@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/roesc-archive/static/css/main.6f9a755a.css",
+    "main.js": "/roesc-archive/static/js/main.d330271b.js",
+    "static/js/787.c0ffca77.chunk.js": "/roesc-archive/static/js/787.c0ffca77.chunk.js",
+    "index.html": "/roesc-archive/index.html",
+    "main.6f9a755a.css.map": "/roesc-archive/static/css/main.6f9a755a.css.map",
+    "main.d330271b.js.map": "/roesc-archive/static/js/main.d330271b.js.map",
+    "787.c0ffca77.chunk.js.map": "/roesc-archive/static/js/787.c0ffca77.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f9a755a.css",
+    "static/js/main.d330271b.js"
+  ]
+}
