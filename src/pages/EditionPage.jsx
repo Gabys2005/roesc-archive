@@ -133,7 +133,7 @@ function EditionPage() {
 			<PageSection check={editionData.images}>
 				<h2>Media</h2>
 				<hr></hr>
-				<div className="is-flex is-flex-wrap-wrap">
+				<div className="columns is-multiline">
 					{editionData.images?.map((r) => (
 						<div className="column is-one-quarter">
 							<a href={r} target="_blank" rel="noreferrer">
