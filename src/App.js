@@ -1,4 +1,3 @@
-import "./App.css";
 import RoescList from "./components/RoescList";
 
 function App() {
