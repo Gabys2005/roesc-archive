@@ -1,21 +1,9 @@
+import { Link } from "react-router-dom";
 import Flag from "../Flag";
 import Table from "../Table";
 import TableHeader from "../TableHeader";
 
 function NationalFinalsList(props) {
-	const convertedData = [];
-
-	const data = props.source;
-
-	data.entries.forEach((entry) => {
-		if (entry.nf) {
-			convertedData.push({
-				country: entry.country,
-				name: entry.nf,
-			});
-		}
-	});
-
 	return (
 		<Table>
 			<TableHeader>
@@ -24,13 +12,17 @@ function NationalFinalsList(props) {
 				<th>National Final</th>
 			</TableHeader>
 			<tbody>
-				{convertedData.map((data, i) => (
+				{props.source?.map((data, i) => (
 					<tr key={data.country}>
 						<td>{i + 1}</td>
 						<td>
 							<Flag country={data.country} /> {data.country}
 						</td>
-						<td>{data.name}</td>
+						<td>
+							<Link to={`/roescs/${props.roesc}/editions/${props.edition}/nfs/${data.link}`}>
+								{data.name}
+							</Link>
+						</td>
 					</tr>
 				))}
 			</tbody>

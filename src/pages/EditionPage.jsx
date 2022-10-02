@@ -120,7 +120,7 @@ function EditionPage() {
 
 			<h2>National Finals</h2>
 			<hr></hr>
-			<NationalFinalsList source={editionData}></NationalFinalsList>
+			<NationalFinalsList source={editionData.nfs} roesc={roesc} edition={edition}></NationalFinalsList>
 
 			<h2>Shows</h2>
 			<hr></hr>

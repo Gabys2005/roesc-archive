@@ -44,6 +44,76 @@
 		["Israel", "Norway", "Belgium", "Armenia"],
 		["Germany", "Switzerland", "Poland"]
 	],
+	"nfs": [
+		{
+			"name": "Mélodie Belge",
+			"link": "belgium",
+			"country": "Belgium",
+			"spotify": "https://open.spotify.com/embed/playlist/4KxUB5p1vLULPNNs1RNMas",
+			"type": "Discord",
+			"voting_method": "Website Televoting",
+			"entries": [
+				{
+					"artist": "RORI",
+					"song": "Gonna Get Mine"
+				},
+				{
+					"artist": "Charles",
+					"song": "Far Gone",
+					"winner": true
+				},
+				{
+					"artist": "Maya's Moving Castle",
+					"song": "Pedestrians"
+				},
+				{
+					"artist": "Tessa Dixson",
+					"song": "Tender Me"
+				}
+			]
+		},
+		{
+			"name": "Alpenkünstler",
+			"link": "switzerland",
+			"country": "Switzerland",
+			"spotify": "https://open.spotify.com/embed/playlist/4IlQaeDZpLEWPngqSA8KuK",
+			"type": "Discord",
+			"voting_method": "Jury vote: 7, 5, 3, 2, 1 points. Tele vote: ???. Later switched to reactions on Discord",
+			"images": ["https://i.imgur.com/yTGmZP5.jpg"],
+			"entries": [
+				{
+					"artist": "Ekat Bork",
+					"song": "Driving My Mustang",
+					"place": 3,
+					"points": 1
+				},
+				{
+					"artist": "Oy",
+					"song": "Space Diaspora",
+					"place": 3,
+					"points": 1
+				},
+				{
+					"artist": "TASHAN",
+					"song": "Mixie Mixie",
+					"place": 1,
+					"points": 4
+				},
+				{
+					"artist": "Soccer Mommy",
+					"song": "Your Dog",
+					"place": 4,
+					"points": 0
+				},
+				{
+					"artist": "Mansfield.TYA",
+					"song": "Auf Wiedersehen",
+					"place": 2,
+					"points": 2
+				}
+			]
+		}
+	],
 	"entries": [
 		{
 			"country": "Romania",
@@ -200,7 +270,6 @@
 			"song": "Far Gone",
 			"artist": "Charles",
 			"participant": "oxyo_rbx",
-			"nf": "Mélodie Belge",
 			"shows": {
 				"gf": {
 					"order": 14,
@@ -246,7 +315,6 @@
 			"song": "Mixie Mixie",
 			"artist": "Ta'Shan",
 			"participant": "Ver_Blazi",
-			"nf": "Alpenkünstler",
 			"shows": {
 				"gf": {
 					"order": 3,
