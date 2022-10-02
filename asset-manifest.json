@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/roesc-archive/static/css/main.204299cc.css",
-    "main.js": "/roesc-archive/static/js/main.295de3a5.js",
+    "main.js": "/roesc-archive/static/js/main.7ab428f8.js",
     "static/js/256.ea5f860a.chunk.js": "/roesc-archive/static/js/256.ea5f860a.chunk.js",
     "static/js/280.a45217c8.chunk.js": "/roesc-archive/static/js/280.a45217c8.chunk.js",
     "static/js/515.6867ded6.chunk.js": "/roesc-archive/static/js/515.6867ded6.chunk.js",
     "static/js/707.750ee404.chunk.js": "/roesc-archive/static/js/707.750ee404.chunk.js",
     "index.html": "/roesc-archive/index.html",
     "main.204299cc.css.map": "/roesc-archive/static/css/main.204299cc.css.map",
-    "main.295de3a5.js.map": "/roesc-archive/static/js/main.295de3a5.js.map"
+    "main.7ab428f8.js.map": "/roesc-archive/static/js/main.7ab428f8.js.map"
   },
   "entrypoints": [
     "static/css/main.204299cc.css",
-    "static/js/main.295de3a5.js"
+    "static/js/main.7ab428f8.js"
   ]
 }
