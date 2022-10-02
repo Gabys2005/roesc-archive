@@ -94,25 +94,25 @@ function EditionPage() {
 				</tbody>
 			</Table>
 
-			<PageSection check={editionData.venue_bidding}>
+			<PageSection check={editionData.venue_bidding?.length > 0}>
 				<h2>Venue Bidding</h2>
 				<hr></hr>
 				<VenueBidding venues={editionData.venue_bidding} venue={editionData.venue}></VenueBidding>
 			</PageSection>
 
-			<PageSection check={editionData.entries.length !== 0}>
+			<PageSection check={editionData.entries.length > 0}>
 				<h2>Participants</h2>
 				<hr></hr>
 				<ParticipantTable source={editionData.entries}></ParticipantTable>
 			</PageSection>
 
-			<PageSection check={editionData.pots}>
+			<PageSection check={editionData.pots?.length > 0}>
 				<h2>Pots</h2>
 				<hr></hr>
 				<PotsTable source={editionData.pots}></PotsTable>
 			</PageSection>
 
-			<PageSection check={editionData.gf_pots}>
+			<PageSection check={editionData.gf_pots?.length > 0}>
 				<h2>GF Pots</h2>
 				<hr></hr>
 				<PotsTable source={editionData.gf_pots}></PotsTable>

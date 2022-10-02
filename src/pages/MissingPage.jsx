@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { revealNames as revealArr } from "../utils";
 
 const revealNames = Object.keys(revealArr);
-const roescFields = ["shortName", "longName", "link", "created", "cancelled", "owner", "links", "notes"];
+const roescFields = ["shortName", "longName", "link", "created", "cancelled", "owner", "links"];
 const editionFields = [
 	"number",
 	"link",
@@ -18,6 +18,7 @@ const editionFields = [
 	"venue_bidding",
 	"pots",
 	"entries",
+	"notes",
 ];
 const entryFields = ["country", "song", "artist", "participant"];
 const showFields = ["order", "place", "points", "jury", "tele"];
@@ -52,7 +53,12 @@ function MissingPage() {
 					});
 					revealNames.forEach((field) => {
 						if (!edition.reveals?.[field]) {
-							thisData.missing.push(`${edition.number} reveal: ${field}`);
+							if (field === "hosts" || field === "host") {
+								if (!edition.reveals?.host && !edition.reveals?.hosts)
+									thisData.missing.push(`${edition.number} reveal: ${field}`);
+							} else {
+								thisData.missing.push(`${edition.number} reveal: ${field}`);
+							}
 						}
 					});
 					edition.entries.forEach((entry) => {

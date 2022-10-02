@@ -83,8 +83,8 @@
 					"order": 12,
 					"place": 9,
 					"points": 229,
-					"jury": 0,
-					"tele": 0
+					"jury": 123,
+					"tele": 106
 				}
 			}
 		},
@@ -167,8 +167,8 @@
 					"order": 11,
 					"place": 14,
 					"points": 116,
-					"jury": 0,
-					"tele": 0
+					"jury": 63,
+					"tele": 53
 				}
 			}
 		},
@@ -205,8 +205,8 @@
 					"order": 13,
 					"place": 7,
 					"points": 237,
-					"jury": 0,
-					"tele": 0
+					"jury": 121,
+					"tele": 116
 				}
 			}
 		},
@@ -228,8 +228,8 @@
 					"order": 3,
 					"place": 1,
 					"points": 291,
-					"jury": 0,
-					"tele": 0
+					"jury": 127,
+					"tele": 164
 				}
 			}
 		},
@@ -250,7 +250,7 @@
 		},
 		{
 			"country": "Lithuania",
-			"song": "Leikinai",
+			"song": "Laikinai",
 			"artist": "Evgenya Redko",
 			"participant": "KorxenStar",
 			"shows": {
@@ -266,8 +266,8 @@
 					"order": 9,
 					"place": 3,
 					"points": 261,
-					"jury": 0,
-					"tele": 0
+					"jury": 139,
+					"tele": 122
 				}
 			}
 		},
@@ -289,8 +289,8 @@
 					"order": 1,
 					"place": 8,
 					"points": 231,
-					"jury": 0,
-					"tele": 0
+					"jury": 88,
+					"tele": 143
 				}
 			}
 		},
@@ -329,8 +329,8 @@
 					"order": 8,
 					"place": 5,
 					"points": 245,
-					"jury": 0,
-					"tele": 0
+					"jury": 134,
+					"tele": 111
 				}
 			}
 		},
@@ -382,8 +382,8 @@
 					"order": 2,
 					"place": 12,
 					"points": 154,
-					"jury": 0,
-					"tele": 0
+					"jury": 59,
+					"tele": 95
 				}
 			}
 		},
@@ -406,8 +406,8 @@
 					"order": 6,
 					"place": 13,
 					"points": 141,
-					"jury": 0,
-					"tele": 0
+					"jury": 72,
+					"tele": 69
 				}
 			}
 		},
@@ -429,8 +429,8 @@
 					"order": 14,
 					"place": 11,
 					"points": 159,
-					"jury": 0,
-					"tele": 0
+					"jury": 80,
+					"tele": 79
 				}
 			}
 		},
@@ -482,8 +482,8 @@
 					"order": 5,
 					"place": 6,
 					"points": 244,
-					"jury": 0,
-					"tele": 0
+					"jury": 138,
+					"tele": 106
 				}
 			}
 		},
@@ -520,8 +520,8 @@
 					"order": 4,
 					"place": 10,
 					"points": 181,
-					"jury": 0,
-					"tele": 0
+					"jury": 75,
+					"tele": 106
 				}
 			}
 		},
@@ -543,8 +543,8 @@
 					"order": 10,
 					"place": 2,
 					"points": 268,
-					"jury": 0,
-					"tele": 0
+					"jury": 152,
+					"tele": 116
 				}
 			}
 		},
@@ -558,8 +558,8 @@
 					"order": 7,
 					"place": 4,
 					"points": 259,
-					"jury": 0,
-					"tele": 0
+					"jury": 137,
+					"tele": 122
 				}
 			}
 		}
