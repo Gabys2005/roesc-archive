@@ -138,7 +138,7 @@
 			"country": "Northern Ireland",
 			"song": "No Boy No Cry",
 			"artist": "Fleur East",
-			"participant": "",
+			"participant": "euro_nathaniel",
 			"shows": {
 				"qr1": {
 					"order": 5,
@@ -338,7 +338,7 @@
 			"country": "France",
 			"song": "Freeze You Out",
 			"artist": "Marina Kaye",
-			"participant": "IvanXDYT03",
+			"participant": ["Rixzty", "djanders12"],
 			"shows": {
 				"qr2": {
 					"order": 2,
