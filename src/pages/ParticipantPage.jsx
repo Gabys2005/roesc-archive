@@ -1,6 +1,34 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import Table from "../components/Table";
+import TableHeader from "../components/TableHeader";
 import { getParticipantData } from "../getData";
+import { getShowName } from "../utils";
+
+function ResultsText(props) {
+	const results = [];
+	for (const showCode in props.data) {
+		if (Object.hasOwnProperty.call(props.data, showCode)) {
+			const showData = props.data[showCode];
+			results.push({
+				name: getShowName(showCode),
+				place: showData.place,
+				points: showData.points,
+			});
+		}
+	}
+	const strings = results.map((r) => `${r.name}: ${r.place}th place, ${r.points} points`);
+	return (
+		<>
+			{strings.map((r) => (
+				<>
+					{r}
+					<br></br>
+				</>
+			))}
+		</>
+	);
+}
 
 function ParticipantPage() {
 	const { participant } = useParams();
@@ -23,8 +51,35 @@ function ParticipantPage() {
 
 	return (
 		<div>
-			<h1>{data.username}</h1>
+			<h1>{participant}</h1>
 			<hr></hr>
+			<h2>Participations</h2>
+			<Table>
+				<TableHeader>
+					<th>roesc</th>
+					<th>country</th>
+					<th>song</th>
+					<th>artist</th>
+					<th>results</th>
+				</TableHeader>
+				<tbody>
+					{data.map((r, i) => (
+						<tr key={i}>
+							<td>
+								<Link to={`/roescs/${r.fullData.link}/editions/${r.editionData.link}`}>
+									{r.fullData.shortName} {r.editionData.number}
+								</Link>
+							</td>
+							<td>{r.participantData.country}</td>
+							<td>{r.participantData.song}</td>
+							<td>{r.participantData.artist}</td>
+							<td>
+								<ResultsText data={r.participantData.shows}></ResultsText>
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</Table>
 		</div>
 	);
 }

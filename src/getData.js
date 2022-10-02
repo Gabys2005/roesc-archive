@@ -57,8 +57,25 @@ async function getParticipantsData() {
 }
 
 async function getParticipantData(username) {
-	const data = await getParticipantsData();
-	return data.find((r) => r.username.toLowerCase() === username.toLowerCase());
+	const data = await getFullData();
+	const participantData = [];
+	data.forEach((d) => {
+		d.editions.forEach((edition) => {
+			const pData = edition.entries.find((r) =>
+				Array.isArray(r.participant)
+					? r.participant.find((a) => a.toLowerCase() === username.toLowerCase())
+					: r.participant.toLowerCase() === username.toLowerCase()
+			);
+			if (pData) {
+				participantData.push({
+					fullData: d,
+					editionData: edition,
+					participantData: pData,
+				});
+			}
+		});
+	});
+	return participantData;
 }
 
 export { getFullData, getParticipantsData, getParticipantData };

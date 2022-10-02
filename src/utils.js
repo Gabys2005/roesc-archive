@@ -51,4 +51,8 @@ function average(arr) {
 	return Math.round(avg * 10) / 10;
 }
 
-export { joinTable, getShowName, objectToArray, sum, average };
+function getDate(str) {
+	return Date.parse(str.replace("th", "").replace("st", "").replace("nd", "").replace("rd", ""));
+}
+
+export { joinTable, getShowName, objectToArray, sum, average, getDate };
