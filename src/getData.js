@@ -1,34 +1,8 @@
 import { sum } from "./utils";
 
-const cache = {};
-let fullDataCached = null;
-
-async function getRoesc(name) {
-	if (cache[name]) {
-		return cache[name];
-	}
-	const data = await fetch(`${process.env.PUBLIC_URL}/data/individual/${name}.json`).then((res) => res.json());
-	cache[name] = data;
-	return data;
-}
-
 async function getFullData() {
-	console.log("egging");
-	if (fullDataCached) {
-		return fullDataCached;
-	}
-	const data = await fetch(`${process.env.PUBLIC_URL}/data/combined.json`).then((res) => res.json());
-	fullDataCached = data;
-	data.forEach((roesc) => {
-		cache[roesc.link] = roesc;
-	});
-	console.log("egged");
-	return data;
-}
-
-async function getEdition(roesc, edition) {
-	const roescData = await getRoesc(roesc);
-	return roescData.editions.find((r) => r.link === edition);
+	const data = await import("./data/generated/combined.json");
+	return data.default;
 }
 
 async function getParticipantsData() {
@@ -59,6 +33,8 @@ async function getParticipantsData() {
 		}
 	}
 
+	console.log(data);
+
 	data.forEach((roesc) => {
 		roesc.editions.forEach((edition) => {
 			edition.entries.forEach((entry) => {
@@ -85,4 +61,4 @@ async function getParticipantData(username) {
 	return data.find((r) => r.username.toLowerCase() === username.toLowerCase());
 }
 
-export { getRoesc, getEdition, getFullData, getParticipantsData, getParticipantData };
+export { getFullData, getParticipantsData, getParticipantData };

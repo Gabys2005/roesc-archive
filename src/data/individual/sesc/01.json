@@ -1,0 +1,28 @@
+{
+	"number": "#01",
+	"link": "01",
+	"city": "Athens",
+	"country": "Greece",
+	"slogan": "Shine Like A Star",
+	"dates": {
+		"gf": "25th November 2017"
+	},
+	"presenters": ["Sakis Rouvas"],
+	"shows": ["gf"],
+	"winner": "Finland",
+	"entries": [
+		{
+			"country": "Bulgaria",
+			"song": "Attention",
+			"artist": "Charlie Puth",
+			"participant": "Estoniahuman",
+			"shows": {
+				"gf": {
+					"order": 1,
+					"place": 6,
+					"points": 51
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"number": "#03",
+	"link": "03",
+	"city": "Helsinki",
+	"country": "Finland",
+	"slogan": "One with the sea",
+	"dates": {
+		"sf1": "17th February 2018",
+		"sf2": "18th February 2018",
+		"gf": "25th February 2018"
+	},
+	"presenters": ["Julie Chen", "Sharon Osbourne"],
+	"shows": ["sf1", "sf2", "gf"],
+	"entries": [
+		{
+			"country": "Austria",
+			"song": "Swish Swish",
+			"artist": "Katy Perry ft. Nicki Minaj",
+			"participant": "JojooxD",
+			"shows": {
+				"sf1": {
+					"order": 1,
+					"place": 14
+				}
+			}
+		}
+	]
+}

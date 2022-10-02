@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import Row from "../components/Row";
 import Table from "../components/Table";
 import TableHeader from "../components/TableHeader";
-import { getRoesc } from "../getData";
 import { joinTable, objectToArray } from "../utils";
 
 function RoescPage() {
@@ -13,16 +12,14 @@ function RoescPage() {
 	const [error, setError] = useState("");
 
 	useEffect(() => {
-		async function run() {
-			try {
-				const data = await getRoesc(roesc);
-				setData(data);
+		import(`../data/generated/${roesc}.json`)
+			.then((rData) => {
+				setData(rData);
 				setLoading(false);
-			} catch (err) {
+			})
+			.catch((err) => {
 				setError(err);
-			}
-		}
-		run();
+			});
 	}, [roesc]);
 
 	if (error !== "") {

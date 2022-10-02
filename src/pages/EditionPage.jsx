@@ -6,7 +6,6 @@ import VenueBidding from "../components/RoescPage/VenueBidding";
 import Row from "../components/Row";
 import ShowTable from "../components/ShowTable";
 import Table from "../components/Table";
-import { getRoesc, getEdition } from "../getData";
 import { getShowName, joinTable } from "../utils";
 import SplitResultsTable from "../components/RoescPage/SplitResultsTable";
 import NationalFinalsList from "../components/RoescPage/NationalFinalsList";
@@ -38,22 +37,25 @@ function EditionPage() {
 	const [error, setError] = useState("");
 
 	useEffect(() => {
-		async function run() {
-			try {
-				const data = await getRoesc(roesc);
-				const editionData = await getEdition(roesc, edition);
-				setData(data);
+		import(`../data/generated/${roesc}.json`)
+			.then((rData) => {
+				const editionData = rData.editions.find((r) => r.link === edition);
+				if (!editionData) {
+					setError("This edition isn't in our database (yet?)");
+				} else {
+					setError("");
+				}
+				setData(rData);
 				setEditionData(editionData);
 				setLoading(false);
-			} catch (err) {
+			})
+			.catch((err) => {
 				setError(err);
-			}
-		}
-		run();
+			});
 	}, [roesc, edition]);
 
 	if (error !== "") {
-		return <h1>error 🦆</h1>;
+		return <h1>error 🦆: {error.toString()}</h1>;
 	}
 
 	if (loading) {

@@ -1,0 +1,524 @@
+{
+	"number": "#02",
+	"link": "02",
+	"city": "Cluj-Napoca",
+	"country": "Romania",
+	"venue": "BT Arena",
+	"slogan": ["Touche", "Undefined"],
+	"dates": {
+		"qr1": "4th July 2021",
+		"qr2": "11th July 2021",
+		"gf": "12th September 2021"
+	},
+	"reveals": {
+		"participants": "18th April 2021",
+		"allocation": "9th May 2021",
+		"venue": "9th May 2021",
+		"city": "9th May 2021",
+		"slogan": "2nd June 2021",
+		"hosts": "4th June 2021",
+		"stage": "6th June 2021",
+		"logo": "13th June 2021",
+		"ro": "20th June 2021"
+	},
+	"presenters": ["WRS", "INNA"],
+	"shows": ["qr1", "qr2", "gf"],
+	"images": [],
+	"pots": [
+		["Serbia", "Spain", "Scotland", "Hungary", "Denmark", "Sweden", "Israel"],
+		["Ukraine", "Germany", "Italy", "Isle Of Man", "Australia", "England"],
+		["Ireland", "Wales", "Belarus", "Netherlands", "Aland Islands", "Finland"],
+		["Andorra", "Northern Ireland", "Russia", "Belgium", "Moldova", "Greece", "Lithuania"]
+	],
+	"entries": [
+		{
+			"country": "Sweden",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"nf": "Melodifestivalen",
+			"shows": {
+				"qr1": {
+					"order": 1,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Russia",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 2,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Netherlands",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 3,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Spain",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 4,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Northern Ireland",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 5,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Isle Of Man",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 6,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Wales",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 7,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Belgium",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 8,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Ireland",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 9,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Serbia",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 10,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Lithuania",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 11,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "England",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr1": {
+					"order": 12,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Germany",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"nf": "Final Destination Deutschland",
+			"shows": {
+				"qr1": {
+					"order": 13,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Hungary",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"nf": "Hungary For The Crown",
+			"shows": {
+				"qr2": {
+					"order": 1,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "France",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 2,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Ukraine",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 3,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Greece",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 4,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Australia",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 5,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Finland",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 6,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Belarus",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 7,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Denmark",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 8,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Scotland",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 9,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Italy",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 10,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Israel",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 11,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Aland Islands",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"qr2": {
+					"order": 12,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0,
+					"qualified": true
+				},
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Romania",
+			"song": "",
+			"artist": "",
+			"participant": "",
+			"shows": {
+				"gf": {
+					"order": 0,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		}
+	]
+}
