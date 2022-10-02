@@ -13,11 +13,15 @@
 		"allocation": "14th February 2021",
 		"slogan": "14th February 2021",
 		"dates": "17th February 2021",
-		"host": "23rd February 2021",
+		"hosts": "23rd February 2021",
+		"venue": "5th March 2021",
+		"city": "5th March 2021",
 		"stage": "5th March 2021",
 		"gf_ro": "5th March 2021",
 		"logo": "5th March 2021"
 	},
+	"notes": [],
+	"venue_bidding": [],
 	"presenters": "Małgorzata Tomaszewska",
 	"shows": ["gf"],
 	"images": [
@@ -33,6 +37,7 @@
 		"https://i.imgur.com/6lKrKZk.png",
 		"https://i.imgur.com/DzyIFbW.png"
 	],
+	"pots": [],
 	"gf_pots": [
 		["Romania", "Austria", "Portugal", "France"],
 		["England", "Albania", "Kazakhstan", "Russia"],

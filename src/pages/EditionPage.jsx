@@ -83,6 +83,14 @@ function EditionPage() {
 					</Row>
 					<Row title="Presenters">{joinTable(editionData.presenters)}</Row>
 					<Row title="Number of entries">{editionData.entries.length}</Row>
+					<Row title="Notes">
+						{editionData.notes.map((r) => (
+							<>
+								{r}
+								<br></br>
+							</>
+						))}
+					</Row>
 				</tbody>
 			</Table>
 

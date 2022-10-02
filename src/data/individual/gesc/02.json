@@ -15,20 +15,53 @@
 		"allocation": "9th May 2021",
 		"venue": "9th May 2021",
 		"city": "9th May 2021",
+		"dates": "17th May 2021",
 		"slogan": "2nd June 2021",
 		"hosts": "4th June 2021",
 		"stage": "6th June 2021",
 		"logo": "13th June 2021",
-		"ro": "20th June 2021"
+		"ro": "20th June 2021",
+		"gf_ro": "22nd August 2021"
 	},
+	"venue_bidding": [],
 	"presenters": ["WRS", "INNA"],
 	"shows": ["qr1", "qr2", "gf"],
-	"images": [],
+	"images": [
+		"https://i.imgur.com/3X2XrCz.png",
+		"https://i.imgur.com/ST01LO2.png",
+		"https://i.imgur.com/RBNNdDm.png",
+		"https://i.imgur.com/kqmAg92.png",
+		"https://i.imgur.com/wfV2pRp.png",
+		"https://i.imgur.com/MsOmyOc.png",
+		"https://i.imgur.com/jLV7GmQ.png",
+		"https://i.imgur.com/EJoIANt.jpg",
+		"https://i.imgur.com/EJoIANt.jpg",
+		"https://i.imgur.com/sxjrN4m.jpg",
+		"https://i.imgur.com/1O3QcZK.png",
+		"https://i.imgur.com/dFKSMWI.png",
+		"https://i.imgur.com/4W9BJky.png",
+		"https://i.imgur.com/SyNjfPl.png",
+		"https://i.imgur.com/yKdOFvW.png",
+		"https://i.imgur.com/4qHSUrR.png",
+		"https://i.imgur.com/cuL6FiD.png",
+		"https://i.imgur.com/BwlBEqK.png",
+		"https://i.imgur.com/4FdDloA.png",
+		"https://i.imgur.com/PdSGgqx.png",
+		"https://i.imgur.com/7xEqzpS.png",
+		"https://i.imgur.com/QjrbBqx.png",
+		"https://i.imgur.com/KdWjRuR.png",
+		"https://i.imgur.com/1RstQc0.png",
+		"https://i.imgur.com/rbAIsD6.png"
+	],
 	"pots": [
 		["Serbia", "Spain", "Scotland", "Hungary", "Denmark", "Sweden", "Israel"],
 		["Ukraine", "Germany", "Italy", "Isle Of Man", "Australia", "England"],
 		["Ireland", "Wales", "Belarus", "Netherlands", "Aland Islands", "Finland"],
 		["Andorra", "Northern Ireland", "Russia", "Belgium", "Moldova", "Greece", "Lithuania"]
+	],
+	"notes": [
+		"Grand Final was moved from 21st August 2021",
+		"Moldova (borjaelbro) got disqualified for not submitting a song in time"
 	],
 	"entries": [
 		{
@@ -40,16 +73,16 @@
 			"shows": {
 				"qr1": {
 					"order": 1,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 4,
+					"points": 158,
+					"jury": 78,
+					"tele": 80,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 12,
+					"place": 9,
+					"points": 229,
 					"jury": 0,
 					"tele": 0
 				}
@@ -57,17 +90,17 @@
 		},
 		{
 			"country": "Russia",
-			"song": "",
-			"artist": "",
+			"song": "Blah Blah",
+			"artist": "Luri & Bryn",
 			"participant": "Pepz_ie",
 			"nf": "Russian Superstar",
 			"shows": {
 				"qr1": {
 					"order": 2,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 10,
+					"points": 87,
+					"jury": 37,
+					"tele": 50
 				}
 			}
 		},
@@ -79,10 +112,10 @@
 			"shows": {
 				"qr1": {
 					"order": 3,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 9,
+					"points": 98,
+					"jury": 51,
+					"tele": 47
 				}
 			}
 		},
@@ -94,10 +127,10 @@
 			"shows": {
 				"qr1": {
 					"order": 4,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 11,
+					"points": 69,
+					"jury": 22,
+					"tele": 47
 				}
 			}
 		},
@@ -109,10 +142,10 @@
 			"shows": {
 				"qr1": {
 					"order": 5,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 13,
+					"points": 47,
+					"jury": 20,
+					"tele": 27
 				}
 			}
 		},
@@ -124,16 +157,16 @@
 			"shows": {
 				"qr1": {
 					"order": 6,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 6,
+					"points": 129,
+					"jury": 65,
+					"tele": 64,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 11,
+					"place": 14,
+					"points": 116,
 					"jury": 0,
 					"tele": 0
 				}
@@ -143,14 +176,14 @@
 			"country": "Wales",
 			"song": "Moonchild",
 			"artist": "GEISTE",
-			"participant": "crlrst",
+			"participant": ["crlrst", "nastasisja"],
 			"shows": {
 				"qr1": {
 					"order": 7,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 8,
+					"points": 101,
+					"jury": 57,
+					"tele": 44
 				}
 			}
 		},
@@ -162,16 +195,16 @@
 			"shows": {
 				"qr1": {
 					"order": 8,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 5,
+					"points": 147,
+					"jury": 97,
+					"tele": 50,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 13,
+					"place": 7,
+					"points": 237,
 					"jury": 0,
 					"tele": 0
 				}
@@ -185,16 +218,16 @@
 			"shows": {
 				"qr1": {
 					"order": 9,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 2,
+					"points": 168,
+					"jury": 91,
+					"tele": 77,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 3,
+					"place": 1,
+					"points": 291,
 					"jury": 0,
 					"tele": 0
 				}
@@ -208,10 +241,10 @@
 			"shows": {
 				"qr1": {
 					"order": 10,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 12,
+					"points": 62,
+					"jury": 22,
+					"tele": 40
 				}
 			}
 		},
@@ -219,20 +252,20 @@
 			"country": "Lithuania",
 			"song": "Leikinai",
 			"artist": "Evgenya Redko",
-			"participant": "",
+			"participant": "KorxenStar",
 			"shows": {
 				"qr1": {
 					"order": 11,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 3,
+					"points": 166,
+					"jury": 69,
+					"tele": 97,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 9,
+					"place": 3,
+					"points": 261,
 					"jury": 0,
 					"tele": 0
 				}
@@ -246,16 +279,16 @@
 			"shows": {
 				"qr1": {
 					"order": 12,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 1,
+					"points": 170,
+					"jury": 73,
+					"tele": 97,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 1,
+					"place": 8,
+					"points": 231,
 					"jury": 0,
 					"tele": 0
 				}
@@ -270,10 +303,10 @@
 			"shows": {
 				"qr1": {
 					"order": 13,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 7,
+					"points": 106,
+					"jury": 72,
+					"tele": 34
 				}
 			}
 		},
@@ -281,21 +314,21 @@
 			"country": "Hungary",
 			"song": "Player 2",
 			"artist": "SEA",
-			"participant": "hvlfy",
+			"participant": ["hvlfy", "namban"],
 			"nf": "Hungary For The Crown",
 			"shows": {
 				"qr2": {
 					"order": 1,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 1,
+					"points": 170,
+					"jury": 98,
+					"tele": 72,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 8,
+					"place": 5,
+					"points": 245,
 					"jury": 0,
 					"tele": 0
 				}
@@ -309,10 +342,10 @@
 			"shows": {
 				"qr2": {
 					"order": 2,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 8,
+					"points": 106,
+					"jury": 48,
+					"tele": 58
 				}
 			}
 		},
@@ -324,10 +357,10 @@
 			"shows": {
 				"qr2": {
 					"order": 3,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 10,
+					"points": 73,
+					"jury": 45,
+					"tele": 28
 				}
 			}
 		},
@@ -339,8 +372,16 @@
 			"shows": {
 				"qr2": {
 					"order": 4,
-					"place": 0,
-					"points": 0,
+					"place": 7,
+					"points": 112,
+					"jury": 37,
+					"tele": 75,
+					"qualified": true
+				},
+				"gf": {
+					"order": 2,
+					"place": 12,
+					"points": 154,
 					"jury": 0,
 					"tele": 0
 				}
@@ -355,16 +396,16 @@
 			"shows": {
 				"qr2": {
 					"order": 5,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 3,
+					"points": 155,
+					"jury": 69,
+					"tele": 86,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 6,
+					"place": 13,
+					"points": 141,
 					"jury": 0,
 					"tele": 0
 				}
@@ -372,22 +413,22 @@
 		},
 		{
 			"country": "Finland",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Sugar Rush",
+			"artist": "VENIOR",
+			"participant": "sooxya",
 			"shows": {
 				"qr2": {
 					"order": 6,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 5,
+					"points": 146,
+					"jury": 90,
+					"tele": 56,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 14,
+					"place": 11,
+					"points": 159,
 					"jury": 0,
 					"tele": 0
 				}
@@ -397,14 +438,14 @@
 			"country": "Belarus",
 			"song": "Missing",
 			"artist": "Platon & Joolay",
-			"participant": "",
+			"participant": "Nikitosa2zero",
 			"shows": {
 				"qr2": {
 					"order": 7,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 11,
+					"points": 68,
+					"jury": 35,
+					"tele": 33
 				}
 			}
 		},
@@ -416,10 +457,10 @@
 			"shows": {
 				"qr2": {
 					"order": 8,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 9,
+					"points": 85,
+					"jury": 46,
+					"tele": 39
 				}
 			}
 		},
@@ -431,16 +472,16 @@
 			"shows": {
 				"qr2": {
 					"order": 9,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 2,
+					"points": 156,
+					"jury": 75,
+					"tele": 81,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 5,
+					"place": 6,
+					"points": 244,
 					"jury": 0,
 					"tele": 0
 				}
@@ -454,10 +495,10 @@
 			"shows": {
 				"qr2": {
 					"order": 10,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 12,
+					"points": 50,
+					"jury": 25,
+					"tele": 25
 				}
 			}
 		},
@@ -469,16 +510,16 @@
 			"shows": {
 				"qr2": {
 					"order": 11,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 6,
+					"points": 120,
+					"jury": 53,
+					"tele": 67,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 4,
+					"place": 10,
+					"points": 181,
 					"jury": 0,
 					"tele": 0
 				}
@@ -492,16 +533,16 @@
 			"shows": {
 				"qr2": {
 					"order": 12,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0,
+					"place": 4,
+					"points": 150,
+					"jury": 75,
+					"tele": 75,
 					"qualified": true
 				},
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 10,
+					"place": 2,
+					"points": 268,
 					"jury": 0,
 					"tele": 0
 				}
@@ -509,14 +550,14 @@
 		},
 		{
 			"country": "Romania",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Back To Her",
+			"artist": "Holy Molly",
+			"participant": "Alina126",
 			"shows": {
 				"gf": {
-					"order": 0,
-					"place": 0,
-					"points": 0,
+					"order": 7,
+					"place": 4,
+					"points": 259,
 					"jury": 0,
 					"tele": 0
 				}

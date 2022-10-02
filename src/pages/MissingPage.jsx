@@ -1,4 +1,26 @@
 import { useEffect, useState } from "react";
+import { revealNames as revealArr } from "../utils";
+
+const revealNames = Object.keys(revealArr);
+const roescFields = ["shortName", "longName", "link", "created", "cancelled", "owner", "links", "notes"];
+const editionFields = [
+	"number",
+	"link",
+	"city",
+	"country",
+	"venue",
+	"slogan",
+	"dates",
+	"reveals",
+	"presenters",
+	"shows",
+	"images",
+	"venue_bidding",
+	"pots",
+	"entries",
+];
+const entryFields = ["country", "song", "artist", "participant"];
+const showFields = ["order", "place", "points", "jury", "tele"];
 
 function MissingPage() {
 	const [data, setData] = useState([]);
@@ -13,17 +35,50 @@ function MissingPage() {
 					name: roesc.longName,
 					missing: [],
 				};
-				if (!roesc.links) {
+				roescFields.forEach((field) => {
+					if (!roesc[field]) {
+						thisData.missing.push(field);
+					}
+				});
+				if (roesc.links?.length === 0) {
 					thisData.missing.push("links");
 				}
-				if (!roesc.owner) {
-					thisData.missing.push("owner");
-				}
+
+				roesc.editions.forEach((edition) => {
+					editionFields.forEach((field) => {
+						if (!edition[field]) {
+							thisData.missing.push(`${edition.number}: ${field}`);
+						}
+					});
+					revealNames.forEach((field) => {
+						if (!edition.reveals?.[field]) {
+							thisData.missing.push(`${edition.number} reveal: ${field}`);
+						}
+					});
+					edition.entries.forEach((entry) => {
+						entryFields.forEach((field) => {
+							if (!entry[field]) {
+								thisData.missing.push(`${edition.number} ${entry.country}: ${field}`);
+							}
+						});
+						for (const showCode in entry.shows) {
+							if (Object.hasOwnProperty.call(entry.shows, showCode)) {
+								const showData = entry.shows[showCode];
+								showFields.forEach((field) => {
+									if (!showData[field]) {
+										thisData.missing.push(
+											`${edition.number} ${entry.country} ${showCode}: ${field}`
+										);
+									}
+								});
+							}
+						}
+					});
+				});
+
 				if (thisData.missing.length > 0) {
 					dataToSet.push(thisData);
 				}
-
-				roesc.editions.forEach((edition) => {});
 			});
 
 			setData(dataToSet);

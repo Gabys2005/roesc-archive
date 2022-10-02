@@ -6,7 +6,9 @@ const showNames = {
 	participants: "Participants",
 	qr1: "Qualification Round 1",
 	qr2: "Qualification Round 2",
+};
 
+const revealNames = {
 	host: "Host",
 	slogan: "Slogan",
 	logo: "Logo",
@@ -31,6 +33,8 @@ function joinTable(text) {
 function getShowName(short) {
 	if (showNames[short]) {
 		return showNames[short];
+	} else if (revealNames[short]) {
+		return revealNames[short];
 	} else {
 		return "< ERROR >";
 	}
@@ -55,4 +59,4 @@ function getDate(str) {
 	return Date.parse(str.replace("th", "").replace("st", "").replace("nd", "").replace("rd", ""));
 }
 
-export { joinTable, getShowName, objectToArray, sum, average, getDate };
+export { joinTable, getShowName, objectToArray, sum, average, getDate, revealNames };

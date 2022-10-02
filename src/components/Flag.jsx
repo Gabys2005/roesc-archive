@@ -118,6 +118,7 @@ const flags = {
 	guam: "🇬🇺",
 	brunei: "🇧🇳",
 	"puerto rico": "🇵🇷",
+	"isle of man": "🇮🇲",
 };
 
 function Flag(props) {
