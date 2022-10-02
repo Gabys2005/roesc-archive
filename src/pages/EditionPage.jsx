@@ -74,7 +74,7 @@ function EditionPage() {
 					<Row title="Host City">
 						{editionData.city}, {editionData.country}
 					</Row>
-					<Row title="Slogan">{editionData.slogan}</Row>
+					<Row title="Slogan">{joinTable(editionData.slogan)}</Row>
 					<Row title="Dates">
 						<DatesText object={editionData.dates}></DatesText>
 					</Row>
@@ -137,7 +137,7 @@ function EditionPage() {
 				<hr></hr>
 				<div className="columns is-multiline">
 					{editionData.images?.map((r) => (
-						<div className="column is-one-quarter">
+						<div key={r} className="column is-one-quarter">
 							<a href={r} target="_blank" rel="noreferrer">
 								<Media alt="" src={r}></Media>
 							</a>

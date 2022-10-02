@@ -11,6 +11,7 @@ import ErrorPage from "./pages/ErrorPage";
 import EditionPage from "./pages/EditionPage";
 import AllParticipantsPage from "./pages/AllParticipantsPage";
 import ParticipantPage from "./pages/ParticipantPage";
+import MissingPage from "./pages/MissingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,6 +31,7 @@ root.render(
 						<Route path="roescs/:roesc/editions/:edition" element={<EditionPage></EditionPage>}></Route>
 						<Route path="participants" element={<AllParticipantsPage></AllParticipantsPage>}></Route>
 						<Route path="participants/:participant" element={<ParticipantPage></ParticipantPage>}></Route>
+						<Route path="missing" element={<MissingPage></MissingPage>}></Route>
 						<Route path="*" element={<ErrorPage></ErrorPage>}></Route>
 					</Routes>
 				</div>

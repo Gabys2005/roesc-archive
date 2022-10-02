@@ -18,7 +18,7 @@ function PotsTable(props) {
 						<td key={r}>
 							<ul>
 								{r.map((a) => (
-									<li>
+									<li key={a}>
 										<Flag country={a}></Flag> {a}
 										<br></br>
 									</li>

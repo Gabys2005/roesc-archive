@@ -9,6 +9,7 @@ function generate() {
 		const folders = fs.readdirSync(individualDataFolder);
 		folders.forEach((folderName) => {
 			if (folderName.indexOf(".") > 0) return;
+			console.log(folderName);
 			const files = fs.readdirSync(individualDataFolder + folderName);
 			const roescData = JSON.parse(fs.readFileSync(`${individualDataFolder}${folderName}/main.json`, "utf-8"));
 			roescData.editions = [];

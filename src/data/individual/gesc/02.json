@@ -33,9 +33,9 @@
 	"entries": [
 		{
 			"country": "Sweden",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Disco",
+			"artist": "Svrcina & Solarnus",
+			"participant": "DarticFernandez",
 			"nf": "Melodifestivalen",
 			"shows": {
 				"qr1": {
@@ -59,7 +59,8 @@
 			"country": "Russia",
 			"song": "",
 			"artist": "",
-			"participant": "",
+			"participant": "Pepz_ie",
+			"nf": "Russian Superstar",
 			"shows": {
 				"qr1": {
 					"order": 2,
@@ -72,9 +73,9 @@
 		},
 		{
 			"country": "Netherlands",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "What You Waiting For",
+			"artist": "SOMI",
+			"participant": "bhackstabbed",
 			"shows": {
 				"qr1": {
 					"order": 3,
@@ -87,9 +88,9 @@
 		},
 		{
 			"country": "Spain",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "En El Aire",
+			"artist": "Vega Almohalla",
+			"participant": "ElementPanda",
 			"shows": {
 				"qr1": {
 					"order": 4,
@@ -102,8 +103,8 @@
 		},
 		{
 			"country": "Northern Ireland",
-			"song": "",
-			"artist": "",
+			"song": "No Boy No Cry",
+			"artist": "Fleur East",
 			"participant": "",
 			"shows": {
 				"qr1": {
@@ -117,9 +118,9 @@
 		},
 		{
 			"country": "Isle Of Man",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "The Breath Within Your Chest",
+			"artist": "Matt Taylor",
+			"participant": "daxjd",
 			"shows": {
 				"qr1": {
 					"order": 6,
@@ -140,9 +141,9 @@
 		},
 		{
 			"country": "Wales",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Moonchild",
+			"artist": "GEISTE",
+			"participant": "crlrst",
 			"shows": {
 				"qr1": {
 					"order": 7,
@@ -155,9 +156,9 @@
 		},
 		{
 			"country": "Belgium",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Truth Hurts",
+			"artist": "RORI",
+			"participant": "oxyo_rbx",
 			"shows": {
 				"qr1": {
 					"order": 8,
@@ -178,9 +179,9 @@
 		},
 		{
 			"country": "Ireland",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Perfect Places",
+			"artist": "Lorde",
+			"participant": "Panel122221",
 			"shows": {
 				"qr1": {
 					"order": 9,
@@ -201,9 +202,9 @@
 		},
 		{
 			"country": "Serbia",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Komiran",
+			"artist": "Sha & Teodora",
+			"participant": "TheVanyaDJ",
 			"shows": {
 				"qr1": {
 					"order": 10,
@@ -216,8 +217,8 @@
 		},
 		{
 			"country": "Lithuania",
-			"song": "",
-			"artist": "",
+			"song": "Leikinai",
+			"artist": "Evgenya Redko",
 			"participant": "",
 			"shows": {
 				"qr1": {
@@ -239,9 +240,9 @@
 		},
 		{
 			"country": "England",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Brirish Bombs",
+			"artist": "Declan McKenna",
+			"participant": "robndix",
 			"shows": {
 				"qr1": {
 					"order": 12,
@@ -262,9 +263,9 @@
 		},
 		{
 			"country": "Germany",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Unlock It",
+			"artist": "Charli XCX",
+			"participant": "kawaiiliqxe",
 			"nf": "Final Destination Deutschland",
 			"shows": {
 				"qr1": {
@@ -278,9 +279,9 @@
 		},
 		{
 			"country": "Hungary",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Player 2",
+			"artist": "SEA",
+			"participant": "hvlfy",
 			"nf": "Hungary For The Crown",
 			"shows": {
 				"qr2": {
@@ -302,9 +303,9 @@
 		},
 		{
 			"country": "France",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Freeze You Out",
+			"artist": "Marina Kaye",
+			"participant": "IvanXDYT03",
 			"shows": {
 				"qr2": {
 					"order": 2,
@@ -317,9 +318,9 @@
 		},
 		{
 			"country": "Ukraine",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Час зупинитись",
+			"artist": "ERIN",
+			"participant": "ProfeCool",
 			"shows": {
 				"qr2": {
 					"order": 3,
@@ -332,9 +333,9 @@
 		},
 		{
 			"country": "Greece",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Evol",
+			"artist": "SOFIA",
+			"participant": "Thanos615",
 			"shows": {
 				"qr2": {
 					"order": 4,
@@ -347,9 +348,10 @@
 		},
 		{
 			"country": "Australia",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Psycho",
+			"artist": "Mia Rodriguez",
+			"participant": "iCoia",
+			"nf": "Australia Decides",
 			"shows": {
 				"qr2": {
 					"order": 5,
@@ -393,8 +395,8 @@
 		},
 		{
 			"country": "Belarus",
-			"song": "",
-			"artist": "",
+			"song": "Missing",
+			"artist": "Platon & Joolay",
 			"participant": "",
 			"shows": {
 				"qr2": {
@@ -408,9 +410,9 @@
 		},
 		{
 			"country": "Denmark",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "For Mig Selv",
+			"artist": "Sandra Hussein",
+			"participant": "quaackeers",
 			"shows": {
 				"qr2": {
 					"order": 8,
@@ -423,9 +425,9 @@
 		},
 		{
 			"country": "Scotland",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Purge The Poison",
+			"artist": "MARINA",
+			"participant": "SaltyOreos",
 			"shows": {
 				"qr2": {
 					"order": 9,
@@ -446,9 +448,9 @@
 		},
 		{
 			"country": "Italy",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Direzione la vita",
+			"artist": "Annalisa",
+			"participant": "GIORGIOWORLDCUP",
 			"shows": {
 				"qr2": {
 					"order": 10,
@@ -461,9 +463,9 @@
 		},
 		{
 			"country": "Israel",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Water",
+			"artist": "KREAM",
+			"participant": "Liam_Aharon",
 			"shows": {
 				"qr2": {
 					"order": 11,
@@ -484,9 +486,9 @@
 		},
 		{
 			"country": "Aland Islands",
-			"song": "",
-			"artist": "",
-			"participant": "",
+			"song": "Good Puss",
+			"artist": "COBRAH",
+			"participant": "Ver_Blazi",
 			"shows": {
 				"qr2": {
 					"order": 12,
