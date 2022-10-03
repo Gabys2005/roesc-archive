@@ -132,7 +132,92 @@
 			"name": "Hungary For The Crown",
 			"link": "hungary",
 			"country": "Hungary",
-			"entries": []
+			"hosts": ["Chuu", "ViVi"],
+			"spotify": "https://open.spotify.com/embed/playlist/3fIGXGspFCExChrbjTdcVo",
+			"voting_method": "Jury points: 12, 10, 8, 6, 4, 2, 1, Juries: Hungary, Lithuania, Russia, Belgium, Romania, Australia, Sweden. Google Forms televoting, 3 votes per user",
+			"links": {
+				"Results Video": "https://youtu.be/r7e3iLkUpbU"
+			},
+			"images": [
+				"https://i.imgur.com/AyJt7Ad.png",
+				"https://i.imgur.com/sAmiC41.png",
+				"https://i.imgur.com/7tHDLJv.png"
+			],
+			"type": "Discord",
+			"entries": [
+				{
+					"artist": "Dallos Bogi",
+					"song": "Már Értem",
+					"place": 12,
+					"points": 5
+				},
+				{
+					"artist": "PRISTIN V",
+					"song": "Get It",
+					"place": 2,
+					"points": 129
+				},
+				{
+					"artist": "Metzker Viktória, Dukai Regina & Miss Mood",
+					"song": "TITOK",
+					"place": 5,
+					"points": 37
+				},
+				{
+					"artist": "DIORA",
+					"song": "Let Me Blow Your Mind",
+					"place": 7,
+					"points": 23
+				},
+				{
+					"artist": "Tolvai Reni",
+					"song": "Angyal",
+					"place": 3,
+					"points": 105
+				},
+				{
+					"artist": "Sea",
+					"song": "Player 2",
+					"place": 1,
+					"points": 149
+				},
+				{
+					"artist": "Arany Timi",
+					"song": "Tökéletes verzió",
+					"place": 4,
+					"points": 62
+				},
+				{
+					"artist": "Tamáska Gabi",
+					"song": "Bárhol",
+					"place": 6,
+					"points": 28
+				},
+				{
+					"artist": "Gabi Knoll",
+					"song": "Moonflower",
+					"place": 11,
+					"points": 12
+				},
+				{
+					"artist": "Nicky Romero & Stadiumx",
+					"song": "Harmony",
+					"place": 9,
+					"points": 18
+				},
+				{
+					"artist": "Király Viktor",
+					"song": "Promises",
+					"place": 10,
+					"points": 12
+				},
+				{
+					"artist": "Yamina",
+					"song": "It's Me",
+					"place": 8,
+					"points": 22
+				}
+			]
 		},
 		{
 			"name": "Russian Superstar",

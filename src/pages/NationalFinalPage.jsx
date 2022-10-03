@@ -6,6 +6,7 @@ import Row from "../components/Row";
 import SongsTable from "../components/NationalFinalPage/SongsTable";
 import Media from "../components/Media";
 import Flag from "../components/Flag";
+import { joinTable, objectToArray } from "../utils";
 
 function NationalFinalPage() {
 	const [loading, setLoading] = useState(true);
@@ -44,8 +45,18 @@ function NationalFinalPage() {
 					</Row>
 					<Row title="Type">{nfData.type}</Row>
 					<Row title="Voting method">{nfData.voting_method}</Row>
+					<Row title="Hosts">{joinTable(nfData.hosts)}</Row>
 				</tbody>
 			</Table>
+			<h2>Links</h2>
+			<hr></hr>
+			<ul>
+				{objectToArray(nfData.links).map((r) => (
+					<li>
+						{r[0]}: <a href={r[1]}>{r[1]}</a>
+					</li>
+				))}
+			</ul>
 			<PageSection check={nfData.spotify}>
 				<h2>Spotify Playlist</h2>
 				<iframe

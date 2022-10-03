@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+	const [classes, setClasses] = useState("");
+	function toggleNavbar() {
+		console.log(classes);
+		if (classes === "") {
+			setClasses("is-active");
+		} else {
+			setClasses("");
+		}
+	}
 	return (
 		<>
 			<nav className="navbar" role="navigation" aria-label="main navigation">
@@ -11,10 +21,11 @@ function Navbar() {
 
 					<div
 						role="button"
-						className="navbar-burger"
+						className={`navbar-burger ${classes}`}
 						aria-label="menu"
 						aria-expanded="false"
 						data-target="navbarBasicExample"
+						onClick={toggleNavbar}
 					>
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
@@ -22,7 +33,7 @@ function Navbar() {
 					</div>
 				</div>
 
-				<div id="navbarBasicExample" className="navbar-menu">
+				<div id="navbarBasicExample" className={`navbar-menu ${classes}`}>
 					<div className="navbar-start">
 						<Link className="navbar-item" to="/">
 							Home
