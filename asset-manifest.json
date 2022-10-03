@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/roesc-archive/static/css/main.204299cc.css",
-    "main.js": "/roesc-archive/static/js/main.09b2db59.js",
-    "static/js/256.73b3a12b.chunk.js": "/roesc-archive/static/js/256.73b3a12b.chunk.js",
-    "static/js/280.afb91d91.chunk.js": "/roesc-archive/static/js/280.afb91d91.chunk.js",
+    "main.js": "/roesc-archive/static/js/main.c0d0a8f3.js",
+    "static/js/256.bb14dea8.chunk.js": "/roesc-archive/static/js/256.bb14dea8.chunk.js",
+    "static/js/280.91247b6c.chunk.js": "/roesc-archive/static/js/280.91247b6c.chunk.js",
     "static/js/515.2f007530.chunk.js": "/roesc-archive/static/js/515.2f007530.chunk.js",
     "static/js/707.f7f8eb7e.chunk.js": "/roesc-archive/static/js/707.f7f8eb7e.chunk.js",
     "index.html": "/roesc-archive/index.html",
     "main.204299cc.css.map": "/roesc-archive/static/css/main.204299cc.css.map",
-    "main.09b2db59.js.map": "/roesc-archive/static/js/main.09b2db59.js.map"
+    "main.c0d0a8f3.js.map": "/roesc-archive/static/js/main.c0d0a8f3.js.map"
   },
   "entrypoints": [
     "static/css/main.204299cc.css",
-    "static/js/main.09b2db59.js"
+    "static/js/main.c0d0a8f3.js"
   ]
 }
