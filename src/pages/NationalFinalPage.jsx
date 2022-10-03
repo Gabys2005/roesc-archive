@@ -48,15 +48,19 @@ function NationalFinalPage() {
 					<Row title="Hosts">{joinTable(nfData.hosts)}</Row>
 				</tbody>
 			</Table>
-			<h2>Links</h2>
-			<hr></hr>
-			<ul>
-				{objectToArray(nfData.links).map((r) => (
-					<li>
-						{r[0]}: <a href={r[1]}>{r[1]}</a>
-					</li>
-				))}
-			</ul>
+
+			<PageSection check={nfData.links && Object.keys(nfData.links).length > 0}>
+				<h2>Links</h2>
+				<hr></hr>
+				<ul>
+					{objectToArray(nfData.links).map((r) => (
+						<li>
+							{r[0]}: <a href={r[1]}>{r[1]}</a>
+						</li>
+					))}
+				</ul>
+			</PageSection>
+
 			<PageSection check={nfData.spotify}>
 				<h2>Spotify Playlist</h2>
 				<iframe

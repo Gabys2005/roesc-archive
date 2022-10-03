@@ -68,7 +68,40 @@
 			"name": "Australia Decides",
 			"link": "australia",
 			"country": "Australia",
-			"entries": []
+			"type": "Discord",
+			"voting_method": "Reaction voting, 3 reactions per person",
+			"entries": [
+				{
+					"artist": "The Veronicas",
+					"song": "In My Blood",
+					"place": 3,
+					"points": 7
+				},
+				{
+					"artist": "The Kite String Tangle",
+					"song": "NORTH",
+					"place": 5,
+					"points": 0
+				},
+				{
+					"artist": "Mira Rodriguez",
+					"song": "Psycho",
+					"place": 1,
+					"points": 10
+				},
+				{
+					"artist": "Ashwarya",
+					"song": "Biryani",
+					"place": 4,
+					"points": 2
+				},
+				{
+					"artist": "Stray Kids",
+					"song": "All In",
+					"place": 2,
+					"points": 8
+				}
+			]
 		},
 		{
 			"name": "Final Destination Deutschland",
@@ -223,7 +256,76 @@
 			"name": "Russian Superstar",
 			"link": "russia",
 			"country": "Russia",
-			"entries": []
+			"type": "Discord",
+			"spotify": "https://open.spotify.com/embed/playlist/28nQ8LwJGX9iE7J8l4F1KZ",
+			"voting_method": "Televote, 1 vote per person",
+			"entries": [
+				{
+					"artist": "MRKK",
+					"song": "Flute"
+				},
+				{
+					"artist": "MAria Ilieva",
+					"song": "Tvoya"
+				},
+				{
+					"artist": "IC3PEAK",
+					"song": "Грустная сука"
+				},
+				{
+					"artist": "IC3PEAK",
+					"song": "Сказка"
+				},
+				{
+					"artist": "Rakhim",
+					"song": "Fendi"
+				},
+				{
+					"artist": "Babek Mamedrzaev",
+					"song": "Принцесса"
+				},
+				{
+					"artist": "Ustinna",
+					"song": "Кто, Кто"
+				},
+				{
+					"artist": "LANA",
+					"song": "Take The Wheel"
+				},
+				{
+					"artist": "Zivert",
+					"song": "Многоточия"
+				},
+				{
+					"artist": "Ustinna",
+					"song": "Dance in the Dark"
+				},
+				{
+					"artist": "AleXa",
+					"song": "Bomb - Korean Version"
+				},
+				{
+					"artist": "AleXa",
+					"song": "Revolution"
+				},
+				{
+					"artist": "Olga Buzova",
+					"song": "Вот она я"
+				},
+				{
+					"artist": "STRELNIKOV",
+					"song": "Девочка Ла Ла"
+				},
+				{
+					"artist": "Luri, Bryn",
+					"song": "Blah Blah",
+					"winner": true
+				},
+				{
+					"artist": "Luna Vexa",
+					"song": "like you love me"
+				}
+			]
 		},
 		{
 			"name": "Melodifestivalen",
