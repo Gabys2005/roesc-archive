@@ -1,0 +1,498 @@
+{
+	"number": "#03",
+	"link": "03",
+	"city": "Dublin",
+	"country": "Ireland",
+	"venue": "Convention Centre Dublin",
+	"slogan": "Ethereal",
+	"dates": {
+		"sf1": "9th January 2022",
+		"sf2": "16th January 2022",
+		"gf": "29th January 2022"
+	},
+	"reveals": {
+		"dates": "13th October 2021",
+		"participants": "13th October 2021",
+		"allocation": "15th November 2021",
+		"venue": "15th November 2021",
+		"city": "15th November 2021",
+		"slogan": "4th December 2021",
+		"logo": "5th December 2021",
+		"hosts": "13th December 2021",
+		"stage": "24th December 2021",
+		"ro": "",
+		"gf_ro": ""
+	},
+	"venue_bidding": [],
+	"presenters": "Stacy",
+	"shows": ["sf1", "sf2", "gf"],
+	"images": [],
+	"pots": [
+		["Netherlands", "Germany", "Andorra", "Czech Republic", "United States", "Latvia"],
+		["England", "Poland", "Wales", "Italy", "Ukraine", "Northern Ireland"],
+		["Belarus", "Croatia", "Lithuania", "Norway", "Austria", "Sweden"],
+		["Japan", "Romania", "Spain", "France", "Aland Islands", "Monaco"],
+		["Hungary", "Kazakhstan", "Scotland", "Portugal", "Canada", "Finland"]
+	],
+	"notes": [],
+	"nfs": [],
+	"entries": [
+		{
+			"country": "Croatia",
+			"artist": "Dalmatino",
+			"song": "Dajem ti rič",
+			"participant": "ARHIXX",
+			"shows": {
+				"sf2": {
+					"order": 4,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Norway",
+			"artist": "Emilie Adams",
+			"song": "Monogamy",
+			"participant": "nedneu",
+			"shows": {
+				"sf1": {
+					"order": 6,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "France",
+			"artist": "Angèle",
+			"song": "Bruxelles je t'aime",
+			"participant": "TomYTofficiel",
+			"shows": {
+				"sf1": {
+					"order": 5,
+					"place": 9,
+					"points": 118,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Germany",
+			"artist": "Cinta Laura Kiehl",
+			"song": "Markisa",
+			"participant": "kawaiiliqxe",
+			"shows": {
+				"sf1": {
+					"order": 1,
+					"place": 10,
+					"points": 113,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Aland Islands",
+			"artist": "Dotter",
+			"song": "Bulletproof",
+			"participant": "FlamingoHat6568",
+			"shows": {
+				"sf1": {
+					"order": 4,
+					"place": 11,
+					"points": 100,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Northern Ireland",
+			"artist": "LYRA",
+			"song": "New Day",
+			"participant": "tarko11",
+			"shows": {
+				"sf2": {
+					"order": 11,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Monaco",
+			"artist": "Lolo Zouaï",
+			"song": "Scooter",
+			"participant": "Ver_Blazi",
+			"shows": {
+				"sf2": {
+					"order": 2,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Finland",
+			"artist": "Jannika B",
+			"song": "Aamun Takana",
+			"participant": "TheVanyaDJ",
+			"shows": {
+				"sf2": {
+					"order": 12,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Italy",
+			"artist": "Caparezza",
+			"song": "La Scelta",
+			"participant": "GIORGIOWORLDCUP",
+			"shows": {
+				"sf1": {
+					"order": 12,
+					"place": 14,
+					"points": 55,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Canada",
+			"artist": "Allie X",
+			"song": "Casanova",
+			"participant": "hvlfy",
+			"shows": {
+				"sf2": {
+					"order": 3,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Latvia",
+			"artist": "Leon Somov & Jazzu",
+			"song": "Falling",
+			"participant": "matas2008g",
+			"shows": {
+				"sf2": {
+					"order": 13,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Portugal",
+			"artist": "Priyanka",
+			"song": "Come Through",
+			"participant": "crlrst",
+			"shows": {
+				"sf2": {
+					"order": 9,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Kazakhstan",
+			"artist": "C.C.TAY",
+			"song": "Мүмкін емес",
+			"participant": "AquaOoop",
+			"shows": {
+				"sf1": {
+					"order": 11,
+					"place": 13,
+					"points": 63,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Poland",
+			"artist": "sanah",
+			"song": "duszki",
+			"participant": "",
+			"shows": {
+				"sf2": {
+					"order": 7,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Netherlands",
+			"artist": "Lady Bee & AMY MIYÚ",
+			"song": "Bag It",
+			"participant": "Thanos615",
+			"shows": {
+				"sf2": {
+					"order": 15,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Lithuania",
+			"artist": "Paula",
+			"song": "Gimme What I Want",
+			"participant": "Nx_ahh",
+			"shows": {
+				"sf2": {
+					"order": 6,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Spain",
+			"artist": "Nia",
+			"song": "Malayerba",
+			"participant": "DubbleTrubbleBoy",
+			"shows": {
+				"sf1": {
+					"order": 10,
+					"place": 15,
+					"points": 29,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "England",
+			"artist": "London Grammar",
+			"song": "Lose Your Head",
+			"participant": "iCoia",
+			"shows": {
+				"sf1": {
+					"order": 7,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Czech Republic",
+			"artist": "Aiko",
+			"song": "Daughter Of The Sun",
+			"participant": "oxyo_rbx",
+			"shows": {
+				"sf1": {
+					"order": 14,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Ukraine",
+			"artist": "Artik & Asti",
+			"song": "Истеричка",
+			"participant": "ProfeCool",
+			"shows": {
+				"sf2": {
+					"order": 5,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Sweden",
+			"artist": "Agnes",
+			"song": "24 Hours",
+			"participant": "quaackeers",
+			"shows": {
+				"sf1": {
+					"order": 9,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Wales",
+			"artist": "Marina",
+			"song": "Bubblegum Bitch",
+			"participant": "bhackstabbed",
+			"shows": {
+				"sf1": {
+					"order": 8,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Scotland",
+			"artist": "Self Esteem",
+			"song": "Prioritise Pleasure",
+			"participant": "Pepz_ie",
+			"shows": {
+				"sf1": {
+					"order": 13,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Andorra",
+			"artist": "Zahara",
+			"song": "berlin U5",
+			"participant": "borjaelbro",
+			"shows": {
+				"sf2": {
+					"order": 14,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Hungary",
+			"artist": "Hundred Sins",
+			"song": "浮世 (UIKYO)",
+			"participant": "VaullkX",
+			"shows": {
+				"sf1": {
+					"order": 3,
+					"place": 8,
+					"points": 122,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Japan",
+			"artist": "TWICE",
+			"song": "I Can't Stop Me",
+			"participant": "sooxya",
+			"shows": {
+				"sf2": {
+					"order": 1,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Romania",
+			"artist": "AMI & Tata Vlad",
+			"song": "Enigma",
+			"participant": "Alina126",
+			"shows": {
+				"sf2": {
+					"order": 8,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Ireland",
+			"artist": "St. Vincent",
+			"song": "Los Ageless",
+			"participant": "Panel122221",
+			"shows": {}
+		},
+		{
+			"country": "Belarus",
+			"artist": "Garza",
+			"song": "Пташка",
+			"participant": "",
+			"shows": {
+				"sf1": {
+					"order": 2,
+					"place": 12,
+					"points": 79,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Austria",
+			"artist": "Genshin Fansong",
+			"song": "胡口桃生 (Hu Tao)",
+			"participant": "DoodlayRed12",
+			"shows": {
+				"sf2": {
+					"order": 10,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "United States",
+			"artist": "Naïka",
+			"song": "Oh Mama",
+			"participant": "DarticFernandez",
+			"shows": {
+				"sf1": {
+					"order": 15,
+					"place": 0,
+					"points": 0,
+					"jury": 0,
+					"tele": 0
+				}
+			}
+		}
+	]
+}
