@@ -77,6 +77,16 @@ function MissingPage() {
 										);
 									}
 								});
+								if (
+									showData.points > 0 &&
+									showData.tele > 0 &&
+									showData.jury > 0 &&
+									showData.tele + showData.jury !== showData.points
+								) {
+									thisData.missing.push(
+										`${edition.number} ${entry.country} ${showCode}: points don't add up`
+									);
+								}
 							}
 						}
 					});
