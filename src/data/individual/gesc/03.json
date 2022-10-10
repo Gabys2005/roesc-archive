@@ -19,9 +19,9 @@
 		"slogan": "4th December 2021",
 		"logo": "5th December 2021",
 		"hosts": "13th December 2021",
+		"ro": "21st December 2021",
 		"stage": "24th December 2021",
-		"ro": "",
-		"gf_ro": ""
+		"gf_ro": "27th January 2021"
 	},
 	"venue_bidding": [],
 	"presenters": "Stacy",
@@ -34,7 +34,10 @@
 		["Japan", "Romania", "Spain", "France", "Aland Islands", "Monaco"],
 		["Hungary", "Kazakhstan", "Scotland", "Portugal", "Canada", "Finland"]
 	],
-	"notes": [],
+	"notes": [
+		"Austria got disqualified for not voting (robdnix was a replacement voter in the GF)",
+		"Original stage had to get replaced due to a Roblox bug which went unfixed during the christmas break"
+	],
 	"nfs": [],
 	"entries": [
 		{
@@ -45,10 +48,10 @@
 			"shows": {
 				"sf2": {
 					"order": 4,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 14,
+					"points": 21,
+					"jury": 4,
+					"tele": 17
 				}
 			}
 		},
@@ -60,10 +63,18 @@
 			"shows": {
 				"sf1": {
 					"order": 6,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 2,
+					"points": 199,
+					"jury": 101,
+					"tele": 98,
+					"qualified": true
+				},
+				"gf": {
+					"order": 11,
+					"place": 2,
+					"points": 312,
+					"jury": 167,
+					"tele": 145
 				}
 			}
 		},
@@ -77,8 +88,8 @@
 					"order": 5,
 					"place": 9,
 					"points": 118,
-					"jury": 0,
-					"tele": 0
+					"jury": 63,
+					"tele": 55
 				}
 			}
 		},
@@ -92,8 +103,8 @@
 					"order": 1,
 					"place": 10,
 					"points": 113,
-					"jury": 0,
-					"tele": 0
+					"jury": 58,
+					"tele": 55
 				}
 			}
 		},
@@ -107,8 +118,8 @@
 					"order": 4,
 					"place": 11,
 					"points": 100,
-					"jury": 0,
-					"tele": 0
+					"jury": 53,
+					"tele": 47
 				}
 			}
 		},
@@ -120,10 +131,10 @@
 			"shows": {
 				"sf2": {
 					"order": 11,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 13,
+					"points": 34,
+					"jury": 24,
+					"tele": 10
 				}
 			}
 		},
@@ -135,10 +146,18 @@
 			"shows": {
 				"sf2": {
 					"order": 2,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 4,
+					"points": 153,
+					"jury": 69,
+					"tele": 84,
+					"qualified": true
+				},
+				"gf": {
+					"order": 13,
+					"place": 8,
+					"points": 237,
+					"jury": 107,
+					"tele": 130
 				}
 			}
 		},
@@ -150,10 +169,10 @@
 			"shows": {
 				"sf2": {
 					"order": 12,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 10,
+					"points": 128,
+					"jury": 48,
+					"tele": 80
 				}
 			}
 		},
@@ -167,8 +186,8 @@
 					"order": 12,
 					"place": 14,
 					"points": 55,
-					"jury": 0,
-					"tele": 0
+					"jury": 15,
+					"tele": 40
 				}
 			}
 		},
@@ -180,10 +199,10 @@
 			"shows": {
 				"sf2": {
 					"order": 3,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 11,
+					"points": 122,
+					"jury": 55,
+					"tele": 67
 				}
 			}
 		},
@@ -195,10 +214,10 @@
 			"shows": {
 				"sf2": {
 					"order": 13,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 12,
+					"points": 58,
+					"jury": 35,
+					"tele": 23
 				}
 			}
 		},
@@ -210,10 +229,18 @@
 			"shows": {
 				"sf2": {
 					"order": 9,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 5,
+					"points": 149,
+					"jury": 52,
+					"tele": 97,
+					"qualified": true
+				},
+				"gf": {
+					"order": 15,
+					"place": 4,
+					"points": 287,
+					"jury": 134,
+					"tele": 153
 				}
 			}
 		},
@@ -227,8 +254,8 @@
 					"order": 11,
 					"place": 13,
 					"points": 63,
-					"jury": 0,
-					"tele": 0
+					"jury": 38,
+					"tele": 25
 				}
 			}
 		},
@@ -236,14 +263,22 @@
 			"country": "Poland",
 			"artist": "sanah",
 			"song": "duszki",
-			"participant": "",
+			"participant": "Nicki_54321",
 			"shows": {
 				"sf2": {
 					"order": 7,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 3,
+					"points": 153,
+					"jury": 79,
+					"tele": 74,
+					"qualified": true
+				},
+				"gf": {
+					"order": 9,
+					"place": 15,
+					"points": 165,
+					"jury": 58,
+					"tele": 107
 				}
 			}
 		},
@@ -255,10 +290,18 @@
 			"shows": {
 				"sf2": {
 					"order": 15,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 7,
+					"points": 137,
+					"jury": 57,
+					"tele": 80,
+					"qualified": true
+				},
+				"gf": {
+					"order": 1,
+					"place": 6,
+					"points": 262,
+					"jury": 101,
+					"tele": 161
 				}
 			}
 		},
@@ -270,10 +313,18 @@
 			"shows": {
 				"sf2": {
 					"order": 6,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 6,
+					"points": 138,
+					"jury": 81,
+					"tele": 57,
+					"qualified": true
+				},
+				"gf": {
+					"order": 2,
+					"place": 13,
+					"points": 170,
+					"jury": 71,
+					"tele": 99
 				}
 			}
 		},
@@ -287,8 +338,8 @@
 					"order": 10,
 					"place": 15,
 					"points": 29,
-					"jury": 0,
-					"tele": 0
+					"jury": 11,
+					"tele": 18
 				}
 			}
 		},
@@ -300,10 +351,18 @@
 			"shows": {
 				"sf1": {
 					"order": 7,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 5,
+					"points": 161,
+					"jury": 88,
+					"tele": 73,
+					"qualified": true
+				},
+				"gf": {
+					"order": 8,
+					"place": 12,
+					"points": 182,
+					"jury": 105,
+					"tele": 77
 				}
 			}
 		},
@@ -315,10 +374,18 @@
 			"shows": {
 				"sf1": {
 					"order": 14,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 3,
+					"points": 169,
+					"jury": 78,
+					"tele": 91,
+					"qualified": true
+				},
+				"gf": {
+					"order": 10,
+					"place": 14,
+					"points": 166,
+					"jury": 89,
+					"tele": 77
 				}
 			}
 		},
@@ -330,10 +397,10 @@
 			"shows": {
 				"sf2": {
 					"order": 5,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 8,
+					"points": 134,
+					"jury": 74,
+					"tele": 60
 				}
 			}
 		},
@@ -345,10 +412,18 @@
 			"shows": {
 				"sf1": {
 					"order": 9,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 7,
+					"points": 133,
+					"jury": 53,
+					"tele": 80,
+					"qualified": true
+				},
+				"gf": {
+					"order": 5,
+					"place": 7,
+					"points": 259,
+					"jury": 137,
+					"tele": 122
 				}
 			}
 		},
@@ -360,10 +435,18 @@
 			"shows": {
 				"sf1": {
 					"order": 8,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 4,
+					"points": 166,
+					"jury": 93,
+					"tele": 73,
+					"qualified": true
+				},
+				"gf": {
+					"order": 6,
+					"place": 1,
+					"points": 335,
+					"jury": 174,
+					"tele": 161
 				}
 			}
 		},
@@ -375,10 +458,18 @@
 			"shows": {
 				"sf1": {
 					"order": 13,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 1,
+					"points": 216,
+					"jury": 107,
+					"tele": 109,
+					"qualified": true
+				},
+				"gf": {
+					"order": 12,
+					"place": 5,
+					"points": 285,
+					"jury": 170,
+					"tele": 115
 				}
 			}
 		},
@@ -390,10 +481,10 @@
 			"shows": {
 				"sf2": {
 					"order": 14,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 9,
+					"points": 133,
+					"jury": 93,
+					"tele": 40
 				}
 			}
 		},
@@ -407,8 +498,8 @@
 					"order": 3,
 					"place": 8,
 					"points": 122,
-					"jury": 0,
-					"tele": 0
+					"jury": 56,
+					"tele": 66
 				}
 			}
 		},
@@ -420,10 +511,18 @@
 			"shows": {
 				"sf2": {
 					"order": 1,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 1,
+					"points": 183,
+					"jury": 93,
+					"tele": 90,
+					"qualified": true
+				},
+				"gf": {
+					"order": 7,
+					"place": 9,
+					"points": 219,
+					"jury": 120,
+					"tele": 99
 				}
 			}
 		},
@@ -435,10 +534,18 @@
 			"shows": {
 				"sf2": {
 					"order": 8,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 2,
+					"points": 155,
+					"jury": 88,
+					"tele": 67,
+					"qualified": true
+				},
+				"gf": {
+					"order": 3,
+					"place": 10,
+					"points": 215,
+					"jury": 138,
+					"tele": 77
 				}
 			}
 		},
@@ -447,20 +554,28 @@
 			"artist": "St. Vincent",
 			"song": "Los Ageless",
 			"participant": "Panel122221",
-			"shows": {}
+			"shows": {
+				"gf": {
+					"order": 14,
+					"place": 3,
+					"points": 306,
+					"jury": 168,
+					"tele": 138
+				}
+			}
 		},
 		{
 			"country": "Belarus",
 			"artist": "Garza",
 			"song": "Пташка",
-			"participant": "",
+			"participant": "KorxenStar",
 			"shows": {
 				"sf1": {
 					"order": 2,
 					"place": 12,
 					"points": 79,
-					"jury": 0,
-					"tele": 0
+					"jury": 43,
+					"tele": 36
 				}
 			}
 		},
@@ -472,7 +587,7 @@
 			"shows": {
 				"sf2": {
 					"order": 10,
-					"place": 0,
+					"place": 15,
 					"points": 0,
 					"jury": 0,
 					"tele": 0
@@ -487,10 +602,18 @@
 			"shows": {
 				"sf1": {
 					"order": 15,
-					"place": 0,
-					"points": 0,
-					"jury": 0,
-					"tele": 0
+					"place": 6,
+					"points": 133,
+					"jury": 71,
+					"tele": 62,
+					"qualified": true
+				},
+				"gf": {
+					"order": 4,
+					"place": 11,
+					"points": 197,
+					"jury": 59,
+					"tele": 138
 				}
 			}
 		}
