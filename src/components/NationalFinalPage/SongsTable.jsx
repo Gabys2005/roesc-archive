@@ -4,8 +4,12 @@ import TableHeader from "../TableHeader";
 function SongsTable(props) {
 	const data = props.source;
 	let hasPoints = false;
+	let hasPlace = false;
 	if (data.find((r) => r.points !== undefined)) {
 		hasPoints = true;
+	}
+	if (data.find((r) => r.place !== undefined)) {
+		hasPlace = true;
 	}
 
 	const convertedData = [];
@@ -33,12 +37,8 @@ function SongsTable(props) {
 				<th>#</th>
 				<th>Song</th>
 				<th>Artist</th>
-				{hasPoints && (
-					<>
-						<th>Place</th>
-						<th>Points</th>
-					</>
-				)}
+				{hasPlace && <th>Place</th>}
+				{hasPoints && <th>Points</th>}
 			</TableHeader>
 			<tbody>
 				{convertedData.map((r, i) => (
@@ -46,12 +46,8 @@ function SongsTable(props) {
 						<td>{i + 1}</td>
 						<td>{r.song}</td>
 						<td>{r.artist}</td>
-						{hasPoints && (
-							<>
-								<td>{r.place}</td>
-								<td>{r.points}</td>
-							</>
-						)}
+						{hasPlace && <td>{r.place}</td>}
+						{hasPoints && <td>{r.points}</td>}
 					</tr>
 				))}
 			</tbody>

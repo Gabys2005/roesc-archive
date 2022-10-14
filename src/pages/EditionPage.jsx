@@ -6,7 +6,7 @@ import VenueBidding from "../components/RoescPage/VenueBidding";
 import Row from "../components/Row";
 import ShowTable from "../components/ShowTable";
 import Table from "../components/Table";
-import { getShowName, joinTable } from "../utils";
+import { getShowName, joinTable, objectToArray } from "../utils";
 import SplitResultsTable from "../components/RoescPage/SplitResultsTable";
 import NationalFinalsList from "../components/RoescPage/NationalFinalsList";
 import PotsTable from "../components/RoescPage/PotsTable";
@@ -14,6 +14,7 @@ import Media from "../components/Media";
 
 function DatesText(props) {
 	const dates = props.object;
+	if (!dates) return <></>;
 	const datesFinal = [];
 	for (const showShortName in dates) {
 		if (Object.hasOwnProperty.call(dates, showShortName)) {
@@ -82,6 +83,12 @@ function EditionPage() {
 						<DatesText object={editionData.reveals}></DatesText>
 					</Row>
 					<Row title="Presenters">{joinTable(editionData.presenters)}</Row>
+					<Row title="Openings">
+						<DatesText object={editionData.openings}></DatesText>
+					</Row>
+					<Row title="Intervals">
+						<DatesText object={editionData.intervals}></DatesText>
+					</Row>
 					<Row title="Number of entries">{editionData.entries.length}</Row>
 					<Row title="Notes">
 						{editionData.notes.map((r) => (
@@ -93,6 +100,19 @@ function EditionPage() {
 					</Row>
 				</tbody>
 			</Table>
+
+			<h2>Links</h2>
+			<hr></hr>
+			<ul>
+				{objectToArray(editionData.links).map((r) => (
+					<li>
+						{r[0]}:{" "}
+						<a target="_blank" rel="noreferrer" href={r[1]}>
+							{r[1]}
+						</a>
+					</li>
+				))}
+			</ul>
 
 			<PageSection check={editionData.venue_bidding?.length > 0}>
 				<h2>Venue Bidding</h2>

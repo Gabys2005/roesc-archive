@@ -26,7 +26,21 @@
 	"venue_bidding": [],
 	"presenters": "Stacy",
 	"shows": ["sf1", "sf2", "gf"],
-	"images": [],
+	"images": [
+		"https://i.imgur.com/bZKPNhe.png",
+		"https://i.imgur.com/Hl1XAET.png",
+		"https://i.imgur.com/7BDEck0.png",
+		"https://i.imgur.com/AEK62J9.jpg",
+		"https://i.imgur.com/nCJQCj9.jpg",
+		"https://i.imgur.com/mwPhETM.jpg",
+		"https://i.imgur.com/wr6NeZ0.jpg",
+		"https://i.imgur.com/uksw2s6.png",
+		"https://i.imgur.com/LMzFIRI.png",
+		"https://i.imgur.com/wijzhW0.png",
+		"https://i.imgur.com/NGnNEeK.png",
+		"https://i.imgur.com/EsOpPrl.png",
+		"https://i.imgur.com/0Cff45Z.png"
+	],
 	"pots": [
 		["Netherlands", "Germany", "Andorra", "Czech Republic", "United States", "Latvia"],
 		["England", "Poland", "Wales", "Italy", "Ukraine", "Northern Ireland"],
@@ -38,7 +52,165 @@
 		"Austria got disqualified for not voting (robdnix was a replacement voter in the GF)",
 		"Original stage had to get replaced due to a Roblox bug which went unfixed during the christmas break"
 	],
-	"nfs": [],
+	"openings": {
+		"gf": "Lorde - Green Light"
+	},
+	"intervals": {
+		"sf2": "Lesley Roy - Maps",
+		"gf": "Adele - Easy On Me, Hello, Rolling In The Deep, Set Fire To The Rain"
+	},
+	"links": {
+		"Roblox Game": "https://www.roblox.com/games/7899709319",
+		"Youtube - Participant Reveal": "https://www.youtube.com/watch?v=fmgK_o0oPTA",
+		"Youtube - Allocation Draw": "https://www.youtube.com/watch?v=OVsjukT3SlA"
+	},
+	"nfs": [
+		{
+			"name": "Ro Dal",
+			"link": "hungary",
+			"country": "Hungary",
+			"type": "Discord",
+			"voting_method": "Juries: Belarus, Croatia, Czech Republic, England, Finland, France, Ireland, Borobi, Peach",
+			"spotify": "https://open.spotify.com/embed/playlist/3IswcMitbRuAECp4QVwOs4",
+			"images": [
+				"https://i.imgur.com/CuLdIDh.png",
+				"https://i.imgur.com/NlPZaZF.png",
+				"https://i.imgur.com/8o33qxX.jpg",
+				"https://i.imgur.com/BPZOB3o.jpg",
+				"https://i.imgur.com/E2sNUpF.jpg",
+				"https://i.imgur.com/S7Nrmcz.jpg",
+				"https://i.imgur.com/47SowAe.jpg",
+				"https://i.imgur.com/jiWxz6S.png"
+			],
+			"entries": [
+				{
+					"artist": "Carson Coma",
+					"song": "Pók",
+					"place": 2,
+					"points": 72
+				},
+				{
+					"artist": "Lidokami",
+					"song": "Királygyilkos",
+					"place": 4,
+					"points": 70
+				},
+				{
+					"artist": "Hundred Sins",
+					"song": "浮世 (UIKYO)",
+					"place": 1,
+					"points": 78
+				},
+				{
+					"artist": "Dorothy",
+					"song": "What's Coming To Me",
+					"place": 5,
+					"points": 68
+				},
+				{
+					"artist": "Hundred Sings, Lidokami",
+					"song": "Útvesztő",
+					"place": 3,
+					"points": 72
+				}
+			]
+		},
+		{
+			"name": "A Song For England",
+			"link": "england",
+			"country": "England",
+			"type": "Discord",
+			"voting_method": "Reaction voting",
+			"images": ["https://i.imgur.com/A6rE6yF.png"],
+			"entries": [
+				{
+					"artist": "TCTS, Nonô",
+					"song": "Off My Mind",
+					"place": 3,
+					"points": 2
+				},
+				{
+					"artist": "HÆLOS",
+					"song": "End of World Party",
+					"place": 2,
+					"points": 3
+				},
+				{
+					"artist": "Lady Leshurr",
+					"song": "Where Are You Now?",
+					"place": 2,
+					"points": 3
+				},
+				{
+					"artist": "Neon Jungle",
+					"song": "Braveheart",
+					"place": 2,
+					"points": 3
+				},
+				{
+					"artist": "Kyla La Grande",
+					"song": "Neverland",
+					"place": 4,
+					"points": 1
+				},
+				{
+					"artist": "Moli",
+					"song": "On The Weekend",
+					"place": 3,
+					"points": 2
+				},
+				{
+					"artist": "London Grammer",
+					"song": "Lose Your Head",
+					"place": 1,
+					"points": 5
+				},
+				{
+					"artist": "Nero",
+					"song": "The Thrill",
+					"place": 2,
+					"points": 3
+				}
+			]
+		},
+		{
+			"name": "Tokyo Star",
+			"link": "japan",
+			"country": "Japan",
+			"notes": "Cancelled",
+			"type": "Discord",
+			"images": ["https://i.imgur.com/A4ZAPHm.png"],
+			"entries": [
+				{
+					"artist": "TWICE"
+				},
+				{
+					"artist": "Choerry"
+				},
+				{
+					"artist": "IZ*ONE"
+				},
+				{
+					"artist": "Bling Bling"
+				},
+				{
+					"artist": "Nature"
+				},
+				{
+					"artist": "TRI.BE"
+				},
+				{
+					"artist": "Purple Kiss"
+				},
+				{
+					"artist": "Medusa"
+				},
+				{
+					"artist": "Treasure"
+				}
+			]
+		}
+	],
 	"entries": [
 		{
 			"country": "Croatia",

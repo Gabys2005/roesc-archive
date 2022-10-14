@@ -35,7 +35,6 @@
 		"https://i.imgur.com/MsOmyOc.png",
 		"https://i.imgur.com/jLV7GmQ.png",
 		"https://i.imgur.com/EJoIANt.jpg",
-		"https://i.imgur.com/EJoIANt.jpg",
 		"https://i.imgur.com/sxjrN4m.jpg",
 		"https://i.imgur.com/1O3QcZK.png",
 		"https://i.imgur.com/dFKSMWI.png",
@@ -63,6 +62,25 @@
 		"Grand Final was moved from 21st August 2021",
 		"Moldova (borjaelbro) got disqualified for not submitting a song in time"
 	],
+	"openings": {
+		"sf1": "Minelli x INNA - Discoteka, Rampampam",
+		"gf": "SICKOTOY & Misha Miller - Touché"
+	},
+	"intervals": {
+		"sf1": "Holy Molly - Back To Her",
+		"sf2": "Olivia Addams - Stranger",
+		"gf": "Katy Perry - Unconditionally, Legendary Lovers, I Kissed A Girl, Roulette, Last Friday Night, Firework"
+	},
+	"links": {
+		"Roblox Game": "https://www.roblox.com/games/6823705564/",
+		"Youtube - Participant Reveal": "https://www.youtube.com/watch?v=U5QFgxP_oQM",
+		"Youtube - Allocatin Draw": "https://www.youtube.com/watch?v=RjSKNBgamaw",
+		"Youtube - QR1 Recap": "https://www.youtube.com/watch?v=xvJzO4GW8NQ",
+		"Youtube - QR2 Recap": "https://www.youtube.com/watch?v=AUaLY7dSjBM",
+		"Youtube - GF Recap": "https://www.youtube.com/watch?v=KpSr9OlTQaY",
+		"Youtube - Qualification Round 1": "https://www.youtube.com/watch?v=6nO-Tjv3hv0",
+		"Youtube - Grand Final": "https://www.youtube.com/watch?v=mIDY5zGxyx0"
+	},
 	"nfs": [
 		{
 			"name": "Australia Decides",

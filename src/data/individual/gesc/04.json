@@ -1,0 +1,612 @@
+{
+	"number": "#04",
+	"link": "04",
+	"city": "Swansea",
+	"country": "Wales",
+	"venue": "Swansea Arena",
+	"slogan": "Game Over",
+	"dates": {
+		"oc": "3rd July 2022",
+		"sf1": "30th July 2022",
+		"sf2": "6th August 2022",
+		"gf": "20th August 2022"
+	},
+	"reveals": {
+		"dates": "22nd February 2022",
+		"participants": "22nd February 2022",
+		"venue": "22nd February 2022",
+		"city": "22nd February 2022",
+		"allocation": "22nd March 2022",
+		"hosts": "24th April 2022",
+		"slogan": "29th April 2022",
+		"stage": "Revealed after cancellation",
+		"ro": "Never revealed",
+		"logo": "Never revealed"
+	},
+	"venue_bidding": [],
+	"presenters": ["Stacy", "Rick Astley", "Marina"],
+	"shows": [],
+	"images": [
+		"https://i.imgur.com/cfs9dai.mp4",
+		"https://i.imgur.com/MkuWHAD.jpg",
+		"https://i.imgur.com/aZAKzsx.png",
+		"https://i.imgur.com/ICaLigq.png",
+		"https://i.imgur.com/KMxWxCY.png",
+		"https://i.imgur.com/uf6cqEs.png",
+		"https://i.imgur.com/guM3g4D.png",
+		"https://i.imgur.com/D4eWaTf.png",
+		"https://i.imgur.com/xL9QHf0.png"
+	],
+	"pots": [
+		["Scotland", "Poland", "England", "Romania", "Canada", "Ukraine", "Iceland", "Serbia"],
+		["Andorra", "Ireland", "Sweden", "Azerbaijan", "Malta", "Monaco", "United States", "Luxembourg"],
+		["Denmark", "Lithuania", "Germany", "Norway", "Northern Ireland", "Belarus", "Isle Of Man", "Aland Islands"],
+		["Belgium", "France", "Japan", "Spain", "Russia", "Netherlands", "Austria"]
+	],
+	"notes": ["GESC got cancelled midway through this edition"],
+	"openings": {
+		"sf1": "Dua Lipa - Physical, unknown song",
+		"sf2": "Little Mix - 3 unknown songs",
+		"gf": "Marina - Bubblegum Bitch, Primadonna"
+	},
+	"intervals": {
+		"sf1": "Charli XCX - 2 unknown songs",
+		"sf2": "Adele - Oh My God, Skyfall",
+		"gf": "Rihanna - Diamonds, other unknown songs"
+	},
+	"links": {
+		"StacyBlogs": "https://gescroblox.blogspot.com",
+		"Youtube - Participant Reveal": "https://www.youtube.com/watch?v=9Jzl8bW56JE"
+	},
+	"nfs": [
+		{
+			"name": "Bop Til Wales",
+			"link": "denmark",
+			"country": "Denmark",
+			"type": "Discord",
+			"spotify": "https://open.spotify.com/embed/playlist/22HwlFexnnFgvRVRls31zb",
+			"voting_method": "Reaction voting",
+			"notes": "Miami and poison fizzing on a tongue tied, a tie-breaker vote was won 0-8 by poison fizzing on a tongue",
+			"entries": [
+				{
+					"artist": "RoseeLu",
+					"song": "Playing Alone",
+					"points": 1,
+					"place": 3
+				},
+				{
+					"artist": "BBYBITES",
+					"song": "Pleaser",
+					"points": 0,
+					"place": 4
+				},
+				{
+					"artist": "Ericka Jane",
+					"song": "I Say Stupid Things",
+					"points": 0,
+					"place": 4
+				},
+				{
+					"artist": "Ericka Jane",
+					"song": "Strangers In The Night",
+					"points": 1,
+					"place": 3
+				},
+				{
+					"artist": "Yo Johnny, Ravi Kuma",
+					"song": "Miami",
+					"points": 5,
+					"place": 1
+				},
+				{
+					"artist": "Kwamie Liv",
+					"song": "New Boo",
+					"points": 2,
+					"place": 2
+				},
+				{
+					"artist": "BATHSHEBA",
+					"song": "LALA",
+					"points": 0,
+					"place": 4
+				},
+				{
+					"artist": "Brimheim",
+					"song": "poison fizzing on a tongue",
+					"points": 5,
+					"place": 1
+				},
+				{
+					"artist": "Svea S",
+					"song": "Langth Imellem",
+					"points": 0,
+					"place": 4
+				}
+			]
+		},
+		{
+			"name": "C'est vous qui Décidez",
+			"link": "france",
+			"country": "France",
+			"type": "Discord",
+			"voting_method": "Online voting",
+			"links": {
+				"Youtube playlist": "https://www.youtube.com/playlist?list=PLUUUiBOuB8nKEhx4IscuV2OoDVzFvqJuA"
+			},
+			"entries": [
+				{
+					"artist": "Keen'v",
+					"song": "Tahiti"
+				},
+				{
+					"artist": "Keen'v",
+					"song": "Je garde le Sourire",
+					"winner": true
+				},
+				{
+					"artist": "Keen'v",
+					"song": "Elle a"
+				},
+				{
+					"artist": "Keen'v",
+					"song": "Affaire classée"
+				},
+				{
+					"artist": "Keen'v",
+					"song": "Ça résonne"
+				},
+				{
+					"artist": "Keen'v",
+					"song": "Pour toi"
+				}
+			]
+		},
+		{
+			"name": "England Decides",
+			"link": "england",
+			"country": "England",
+			"type": "Discord",
+			"voting_method": "Reaction voting",
+			"entries": [
+				{
+					"artist": "YONAKA",
+					"song": "Get Out",
+					"points": 1,
+					"place": 2
+				},
+				{
+					"artist": "Willow Kayne",
+					"song": "Faces Change",
+					"points": 1,
+					"place": 2
+				},
+				{
+					"artist": "Wolf Alice",
+					"song": "Delicious Things",
+					"points": 0,
+					"place": 3
+				},
+				{
+					"artist": "Kay Crookes",
+					"song": "Feet Don't Fail Me Now",
+					"points": 6,
+					"place": 1
+				},
+				{
+					"artist": "Purple Disco Machine, Sophie and the Giants",
+					"song": "In The Dark",
+					"points": 0,
+					"place": 3
+				}
+			]
+		},
+		{
+			"name": "Monaco Song Festival",
+			"link": "monaco",
+			"country": "Monaco",
+			"type": "Discord",
+			"hosts": ["Yann-Antony Noghès", "Hélène Mannarino"],
+			"voting_method": "Jury voting + tele voting, 5,4,3,2,1 points, live during the YouTube livestream. Later changed to 10,8,6,4,2 points without a livestream",
+			"links": {
+				"YouTube playlist": "https://youtube.com/playlist?list=PLHWXMm-fPPZhDtBsmALT_shAvYE2jsjUY"
+			},
+			"images": ["https://i.imgur.com/2a4SIpa.png", "https://i.imgur.com/C6PNur8.png"],
+			"entries": [
+				{
+					"artist": "Symbiøse",
+					"song": "Can You See Me",
+					"points": 16,
+					"place": 3
+				},
+				{
+					"artist": "Chris Kaeser",
+					"song": "Just Like a Firestorm",
+					"points": 20,
+					"place": 2
+				},
+				{
+					"artist": "Kriill",
+					"song": "Brittany",
+					"points": 12,
+					"place": 5
+				},
+				{
+					"artist": "Pyrelight",
+					"song": "Escape",
+					"points": 28,
+					"place": 1
+				},
+				{
+					"artist": "Agoria",
+					"song": "Embrace",
+					"points": 14,
+					"place": 4
+				}
+			]
+		},
+		{
+			"name": "Star Born Girl 2022",
+			"link": "scotland",
+			"country": "Scotland",
+			"type": "Discord",
+			"voting_method": "DM voting: 12, 10, 8, 6, 4, 2, 1 points",
+			"spotify": "https://open.spotify.com/embed/playlist/1zVGh6XiQYJSKYm3hy6Ejj",
+			"images": ["https://i.imgur.com/wHENMxh.png"],
+			"entries": [
+				{
+					"artist": "XG",
+					"song": "Tippy Toes",
+					"place": 5
+				},
+				{
+					"artist": "KAACHI",
+					"song": "Get Up",
+					"place": 6
+				},
+				{
+					"artist": "Paige Cavell, Xenomania",
+					"song": "Predators & Monsters",
+					"place": 1
+				},
+				{
+					"artist": "LOVE SICK",
+					"song": "Fever",
+					"place": 2
+				},
+				{
+					"artist": "Dylan",
+					"song": "Good Enough",
+					"place": 4
+				},
+				{
+					"artist": "Dylan",
+					"song": "Nineteen",
+					"place": 7
+				},
+				{
+					"artist": "Alice Chater",
+					"song": "Tonight",
+					"place": 3
+				}
+			]
+		},
+		{
+			"name": "Fuego Español",
+			"link": "spain",
+			"country": "Spain",
+			"type": "Discord",
+			"voting_method": "Reaction voting",
+			"entries": [
+				{
+					"artist": "Rakky Ripper",
+					"song": "Coyote",
+					"place": 2,
+					"points": 9
+				},
+				{
+					"artist": "Tanxugueiras",
+					"song": "Figa",
+					"place": 1,
+					"points": 11
+				}
+			]
+		},
+		{
+			"name": "Azerbaijan Star",
+			"link": "azerbaijan",
+			"country": "Azerbaijan",
+			"type": "Discord",
+			"voting_method": "Reaction voting",
+			"entries": [
+				{
+					"artist": "Ülviyye Namazova",
+					"song": "İnad",
+					"place": 5,
+					"points": 0
+				},
+				{
+					"artist": "Alewya",
+					"song": "Play",
+					"place": 3,
+					"points": 2
+				},
+				{
+					"artist": "Dove Cameron",
+					"song": "Boyfriend",
+					"place": 1,
+					"points": 11
+				},
+				{
+					"artist": "Roya",
+					"song": "Bad",
+					"place": 2,
+					"points": 3
+				},
+				{
+					"artist": "Leyla Nur",
+					"song": "Buz",
+					"place": 5,
+					"points": 0
+				},
+				{
+					"artist": "RO-MiNA",
+					"song": "Queen Of The Night",
+					"place": 4,
+					"points": 1
+				},
+				{
+					"artist": "Irade Mehri",
+					"song": "Axsamlar",
+					"place": 5,
+					"points": 0
+				},
+				{
+					"artist": "SOLAR",
+					"song": "Honey",
+					"place": 2,
+					"points": 3
+				}
+			]
+		},
+		{
+			"name": "Kaka Decides",
+			"link": "luxembourg",
+			"country": "Luxembourg",
+			"type": "Discord",
+			"voting_method": "Reaction voting",
+			"entries": [
+				{
+					"artist": "DONAMARIA",
+					"song": "Redmoon",
+					"place": 1,
+					"points": 11
+				},
+				{
+					"artist": "Nosi",
+					"song": "Klengen Drenken",
+					"place": 2,
+					"points": 1
+				}
+			]
+		}
+	],
+	"entries": [
+		{
+			"country": "Scotland",
+			"artist": "Paige Cavell, Xenomania",
+			"song": "Predators & Monsters",
+			"participant": "sooxya",
+			"shows": []
+		},
+		{
+			"country": "Poland",
+			"artist": "Michał Szpak vs Jowiszja",
+			"song": "HALO WODOSPAD",
+			"participant": "Nx_ahh",
+			"shows": []
+		},
+		{
+			"country": "Ireland",
+			"artist": "Cruel Sister",
+			"song": "too much",
+			"participant": "Panel122221",
+			"shows": []
+		},
+		{
+			"country": "Belgium",
+			"artist": "Tsar B",
+			"song": "Cruel",
+			"participant": "Ra1k0w3ckx",
+			"shows": []
+		},
+		{
+			"country": "Aland Islands",
+			"artist": "Petra Marklund",
+			"song": "Panna Mot Panna",
+			"participant": ["GIORGIOWORLDCUP", "TomYTofficiel"],
+			"shows": []
+		},
+		{
+			"country": "England",
+			"artist": "Jay Crookes",
+			"song": "Feet Don't Fail Me Now",
+			"participant": "oxyo_rbx",
+			"shows": []
+		},
+		{
+			"country": "Sweden",
+			"artist": "Nadia Tehran",
+			"song": "Cash Flow",
+			"participant": "Nicki_54321",
+			"shows": []
+		},
+		{
+			"country": "France",
+			"artist": "Keen'v",
+			"song": "Je garde le Sourire",
+			"participant": "EenSlimeJonge",
+			"shows": []
+		},
+		{
+			"country": "Denmark",
+			"artist": "Brimheim",
+			"song": "poison fizzing on a tongue",
+			"participant": "TheVanyaDJ",
+			"shows": []
+		},
+		{
+			"country": "Serbia",
+			"artist": "Nucci",
+			"song": "Crno Oko",
+			"participant": "ARHIXX",
+			"shows": []
+		},
+		{
+			"country": "Japan",
+			"artist": "LOONA",
+			"song": "Hula Hoop",
+			"participant": "hspirality",
+			"shows": []
+		},
+		{
+			"country": "Lithuania",
+			"artist": "Jazzu",
+			"song": "Vasara",
+			"participant": "DevilishTile",
+			"shows": []
+		},
+		{
+			"country": "Germany",
+			"artist": "Lena",
+			"song": "Wild & Free",
+			"participant": "Hamasi_Fedy",
+			"shows": []
+		},
+		{
+			"country": "Romania",
+			"artist": "Roxen",
+			"song": "UFO",
+			"participant": "diego_gamer3634",
+			"shows": []
+		},
+		{
+			"country": "Spain",
+			"artist": "Tanxugueiras",
+			"song": "Figa",
+			"participant": "Thanos615",
+			"shows": []
+		},
+		{
+			"country": "Canada",
+			"artist": "Alice Glass",
+			"song": "LOVE IS VIOLENCE",
+			"participant": ["VaullkX", "Ver_Blazi"],
+			"shows": []
+		},
+		{
+			"country": "Russia",
+			"artist": "Onika",
+			"song": "Turkish Love",
+			"participant": "FlamingoHat6568",
+			"shows": []
+		},
+		{
+			"country": "Iceland",
+			"artist": "Þaðan af",
+			"song": "Katla",
+			"participant": "robndix",
+			"shows": []
+		},
+		{
+			"country": "Norway",
+			"artist": "Sigrid",
+			"song": "It Gets Dark",
+			"participant": ["HoodiniMagic202", "mikayilS"],
+			"shows": []
+		},
+		{
+			"country": "Northern Ireland",
+			"artist": "Jorja Smith",
+			"song": "Be Honest",
+			"participant": "GalaxyDreamer2365",
+			"shows": []
+		},
+		{
+			"country": "Azerbaijan",
+			"artist": "Dove Cameron",
+			"song": "Boyfriend",
+			"participant": "iCoia",
+			"shows": []
+		},
+		{
+			"country": "Netherlands",
+			"artist": "BONES UK",
+			"song": "Pretty Waste",
+			"participant": "P34XH",
+			"shows": []
+		},
+		{
+			"country": "Malta",
+			"artist": "Rina Sawayama",
+			"song": "Dynasty",
+			"participant": "Kawaiiliqxe",
+			"shows": []
+		},
+		{
+			"country": "Belarus",
+			"artist": "Platon & Joolay",
+			"song": "Over",
+			"participant": "matas2008g",
+			"shows": []
+		},
+		{
+			"country": "Monaco",
+			"artist": "Pyrelight",
+			"song": "Escape",
+			"participant": "AlvidAVSC",
+			"shows": []
+		},
+		{
+			"country": "Isle Of Man",
+			"artist": "Kara Marni",
+			"song": "Trippin",
+			"participant": "quaackeers",
+			"shows": []
+		},
+		{
+			"country": "Austria",
+			"artist": "Purple Disco Machine, Sophie and the Giants",
+			"song": "In The Dark",
+			"participant": "itsRexesc",
+			"shows": []
+		},
+		{
+			"country": "Ukraine",
+			"artist": "DOROFEEVA",
+			"song": "raznotsvetnaya",
+			"participant": "ProfeCool",
+			"shows": []
+		},
+		{
+			"country": "Luxembourg",
+			"artist": "DONAMARIA",
+			"song": "Redmoon",
+			"participant": "AquaOoop",
+			"shows": []
+		},
+		{
+			"country": "United States",
+			"artist": "MOTHICA",
+			"song": "SENSITIVE",
+			"participant": "crlrst",
+			"shows": []
+		},
+		{
+			"country": "Wales",
+			"artist": "",
+			"song": "",
+			"participant": ["daxjd", "bhackstabbed"],
+			"shows": []
+		}
+	]
+}

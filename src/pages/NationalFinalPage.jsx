@@ -45,7 +45,12 @@ function NationalFinalPage() {
 					</Row>
 					<Row title="Type">{nfData.type}</Row>
 					<Row title="Voting method">{nfData.voting_method}</Row>
-					<Row title="Hosts">{joinTable(nfData.hosts)}</Row>
+					<PageSection check={nfData.hosts}>
+						<Row title="Hosts">{joinTable(nfData.hosts)}</Row>
+					</PageSection>
+					<PageSection check={nfData.notes}>
+						<Row title="Notes">{joinTable(nfData.notes)}</Row>
+					</PageSection>
 				</tbody>
 			</Table>
 
