@@ -1,17 +1,36 @@
 {
 	"number": "#03",
 	"link": "03",
-	"city": "Helsinki",
-	"country": "Finland",
-	"slogan": "One with the sea",
+	"city": "New York",
+	"country": "United States",
+	"venue": "Nassau Veterans Memorial Coliseum",
+	"slogan": "Speak UP!",
 	"dates": {
 		"sf1": "17th February 2018",
 		"sf2": "18th February 2018",
 		"gf": "25th February 2018"
 	},
-	"notes": [],
-	"presenters": ["Julie Chen", "Sharon Osbourne"],
+	"reveals": {
+		"slogan": "7th January 2018",
+		"logo": "7th January 2018",
+		"venue": "7th January 2018",
+		"hosts": "13th January 2018"
+	},
+	"venue_bidding": [],
+	"presenters": ["Julie Chen (ZerinaCaderia)", "Sharon Osbourne (sugarylovebaker)"],
 	"shows": ["sf1", "sf2", "gf"],
+	"images": [],
+	"pots": [],
+	"notes": [
+		"Big 5: SofosOlaSand (Greece), KaterinAdelle (Cyprus), Carlosgmar13 (Spain), DoodlayRed12 (Vatican City), Tom_5221 (Finland)",
+		"Anna Margaret (lqvr) hosted the running order reveal"
+	],
+	"openings": {},
+	"intervals": {},
+	"links": {
+		"Roblox Game": "https://www.roblox.com/games/1202296039"
+	},
+	"nfs": [],
 	"entries": [
 		{
 			"country": "Austria",
@@ -22,6 +41,480 @@
 				"sf1": {
 					"order": 1,
 					"place": 14
+				}
+			}
+		},
+		{
+			"country": "Luxembourg",
+			"song": "Requiem",
+			"artist": "Alma",
+			"participant": "DarylBlue",
+			"shows": {
+				"sf1": {
+					"order": 2,
+					"place": 1,
+					"qualified": true
+				},
+				"gf": {
+					"order": 1,
+					"place": 15,
+					"points": 25
+				}
+			}
+		},
+		{
+			"country": "United States",
+			"song": "Party in the U.S.A.",
+			"artist": "Miley Cyrus",
+			"participant": "TechnoElementor",
+			"shows": {
+				"sf1": {
+					"order": 3,
+					"place": 11
+				}
+			}
+		},
+		{
+			"country": "North Macedonia",
+			"song": "Reckoning Song",
+			"artist": "Asaf Avidan ft. The Mojos",
+			"participant": "Bella_Larsson",
+			"shows": {
+				"sf1": {
+					"order": 4,
+					"place": 5,
+					"qualified": true
+				},
+				"gf": {
+					"order": 2,
+					"place": 16,
+					"points": 23
+				}
+			}
+		},
+		{
+			"country": "Belgium",
+			"song": "Greedy",
+			"artist": "Ariana Grande",
+			"participant": "NikolasHD1",
+			"shows": {
+				"sf1": {
+					"order": 5,
+					"place": 7,
+					"qualified": true
+				},
+				"gf": {
+					"order": 3,
+					"place": 9,
+					"points": 47
+				}
+			}
+		},
+		{
+			"country": "Russia",
+			"song": "A Million Voices",
+			"artist": "Polina Gagarina",
+			"participant": "adreas2550",
+			"shows": {
+				"sf1": {
+					"order": 6,
+					"place": 6,
+					"qualified": true
+				},
+				"gf": {
+					"order": 4,
+					"place": 8,
+					"points": 51
+				}
+			}
+		},
+		{
+			"country": "Italy",
+			"song": "Everytime We Touch",
+			"artist": "Cascada",
+			"participant": "sfsfsSAS",
+			"shows": {
+				"sf1": {
+					"order": 7,
+					"place": 8
+				}
+			}
+		},
+		{
+			"country": "France",
+			"song": "Believer",
+			"artist": "Imagine Dragons",
+			"participant": "Emmanouela171",
+			"shows": {
+				"sf1": {
+					"order": 8,
+					"place": 10
+				}
+			}
+		},
+		{
+			"country": "Denmark",
+			"song": "Nights With You",
+			"artist": "MØ",
+			"participant": "lqvr",
+			"shows": {
+				"sf1": {
+					"order": 9,
+					"place": 3,
+					"qualified": true
+				},
+				"gf": {
+					"order": 5,
+					"place": 4,
+					"points": 66
+				}
+			}
+		},
+		{
+			"country": "Bulgaria",
+			"song": "Radioactive",
+			"artist": "Imagine Dragons",
+			"participant": "Notis32",
+			"shows": {
+				"sf1": {
+					"order": 10,
+					"place": 4,
+					"qualified": true
+				},
+				"gf": {
+					"order": 6,
+					"place": 6,
+					"points": 55
+				}
+			}
+		},
+		{
+			"country": "Monaco",
+			"song": "Sorry",
+			"artist": "Justin Bieber",
+			"participant": "livinggame",
+			"shows": {
+				"sf1": {
+					"order": 11,
+					"place": 13
+				}
+			}
+		},
+		{
+			"country": "Serbia",
+			"song": "Touch",
+			"artist": "Pia Mia",
+			"participant": "MalgorzataJamrozy",
+			"shows": {
+				"sf1": {
+					"order": 12,
+					"place": 2,
+					"qualified": true
+				},
+				"gf": {
+					"order": 7,
+					"place": 11,
+					"points": 44
+				}
+			}
+		},
+		{
+			"country": "Andorra",
+			"song": "Satellite",
+			"artist": "Lena",
+			"participant": "ThomasWaterbender14",
+			"shows": {
+				"sf1": {
+					"order": 13,
+					"place": 9
+				}
+			}
+		},
+		{
+			"country": "Israel",
+			"song": "Wishing Girl",
+			"artist": "Lola Marsh",
+			"participant": "Lefisie",
+			"shows": {
+				"sf1": {
+					"order": 14,
+					"place": 12
+				}
+			}
+		},
+		{
+			"country": "United Kingdom",
+			"song": "D - Generation",
+			"artist": "Luke Black",
+			"participant": "TedTheToffee2003",
+			"shows": {
+				"sf2": {
+					"order": 1,
+					"place": 5,
+					"qualified": true
+				},
+				"gf": {
+					"order": 11,
+					"place": 19,
+					"points": 18
+				}
+			}
+		},
+		{
+			"country": "Romania",
+			"song": "Call My Name",
+			"artist": "Freia",
+			"participant": "LiviuXD",
+			"shows": {
+				"sf2": {
+					"order": 2,
+					"place": 2,
+					"qualified": true
+				},
+				"gf": {
+					"order": 12,
+					"place": 13,
+					"points": 40
+				}
+			}
+		},
+		{
+			"country": "Portugal",
+			"song": "Amarillo",
+			"artist": "Shakira",
+			"participant": "Miream1234",
+			"shows": {
+				"sf2": {
+					"order": 3,
+					"place": 13
+				}
+			}
+		},
+		{
+			"country": "Iceland",
+			"song": "It's Oh So Quiet",
+			"artist": "Bjork",
+			"participant": "sugarylovebaker",
+			"shows": {
+				"sf2": {
+					"order": 4,
+					"place": 4,
+					"qualified": true
+				},
+				"gf": {
+					"order": 13,
+					"place": 12,
+					"points": 42
+				}
+			}
+		},
+		{
+			"country": "Sweden",
+			"song": "You Belong With Me",
+			"artist": "Taylor Swift",
+			"participant": "berke234443",
+			"shows": {
+				"sf2": {
+					"order": 5,
+					"place": 6,
+					"qualified": true
+				},
+				"gf": {
+					"order": 14,
+					"place": 20,
+					"points": 4
+				}
+			}
+		},
+		{
+			"country": "Moldova",
+			"song": "Hey Mama!",
+			"artist": "Sunstroke Project",
+			"participant": "Pestana_364",
+			"shows": {
+				"sf2": {
+					"order": 6,
+					"place": 3,
+					"qualified": true
+				},
+				"gf": {
+					"order": 15,
+					"place": 10,
+					"points": 46
+				}
+			}
+		},
+		{
+			"country": "Ukraine",
+			"song": "Shady Lady",
+			"artist": "Ani Lorak",
+			"participant": "xxTom_Grxx",
+			"shows": {
+				"sf2": {
+					"order": 7,
+					"place": 9
+				}
+			}
+		},
+		{
+			"country": "Germany",
+			"song": "Never Gonna Give You Up",
+			"artist": "Rick Astley",
+			"participant": "thesparked",
+			"shows": {
+				"sf2": {
+					"order": 8,
+					"place": 12
+				}
+			}
+		},
+		{
+			"country": "Canada",
+			"song": "Hunter",
+			"artist": "Galantis",
+			"participant": "keira654321",
+			"shows": {
+				"sf2": {
+					"order": 9,
+					"place": 11
+				}
+			}
+		},
+		{
+			"country": "Switzerland",
+			"song": "See You Again",
+			"artist": "Charlie Puth",
+			"participant": "snoly2",
+			"shows": {
+				"sf2": {
+					"order": 10,
+					"place": 7,
+					"qualified": true
+				},
+				"gf": {
+					"order": 16,
+					"place": 3,
+					"points": 75
+				}
+			}
+		},
+		{
+			"country": "Norway",
+			"song": "Roll With the Wind",
+			"artist": "Alexander Rybak",
+			"participant": "estoniahuman",
+			"shows": {
+				"sf2": {
+					"order": 11,
+					"place": 8
+				}
+			}
+		},
+		{
+			"country": "Kazakhstan",
+			"song": "Armenia",
+			"artist": "Joan Thiele",
+			"participant": "ZerinaCaderia",
+			"shows": {
+				"sf2": {
+					"order": 12,
+					"place": 1,
+					"qualified": true
+				},
+				"gf": {
+					"order": 17,
+					"place": 1,
+					"points": 110
+				}
+			}
+		},
+		{
+			"country": "Azerbaijan",
+			"song": "Always",
+			"artist": "Aysel ft. Arash",
+			"participant": "EuaLove2017",
+			"shows": {
+				"sf2": {
+					"order": 13,
+					"place": 10
+				}
+			}
+		},
+		{
+			"country": "Greece",
+			"song": "I Alitheia Miazi Psema",
+			"artist": "Demy",
+			"participant": "SofosOlaSand",
+			"shows": {
+				"gf": {
+					"order": 8,
+					"place": 2,
+					"points": 98
+				}
+			}
+		},
+		{
+			"country": "Cyprus",
+			"song": "Rockabye",
+			"artist": "Clean Bandit ft. Sean Paul & Anne-Marie",
+			"participant": "KaterinAdelle",
+			"shows": {
+				"gf": {
+					"order": 9,
+					"place": 5,
+					"points": 61
+				}
+			}
+		},
+		{
+			"country": "Wildcard Winner",
+			"song": "---",
+			"artist": "---",
+			"participant": "---",
+			"shows": {
+				"gf": {
+					"order": 10,
+					"place": 17,
+					"points": 22
+				}
+			}
+		},
+		{
+			"country": "Spain",
+			"song": "Dusk Till Dawn",
+			"artist": "Zayn ft. Sia",
+			"participant": "Carlosgmar13",
+			"shows": {
+				"gf": {
+					"order": 18,
+					"place": 7,
+					"points": 52
+				}
+			}
+		},
+		{
+			"country": "Vatican City",
+			"song": "Dr Jean's Banana Dance",
+			"artist": "Dr. Jean",
+			"participant": "DoodlayRed12",
+			"shows": {
+				"gf": {
+					"order": 19,
+					"place": 18,
+					"points": 19
+				}
+			}
+		},
+		{
+			"country": "Finland",
+			"song": "Love Me Right",
+			"artist": "Rose May Alaba",
+			"participant": "Tom_5221",
+			"shows": {
+				"gf": {
+					"order": 20,
+					"place": 14,
+					"points": 28
 				}
 			}
 		}

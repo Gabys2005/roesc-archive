@@ -397,7 +397,7 @@
 			"country": "Portugal",
 			"artist": "Priyanka",
 			"song": "Come Through",
-			"participant": "crlrst",
+			"participant": ["crlrst", "SaltyOreos"],
 			"shows": {
 				"sf2": {
 					"order": 9,

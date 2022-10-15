@@ -41,6 +41,7 @@ function RoescPage() {
 					<Row title="Created" content={data.created}></Row>
 					<Row title="Cancelled" content={data.cancelled}></Row>
 					<Row title="Owner" content={joinTable(data.owner)}></Row>
+					<Row title="Previous Owners" content={joinTable(data.previous_owners)}></Row>
 				</tbody>
 			</Table>
 			<h2>Links</h2>

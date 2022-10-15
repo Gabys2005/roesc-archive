@@ -1,0 +1,683 @@
+{
+    "number": "#10",
+    "link": "10",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "venue": "",
+    "slogan": "ILLUMINATE!",
+    "dates": {
+        "sf1": "03rd August 2019",
+        "sf2": "04th August 2019",
+        "gf": "17th August 2019"
+    },
+    "reveals": {},
+    "venue_bidding": [],
+    "presenters": "Anna Vergelskaya, Julia Samoylova, Jamala, Mila Kunis",
+    "shows": [
+        "sf1",
+        "sf2",
+        "gf"
+    ],
+    "images": [],
+    "pots": [],
+    "notes": [],
+    "openings": {},
+    "intervals": {},
+    "links": {},
+    "nfs": [],
+    "entries": [
+        {
+            "country": "Bulgaria",
+            "song": "Perfect love",
+            "artist": "Poli Genova",
+            "participant": "NikolasHD1",
+            "shows": {
+                "sf1": {
+                    "order": 1,
+                    "place": 17,
+                    "points": 66
+                }
+            }
+        },
+        {
+            "country": "Ireland",
+            "song": "Church",
+            "artist": "Aly & AJ",
+            "participant": "iCoia",
+            "shows": {
+                "sf1": {
+                    "order": 2,
+                    "place": 11,
+                    "points": 96
+                }
+            }
+        },
+        {
+            "country": "Sweden",
+            "song": "Work",
+            "artist": "ionnalee",
+            "participant": "Ver_Blazi",
+            "shows": {
+                "sf1": {
+                    "order": 3,
+                    "place": 8,
+                    "points": 112,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 8,
+                    "place": 17,
+                    "points": 99
+                }
+            }
+        },
+        {
+            "country": "Albania",
+            "song": "A do si kjo",
+            "artist": "Ronela Hajati",
+            "participant": "PikyoSeoul20",
+            "shows": {
+                "sf1": {
+                    "order": 4,
+                    "place": 14,
+                    "points": 86
+                }
+            }
+        },
+        {
+            "country": "France",
+            "song": "Like Boys",
+            "artist": "Hyphen Hyphen",
+            "participant": "Juniorhioi",
+            "shows": {
+                "sf1": {
+                    "order": 5,
+                    "place": 20,
+                    "points": null
+                }
+            }
+        },
+        {
+            "country": "Iran",
+            "song": "We Don't Run From Anyone",
+            "artist": "Amanda Delara",
+            "participant": "nedneu",
+            "shows": {
+                "sf1": {
+                    "order": 6,
+                    "place": 1,
+                    "points": 201,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 6,
+                    "place": 2,
+                    "points": 287
+                }
+            }
+        },
+        {
+            "country": "Malta",
+            "song": "High",
+            "artist": "Ira Losco",
+            "participant": "IXFearlessBellaIX",
+            "shows": {
+                "sf1": {
+                    "order": 7,
+                    "place": 19,
+                    "points": 26
+                }
+            }
+        },
+        {
+            "country": "Wales",
+            "song": "Hourglass",
+            "artist": "Alice Chater",
+            "participant": "Aesthiqq",
+            "shows": {
+                "sf1": {
+                    "order": 8,
+                    "place": 6,
+                    "points": 123,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 13,
+                    "place": 12,
+                    "points": 169
+                }
+            }
+        },
+        {
+            "country": "Australia",
+            "song": "Heartbreak Dream",
+            "artist": "Betty Who",
+            "participant": "daxjd",
+            "shows": {
+                "sf1": {
+                    "order": 9,
+                    "place": 3,
+                    "points": 153,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 12,
+                    "place": 19,
+                    "points": 86
+                }
+            }
+        },
+        {
+            "country": "Serbia",
+            "song": "Tigar",
+            "artist": "Nikolija",
+            "participant": "MalgorzataJamrozy",
+            "shows": {
+                "sf1": {
+                    "order": 10,
+                    "place": 4,
+                    "points": 143,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 3,
+                    "place": 8,
+                    "points": 196
+                }
+            }
+        },
+        {
+            "country": "Belgium",
+            "song": "Moment",
+            "artist": "Blanche",
+            "participant": "RedPlaysRobloxHD",
+            "shows": {
+                "sf1": {
+                    "order": 11,
+                    "place": 12,
+                    "points": 96
+                }
+            }
+        },
+        {
+            "country": "Denmark",
+            "song": "Clappin",
+            "artist": "Nik & Jay",
+            "participant": "Hej100000",
+            "shows": {
+                "sf1": {
+                    "order": 12,
+                    "place": 13,
+                    "points": 88
+                }
+            }
+        },
+        {
+            "country": "England",
+            "song": "I Go Crazy",
+            "artist": "Orla Gartland",
+            "participant": "iiLaxertin",
+            "shows": {
+                "sf1": {
+                    "order": 13,
+                    "place": 16,
+                    "points": 73
+                }
+            }
+        },
+        {
+            "country": "Argentina",
+            "song": "Princesa",
+            "artist": "Tini & Karol G",
+            "participant": "EurovisionAviation",
+            "shows": {
+                "sf1": {
+                    "order": 14,
+                    "place": 18,
+                    "points": 60
+                }
+            }
+        },
+        {
+            "country": "Netherlands",
+            "song": "Don't Let Me Go",
+            "artist": "Rochelle",
+            "participant": "JKrulezYT203",
+            "shows": {
+                "sf1": {
+                    "order": 15,
+                    "place": 9,
+                    "points": 112,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 21,
+                    "place": 18,
+                    "points": 87
+                }
+            }
+        },
+        {
+            "country": "South Korea",
+            "song": "Paint on Spring",
+            "artist": "Martin Smith",
+            "participant": "WillowDog12",
+            "shows": {
+                "sf1": {
+                    "order": 16,
+                    "place": 15,
+                    "points": 84
+                }
+            }
+        },
+        {
+            "country": "Turkey",
+            "song": "Sampiyon",
+            "artist": "Hadise",
+            "participant": "ohemilyyy",
+            "shows": {
+                "sf1": {
+                    "order": 17,
+                    "place": 5,
+                    "points": 135,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 9,
+                    "place": 20,
+                    "points": 81
+                }
+            }
+        },
+        {
+            "country": "Spain",
+            "song": "Victorious",
+            "artist": "Xuso Jones",
+            "participant": "DarticFernandez",
+            "shows": {
+                "sf1": {
+                    "order": 18,
+                    "place": 10,
+                    "points": 100,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 2,
+                    "place": 21,
+                    "points": 57
+                }
+            }
+        },
+        {
+            "country": "Iceland",
+            "song": "Picture Perfect",
+            "artist": "Hildur",
+            "participant": "robdnix",
+            "shows": {
+                "sf1": {
+                    "order": 19,
+                    "place": 7,
+                    "points": 116,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 4,
+                    "place": 11,
+                    "points": 156
+                }
+            }
+        },
+        {
+            "country": "United States",
+            "song": "Medusa",
+            "artist": "Kailee Morgue",
+            "participant": "TechnoElementor",
+            "shows": {
+                "sf1": {
+                    "order": 20,
+                    "place": 2,
+                    "points": 174,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 5,
+                    "place": 14,
+                    "points": 145
+                }
+            }
+        },
+        {
+            "country": "Kazakhstan",
+            "song": "Jasa, twğan Jer",
+            "artist": "Laşın tobı",
+            "participant": "YaAllxh",
+            "shows": {
+                "sf2": {
+                    "order": 1,
+                    "place": 8,
+                    "points": 119,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 20,
+                    "place": 7,
+                    "points": 199
+                }
+            }
+        },
+        {
+            "country": "Finland",
+            "song": "Heroes Tonight",
+            "artist": "Janji ft. Johnning",
+            "participant": "GalaxyDreamer2365",
+            "shows": {
+                "sf2": {
+                    "order": 2,
+                    "place": 20,
+                    "points": 20
+                }
+            }
+        },
+        {
+            "country": "Germany",
+            "song": "Walpurgisnacht",
+            "artist": "Faun",
+            "participant": "NerdyGamer197",
+            "shows": {
+                "sf2": {
+                    "order": 3,
+                    "place": 12,
+                    "points": 83
+                }
+            }
+        },
+        {
+            "country": "Lithuania",
+            "song": "Sting",
+            "artist": "Coals",
+            "participant": "Tom_5221",
+            "shows": {
+                "sf2": {
+                    "order": 4,
+                    "place": 9,
+                    "points": 111,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 16,
+                    "place": 10,
+                    "points": 171
+                }
+            }
+        },
+        {
+            "country": "Cyprus",
+            "song": "Sweetest Love",
+            "artist": "Eleni Foureira",
+            "participant": "honeyxmemories",
+            "shows": {
+                "sf2": {
+                    "order": 5,
+                    "place": 16,
+                    "points": 64
+                }
+            }
+        },
+        {
+            "country": "New Zealand",
+            "song": "In your Dreams",
+            "artist": "Indiana Massara",
+            "participant": "Ittai8",
+            "shows": {
+                "sf2": {
+                    "order": 6,
+                    "place": 19,
+                    "points": 35
+                }
+            }
+        },
+        {
+            "country": "Romania",
+            "song": "Touch Me",
+            "artist": "Antonia",
+            "participant": "Alina126",
+            "shows": {
+                "sf2": {
+                    "order": 7,
+                    "place": 2,
+                    "points": 188,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 10,
+                    "place": 4,
+                    "points": 272
+                }
+            }
+        },
+        {
+            "country": "Switzerland",
+            "song": "Puis danse",
+            "artist": "Eugénie",
+            "participant": "bhackstabbed",
+            "shows": {
+                "sf2": {
+                    "order": 8,
+                    "place": 5,
+                    "points": 160,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 19,
+                    "place": 9,
+                    "points": 186
+                }
+            }
+        },
+        {
+            "country": "Canada",
+            "song": "Give It",
+            "artist": "Betta Lemme",
+            "participant": "Lefisie",
+            "shows": {
+                "sf2": {
+                    "order": 9,
+                    "place": 3,
+                    "points": 180,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 18,
+                    "place": 3,
+                    "points": 282
+                }
+            }
+        },
+        {
+            "country": "Philippines",
+            "song": "No Apology",
+            "artist": "Karencitta",
+            "participant": "RamenVoid",
+            "shows": {
+                "sf2": {
+                    "order": 10,
+                    "place": 11,
+                    "points": 99
+                }
+            }
+        },
+        {
+            "country": "Luxembourg",
+            "song": "Boundaries",
+            "artist": "Lena",
+            "participant": "austxr",
+            "shows": {
+                "sf2": {
+                    "order": 11,
+                    "place": 18,
+                    "points": 45
+                }
+            }
+        },
+        {
+            "country": "Italy",
+            "song": "Stay Open",
+            "artist": "Diplo & MØ ft. Levante",
+            "participant": "iDiaa",
+            "shows": {
+                "sf2": {
+                    "order": 12,
+                    "place": 13,
+                    "points": 80
+                }
+            }
+        },
+        {
+            "country": "Åland Islands",
+            "song": "Blame It On The Disco",
+            "artist": "Alcazar",
+            "participant": "oxyo_rbx",
+            "shows": {
+                "sf2": {
+                    "order": 13,
+                    "place": 10,
+                    "points": 108,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 17,
+                    "place": 15,
+                    "points": 117
+                }
+            }
+        },
+        {
+            "country": "Greece",
+            "song": "Balkan",
+            "artist": "Antonella",
+            "participant": "SofosOlaSand",
+            "shows": {
+                "sf2": {
+                    "order": 14,
+                    "place": 4,
+                    "points": 161,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 11,
+                    "place": 6,
+                    "points": 217
+                }
+            }
+        },
+        {
+            "country": "Norway",
+            "song": "STFU",
+            "artist": "Julie Bergan",
+            "participant": "ZerinaCaderia",
+            "shows": {
+                "sf2": {
+                    "order": 15,
+                    "place": 6,
+                    "points": 136,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 15,
+                    "place": 5,
+                    "points": 222
+                }
+            }
+        },
+        {
+            "country": "Jamaica",
+            "song": "Lions",
+            "artist": "Skip Marley",
+            "participant": "EleGrow",
+            "shows": {
+                "sf2": {
+                    "order": 16,
+                    "place": 14,
+                    "points": 76
+                }
+            }
+        },
+        {
+            "country": "South Africa",
+            "song": "Prayer",
+            "artist": "Gina Kushka",
+            "participant": "Vecu",
+            "shows": {
+                "sf2": {
+                    "order": 17,
+                    "place": 1,
+                    "points": 217,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 14,
+                    "place": 1,
+                    "points": 396
+                }
+            }
+        },
+        {
+            "country": "Faroe Islands",
+            "song": "Last Dance",
+            "artist": "Rhys",
+            "participant": "ItsVoxx",
+            "shows": {
+                "sf2": {
+                    "order": 18,
+                    "place": 17,
+                    "points": 60
+                }
+            }
+        },
+        {
+            "country": "Egypt",
+            "song": "Armenian girls",
+            "artist": "Iveta Mukuchyan",
+            "participant": "JojooxD",
+            "shows": {
+                "sf2": {
+                    "order": 19,
+                    "place": 15,
+                    "points": 73
+                }
+            }
+        },
+        {
+            "country": "Israel",
+            "song": "Catch (oh oh oh)",
+            "artist": "Crocodile",
+            "participant": "Liam_Aharon",
+            "shows": {
+                "sf2": {
+                    "order": 20,
+                    "place": 7,
+                    "points": 120,
+                    "qualified": true
+                },
+                "gf": {
+                    "order": 1,
+                    "place": 13,
+                    "points": 149
+                }
+            }
+        },
+        {
+            "country": "Ukraine",
+            "song": "Instadrama",
+            "artist": "Loboda",
+            "participant": "apheli0n",
+            "shows": {
+                "gf": {
+                    "order": 7,
+                    "place": 16,
+                    "points": 104
+                }
+            }
+        }
+    ]
+}

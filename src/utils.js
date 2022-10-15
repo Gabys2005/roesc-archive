@@ -1,5 +1,6 @@
 const showNames = {
 	oc: "Opening Ceremony",
+	sf: "Semi-Final",
 	sf1: "Semi-Final 1",
 	sf2: "Semi-Final 2",
 	gf: "Grand Final",
