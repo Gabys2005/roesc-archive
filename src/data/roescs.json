@@ -17,5 +17,12 @@
 		"longName": "Gabys' Eurovision Song Contest",
 		"owner": "gabys2005",
 		"link": "gesc"
+	},
+	{
+		"shortName": "ESC",
+		"longName": "Roblox Eurovision Song Contest",
+		"owner": "Daleorator",
+		"previousOwners": ["DarticFernandez", "TheOnlyLuka", "Zerrus"],
+		"link": "esc"
 	}
 ]
