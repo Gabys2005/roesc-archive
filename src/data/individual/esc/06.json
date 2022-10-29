@@ -3,7 +3,7 @@
 	"link": "06",
 	"city": "Kraków",
 	"country": "Poland",
-	"slogan": "",
+	"slogan": "Fly High",
 	"venue": "TAURON Arena",
 	"dates": {
 		"sf1": "7th July 2018",
@@ -15,14 +15,21 @@
 	},
 	"notes": [],
 	"venue_bidding": [],
-	"presenters": "",
+	"presenters": "Daleorator",
 	"shows": ["sf1", "sf2", "gf"],
-	"images": [],
+	"images": [
+		"https://i.imgur.com/sMQhMvF.jpg",
+		"https://i.imgur.com/LiCykII.png",
+		"https://i.imgur.com/Wv7iE56.png",
+		"https://i.imgur.com/oNJwYwW.png"
+	],
 	"pots": [],
 	"gf_pots": [],
 	"openings": {},
 	"intervals": {},
-	"links": {},
+	"links": {
+		"YouTube - Semi Final 1": "https://www.youtube.com/watch?v=m8Ig3zLm3Rk"
+	},
 	"nfs": [],
 	"entries": [
 		{
@@ -68,6 +75,13 @@
 					"jury": 72,
 					"tele": 136,
 					"qualified": true
+				},
+				"gf": {
+					"order": 3,
+					"place": 5,
+					"points": 282,
+					"jury": 180,
+					"tele": 102
 				}
 			}
 		},
@@ -84,6 +98,13 @@
 					"jury": 68,
 					"tele": 181,
 					"qualified": true
+				},
+				"gf": {
+					"order": 16,
+					"place": 10,
+					"points": 198,
+					"jury": 130,
+					"tele": 68
 				}
 			}
 		},
@@ -100,6 +121,13 @@
 					"jury": 91,
 					"tele": 113,
 					"qualified": true
+				},
+				"gf": {
+					"order": 8,
+					"place": 3,
+					"points": 345,
+					"jury": 142,
+					"tele": 203
 				}
 			}
 		},
@@ -116,6 +144,13 @@
 					"jury": 45,
 					"tele": 181,
 					"qualified": true
+				},
+				"gf": {
+					"order": 11,
+					"place": 1,
+					"points": 416,
+					"jury": 111,
+					"tele": 305
 				}
 			}
 		},
@@ -132,6 +167,13 @@
 					"jury": 49,
 					"tele": 136,
 					"qualified": true
+				},
+				"gf": {
+					"order": 4,
+					"place": 11,
+					"points": 198,
+					"jury": 130,
+					"tele": 68
 				}
 			}
 		},
@@ -253,6 +295,339 @@
 					"jury": 74,
 					"tele": 45,
 					"qualified": true
+				},
+				"gf": {
+					"order": 1,
+					"place": 15,
+					"points": 124,
+					"jury": 90,
+					"tele": 34
+				}
+			}
+		},
+		{
+			"country": "Lithuania",
+			"song": "Leisk Bandyt",
+			"artist": "IGLĖ",
+			"participant": ["Tom_5221", "Lefisie"],
+			"shows": {
+				"sf2": {
+					"order": 1,
+					"place": 1,
+					"points": 234,
+					"jury": 67,
+					"tele": 167,
+					"qualified": true
+				},
+				"gf": {
+					"order": 12,
+					"place": 4,
+					"points": 325,
+					"jury": 54,
+					"tele": 271
+				}
+			}
+		},
+		{
+			"country": "Italy",
+			"song": "Ritornerai",
+			"artist": "Chanty",
+			"participant": "luckyone",
+			"shows": {
+				"sf2": {
+					"order": 2,
+					"place": 4,
+					"points": 184,
+					"jury": 67,
+					"tele": 117,
+					"qualified": true
+				},
+				"gf": {
+					"order": 6,
+					"place": 2,
+					"points": 414,
+					"jury": 126,
+					"tele": 288
+				}
+			}
+		},
+		{
+			"country": "France",
+			"song": "Rupture",
+			"artist": "Laurie Darmon",
+			"participant": "smiIeyyy",
+			"shows": {
+				"sf2": {
+					"order": 3,
+					"place": 15,
+					"points": 63,
+					"jury": 63,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Bulgaria",
+			"song": "Bones",
+			"artist": "EQUINOX",
+			"participant": "FISHFOX15",
+			"shows": {
+				"sf2": {
+					"order": 4,
+					"place": 10,
+					"points": 104,
+					"jury": 71,
+					"tele": 33
+				}
+			}
+		},
+		{
+			"country": "Andorra",
+			"song": "La Chute Est Lente",
+			"artist": "Alma",
+			"participant": ["haunting_echoes", "lqvr"],
+			"shows": {
+				"sf2": {
+					"order": 5,
+					"place": 13,
+					"points": 75,
+					"jury": 75,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Romania",
+			"song": "Amici",
+			"artist": "Ilinca",
+			"participant": ["daxjd", "TechnoElementor"],
+			"shows": {
+				"sf2": {
+					"order": 6,
+					"place": 11,
+					"points": 94,
+					"jury": 61,
+					"tele": 33
+				}
+			}
+		},
+		{
+			"country": "North Macedonia",
+			"song": "Dance Alone",
+			"artist": "Jana Burceska",
+			"participant": ["Hamstercub", "kerian123"],
+			"shows": {
+				"sf2": {
+					"order": 7,
+					"place": 5,
+					"points": 177,
+					"jury": 77,
+					"tele": 100,
+					"qualified": true
+				},
+				"gf": {
+					"order": 15,
+					"place": 7,
+					"points": 223,
+					"jury": 104,
+					"tele": 119
+				}
+			}
+		},
+		{
+			"country": "Cyprus",
+			"song": "Aphrodisiac",
+			"artist": "Eleftheria Eleftheriou",
+			"participant": ["ThatOneElias"],
+			"shows": {
+				"sf2": {
+					"order": 8,
+					"place": 12,
+					"points": 77,
+					"jury": 60,
+					"tele": 17
+				}
+			}
+		},
+		{
+			"country": "Slovakia",
+			"song": "Ta Ne",
+			"artist": "Kristína",
+			"participant": ["lucky_luke2503", "SkyforestGRW", "TedTheToffee2003"],
+			"shows": {
+				"sf2": {
+					"order": 9,
+					"place": 6,
+					"points": 140,
+					"jury": 73,
+					"tele": 67,
+					"qualified": true
+				},
+				"gf": {
+					"order": 13,
+					"place": 9,
+					"points": 202,
+					"jury": 134,
+					"tele": 68
+				}
+			}
+		},
+		{
+			"country": "Monaco",
+			"song": "Tout De Moi",
+			"artist": "Lise Darly",
+			"participant": ["JohnSimov", "MarkMarkowitz"],
+			"shows": {
+				"sf2": {
+					"order": 10,
+					"place": 8,
+					"points": 106,
+					"jury": 39,
+					"tele": 67
+				}
+			}
+		},
+		{
+			"country": "Ireland",
+			"song": "Hail Rain or Sunshine",
+			"artist": "The Script",
+			"participant": ["WillowDog12", "AviationGeekInsta", "lilHungry_Turtle"],
+			"shows": {
+				"sf2": {
+					"order": 10,
+					"place": 2,
+					"points": 201,
+					"jury": 67,
+					"tele": 134,
+					"qualified": true
+				},
+				"gf": {
+					"order": 14,
+					"place": 8,
+					"points": 218,
+					"jury": 116,
+					"tele": 102
+				}
+			}
+		},
+		{
+			"country": "Greece",
+			"song": "One Day",
+			"artist": "ARASH ft. Helena",
+			"participant": ["GreekArmyofRoblox"],
+			"shows": {
+				"sf2": {
+					"order": 12,
+					"place": 6,
+					"points": 125,
+					"jury": 75,
+					"tele": 50,
+					"qualified": true
+				},
+				"gf": {
+					"order": 10,
+					"place": 12,
+					"points": 194,
+					"jury": 126,
+					"tele": 68
+				}
+			}
+		},
+		{
+			"country": "Estonia",
+			"song": "La Forza",
+			"artist": "Elina Nechayeva",
+			"participant": ["AmareKordei"],
+			"shows": {
+				"sf2": {
+					"order": 13,
+					"place": 14,
+					"points": 66,
+					"jury": 66,
+					"tele": 0
+				}
+			}
+		},
+		{
+			"country": "Germany",
+			"song": "Heart to Break",
+			"artist": "Kim Petras",
+			"participant": ["Jenna_Talya"],
+			"shows": {
+				"sf2": {
+					"order": 14,
+					"place": 6,
+					"points": 125,
+					"jury": 58,
+					"tele": 67
+				}
+			}
+		},
+		{
+			"country": "Netherlands",
+			"song": "Guaya",
+			"artist": "Eva Simons",
+			"participant": ["mikemikesim", "NoisyGrAntonlol"],
+			"shows": {
+				"sf2": {
+					"order": 15,
+					"place": 2,
+					"points": 201,
+					"jury": 67,
+					"tele": 134,
+					"qualified": true
+				},
+				"gf": {
+					"order": 2,
+					"place": 6,
+					"points": 269,
+					"jury": 117,
+					"tele": 152
+				}
+			}
+		},
+		{
+			"country": "Poland",
+			"song": "Heartbeat",
+			"artist": "Margaret",
+			"participant": ["432124aaaaaaaaa", "amsergame123"],
+			"shows": {
+				"gf": {
+					"order": 5,
+					"place": 14,
+					"points": 155,
+					"jury": 138,
+					"tele": 17
+				}
+			}
+		},
+		{
+			"country": "Australia",
+			"song": "The Greatest Show",
+			"artist": "Hugh Jackman",
+			"participant": ["AnthonyJAbbott", "RudelyAwHakened", "Sparky500000000", "EdwardJHoward", "MarkJClark"],
+			"shows": {
+				"gf": {
+					"order": 7,
+					"place": 13,
+					"points": 187,
+					"jury": 136,
+					"tele": 51
+				}
+			}
+		},
+		{
+			"country": "Sweden",
+			"song": "Heroes",
+			"artist": "Måns Zelmerlöw",
+			"participant": ["NicholasGripenberg"],
+			"shows": {
+				"gf": {
+					"order": 9,
+					"place": 16,
+					"points": 80,
+					"jury": 80,
+					"tele": 0
 				}
 			}
 		}
