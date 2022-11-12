@@ -19,7 +19,14 @@
 	"venue_bidding": [],
 	"presenters": ["Julie Chen (ZerinaCaderia)", "Sharon Osbourne (sugarylovebaker)"],
 	"shows": ["sf1", "sf2", "gf"],
-	"images": [],
+	"images": [
+		"https://i.imgur.com/pnVjc2O.png",
+		"https://i.imgur.com/2NX06o6.png",
+		"https://i.imgur.com/iU5uVTL.png",
+		"https://i.imgur.com/BsSOmyw.png",
+		"https://i.imgur.com/gn2GOKK.png",
+		"https://i.imgur.com/e6ALDY1.png"
+	],
 	"pots": [],
 	"notes": [
 		"Big 5: SofosOlaSand (Greece), KaterinAdelle (Cyprus), Carlosgmar13 (Spain), DoodlayRed12 (Vatican City), Tom_5221 (Finland)",

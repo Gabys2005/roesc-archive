@@ -21,7 +21,12 @@
 		"Zhanar Dugalova (daxjd)"
 	],
 	"shows": ["sf", "gf"],
-	"images": [],
+	"images": [
+		"https://i.imgur.com/xKealnG.png",
+		"https://i.imgur.com/xvjn3RE.png",
+		"https://i.imgur.com/OfZg3h1.png",
+		"https://i.imgur.com/CIXlVTU.png"
+	],
 	"pots": [],
 	"notes": ["Failed to vote: GF - Portugal, SF - China, Finland, Sweden (-40 points)", "GF date was moved"],
 	"openings": {},
