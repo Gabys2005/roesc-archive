@@ -45,7 +45,9 @@
 				"sf": {
 					"order": 1,
 					"place": 14,
-					"points": 68
+					"points": 68,
+					"jury": 61,
+					"tele": 7
 				}
 			}
 		},
@@ -59,12 +61,16 @@
 					"order": 2,
 					"place": 4,
 					"points": 112,
-					"qualified": true
+					"qualified": true,
+					"jury": 98,
+					"tele": 14
 				},
 				"gf": {
 					"order": 11,
 					"place": 19,
-					"points": 55
+					"points": 55,
+					"jury": 56,
+					"tele": -1
 				}
 			}
 		},
@@ -78,12 +84,16 @@
 					"order": 3,
 					"place": 5,
 					"points": 106,
-					"qualified": true
+					"qualified": true,
+					"jury": 95,
+					"tele": 11
 				},
 				"gf": {
 					"order": 12,
 					"place": 5,
-					"points": 118
+					"points": 118,
+					"jury": 94,
+					"tele": 24
 				}
 			}
 		},
@@ -97,12 +107,16 @@
 					"order": 4,
 					"place": 6,
 					"points": 106,
-					"qualified": true
+					"qualified": true,
+					"jury": 101,
+					"tele": 5
 				},
 				"gf": {
 					"order": 13,
 					"place": 4,
-					"points": 141
+					"points": 141,
+					"jury": 119,
+					"tele": 22
 				}
 			}
 		},
@@ -115,7 +129,9 @@
 				"sf": {
 					"order": 5,
 					"place": 13,
-					"points": 75
+					"points": 75,
+					"jury": 55,
+					"tele": 20
 				}
 			}
 		},
@@ -129,12 +145,16 @@
 					"order": 6,
 					"place": 7,
 					"points": 94,
-					"qualified": true
+					"qualified": true,
+					"jury": 84,
+					"tele": 10
 				},
 				"gf": {
 					"order": 14,
 					"place": 11,
-					"points": 77
+					"points": 77,
+					"jury": 47,
+					"tele": 30
 				}
 			}
 		},
@@ -147,7 +167,9 @@
 				"sf": {
 					"order": 7,
 					"place": 16,
-					"points": 55
+					"points": 55,
+					"jury": 53,
+					"tele": 2
 				}
 			}
 		},
@@ -160,7 +182,9 @@
 				"sf": {
 					"order": 8,
 					"place": 15,
-					"points": 61
+					"points": 61,
+					"jury": 48,
+					"tele": 13
 				}
 			}
 		},
@@ -173,7 +197,9 @@
 				"sf": {
 					"order": 9,
 					"place": 18,
-					"points": 13
+					"points": 13,
+					"jury": 45,
+					"tele": -33
 				}
 			}
 		},
@@ -187,12 +213,16 @@
 					"order": 10,
 					"place": 9,
 					"points": 86,
-					"qualified": true
+					"qualified": true,
+					"jury": 67,
+					"tele": 19
 				},
 				"gf": {
 					"order": 15,
 					"place": 17,
-					"points": 59
+					"points": 59,
+					"jury": 30,
+					"tele": 29
 				}
 			}
 		},
@@ -205,7 +235,9 @@
 				"sf": {
 					"order": 11,
 					"place": 11,
-					"points": 85
+					"points": 85,
+					"jury": 67,
+					"tele": 18
 				}
 			}
 		},
@@ -219,12 +251,16 @@
 					"order": 12,
 					"place": 10,
 					"points": 86,
-					"qualified": true
+					"qualified": true,
+					"jury": 82,
+					"tele": 4
 				},
 				"gf": {
 					"order": 16,
 					"place": 20,
-					"points": 52
+					"points": 52,
+					"jury": 44,
+					"tele": 8
 				}
 			}
 		},
@@ -238,12 +274,16 @@
 					"order": 13,
 					"place": 2,
 					"points": 124,
-					"qualified": true
+					"qualified": true,
+					"jury": 101,
+					"tele": 23
 				},
 				"gf": {
 					"order": 17,
 					"place": 14,
-					"points": 60
+					"points": 60,
+					"jury": 43,
+					"tele": 17
 				}
 			}
 		},
@@ -257,12 +297,16 @@
 					"order": 14,
 					"place": 1,
 					"points": 142,
-					"qualified": true
+					"qualified": true,
+					"jury": 121,
+					"tele": 21
 				},
 				"gf": {
 					"order": 18,
 					"place": 2,
-					"points": 152
+					"points": 152,
+					"jury": 118,
+					"tele": 34
 				}
 			}
 		},
@@ -275,7 +319,9 @@
 				"sf": {
 					"order": 15,
 					"place": 12,
-					"points": 82
+					"points": 82,
+					"jury": 109,
+					"tele": -27
 				}
 			}
 		},
@@ -288,7 +334,9 @@
 				"sf": {
 					"order": 16,
 					"place": 17,
-					"points": 52
+					"points": 52,
+					"jury": 77,
+					"tele": -25
 				}
 			}
 		},
@@ -302,12 +350,16 @@
 					"order": 17,
 					"place": 8,
 					"points": 94,
-					"qualified": true
+					"qualified": true,
+					"jury": 79,
+					"tele": 15
 				},
 				"gf": {
 					"order": 19,
 					"place": 15,
-					"points": 60
+					"points": 60,
+					"jury": 45,
+					"tele": 15
 				}
 			}
 		},
@@ -321,12 +373,16 @@
 					"order": 18,
 					"place": 3,
 					"points": 121,
-					"qualified": true
+					"qualified": true,
+					"jury": 106,
+					"tele": 15
 				},
 				"gf": {
 					"order": 20,
 					"place": 13,
-					"points": 64
+					"points": 64,
+					"jury": 42,
+					"tele": 22
 				}
 			}
 		},
@@ -339,7 +395,9 @@
 				"gf": {
 					"order": 1,
 					"place": 18,
-					"points": 58
+					"points": 58,
+					"jury": 47,
+					"tele": 11
 				}
 			}
 		},
@@ -352,7 +410,9 @@
 				"gf": {
 					"order": 2,
 					"place": 6,
-					"points": 99
+					"points": 99,
+					"jury": 69,
+					"tele": 30
 				}
 			}
 		},
@@ -365,7 +425,9 @@
 				"gf": {
 					"order": 3,
 					"place": 9,
-					"points": 83
+					"points": 83,
+					"jury": 49,
+					"tele": 34
 				}
 			}
 		},
@@ -378,7 +440,9 @@
 				"gf": {
 					"order": 4,
 					"place": 1,
-					"points": 156
+					"points": 156,
+					"jury": 123,
+					"tele": 33
 				}
 			}
 		},
@@ -391,7 +455,9 @@
 				"gf": {
 					"order": 5,
 					"place": 12,
-					"points": 69
+					"points": 69,
+					"jury": 41,
+					"tele": 28
 				}
 			}
 		},
@@ -404,7 +470,9 @@
 				"gf": {
 					"order": 6,
 					"place": 10,
-					"points": 77
+					"points": 77,
+					"jury": 56,
+					"tele": 21
 				}
 			}
 		},
@@ -417,7 +485,9 @@
 				"gf": {
 					"order": 7,
 					"place": 8,
-					"points": 84
+					"points": 84,
+					"jury": 78,
+					"tele": 6
 				}
 			}
 		},
@@ -430,7 +500,9 @@
 				"gf": {
 					"order": 8,
 					"place": 7,
-					"points": 87
+					"points": 87,
+					"jury": 68,
+					"tele": 19
 				}
 			}
 		},
@@ -443,7 +515,9 @@
 				"gf": {
 					"order": 9,
 					"place": 16,
-					"points": 59
+					"points": 59,
+					"jury": 44,
+					"tele": 15
 				}
 			}
 		},
@@ -456,7 +530,9 @@
 				"gf": {
 					"order": 10,
 					"place": 3,
-					"points": 148
+					"points": 148,
+					"jury": 121,
+					"tele": 27
 				}
 			}
 		}
