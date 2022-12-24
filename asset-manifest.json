@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/roesc-archive/static/css/main.204299cc.css",
-    "main.js": "/roesc-archive/static/js/main.01a6260f.js",
-    "static/js/256.99a5a860.chunk.js": "/roesc-archive/static/js/256.99a5a860.chunk.js",
-    "static/js/541.ca392424.chunk.js": "/roesc-archive/static/js/541.ca392424.chunk.js",
-    "static/js/280.b3642c9c.chunk.js": "/roesc-archive/static/js/280.b3642c9c.chunk.js",
-    "static/js/515.eb3a989d.chunk.js": "/roesc-archive/static/js/515.eb3a989d.chunk.js",
-    "static/js/707.cd8fabb1.chunk.js": "/roesc-archive/static/js/707.cd8fabb1.chunk.js",
+    "main.js": "/roesc-archive/static/js/main.c73b987d.js",
+    "static/js/256.ae40f584.chunk.js": "/roesc-archive/static/js/256.ae40f584.chunk.js",
+    "static/js/541.19e5ab5e.chunk.js": "/roesc-archive/static/js/541.19e5ab5e.chunk.js",
+    "static/js/280.474e14d0.chunk.js": "/roesc-archive/static/js/280.474e14d0.chunk.js",
+    "static/js/515.ee19aa9e.chunk.js": "/roesc-archive/static/js/515.ee19aa9e.chunk.js",
+    "static/js/707.a0893ba4.chunk.js": "/roesc-archive/static/js/707.a0893ba4.chunk.js",
     "index.html": "/roesc-archive/index.html",
     "main.204299cc.css.map": "/roesc-archive/static/css/main.204299cc.css.map",
-    "main.01a6260f.js.map": "/roesc-archive/static/js/main.01a6260f.js.map"
+    "main.c73b987d.js.map": "/roesc-archive/static/js/main.c73b987d.js.map"
   },
   "entrypoints": [
     "static/css/main.204299cc.css",
-    "static/js/main.01a6260f.js"
+    "static/js/main.c73b987d.js"
   ]
 }
