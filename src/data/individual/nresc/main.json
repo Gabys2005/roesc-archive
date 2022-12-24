@@ -2,8 +2,8 @@
 	"shortName": "NRESC",
 	"longName": "Nedas' And Rob's Earthvision Song Contest",
 	"link": "nresc",
-	"created": "23rd August 2020",
-	"cancelled": "21st August 2022",
+	"created": "2020-08-23",
+	"cancelled": "2022-08-21",
 	"owner": ["nedneu", "robndix"],
 	"links": {
 		"Official wiki": "https://nresc.miraheze.org",

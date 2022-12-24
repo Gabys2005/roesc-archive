@@ -14,6 +14,7 @@ import ParticipantPage from "./pages/ParticipantPage";
 import MissingPage from "./pages/MissingPage";
 import NationalFinalsPage from "./pages/NationalFinalsPage";
 import NationalFinalPage from "./pages/NationalFinalPage";
+import Editor from "./pages/Editor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,26 +24,17 @@ root.render(
 			<section className="section">
 				<div className="content container">
 					<Routes>
-						<Route path="/" element={<App></App>}></Route>
-						<Route path="roescs" element={<Roescs></Roescs>}></Route>
-						<Route
-							path="roescs/:roesc"
-							element={<RoescPage></RoescPage>}
-							errorElement={<ErrorPage></ErrorPage>}
-						></Route>
-						<Route path="roescs/:roesc/editions/:edition" element={<EditionPage></EditionPage>}></Route>
-						<Route
-							path="roescs/:roesc/editions/:edition/nfs"
-							element={<NationalFinalsPage></NationalFinalsPage>}
-						></Route>
-						<Route
-							path="roescs/:roesc/editions/:edition/nfs/:nf"
-							element={<NationalFinalPage></NationalFinalPage>}
-						></Route>
-						<Route path="participants" element={<AllParticipantsPage></AllParticipantsPage>}></Route>
-						<Route path="participants/:participant" element={<ParticipantPage></ParticipantPage>}></Route>
-						<Route path="missing" element={<MissingPage></MissingPage>}></Route>
-						<Route path="*" element={<ErrorPage></ErrorPage>}></Route>
+						<Route path="/" element={<App />} />
+						<Route path="roescs" element={<Roescs />} />
+						<Route path="roescs/:roesc" element={<RoescPage />} errorElement={<ErrorPage />} />
+						<Route path="roescs/:roesc/editions/:edition" element={<EditionPage />} />
+						<Route path="roescs/:roesc/editions/:edition/nfs" element={<NationalFinalsPage />} />
+						<Route path="roescs/:roesc/editions/:edition/nfs/:nf" element={<NationalFinalPage />} />
+						<Route path="participants" element={<AllParticipantsPage />} />
+						<Route path="participants/:participant" element={<ParticipantPage />} />
+						<Route path="missing" element={<MissingPage />} />
+						<Route path="editor" element={<Editor />} />
+						<Route path="*" element={<ErrorPage />} />
 					</Routes>
 				</div>
 			</section>

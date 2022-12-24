@@ -50,6 +50,10 @@ function Navbar() {
 						<Link className="navbar-item" to="/missing">
 							Missing
 						</Link>
+
+						<Link className="navbar-item" to="/editor">
+							Editor
+						</Link>
 					</div>
 				</div>
 			</nav>

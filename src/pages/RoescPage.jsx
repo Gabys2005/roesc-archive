@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Row from "../components/Row";
 import Table from "../components/Table";
 import TableHeader from "../components/TableHeader";
-import { joinTable, objectToArray } from "../utils";
+import { joinTable, objectToArray, getDateString } from "../utils";
 
 function RoescPage() {
 	const { roesc } = useParams();
@@ -38,8 +38,8 @@ function RoescPage() {
 			<hr></hr>
 			<Table>
 				<tbody>
-					<Row title="Created" content={data.created}></Row>
-					<Row title="Cancelled" content={data.cancelled}></Row>
+					<Row title="Created" content={getDateString(data.created)}></Row>
+					<Row title="Cancelled" content={getDateString(data.cancelled)}></Row>
 					<Row title="Owner" content={joinTable(data.owner)}></Row>
 					<Row title="Previous Owners" content={joinTable(data.previous_owners)}></Row>
 				</tbody>
