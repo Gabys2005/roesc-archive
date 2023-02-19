@@ -33,22 +33,42 @@ function MultiStringInput(props) {
 
 	return (
 		<div className="mb-5">
-			<p className="subtitle">{props.description}</p>
+			<p className="subtitle">
+				<b>{props.placeholder}: </b>
+				{props.description}
+			</p>
 			{fields.map((r, i) => (
 				<div className="field has-addons" key={i}>
 					<p className="control is-expanded">
-						<input className="input" type="text" value={r} onChange={changeField(i)}></input>
+						<input
+							className="input"
+							type="text"
+							value={r}
+							onChange={changeField(i)}
+							placeholder={`${props.placeholder} ${fields.length > 1 ? i + 1 : ""}`}
+						></input>
 					</p>
 					<p className="control">
 						<button className="button is-danger is-outlined" onClick={removeField(i)}>
 							X
 						</button>
 					</p>
+					{props.inline && i + 1 === fields.length ? (
+						<button className="button is-primary is-outlined" onClick={addNew}>
+							Add another
+						</button>
+					) : (
+						<></>
+					)}
 				</div>
 			))}
-			<button className="button is-primary" onClick={addNew}>
-				Add another
-			</button>
+			{!props.inline || fields.length === 0 ? (
+				<button className="button is-primary" onClick={addNew}>
+					Add another
+				</button>
+			) : (
+				<></>
+			)}
 			<hr />
 		</div>
 	);

@@ -4,17 +4,23 @@ import "./index.css";
 import App from "./App";
 
 import { Routes, Route, HashRouter } from "react-router-dom";
-import Roescs from "./pages/Roescs";
 import Navbar from "./components/Navbar";
-import RoescPage from "./pages/RoescPage";
 import ErrorPage from "./pages/ErrorPage";
-import EditionPage from "./pages/EditionPage";
-import AllParticipantsPage from "./pages/AllParticipantsPage";
-import ParticipantPage from "./pages/ParticipantPage";
-import MissingPage from "./pages/MissingPage";
-import NationalFinalsPage from "./pages/NationalFinalsPage";
-import NationalFinalPage from "./pages/NationalFinalPage";
-import Editor from "./pages/Editor";
+import loadable from "@loadable/component";
+
+const loadSettings = {
+	fallback: <h1>Loading...</h1>,
+};
+
+const Roescs = loadable(() => import("./pages/Roescs"), loadSettings);
+const RoescPage = loadable(() => import("./pages/RoescPage"), loadSettings);
+const EditionPage = loadable(() => import("./pages/EditionPage"), loadSettings);
+const NationalFinalsPage = loadable(() => import("./pages/NationalFinalsPage"), loadSettings);
+const NationalFinalPage = loadable(() => import("./pages/NationalFinalPage"), loadSettings);
+const AllParticipantsPage = loadable(() => import("./pages/AllParticipantsPage"), loadSettings);
+const ParticipantPage = loadable(() => import("./pages/ParticipantPage"), loadSettings);
+const MissingPage = loadable(() => import("./pages/MissingPage"), loadSettings);
+const Editor = loadable(() => import("./pages/Editor"), loadSettings);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

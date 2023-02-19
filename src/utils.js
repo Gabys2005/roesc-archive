@@ -4,9 +4,9 @@ const showNames = {
 	sf1: "Semi-Final 1",
 	sf2: "Semi-Final 2",
 	gf: "Grand Final",
-	participants: "Participants",
 	qr1: "Qualification Round 1",
 	qr2: "Qualification Round 2",
+	pqr: "Pre-Qualification Round",
 };
 
 const revealNames = {
@@ -63,6 +63,10 @@ function objectToArray(obj) {
 	return Object.keys(obj).map((key) => [key, obj[key]]);
 }
 
+function arrayToObject(arr) {
+	return arr.reduce((a, v) => ({ ...a, [v[0]]: v[1] }), {});
+}
+
 function sum(arr) {
 	return arr.reduce((a, b) => a + b, 0);
 }
@@ -117,8 +121,10 @@ export {
 	sum,
 	average,
 	getDate,
+	showNames,
 	revealNames,
 	urlRegex,
 	isValidDate,
 	getDateString,
+	arrayToObject,
 };

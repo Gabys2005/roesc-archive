@@ -43,18 +43,10 @@ function Editor() {
 	if (editorType === "edition")
 		return (
 			<Boilerplate>
-				<EditionFileEditor goBack={goBack} data={editorData}></EditionFileEditor>
+				<EditionFileEditor goBack={goBack} data={editorData} />
 			</Boilerplate>
 		);
 	return <h1>error?</h1>;
-
-	// return (
-	// 	<div>
-	// 		<h1>Editor</h1>
-	// 		<hr></hr>
-	// 		{showEditor === false ? <EditorInit onInit={onInit}></EditorInit> : {editorType === "main" ? <MainFileEditor data={editorData}></MainFileEditor> : <p>edition editor</p>}}
-	// 	</div>
-	// );
 }
 
 export default Editor;

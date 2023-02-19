@@ -9,11 +9,31 @@ const defaultData = {
 	link: "",
 	created: "",
 	cancelled: "",
-	owner: [""],
+	owners: [""],
+	previous_owners: [],
 	links: {},
 };
 
-const defaultEditionData = {};
+const defaultEditionData = {
+	number: "",
+	link: "",
+	cities: [""],
+	countries: [""],
+	venues: [""],
+	slogans: [""],
+	dates: {},
+	reveals: {},
+	venue_bidding: [],
+	presenters: [],
+	shows: [],
+	pots: [],
+	notes: [],
+	openings: {},
+	intervals: {},
+	links: {},
+	nfs: [],
+	entries: [],
+};
 
 function EditorInit(props) {
 	const [selected, setSelected] = useState("");
@@ -60,7 +80,7 @@ function EditorInit(props) {
 
 	function initFile() {
 		if (fileData) {
-			if (fileData.owner) {
+			if (fileData.owners) {
 				props.onInit({ type: "main", data: fileData });
 			} else {
 				props.onInit({ type: "edition", data: fileData });
@@ -91,7 +111,7 @@ function EditorInit(props) {
 
 	return (
 		<div>
-			<h2>How would you want to start?</h2>
+			<h2>How would you like to start?</h2>
 			<p>
 				"Main" files are files that contain information about a RoESC that isn't different during every edition:
 				name, owner(s), created/cancelled dates, links

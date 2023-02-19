@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { isValidDate } from "../../utils";
+import { isValidDate } from "../../../utils";
 
 function DateInput(props) {
 	const [exactDate, setExactDate] = useState(props.value === "" ? true : isValidDate(props.value));
@@ -26,7 +26,10 @@ function DateInput(props) {
 
 	return (
 		<div className="mb-5">
-			<p className="subtitle">{props.description}</p>
+			<p className="subtitle">
+				<b>{props.placeholder}: </b>
+				{props.description}
+			</p>
 			<label className="switch field is-rounded">
 				<input type="checkbox" checked={exactDate} onChange={changeExactDate} />
 				<span className="check"></span>
