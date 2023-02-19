@@ -62,6 +62,12 @@ function BasicInformation({ data, change }) {
 				comments={{ sf: "only one" }}
 				onChange={change("shows")}
 			></CheckboxList>
+			<MultiStringInput
+				description="Additional written notes"
+				placeholder="Notes"
+				value={data.notes}
+				onChange={change("notes")}
+			></MultiStringInput>
 		</Collapsible>
 	);
 }
