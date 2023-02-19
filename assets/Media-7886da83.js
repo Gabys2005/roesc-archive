@@ -1,1 +1,0 @@
-import{a as r,F as n}from"./index-18bfd755.js";function c(e){return e.check?e.children:r(n,{})}function i(e){return e.src.endsWith(".mp4")?r("video",{src:e.src,controls:!0}):r("img",{src:e.src,alt:"egg",loading:"lazy"})}export{i as M,c as P};
