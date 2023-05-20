@@ -1,1 +1,0 @@
-import{a as e}from"./index-3e4226df.js";function i(r){return e("div",{className:"table-container",children:e("table",{className:"table is-bordered is-striped is-hoverable is-fullwidth",children:r.children})})}function l(r){return e("thead",{children:e("tr",{children:r.children})})}export{i as T,l as a};
