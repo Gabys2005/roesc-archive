@@ -1,64 +1,36 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
-	const [classes, setClasses] = useState("");
-	function toggleNavbar() {
-		console.log(classes);
-		if (classes === "") {
-			setClasses("is-active");
-		} else {
-			setClasses("");
-		}
-	}
+export default function Navbar() {
+	const [activeClass, setActiveClass] = useState("");
+
 	return (
-		<>
-			<nav className="navbar" role="navigation" aria-label="main navigation">
-				<div className="navbar-brand">
-					<Link className="navbar-item" to="/">
-						🥚🦆
+		<div className="navbar">
+			<div className="navbar-brand">
+				<div className="navbar-item">
+					<Link to="/">RoESC Archive</Link>
+				</div>
+				<a
+					role="button"
+					className={`navbar-burger ${activeClass}`}
+					onClick={() => setActiveClass(activeClass === "" ? "is-active" : "")}
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+
+			<div className={`navbar-menu ${activeClass}`}>
+				<div className="navbar-start">
+					<Link to="/" className="navbar-item">
+						Home
 					</Link>
-
-					<div
-						role="button"
-						className={`navbar-burger ${classes}`}
-						aria-label="menu"
-						aria-expanded="false"
-						data-target="navbarBasicExample"
-						onClick={toggleNavbar}
-					>
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-					</div>
+					<Link to="/editor" className="navbar-item">
+						Editor
+					</Link>
 				</div>
-
-				<div id="navbarBasicExample" className={`navbar-menu ${classes}`}>
-					<div className="navbar-start">
-						<Link className="navbar-item" to="/">
-							Home
-						</Link>
-
-						<Link className="navbar-item" to="/roescs">
-							RoESCs
-						</Link>
-
-						<Link className="navbar-item" to="/participants">
-							Participants
-						</Link>
-
-						<Link className="navbar-item" to="/missing">
-							Missing
-						</Link>
-
-						<Link className="navbar-item" to="/editor">
-							Editor
-						</Link>
-					</div>
-				</div>
-			</nav>
-		</>
+			</div>
+		</div>
 	);
 }
-
-export default Navbar;

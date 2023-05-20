@@ -1,52 +1,34 @@
-import EditorInit from "../components/EditorPage/Init";
-import { useState } from "react";
-import MainFileEditor from "../components/EditorPage/MainFileEditor";
-import EditionFileEditor from "../components/EditorPage/EditionFileEditor";
+import Button from "../components/Button";
 
-function Boilerplate(props) {
+export default function Editor() {
 	return (
 		<div>
 			<h1>Editor</h1>
 			<hr />
-			{props.children}
+			<p>What would like to do?</p>
+			<div className="columns">
+				<div className="column">
+					<div className="box">
+						<h2>Start with a blank template</h2>
+						<hr />
+						<div className="buttons">
+							<Button link to="/editor/new/main">
+								RoESC File
+							</Button>
+							<Button link to="/editor/new/edition">
+								Edition File
+							</Button>
+						</div>
+					</div>
+				</div>
+
+				<div className="column">
+					<div className="box">
+						<h2>Edit an existing RoESC</h2>
+						<hr />
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
-
-function Editor() {
-	const [showEditor, setShowEditor] = useState(false);
-	const [editorType, setEditorType] = useState("main");
-	const [editorData, setEditorData] = useState();
-
-	function onInit(data) {
-		setEditorData(data.data);
-		setEditorType(data.type);
-		setShowEditor(true);
-	}
-
-	function goBack() {
-		setShowEditor(false);
-	}
-
-	if (showEditor === false)
-		return (
-			<Boilerplate>
-				<EditorInit onInit={onInit} />
-			</Boilerplate>
-		);
-	if (editorType === "main")
-		return (
-			<Boilerplate>
-				<MainFileEditor goBack={goBack} data={editorData} />
-			</Boilerplate>
-		);
-	if (editorType === "edition")
-		return (
-			<Boilerplate>
-				<EditionFileEditor goBack={goBack} data={editorData} />
-			</Boilerplate>
-		);
-	return <h1>error?</h1>;
-}
-
-export default Editor;
