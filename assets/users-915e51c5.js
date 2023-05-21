@@ -1,0 +1,1 @@
+const e=[{id:"7bdfb71c-2fa3-4321-b485-5c9f345802cf",current:{username:"gabys2005",id:"147274250"},previous:[]},{id:"eeb71f68-77ad-44d0-b978-56ee92716f4e",current:{username:"KorxenStar",id:"1929979343"},previous:[{username:"Tom_5221",id:"345441509"}]},{id:"fe119bf0-e951-4e7b-a61e-b0d849f36902",current:{username:"DarticFernandez",id:"242801959"},previous:[]}];export{e as default};
