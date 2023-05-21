@@ -1,17 +1,17 @@
 import Button from "../Button";
 import InputHeader from "./Util/InputHeader";
 
-export default function LinksInput({ name, description, value, setValue }) {
+export default function LinksInput({ name, description, value, setValue, namePlaceholder }) {
 	function editName(i, v) {
 		const newValue = value.map((r, i2) => {
-			if (i2 === i) return { name: v, destination: r.destination };
+			if (i2 === i) return { name: v, link: r.link };
 			return r;
 		});
 		setValue(newValue);
 	}
 	function editDestination(i, v) {
 		const newValue = value.map((r, i2) => {
-			if (i2 === i) return { name: r.name, destination: v };
+			if (i2 === i) return { name: r.name, link: v };
 			return r;
 		});
 		setValue(newValue);
@@ -27,7 +27,7 @@ export default function LinksInput({ name, description, value, setValue }) {
 							type="text"
 							value={link.name}
 							onChange={(e) => editName(i, e.target.value)}
-							placeholder="Name"
+							placeholder={namePlaceholder || "Name"}
 						/>
 					</div>
 					<div className="control">
@@ -37,7 +37,7 @@ export default function LinksInput({ name, description, value, setValue }) {
 						<input
 							className="input"
 							type="text"
-							value={link.destination}
+							value={link.link}
 							onChange={(e) => editDestination(i, e.target.value)}
 							placeholder="Destination (Link)"
 						/>
@@ -49,7 +49,7 @@ export default function LinksInput({ name, description, value, setValue }) {
 					</div>
 				</div>
 			))}
-			<Button onClick={() => setValue([...value, { name: "", destination: "" }])}>Add Another</Button>
+			<Button onClick={() => setValue([...value, { name: "", link: "" }])}>Add Another</Button>
 		</InputHeader>
 	);
 }

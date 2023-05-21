@@ -17,9 +17,12 @@ export default function Roesc() {
 				developers: [],
 				staff: [],
 				designers: [],
-				media: {
-					logos: [],
-				},
+				media: [
+					{
+						name: "Logos",
+						images: [],
+					},
+				],
 			}}
 		/>
 	);
