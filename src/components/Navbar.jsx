@@ -5,7 +5,7 @@ export default function Navbar() {
 	const [activeClass, setActiveClass] = useState("");
 
 	return (
-		<div className="navbar">
+		<div className="navbar is-spaced">
 			<div className="navbar-brand">
 				<div className="navbar-item">
 					<Link to="/">RoESC Archive</Link>

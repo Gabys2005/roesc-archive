@@ -12,6 +12,14 @@ export default function Roesc() {
 				cancellationDate: "",
 				textContent: "",
 				links: [],
+				owners: [],
+				previousOwners: [],
+				developers: [],
+				staff: [],
+				designers: [],
+				media: {
+					logos: [],
+				},
 			}}
 		/>
 	);
