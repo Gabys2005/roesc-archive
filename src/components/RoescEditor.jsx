@@ -4,18 +4,24 @@ import Output from "./RoescEditor/Output";
 import TextContent from "./RoescEditor/TextContent";
 import Links from "./RoescEditor/Links";
 import People from "./RoescEditor/People";
-import Editor from "./UsersEditor/Editor";
+import UsersEditor from "./UsersEditor/Editor";
+import BroadcastersEditor from "./BroadcastersEditor/Editor";
 import EditingInformation from "./RoescEditor/EditingInformation";
 import Media from "./RoescEditor/Media";
+import Error404 from "../pages/404";
 
 export default function RoescEditor({ name, initialData }) {
 	const [data, setData] = useState(initialData);
 	const [currentTab, setCurrentTab] = useState("Basic Information");
 	const [users, setUsers] = useState([]);
+	const [broadcasters, setBroadcasters] = useState([]);
 
 	useEffect(() => {
 		import("../data/original/users.json").then((users) => {
 			setUsers(users.default);
+		});
+		import("../data/original/broadcasters.json").then((broadcasters) => {
+			setBroadcasters(broadcasters.default);
 		});
 	}, []);
 
@@ -46,7 +52,7 @@ export default function RoescEditor({ name, initialData }) {
 		},
 		{
 			name: "People",
-			component: <People data={data} setValue={setValue} users={users} />,
+			component: <People data={data} setValue={setValue} users={users} broadcasters={broadcasters} />,
 		},
 		{
 			name: "Media",
@@ -54,11 +60,21 @@ export default function RoescEditor({ name, initialData }) {
 		},
 		{
 			name: "Output",
-			component: <Output data={data} users={users} />,
+			component: <Output data={data} users={users} broadcasters={broadcasters} />,
+		},
+		{
+			name: "|",
+			component: <Error404 />,
 		},
 		{
 			name: "Users Editor",
-			component: <Editor users={users} setUsers={setUsers} />,
+			component: <UsersEditor users={users} setUsers={setUsers} />,
+		},
+		{
+			name: "Broadcasters Editor",
+			component: (
+				<BroadcastersEditor broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
+			),
 		},
 	];
 

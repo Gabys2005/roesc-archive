@@ -1,0 +1,33 @@
+{
+	"name": "Gabys' Eurovision Song Contest",
+	"link": "gesc",
+	"previousNames": [],
+	"creationDate": "2021/01/02",
+	"cancellationDate": "2022/05/013",
+	"textContent": "",
+	"links": [
+		{
+			"name": "YouTube Channel",
+			"link": "https://youtube.com/@gesc"
+		},
+		{
+			"name": "Roblox Group",
+			"link": "https://www.roblox.com/groups/9850517"
+		}
+	],
+	"owners": ["7bdfb71c-2fa3-4321-b485-5c9f345802cf"],
+	"previousOwners": [],
+	"developers": [
+		"7bdfb71c-2fa3-4321-b485-5c9f345802cf",
+		"eeb71f68-77ad-44d0-b978-56ee92716f4e",
+		"47d368f3-8723-40c4-9c82-d61ac0933b06"
+	],
+	"staff": [],
+	"designers": ["fe119bf0-e951-4e7b-a61e-b0d849f36902", "eeb71f68-77ad-44d0-b978-56ee92716f4e"],
+	"media": [
+		{
+			"name": "Logos",
+			"images": []
+		}
+	]
+}

@@ -1,6 +1,7 @@
+import MultiSelect from "../Inputs/MultiSelect";
 import UserInput from "../Inputs/UserInput";
 
-export default function People({ users, data, setValue }) {
+export default function People({ users, data, setValue, broadcasters }) {
 	return (
 		<div>
 			<div className="box">
@@ -32,6 +33,16 @@ export default function People({ users, data, setValue }) {
 					description="People who developed this contest"
 					value={data.developers}
 					setValue={(devs) => setValue("developers", devs)}
+				/>
+				<hr />
+				<MultiSelect
+					name="Broadcasters"
+					description="Who livestreamed the contest live on YouTube/Twich"
+					value={data.broadcasters}
+					setValue={(broadcasters) => setValue("broadcasters", broadcasters)}
+					options={broadcasters.map((r) => {
+						return { name: r.name, value: r.id };
+					})}
 				/>
 				<hr />
 				<UserInput

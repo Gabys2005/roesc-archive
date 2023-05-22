@@ -17,6 +17,7 @@ export default function Roesc() {
 				developers: [],
 				staff: [],
 				designers: [],
+				broadcasters: [],
 				media: [
 					{
 						name: "Logos",

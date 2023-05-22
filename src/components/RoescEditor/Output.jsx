@@ -2,7 +2,7 @@ import Textarea from "../Inputs/Textarea";
 import Button from "../Button";
 import { saveAs } from "file-saver";
 
-export default function Output({ data, users }) {
+export default function Output({ data, users, broadcasters }) {
 	function download(what, name) {
 		const blob = new Blob([JSON.stringify(what, null, 4)], {
 			type: "application/json",
@@ -31,6 +31,13 @@ export default function Output({ data, users }) {
 						<h2>Users File</h2>
 						<Textarea disabled value={JSON.stringify(users, null, 4)} className="mb-2" />
 						<Button onClick={() => download(users, "users")}>Download</Button>
+					</div>
+				</div>
+				<div className="column">
+					<div className="box">
+						<h2>Broadcasters File</h2>
+						<Textarea disabled value={JSON.stringify(broadcasters, null, 4)} className="mb-2" />
+						<Button onClick={() => download(broadcasters, "broadcasters")}>Download</Button>
 					</div>
 				</div>
 			</div>
