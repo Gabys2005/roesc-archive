@@ -1,5 +1,7 @@
 import fs from "fs";
-const dataFolder = "./src/data";
+import path from "path";
+
+const dataFolder = path.join(".", "/src/data");
 const originalFolder = `${dataFolder}/original`;
 const generatedFolder = `${dataFolder}/generated`;
 
