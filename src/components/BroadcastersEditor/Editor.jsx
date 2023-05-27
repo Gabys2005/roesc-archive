@@ -26,7 +26,11 @@ export default function Editor({ broadcasters, setBroadcasters, users }) {
 			) : (
 				""
 			)}
-			{tab === "edit" ? <EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} /> : ""}
+			{tab === "edit" ? (
+				<EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
+			) : (
+				""
+			)}
 		</div>
 	);
 }

@@ -86,7 +86,7 @@ export default function RoescEditor({ name, initialData }) {
 				<ul className="ml-0">
 					{tabs.map((tabData) => (
 						<li className={currentTab === tabData.name ? "is-active" : ""} key={tabData.name}>
-							<a onClick={() => setCurrentTab(tabData.name)}>{tabData.name}</a>
+							<a onClick={() => tabData.name !== "|" && setCurrentTab(tabData.name)}>{tabData.name}</a>
 						</li>
 					))}
 				</ul>

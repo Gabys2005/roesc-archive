@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import InputHeader from "../Inputs/Util/InputHeader";
-import SingleUserInput from "./SingleUserInput";
-import Button from "../Button";
+import Inputs from "./Inputs";
 
 export default function EditUser({ users, setUsers }) {
 	const [selected, setSelected] = useState(users[0]?.id);
-	const [current, setCurrent] = useState({ username: "", id: "" });
-	const [previous, setPrevious] = useState([]);
 
 	const usersOptions = users.map((userData) => (
 		<option value={userData.id} key={userData.id}>
@@ -14,14 +11,6 @@ export default function EditUser({ users, setUsers }) {
 			{userData.previous.length > 0 ? `(${userData.previous.map((r) => r.username).join(", ")})` : ""}
 		</option>
 	));
-
-	useEffect(() => {
-		const currentUser = users.find((r) => r.id === selected);
-		if (currentUser) {
-			setCurrent(currentUser.current);
-			setPrevious(currentUser.previous);
-		}
-	}, [users, selected]);
 
 	return (
 		<div>
@@ -35,50 +24,12 @@ export default function EditUser({ users, setUsers }) {
 
 			<hr />
 
-			<InputHeader name="Current Information" description="Current Roblox username and ID">
-				<SingleUserInput
-					value={current}
-					setValue={(newData) =>
-						setUsers(users.map((user) => (user.id === selected ? { ...user, current: newData } : user)))
-					}
-				/>
-			</InputHeader>
-			<InputHeader name="Previous Information" description="Previous Roblox usernames and IDs">
-				{previous.map((data, i) => (
-					<SingleUserInput
-						key={i}
-						value={data}
-						setValue={(newData) =>
-							setUsers(
-								users.map((user) =>
-									user.id === selected
-										? {
-												...user,
-												previous: user.previous.map((prev, i2) => (i2 === i ? newData : prev)),
-										  }
-										: user
-								)
-							)
-						}
-						// setValue={(newData) => setPrevious(previous.map((r, i2) => (i == i2 ? newData : r)))}
-						showDeleteButton
-						remove={() => setPrevious(previous.filter((r, i2) => i2 !== i))}
-					/>
-				))}
-				<Button
-					onClick={() =>
-						setUsers(
-							users.map((user) =>
-								user.id === selected
-									? { ...user, previous: [...user.previous, { username: "", id: "" }] }
-									: user
-							)
-						)
-					}
-				>
-					Add Another
-				</Button>
-			</InputHeader>
+			<Inputs
+				data={users.find((user) => user.id === selected)}
+				setData={(field, value) =>
+					setUsers(users.map((user) => (user.id === selected ? { ...user, [field]: value } : user)))
+				}
+			/>
 		</div>
 	);
 }

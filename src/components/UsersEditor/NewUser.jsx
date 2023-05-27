@@ -1,39 +1,34 @@
-import { useState } from "react";
-import InputHeader from "../Inputs/Util/InputHeader";
+import { useEffect, useState } from "react";
 import Button from "../Button";
 import { v4 as uuid } from "uuid";
-import SingleUserInput from "./SingleUserInput";
+import Inputs from "./Inputs";
+
+const defaultData = { current: "", previous: [], textContent: "" };
 
 export default function NewUser({ addUser }) {
-	const [current, setCurrent] = useState({ username: "", id: "" });
-	const [previous, setPrevious] = useState([]);
+	const localSave = localStorage.getItem("backup-users");
+	const [data, setData] = useState(localSave ? JSON.parse(localSave) : defaultData);
+
+	useEffect(() => {
+		localStorage.setItem("backup-users", JSON.stringify(data));
+	}, [data]);
 
 	return (
 		<div>
-			<InputHeader name="Current Information" description="Current Roblox username and ID">
-				<SingleUserInput value={current} setValue={setCurrent} />
-			</InputHeader>
-			<InputHeader name="Previous Information" description="Previous Roblox usernames and IDs">
-				{previous.map((data, i) => (
-					<SingleUserInput
-						key={i}
-						value={data}
-						setValue={(newData) => setPrevious(previous.map((r, i2) => (i == i2 ? newData : r)))}
-						showDeleteButton
-						remove={() => setPrevious(previous.filter((r, i2) => i2 !== i))}
-					/>
-				))}
-				<Button onClick={() => setPrevious([...previous, { username: "", id: "" }])}>Add Another</Button>
-			</InputHeader>
+			<Inputs data={data} setData={(field, value) => setData({ ...data, [field]: value })} />
 			<hr />
 			<Button
 				onClick={() => {
-					addUser({ id: uuid(), current, previous });
-					setCurrent({ username: "", id: "" });
-					setPrevious([]);
+					addUser({
+						id: uuid(),
+						current: data.current,
+						previous: data.previous,
+						textContent: data.textContent,
+					});
+					setData(defaultData);
 				}}
 			>
-				Add User
+				Create User
 			</Button>
 		</div>
 	);
