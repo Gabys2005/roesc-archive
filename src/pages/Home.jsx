@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import RoescList from "../components/RoescList";
 
 export default function Home() {
 	return (
@@ -9,6 +10,8 @@ export default function Home() {
 			<Link to="/editor" className="button is-primary is-large">
 				Editor
 			</Link>
+			<hr />
+			<RoescList />
 		</div>
 	);
 }
