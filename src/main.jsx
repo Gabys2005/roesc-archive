@@ -13,6 +13,8 @@ import UsersEditor from "./pages/Editor/Users.jsx";
 import BroadcastersEditor from "./pages/Editor/Broadcasters.jsx";
 import BackupRoescEditor from "./pages/Editor/Backup/Roesc.jsx";
 import RoescPage from "./pages/RoescPage.jsx";
+import RoescList from "./components/RoescList.jsx";
+import UserPage from "./pages/UserPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -34,7 +36,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 						<Route path="/editor/backup/main" element={<BackupRoescEditor />} />
 
+						<Route path="/roescs" element={<RoescList />} />
 						<Route path="/roescs/:roesc" element={<RoescPage />} />
+
+						<Route path="/users/:username" element={<UserPage />} />
 
 						<Route path="*" element={<Error404 />} />
 					</Routes>

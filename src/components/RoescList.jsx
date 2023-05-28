@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getRoescs } from "../modules/fetchData";
 import { Link } from "react-router-dom";
+import UsersString from "./UsersString";
 
 export default function RoescList() {
 	const [roescs, setRoescs] = useState([]);
@@ -18,6 +19,7 @@ export default function RoescList() {
 					<tr>
 						<th style={{ width: "1%" }}>#</th>
 						<th>Name</th>
+						<th>Owner(s)</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -26,6 +28,9 @@ export default function RoescList() {
 							<td>{i + 1}</td>
 							<td>
 								<Link to={`/roescs/${roescData.link}`}>{roescData.name}</Link>
+							</td>
+							<td>
+								<UsersString userids={roescData.owners} />
 							</td>
 						</tr>
 					))}

@@ -26,6 +26,9 @@ export default function Navbar() {
 					<Link to="/" className="navbar-item">
 						Home
 					</Link>
+					<Link to="/roescs" className="navbar-item">
+						RoESCs
+					</Link>
 					<Link to="/editor" className="navbar-item">
 						Editor
 					</Link>

@@ -34,10 +34,10 @@ export default function RoescPage() {
 		<div>
 			<h1>{data.name}</h1>
 			<hr />
+			<SideTable data={data} style={{ float: "right" }} />
 			<div style={{ float: "left" }}>
 				<Markdown value={data.textContent} />
 			</div>
-			<SideTable data={data} style={{ float: "right" }} />
 		</div>
 	);
 }

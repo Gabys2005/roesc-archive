@@ -40,6 +40,19 @@ function getUserById(id) {
 	});
 }
 
+function getUserByUsername(username) {
+	return new Promise((resolve, reject) => {
+		getUsers().then((users) => {
+			const user = users.find((u) => u.current.username.toLowerCase() === username.toLowerCase());
+			if (user) {
+				resolve(user);
+			} else {
+				reject("User doesn't exist");
+			}
+		});
+	});
+}
+
 function getBroadcasters() {
 	return new Promise((resolve) => {
 		import("../data/original/broadcasters.json").then((broadcasters) => {
@@ -48,4 +61,4 @@ function getBroadcasters() {
 	});
 }
 
-export { getRoescs, getRoescByLink, getUsers, getUserById, getBroadcasters };
+export { getRoescs, getRoescByLink, getUsers, getUserById, getBroadcasters, getUserByUsername };
