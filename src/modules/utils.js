@@ -7,4 +7,12 @@ function download(what, name) {
 	saveAs(blob, `${name}.json`);
 }
 
-export { download };
+function getMedia(data, name) {
+	const found = data.find((r) => r.name === name);
+	if (found) {
+		return found.images;
+	}
+	return [];
+}
+
+export { download, getMedia };

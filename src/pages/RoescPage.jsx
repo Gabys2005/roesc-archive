@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getRoescByLink } from "../modules/fetchData";
 import Markdown from "../components/Markdown";
 import SideTable from "../components/RoescPage/SideTable";
+import Media from "../components/Media";
 
 export default function RoescPage() {
 	const { roesc } = useParams();
@@ -38,6 +39,8 @@ export default function RoescPage() {
 			<div style={{ float: "left" }}>
 				<Markdown value={data.textContent} />
 			</div>
+			<div style={{ clear: "both" }}></div>
+			<Media media={data.media} />
 		</div>
 	);
 }

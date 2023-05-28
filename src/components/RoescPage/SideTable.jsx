@@ -1,9 +1,11 @@
 import { parseDate } from "../../modules/parseDate";
 import UsersString from "../UsersString";
+import { getMedia } from "../../modules/utils";
+import LogoImage from "../LogoImage";
 
 export default function SideTable({ data, style }) {
 	return (
-		<div className="table-container" style={style}>
+		<div className="table-container sideTable" style={style}>
 			<table className="table is-bordered is-striped is-hoverable">
 				<thead>
 					<tr>
@@ -11,9 +13,15 @@ export default function SideTable({ data, style }) {
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td colSpan={2}>*logo here*</td>
-					</tr>
+					{getMedia(data.media, "Logos").length > 0 ? (
+						<tr>
+							<td colSpan={2}>
+								<LogoImage link={getMedia(data.media, "Logos")[0].link} />
+							</td>
+						</tr>
+					) : (
+						""
+					)}
 					<tr>
 						<td>Owners:</td>
 						<td>
