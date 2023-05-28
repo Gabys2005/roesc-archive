@@ -31,7 +31,7 @@ export default function UserPage() {
 			<h1>{user.current.username}</h1>
 			<hr />
 			<SideTable data={user} style={{ float: "right" }} />
-			<div style={{ float: "left" }}>
+			<div>
 				<Markdown value={user.textContent} />
 			</div>
 		</div>

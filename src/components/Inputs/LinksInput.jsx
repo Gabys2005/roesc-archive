@@ -1,7 +1,7 @@
 import Button from "../Button";
 import InputHeader from "./Util/InputHeader";
 
-export default function LinksInput({ name, description, value, setValue, namePlaceholder }) {
+export default function LinksInput({ name, description, value, setValue, namePlaceholder, linkPlaceholder }) {
 	function editName(i, v) {
 		const newValue = value.map((r, i2) => {
 			if (i2 === i) return { name: v, link: r.link };
@@ -39,7 +39,7 @@ export default function LinksInput({ name, description, value, setValue, namePla
 							type="text"
 							value={link.link}
 							onChange={(e) => editDestination(i, e.target.value)}
-							placeholder="Destination (Link)"
+							placeholder={linkPlaceholder || "Destination (Link)"}
 						/>
 					</div>
 					<div className="control">

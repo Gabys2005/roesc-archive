@@ -16,6 +16,17 @@ export default function SideTable({ data, style }) {
 					) : (
 						""
 					)}
+					<tr>
+						<td colSpan={2}>
+							<a
+								href={`https://roblox.com/users/${data.current.id}/profile`}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Roblox Profile
+							</a>
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
