@@ -1,8 +1,9 @@
 import { useState } from "react";
 import NewBroadcaster from "./NewBroadcaster";
 import EditBroadcaster from "./EditBroadcaster";
+import Output from "./Output";
 
-export default function Editor({ broadcasters, setBroadcasters, users }) {
+export default function Editor({ broadcasters, setBroadcasters, users, showOutput }) {
 	const [tab, setTab] = useState("edit");
 
 	return (
@@ -15,6 +16,13 @@ export default function Editor({ broadcasters, setBroadcasters, users }) {
 					<li className={tab === "new" ? "is-active" : ""}>
 						<a onClick={() => setTab("new")}>New Broadcaster</a>
 					</li>
+					{showOutput ? (
+						<li className={tab === "output" ? "is-active" : ""}>
+							<a onClick={() => setTab("output")}>Output</a>
+						</li>
+					) : (
+						""
+					)}
 				</ul>
 			</div>
 
@@ -31,6 +39,7 @@ export default function Editor({ broadcasters, setBroadcasters, users }) {
 			) : (
 				""
 			)}
+			{tab === "output" ? <Output data={broadcasters} /> : ""}
 		</div>
 	);
 }

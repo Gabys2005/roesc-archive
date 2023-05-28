@@ -1,8 +1,9 @@
 import { useState } from "react";
 import NewUser from "./NewUser";
 import EditUser from "./EditUser";
+import Output from "./Output";
 
-export default function UsersEditor({ users, setUsers }) {
+export default function UsersEditor({ users, setUsers, showOutput }) {
 	const [tab, setTab] = useState("edit");
 
 	return (
@@ -15,11 +16,19 @@ export default function UsersEditor({ users, setUsers }) {
 					<li className={tab === "new" ? "is-active" : ""}>
 						<a onClick={() => setTab("new")}>New User</a>
 					</li>
+					{showOutput ? (
+						<li className={tab === "output" ? "is-active" : ""}>
+							<a onClick={() => setTab("output")}>Output</a>
+						</li>
+					) : (
+						""
+					)}
 				</ul>
 			</div>
 
 			{tab === "new" ? <NewUser addUser={(user) => setUsers([...users, user])} /> : ""}
 			{tab === "edit" ? <EditUser users={users} setUsers={setUsers} /> : ""}
+			{tab === "output" ? <Output data={users} /> : ""}
 		</div>
 	);
 }

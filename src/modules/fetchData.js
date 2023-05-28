@@ -40,4 +40,12 @@ function getUserById(id) {
 	});
 }
 
-export { getRoescs, getRoescByLink, getUsers, getUserById };
+function getBroadcasters() {
+	return new Promise((resolve) => {
+		import("../data/original/broadcasters.json").then((broadcasters) => {
+			resolve(broadcasters.default);
+		});
+	});
+}
+
+export { getRoescs, getRoescByLink, getUsers, getUserById, getBroadcasters };

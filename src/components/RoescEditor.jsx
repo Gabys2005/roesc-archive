@@ -30,7 +30,7 @@ export default function RoescEditor({ name, initialData }) {
 	}
 
 	useEffect(() => {
-		localStorage.setItem("editor_roesc_backup", JSON.stringify(data));
+		localStorage.setItem("backup-main", JSON.stringify(data));
 	}, [data]);
 
 	const tabs = [

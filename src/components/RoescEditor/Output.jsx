@@ -1,15 +1,8 @@
 import Textarea from "../Inputs/Textarea";
 import Button from "../Button";
-import { saveAs } from "file-saver";
+import { download } from "../../modules/utils";
 
 export default function Output({ data, users, broadcasters }) {
-	function download(what, name) {
-		const blob = new Blob([JSON.stringify(what, null, 4)], {
-			type: "application/json",
-		});
-		saveAs(blob, `${name}.json`);
-	}
-
 	return (
 		<div>
 			<div className="box">

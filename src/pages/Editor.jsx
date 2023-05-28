@@ -18,8 +18,8 @@ export default function Editor() {
 			<h1>Editor</h1>
 			<hr />
 			<p>What would like to do?</p>
-			<div className="columns">
-				<div className="column">
+			<div className="columns is-multiline">
+				<div className="column is-half">
 					<div className="box">
 						<h2>Start with a blank template</h2>
 						<hr />
@@ -34,7 +34,7 @@ export default function Editor() {
 					</div>
 				</div>
 
-				<div className="column">
+				<div className="column is-half">
 					<div className="box">
 						<h2>Edit an existing RoESC</h2>
 						<div className="select is-fullwidth">
@@ -53,6 +53,32 @@ export default function Editor() {
 						>
 							RoESC File
 						</Link>
+					</div>
+				</div>
+
+				<div className="column is-half">
+					<div className="box">
+						<h2>Backups</h2>
+						<p>Start from your last saved backup. Backups are saved every time you change anything</p>
+						<hr />
+						<Link className="button is-primary" to={"/editor/backup/main"}>
+							RoESC Backup
+						</Link>
+					</div>
+				</div>
+
+				<div className="column is-half">
+					<div className="box">
+						<h2>Other Editors</h2>
+						<hr />
+						<div className="buttons">
+							<Link className="button is-primary" to="/editor/users">
+								Users Editor
+							</Link>
+							<Link className="button is-primary" to="/editor/broadcasters">
+								Broadcasters Editor
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
