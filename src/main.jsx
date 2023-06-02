@@ -15,6 +15,7 @@ import BackupRoescEditor from "./pages/Editor/Backup/Roesc.jsx";
 import RoescPage from "./pages/RoescPage.jsx";
 import RoescList from "./components/RoescList.jsx";
 import UserPage from "./pages/UserPage.jsx";
+import NewEditionEditor from "./pages/Editor/New/Edition.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 						<Route path="/editor/broadcasters" element={<BroadcastersEditor />} />
 
 						<Route path="/editor/new/main" element={<NewRoescEditor />} />
+						<Route path="/editor/new/edition" element={<NewEditionEditor />} />
 
 						<Route path="/editor/existing/:link" element={<ExistingRoescEditor />} />
 

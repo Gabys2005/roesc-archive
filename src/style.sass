@@ -1,3 +1,4 @@
+@import "../node_modules/bulma-checkbox/bulma-checkbox.scss"
 @import "../node_modules/bulma/bulma.sass"
 @import "../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass"
 
@@ -7,3 +8,10 @@
 @media (max-width: 700px)
     .sideTable
         width: 100%
+
+@media (prefers-color-scheme: dark)
+    a
+        color: #5ea3e4
+
+    .button.is-static
+        background-color: #1c1c1c
