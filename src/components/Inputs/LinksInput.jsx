@@ -1,7 +1,19 @@
 import Button from "../Button";
 import InputHeader from "./Util/InputHeader";
 
-export default function LinksInput({ name, description, value, setValue, namePlaceholder, linkPlaceholder }) {
+export default function LinksInput({
+	name,
+	description,
+	value,
+	setValue,
+	namePlaceholder,
+	linkPlaceholder,
+	requiredValues,
+}) {
+	if (!requiredValues) {
+		requiredValues = [];
+	}
+
 	function editName(i, v) {
 		const newValue = value.map((r, i2) => {
 			if (i2 === i) return { name: v, link: r.link };
@@ -26,6 +38,7 @@ export default function LinksInput({ name, description, value, setValue, namePla
 							className="input"
 							type="text"
 							value={link.name}
+							disabled={requiredValues.indexOf(link.name) > -1}
 							onChange={(e) => editName(i, e.target.value)}
 							placeholder={namePlaceholder || "Name"}
 						/>
@@ -42,11 +55,15 @@ export default function LinksInput({ name, description, value, setValue, namePla
 							placeholder={linkPlaceholder || "Destination (Link)"}
 						/>
 					</div>
-					<div className="control">
-						<Button color="danger" onClick={() => setValue(value.filter((r, i2) => i2 !== i))}>
-							X
-						</Button>
-					</div>
+					{requiredValues.indexOf(link.name) === -1 ? (
+						<div className="control">
+							<Button color="danger" onClick={() => setValue(value.filter((r, i2) => i2 !== i))}>
+								X
+							</Button>
+						</div>
+					) : (
+						""
+					)}
 				</div>
 			))}
 			<Button onClick={() => setValue([...value, { name: "", link: "" }])}>Add Another</Button>

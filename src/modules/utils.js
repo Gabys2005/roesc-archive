@@ -15,4 +15,8 @@ function getMedia(data, name) {
 	return [];
 }
 
-export { download, getMedia };
+function getMediaImage(images, name) {
+	return images.find((r) => r.name === name)?.link;
+}
+
+export { download, getMedia, getMediaImage };

@@ -21,7 +21,16 @@ export default function Roesc() {
 				media: [
 					{
 						name: "Logos",
-						images: [],
+						images: [
+							{
+								name: "Light Logo",
+								link: "",
+							},
+							{
+								name: "Dark Logo",
+								link: "",
+							},
+						],
 					},
 				],
 			}}

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { getUsers } from "../../modules/fetchData";
+import { getUsersDetailed } from "../../modules/users";
 import UsersEditor from "../../components/UsersEditor/Editor";
 
 export default function Users() {
 	const [users, setUsers] = useState();
 
 	useEffect(() => {
-		getUsers().then((users) => {
+		getUsersDetailed().then((users) => {
 			setUsers(users);
 		});
 	}, []);

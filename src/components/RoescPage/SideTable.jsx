@@ -1,7 +1,7 @@
 import { parseDate } from "../../modules/parseDate";
 import UsersString from "../UsersString";
 import { getMedia } from "../../modules/utils";
-import LogoImage from "../LogoImage";
+import LogoImage from "./LogoImage";
 
 export default function SideTable({ data, style }) {
 	return (
@@ -13,10 +13,10 @@ export default function SideTable({ data, style }) {
 					</tr>
 				</thead>
 				<tbody>
-					{getMedia(data.media, "Logos").length > 0 ? (
+					{getMedia(data.media, "logos").length > 0 ? (
 						<tr>
 							<td colSpan={2}>
-								<LogoImage link={getMedia(data.media, "Logos")[0].link} />
+								<LogoImage logos={getMedia(data.media, "logos")} />
 							</td>
 						</tr>
 					) : (

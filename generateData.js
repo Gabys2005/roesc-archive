@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import watch from "node-watch";
 
 const dataFolder = path.join(".", "/src/data");
 const originalFolder = `${dataFolder}/original`;
@@ -18,7 +19,30 @@ function run() {
 		allRoescs.push(mainFileData);
 	}
 
-	fs.writeFileSync(`${generatedFolder}/roescs.json`, JSON.stringify(allRoescs), "utf-8", () => {});
+	const usersContent = fs.readFileSync(`${originalFolder}/users.json`);
+	const users = JSON.parse(usersContent);
+
+	const userNames = users.map((user) => {
+		return {
+			id: user.id,
+			name: user.current.username,
+			previousNames: user.previous.map((r) => r.username),
+			aliases: user.aliases,
+		};
+	});
+
+	fs.writeFileSync(`${generatedFolder}/roescs.json`, JSON.stringify(allRoescs), "utf-8");
+	fs.writeFileSync(`${generatedFolder}/users.json`, JSON.stringify(userNames), "utf-8");
 }
 
-run();
+// eslint-disable-next-line no-undef
+if (process.argv.indexOf("--watch") > 0) {
+	run();
+	watch(originalFolder, { recursive: true }, (eventType, filename) => {
+		console.log(eventType);
+		console.log(filename);
+		run();
+	});
+} else {
+	run();
+}

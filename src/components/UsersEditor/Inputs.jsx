@@ -2,14 +2,15 @@ import InputHeader from "../Inputs/Util/InputHeader";
 import SingleUserInput from "./SingleUserInput";
 import Button from "../Button";
 import MarkdownInput from "../Inputs/MarkdownInput";
+import MultiTextInput from "../Inputs/MultiTextInput";
 
 export default function Inputs({ data, setData }) {
 	return (
 		<div>
-			<InputHeader name="Current Information" description="Current Roblox username and ID">
+			<InputHeader name="Current Account" description="Current Roblox username and ID">
 				<SingleUserInput value={data.current} setValue={(newVal) => setData("current", newVal)} />
 			</InputHeader>
-			<InputHeader name="Previous Information" description="Previous Roblox usernames and IDs">
+			<InputHeader name="Previous Accounts" description="Previous Roblox usernames and IDs">
 				{data.previous.map((data, i) => (
 					<SingleUserInput
 						key={i}
@@ -33,7 +34,19 @@ export default function Inputs({ data, setData }) {
 					Add Another
 				</Button>
 			</InputHeader>
-			<InputHeader name="Written content">
+			<MultiTextInput
+				name="Aliases"
+				description="Previous usernames that weren't separate accounts"
+				value={data.aliases}
+				setValue={(data) => setData("aliases", data)}
+			/>
+
+			<hr />
+
+			<InputHeader
+				name="Written content"
+				description="This content will be displayed next to the info table on that user's page"
+			>
 				<MarkdownInput value={data.textContent} setValue={(newContent) => setData("textContent", newContent)} />
 			</InputHeader>
 		</div>

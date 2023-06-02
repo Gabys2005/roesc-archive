@@ -16,8 +16,18 @@ export default function SideTable({ data, style }) {
 					) : (
 						""
 					)}
+
+					{data.aliases.length > 0 ? (
+						<tr>
+							<td>Also known as: </td>
+							<td>{data.aliases.join(", ")}</td>
+						</tr>
+					) : (
+						""
+					)}
+
 					<tr>
-						<td colSpan={2}>
+						<td colSpan={2} style={{ textAlign: "center" }}>
 							<a
 								href={`https://roblox.com/users/${data.current.id}/profile`}
 								target="_blank"

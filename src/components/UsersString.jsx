@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getUserById } from "../modules/fetchData";
+import { getUserById } from "../modules/users";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -11,8 +11,8 @@ export default function UsersString({ userids }) {
 		Promise.all(users).then((actualUsers) => {
 			setUsers(
 				actualUsers.map((u, i) => (
-					<Link key={u.id} to={`/users/${u.current.username}`}>
-						{u.current.username}
+					<Link key={u.id} to={`/users/${u.name}`}>
+						{u.name}
 						{i === actualUsers.length - 1 ? "" : ", "}
 					</Link>
 				))

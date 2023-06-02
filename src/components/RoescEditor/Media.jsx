@@ -19,8 +19,9 @@ export default function Media({ data, setValue }) {
 				<LinksInput
 					name="Logos"
 					description="General logos made for this RoESC. NOT EDITION SPECIFIC"
-					value={data.media.find((r) => r.name === "Logos").images}
+					value={data.media.find((r) => r.name === "logos").images}
 					setValue={(images) => editMedia("Logos", images)}
+					requiredValues={["Light Logo", "Dark Logo"]}
 					namePlaceholder="Description"
 					linkPlaceholder="File Name"
 				/>

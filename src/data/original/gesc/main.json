@@ -19,8 +19,17 @@
 	"previousOwners": [],
 	"media": [
 		{
-			"name": "Logos",
-			"images": []
+			"name": "logos",
+			"images": [
+				{
+					"name": "Light Logo",
+					"image": ""
+				},
+				{
+					"name": "Dark Logo",
+					"image": ""
+				}
+			]
 		}
 	]
 }

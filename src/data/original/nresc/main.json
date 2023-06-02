@@ -27,11 +27,15 @@
 	"broadcasters": [],
 	"media": [
 		{
-			"name": "Logos",
+			"name": "logos",
 			"images": [
 				{
-					"name": "Logo",
+					"name": "Dark Logo",
 					"link": "nresc/logo.png"
+				},
+				{
+					"name": "Light Logo",
+					"link": ""
 				}
 			]
 		}

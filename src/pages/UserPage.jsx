@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getUserByUsername } from "../modules/fetchData";
+import { getDetailedUserByUsername } from "../modules/users";
 import SideTable from "../components/UserPage/SideTable";
 import Markdown from "../components/Markdown";
 
@@ -13,7 +13,7 @@ export default function UserPage() {
 		setUser(null);
 		setError("");
 
-		getUserByUsername(username)
+		getDetailedUserByUsername(username)
 			.then((user) => setUser(user))
 			.catch((err) => setError(err));
 	}, [username]);
