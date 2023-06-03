@@ -39,6 +39,7 @@ export default function Inputs({ users, data, setData }) {
 				value={data.logos}
 				setValue={(logos) => setData("logos", logos)}
 				namePlaceholder="Description"
+				linkPlaceholder="File Name"
 			/>
 			<hr />
 			<UserInput

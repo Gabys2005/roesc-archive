@@ -33,7 +33,7 @@ export default function Editor({ initialData, name }) {
 	const tabs = [
 		{
 			name: "Basic Information",
-			component: <BasicInformation data={data} setValue={setValue} users={users} />,
+			component: <BasicInformation data={data} setValue={setValue} users={users} broadcasters={broadcasters} />,
 		},
 		{
 			name: "Output",

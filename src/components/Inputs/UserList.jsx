@@ -3,8 +3,9 @@ export default function UserList({ value, setValue, users, disabled }) {
 		<div className="control select">
 			<select value={value} onChange={(e) => setValue(e.target.value)} disabled={disabled}>
 				<option default hidden>
-					Select
+					Select user
 				</option>
+				<option value="unknown">Unknown</option>
 				{users
 					.sort((a, b) => a.current.username.localeCompare(b.current.username))
 					.map((userData) => (

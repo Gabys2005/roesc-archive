@@ -11,10 +11,10 @@ export default function Inputs({ data, setData }) {
 				<SingleUserInput value={data.current} setValue={(newVal) => setData("current", newVal)} />
 			</InputHeader>
 			<InputHeader name="Previous Accounts" description="Previous Roblox usernames and IDs">
-				{data.previous.map((data, i) => (
+				{data.previous.map((userData, i) => (
 					<SingleUserInput
 						key={i}
-						value={data}
+						value={userData}
 						setValue={(newData) =>
 							setData(
 								"previous",

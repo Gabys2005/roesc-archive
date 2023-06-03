@@ -73,5 +73,20 @@
 		"previous": [],
 		"aliases": ["tunfiskurinn", "declanmmx"],
 		"textContent": ""
+	},
+	{
+		"id": "2619aac8-2e2e-4165-9b8a-d175f8df67f9",
+		"current": {
+			"username": "giorgioworldcupTEMP",
+			"id": "2648641915"
+		},
+		"previous": [
+			{
+				"username": "GIORGIOWORLDCUP",
+				"id": "1315016274"
+			}
+		],
+		"aliases": [],
+		"textContent": ""
 	}
 ]

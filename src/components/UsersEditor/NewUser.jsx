@@ -3,7 +3,7 @@ import Button from "../Button";
 import { v4 as uuid } from "uuid";
 import Inputs from "./Inputs";
 
-const defaultData = { current: "", previous: [], textContent: "" };
+const defaultData = { current: "", previous: [], aliases: [], textContent: "" };
 
 export default function NewUser({ addUser }) {
 	const localSave = localStorage.getItem("backup-users");
@@ -23,6 +23,7 @@ export default function NewUser({ addUser }) {
 						id: uuid(),
 						current: data.current,
 						previous: data.previous,
+						aliases: data.aliases,
 						textContent: data.textContent,
 					});
 					setData(defaultData);

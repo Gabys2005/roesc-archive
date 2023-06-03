@@ -21,9 +21,6 @@ export default function PresenterInput({ value, setValue, name, description, use
 						/>
 					</div>
 					<div className="control">
-						<div className="button is-static">-</div>
-					</div>
-					<div className="control">
 						<label className="b-checkbox checkbox input">
 							<input
 								type="checkbox"

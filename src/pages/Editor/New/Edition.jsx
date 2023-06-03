@@ -11,6 +11,8 @@ export default function Edition() {
 				countries: [],
 				venues: [],
 				presenters: [],
+				broadcasters: [],
+				links: [],
 			}}
 		/>
 	);

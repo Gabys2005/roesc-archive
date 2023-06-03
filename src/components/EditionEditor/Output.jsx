@@ -14,9 +14,9 @@ export default function Output({ data, users, broadcasters }) {
 			<div className="columns">
 				<div className="column">
 					<div className="box">
-						<h2>Main File</h2>
+						<h2>Edition File</h2>
 						<Textarea disabled value={JSON.stringify(data, null, 4)} className="mb-2" />
-						<Button onClick={() => download(data, "main")}>Download</Button>
+						<Button onClick={() => download(data, data.link)}>Download</Button>
 					</div>
 				</div>
 				<div className="column">
