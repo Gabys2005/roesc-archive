@@ -9,6 +9,7 @@ import Output from "./Output";
 import Location from "./Location";
 import Media from "./Media";
 import SemiFinalDraw from "./SemiFinalDraw";
+import Shows from "./Shows";
 
 export default function Editor({ initialData, name }) {
 	const [data, setData] = useState(initialData);
@@ -41,6 +42,10 @@ export default function Editor({ initialData, name }) {
 		{
 			name: "Location",
 			component: <Location data={data} setValue={setValue} />,
+		},
+		{
+			name: "Shows",
+			component: <Shows data={data} setValue={setValue} />,
 		},
 		{
 			name: "SF Draw",

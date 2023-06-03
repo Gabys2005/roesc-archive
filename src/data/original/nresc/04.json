@@ -10,6 +10,77 @@
 			"link": "https://en.wikipedia.org/wiki/Nippon_Gaishi_Hall"
 		}
 	],
+	"shows": [
+		{
+			"id": "sf1",
+			"date": "2022/01/08",
+			"openings": [
+				{
+					"artists": ["Rina Sawayama"],
+					"title": "Dynasty",
+					"link": "https://youtu.be/AXekXn25GRs"
+				}
+			],
+			"intervals": [
+				{
+					"artists": ["Mitski"],
+					"title": "Geyser",
+					"link": "https://www.youtube.com/watch?v=3zdFZJf-B90"
+				},
+				{
+					"artists": ["Mitski"],
+					"title": "The Only Heartbreaker",
+					"link": "https://www.youtube.com/watch?v=LmXFF_whkVk"
+				}
+			]
+		},
+		{
+			"id": "sf2",
+			"date": "2020/01/15",
+			"openings": [
+				{
+					"artists": ["Avril Lavigne"],
+					"title": "Hello Kitty",
+					"link": "https://youtu.be/LiaYDPRedWQ"
+				}
+			],
+			"intervals": [
+				{
+					"artists": ["Hatsune Miku"],
+					"title": "PoPiPo",
+					"link": "https://www.youtube.com/watch?v=TNf3GPizM58"
+				}
+			]
+		},
+		{
+			"id": "gf",
+			"date": "2022/02/05",
+			"openings": [
+				{
+					"artists": ["Mitski"],
+					"title": "Nobody",
+					"link": "https://youtu.be/qooWnw5rEcI"
+				}
+			],
+			"intervals": [
+				{
+					"artists": ["EVERGLOW"],
+					"title": "Pirate",
+					"link": "https://www.youtube.com/watch?v=-2X-pL06628"
+				},
+				{
+					"artists": ["LOONA"],
+					"title": "HULA HOOP",
+					"link": "https://https//www.youtube.com/watch?v=tnpUv1Vj5MA"
+				},
+				{
+					"artists": ["Mitski"],
+					"title": "Love Me More",
+					"link": "https://www.youtube.com/watch?v=P4J3Z9xgjWQ"
+				}
+			]
+		}
+	],
 	"presenters": [
 		{
 			"name": "Hatsune Miku",
