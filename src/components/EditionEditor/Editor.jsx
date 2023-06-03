@@ -6,6 +6,7 @@ import UsersEditor from "../UsersEditor/Editor";
 import BroadcastersEditor from "../BroadcastersEditor/Editor";
 import BasicInformation from "./BasicInformation";
 import Output from "./Output";
+import Location from "./Location";
 
 export default function Editor({ initialData, name }) {
 	const [data, setData] = useState(initialData);
@@ -34,6 +35,10 @@ export default function Editor({ initialData, name }) {
 		{
 			name: "Basic Information",
 			component: <BasicInformation data={data} setValue={setValue} users={users} broadcasters={broadcasters} />,
+		},
+		{
+			name: "Location",
+			component: <Location data={data} setValue={setValue} />,
 		},
 		{
 			name: "Output",

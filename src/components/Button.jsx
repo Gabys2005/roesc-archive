@@ -4,9 +4,13 @@ function Button(props) {
 	let className = "button ";
 
 	if (props.color === "danger") {
-		className += "is-danger";
+		className += "is-danger ";
 	} else {
-		className += "is-primary";
+		className += "is-primary ";
+	}
+
+	if (props.size === "small") {
+		className += "is-small";
 	}
 
 	if (props.link) {
