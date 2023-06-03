@@ -7,6 +7,7 @@ import BroadcastersEditor from "../BroadcastersEditor/Editor";
 import BasicInformation from "./BasicInformation";
 import Output from "./Output";
 import Location from "./Location";
+import Media from "./Media";
 
 export default function Editor({ initialData, name }) {
 	const [data, setData] = useState(initialData);
@@ -39,6 +40,10 @@ export default function Editor({ initialData, name }) {
 		{
 			name: "Location",
 			component: <Location data={data} setValue={setValue} />,
+		},
+		{
+			name: "Media",
+			component: <Media data={data} setValue={setValue} />,
 		},
 		{
 			name: "Output",

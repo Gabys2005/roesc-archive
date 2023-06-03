@@ -5,6 +5,8 @@ import { getRoescByLink } from "../modules/fetchData";
 import Markdown from "../components/Markdown";
 import Table from "../components/Table";
 import OutLink from "../components/OutLink";
+import Media from "../components/Media";
+import SideTable from "../components/EditionPage/SideTable";
 
 export default function EditionPage() {
 	const { roesc, edition } = useParams();
@@ -31,6 +33,7 @@ export default function EditionPage() {
 				{roescData.name} {data.edition}
 			</h1>
 			<hr />
+			<SideTable data={data} roescData={roescData} />
 			<Markdown value={data.textContent} />
 
 			<h1>Location</h1>
@@ -47,6 +50,8 @@ export default function EditionPage() {
 					</tr>
 				))}
 			</Table>
+
+			<Media media={data.media} />
 		</div>
 	);
 }
