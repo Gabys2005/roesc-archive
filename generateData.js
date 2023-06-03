@@ -7,6 +7,10 @@ const originalFolder = `${dataFolder}/original`;
 const generatedFolder = `${dataFolder}/generated`;
 
 function run() {
+	if (!fs.existsSync(generatedFolder)) {
+		fs.mkdirSync(generatedFolder);
+	}
+
 	const roescFolders = fs.readdirSync(originalFolder).filter((name) => !name.endsWith(".json"));
 	const allRoescs = [];
 
