@@ -7,6 +7,8 @@ import Table from "../components/Table";
 import OutLink from "../components/OutLink";
 import Media from "../components/Media";
 import SideTable from "../components/EditionPage/SideTable";
+import Country from "../components/Country";
+import Twemoji from "react-twemoji";
 
 export default function EditionPage() {
 	const { roesc, edition } = useParams();
@@ -50,6 +52,29 @@ export default function EditionPage() {
 					</tr>
 				))}
 			</Table>
+
+			<h1>Semi-Final Allocation Draw</h1>
+			<hr />
+			<Markdown value={data.sfDrawText} />
+			<Twemoji>
+				<Table columns={data.sfDraw.map((_, i) => `Pot ${i + 1}`)}>
+					<tr>
+						{data.sfDraw.map((countries, i) => (
+							<td key={i}>
+								<ul style={{ marginTop: 0 }}>
+									{countries.map((country, i) => (
+										<li key={i}>
+											<Country id={country} />
+										</li>
+									))}
+								</ul>
+							</td>
+						))}
+					</tr>
+				</Table>
+			</Twemoji>
+
+			<div style={{ marginTop: "2rem" }}></div>
 
 			<Media media={data.media} />
 		</div>

@@ -1,12 +1,7 @@
 import Button from "../Button";
 import InputHeader from "./Util/InputHeader";
 
-const countries = {
-	ireland: "Ireland",
-	japan: "Japan",
-};
-
-const countriesArray = Object.keys(countries).map((key) => [key, countries[key]]);
+import { countriesArray } from "../../modules/countryList";
 
 export default function CountryInput({ name, description, value, setValue }) {
 	return (
@@ -22,8 +17,8 @@ export default function CountryInput({ name, description, value, setValue }) {
 								Select
 							</option>
 							{countriesArray.map((country) => (
-								<option value={country[0]} key={country[0]}>
-									{country[1]}
+								<option value={country.id} key={country.id}>
+									{country.name}
 								</option>
 							))}
 						</select>

@@ -16,6 +16,9 @@ export default function Edition() {
 
 				textContent: "",
 
+				sfDraw: [],
+				sfDrawContent: "",
+
 				bidding: [],
 				biddingText: "",
 			}}

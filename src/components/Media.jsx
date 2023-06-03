@@ -8,6 +8,7 @@ export default function Media({ media }) {
 	return (
 		<div>
 			<h1>Media</h1>
+			<hr />
 			{media.map((mediaSection) => (
 				<div key={mediaSection.name}>
 					<h2>{names[mediaSection.name]}</h2>
