@@ -1,11 +1,11 @@
-export default function Table({ columns, children }) {
+export default function Table({ columns, children, compact }) {
 	return (
 		<div className="table-container">
-			<table className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+			<table className={`table is-bordered is-striped ${compact ? "is-narrow" : ""} is-hoverable is-fullwidth`}>
 				<thead>
 					<tr>
 						{columns.map((name, i) => (
-							<td key={i}>{name}</td>
+							<th key={i}>{name}</th>
 						))}
 					</tr>
 				</thead>

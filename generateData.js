@@ -16,10 +16,26 @@ function run() {
 
 	for (let i = 0; i < roescFolders.length; i++) {
 		const roescFolderName = roescFolders[i];
-		// const files = fs.readdirSync(`${originalFolder}/${roescFolderName}`)
+		const files = fs.readdirSync(`${originalFolder}/${roescFolderName}`);
 		const mainFileContent = fs.readFileSync(`${originalFolder}/${roescFolderName}/main.json`);
 		const mainFileData = JSON.parse(mainFileContent);
 
+		const thisRoescData = [];
+		for (let j = 0; j < files.length; j++) {
+			const fileName = files[j];
+			if (fileName !== "main.json") {
+				const fileContent = fs.readFileSync(`${originalFolder}/${roescFolderName}/${fileName}`);
+				const fileData = JSON.parse(fileContent);
+
+				thisRoescData.push({
+					edition: fileData.edition,
+					link: fileData.link,
+					countries: fileData.countries,
+					venues: fileData.venues,
+				});
+			}
+		}
+		fs.writeFileSync(`${generatedFolder}/${roescFolderName}.json`, JSON.stringify(thisRoescData), "utf-8");
 		allRoescs.push(mainFileData);
 	}
 

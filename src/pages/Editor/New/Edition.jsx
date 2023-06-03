@@ -14,6 +14,8 @@ export default function Edition() {
 				broadcasters: [],
 				links: [],
 
+				textContent: "",
+
 				bidding: [],
 				biddingText: "",
 			}}

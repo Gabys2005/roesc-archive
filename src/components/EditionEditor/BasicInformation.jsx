@@ -1,9 +1,11 @@
 import BroadcasterInput from "../Inputs/BroadcasterInput";
 import CountryInput from "../Inputs/CountryInput";
 import LinksInput from "../Inputs/LinksInput";
+import MarkdownInput from "../Inputs/MarkdownInput";
 import MultiTextInput from "../Inputs/MultiTextInput";
 import PresenterInput from "../Inputs/PresenterInput";
 import TextInput from "../Inputs/TextInput";
+import InputHeader from "../Inputs/Util/InputHeader";
 import VenueInput from "../Inputs/VenueInput";
 
 export default function BasicInformation({ data, setValue, users, broadcasters }) {
@@ -65,6 +67,13 @@ export default function BasicInformation({ data, setValue, users, broadcasters }
 				setValue={(broadcasters) => setValue("broadcasters", broadcasters)}
 				broadcasters={broadcasters}
 			/>
+			<hr />
+			<InputHeader
+				name="Primary written content"
+				description="This text will appear at the very top of this edition's page. You can find content boxes for individual sections in their tabs"
+			>
+				<MarkdownInput value={data.textContent} setValue={(text) => setValue("textContent", text)} />
+			</InputHeader>
 		</div>
 	);
 }

@@ -3,6 +3,7 @@ import InputHeader from "./Util/InputHeader";
 
 const countries = {
 	ireland: "Ireland",
+	japan: "Japan",
 };
 
 const countriesArray = Object.keys(countries).map((key) => [key, countries[key]]);

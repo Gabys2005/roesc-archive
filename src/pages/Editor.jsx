@@ -2,16 +2,25 @@ import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import { getRoescs } from "../modules/fetchData";
 import { Link } from "react-router-dom";
+import { getEditions } from "../modules/roesc";
 
 export default function Editor() {
 	const [roescs, setRoescs] = useState([]);
+	const [editions, setEditions] = useState([]);
 	const [selected, setSelected] = useState(0);
+	const [selectedEdition, setSelectedEdition] = useState(0);
 
 	useEffect(() => {
 		getRoescs().then((roescs) => {
 			setRoescs(roescs);
 		});
 	}, []);
+
+	useEffect(() => {
+		setEditions([]);
+		setSelectedEdition(0);
+		getEditions(roescs[selected]?.link).then((editions) => setEditions(editions));
+	}, [selected, roescs]);
 
 	return (
 		<div>
@@ -46,13 +55,34 @@ export default function Editor() {
 								))}
 							</select>
 						</div>
+						<div className="select is-fullwidth">
+							<select value={selectedEdition} onChange={(e) => setSelectedEdition(e.target.value)}>
+								{editions.map((edition, i) => (
+									<option key={edition.link} value={i}>
+										{edition.edition}
+									</option>
+								))}
+							</select>
+						</div>
 						<hr />
-						<Link
-							className="button is-primary"
-							to={roescs.length > 0 ? `/editor/existing/${roescs[selected].link}` : ""}
-						>
-							RoESC File
-						</Link>
+						<div className="buttons">
+							<Link
+								className="button is-primary"
+								to={roescs.length > 0 ? `/editor/existing/${roescs[selected].link}` : ""}
+							>
+								RoESC File
+							</Link>
+							<Link
+								className="button is-primary"
+								to={
+									roescs.length > 0
+										? `/editor/existing/${roescs[selected].link}/${editions[selectedEdition]?.link}`
+										: ""
+								}
+							>
+								Edition File
+							</Link>
+						</div>
 					</div>
 				</div>
 

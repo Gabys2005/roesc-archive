@@ -16,6 +16,8 @@ import RoescPage from "./pages/RoescPage.jsx";
 import RoescList from "./components/RoescList.jsx";
 import UserPage from "./pages/UserPage.jsx";
 import NewEditionEditor from "./pages/Editor/New/Edition.jsx";
+import ExistingEditionEditor from "./pages/Editor/Existing/Edition.jsx";
+import EditionPage from "./pages/EditionPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -35,11 +37,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 						<Route path="/editor/new/edition" element={<NewEditionEditor />} />
 
 						<Route path="/editor/existing/:link" element={<ExistingRoescEditor />} />
+						<Route path="/editor/existing/:roesc/:edition" element={<ExistingEditionEditor />} />
 
 						<Route path="/editor/backup/main" element={<BackupRoescEditor />} />
 
 						<Route path="/roescs" element={<RoescList />} />
 						<Route path="/roescs/:roesc" element={<RoescPage />} />
+						<Route path="/roescs/:roesc/:edition" element={<EditionPage />} />
 
 						<Route path="/users/:username" element={<UserPage />} />
 

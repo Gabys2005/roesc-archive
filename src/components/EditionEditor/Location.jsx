@@ -14,7 +14,7 @@ export default function Location({ data, setValue }) {
 
 	return (
 		<div className="box">
-			<InputHeader name="Bidding Table" description="add description here">
+			<InputHeader name="Bidding Table" description="TODO: add description here">
 				<Table columns={["City", "Venue", "Notes", "Wikipedia link", "Won?", ""]}>
 					{data.bidding.map((bidData, i) => (
 						<tr key={i}>

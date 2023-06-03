@@ -1,6 +1,5 @@
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Textarea from "./Textarea";
-import remarkGfm from "remark-gfm";
+import Markdown from "../Markdown";
 
 export default function MarkdownInput({ value, setValue }) {
 	return (
@@ -9,7 +8,7 @@ export default function MarkdownInput({ value, setValue }) {
 				<Textarea style={{ height: "100%" }} value={value} setValue={setValue}></Textarea>
 			</div>
 			<div className="column">
-				<ReactMarkdown remarkPlugins={[remarkGfm]}>{value}</ReactMarkdown>
+				<Markdown value={value} />
 			</div>
 		</div>
 	);
