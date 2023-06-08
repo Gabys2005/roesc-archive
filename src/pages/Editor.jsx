@@ -46,6 +46,7 @@ export default function Editor() {
 				<div className="column is-half">
 					<div className="box">
 						<h2>Edit an existing RoESC</h2>
+						<hr />
 						<div className="select is-fullwidth">
 							<select value={selected} onChange={(e) => setSelected(e.target.value)}>
 								{roescs.map((roesc, i) => (
@@ -89,6 +90,7 @@ export default function Editor() {
 				<div className="column is-half">
 					<div className="box">
 						<h2>Backups</h2>
+						<hr />
 						<p>Start from your last saved backup. Backups are saved every time you change anything</p>
 						<hr />
 						<Link className="button is-primary" to={"/editor/backup/main"}>

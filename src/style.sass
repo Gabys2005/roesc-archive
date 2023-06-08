@@ -1,6 +1,6 @@
 @import "../node_modules/bulma-checkbox/bulma-checkbox.scss"
 @import "../node_modules/bulma/bulma.sass"
-@import "../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass"
+// @import "../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass"
 
 .emoji 
     height: 1.5rem
@@ -9,19 +9,164 @@
 .sideTable
     width: 25rem
 
-tr.selected
-    background-color: rgb(206, 223, 242)
-
 @media (max-width: 700px)
     .sideTable
         width: 100%
 
-@media (prefers-color-scheme: dark)
-    a
-        color: #5ea3e4
+html
+    --background-color: hsl(0, 0%, 100%)
+    --navbar-text-color: hsl(0, 0%, 29%)
+    --navbar-hover-background: hsl(0, 0%, 98%)
+    --text-color: hsl(0, 0%, 21%)
+    --line-background: hsl(0, 0%, 96%)
+    --primary-button-background: hsl(171, 100%, 41%)
+    --primary-button-background-hover: #00c4a7
+    --danger-button-background: hsl(348, 86%, 61%)
+    --danger-button-background-hover: #f03a5f
+    --table-background: hsl(0, 0%, 100%)
+    --border-color: hsl(0, 0%, 86%)
+    --input-border-color: hsl(0, 0%, 71%)
+    --link-color: hsl(229, 53%, 53%)
 
-    .button.is-static
-        background-color: #1c1c1c
+    --selected-color: rgb(206, 223, 242)
 
-    tr.selected
-        background-color: #57452b
+html.is-dark
+    --background-color: hsl(228, 10%, 10%)
+    --navbar-text-color: #b5b5b5
+    --navbar-hover-background: #121212
+    --text-color: #dbdbdb
+    --line-background: #242424
+    --primary-button-background: #009e86
+    --primary-button-background-hover: #00917c
+    --danger-button-background: #ee1742
+    --danger-button-background-hover: #e6113c
+    --table-background: #0a0a0a
+    --border-color: #363636
+    --input-border-color: #4a4a4a
+    --link-color: #5ea3e4
+    color-scheme: dark
+
+    --selected-color: #57452b
+
+html
+    background-color: var(--background-color) !important
+
+.navbar
+    background-color: var(--background-color)
+
+.navbar-item
+    color: var(--navbar-text-color)
+
+.navbar-item:hover, .navbar-item:focus
+    color: var(--text-color) !important
+    background-color: var(--navbar-hover-background) !important
+    
+.content
+    h1, h2, h3, h4, h5, h6, strong
+        color: var(--text-color)
+
+body
+    color: var(--navbar-text-color)
+
+.button.is-primary
+    background-color: var(--primary-button-background)
+
+.button.is-primary:hover
+    background-color: var(--primary-button-background-hover)
+
+hr
+    background-color: var(--line-background)
+
+a:hover
+    color: var(--text-color)
+
+table
+    background-color: var(--table-background) !important
+
+table, th
+    color: var(--text-color) !important
+
+td, th
+    border-color: var(--border-color) !important
+
+.table.is-striped tbody tr:not(.is-selected):nth-child(even)
+    background-color: var(--navbar-hover-background)
+
+.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover
+    background-color: var(--navbar-hover-background)
+
+.table.is-hoverable.is-striped tbody tr:not(.is-selected):hover:nth-child(even)
+    background-color: var(--line-background)
+
+.box
+    background-color: var(--table-background)
+    color: var(--navbar-text-color)
+
+.select select
+    background-color: var(--table-background)
+    border-color: var(--border-color)
+    color: var(--text-color)
+
+a
+    color: var(--link-color)
+
+.tabs a
+    color: var(--navbar-text-color)
+
+.tabs.is-boxed li.is-active a
+    background-color: var(--table-background)
+    border-color: var(--border-color)
+
+.tabs ul
+    border-bottom-color: var(--border-color)
+
+.label
+    color: var(--text-color)
+
+.input, .textarea
+    background-color: var(--table-background)
+    border-color: var(--border-color)
+    color: var(--text-color)
+
+.input::placeholder
+    color: var(--input-border-color)
+
+.button.is-static
+    background-color: var(--line-background)
+    border-color: var(--border-color)
+
+.tabs.is-boxed a:hover
+    background-color: var(--line-background)
+    border-bottom-color: var(--border-color)
+
+.tabs a:hover
+    color: var(--text-color)
+
+.button.is-danger
+    background-color: var(--danger-button-background)
+
+.button.is-danger:hover
+    background-color: var(--danger-button-background-hover)
+
+.input:hover, .textarea:hover
+    border-color: var(--input-border-color)
+
+.input[disabled], .textarea[disabled]
+    background-color: var(--line-background)
+    border-color: var(--line-background)
+    color: var(--navbar-text-color)
+
+.tabs a
+    border-bottom-color: var(--border-color)
+
+.select:not(.is-multiple):not(.is-loading):hover::after
+    border-color: var(--text-color)
+
+.select select:hover, .select select.is-hovered
+    border-color: var(--input-border-color)
+
+tr.selected
+    background-color: var(--selected-color)
+
+.tabs li.is-active a
+    color: var(--link-color)

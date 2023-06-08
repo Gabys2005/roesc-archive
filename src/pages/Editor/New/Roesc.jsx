@@ -20,7 +20,7 @@ export default function Roesc() {
 				broadcasters: [],
 				media: [
 					{
-						name: "Logos",
+						name: "logos",
 						images: [
 							{
 								name: "Light Logo",

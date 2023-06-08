@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+	const localTheme = localStorage.getItem("theme");
+	const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 	const [activeClass, setActiveClass] = useState("");
+	const [theme, setTheme] = useState(localTheme || (prefersDark ? "dark" : "light"));
+
+	useEffect(() => {
+		if (theme === "light") {
+			document.documentElement.classList.remove("is-dark");
+		} else {
+			document.documentElement.classList.add("is-dark");
+		}
+		localStorage.setItem("theme", theme);
+	}, [theme]);
 
 	return (
 		<div className="navbar is-spaced">
@@ -32,6 +45,12 @@ export default function Navbar() {
 					<Link to="/editor" className="navbar-item">
 						Editor
 					</Link>
+				</div>
+
+				<div className="navbar-end">
+					<a className="navbar-item" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+						Switch to {theme === "dark" ? "light" : "dark"} theme
+					</a>
 				</div>
 			</div>
 		</div>
