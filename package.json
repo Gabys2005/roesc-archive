@@ -18,6 +18,7 @@
 		"node-watch": "^0.7.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-error-boundary": "^4.0.9",
 		"react-markdown": "^8.0.7",
 		"react-router-dom": "^6.11.2",
 		"react-twemoji": "^0.5.0",

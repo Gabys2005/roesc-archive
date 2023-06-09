@@ -20,7 +20,7 @@ export default function Media({ data, setValue }) {
 					name="Logos"
 					description="General logos made for this RoESC. NOT EDITION SPECIFIC"
 					value={data.media.find((r) => r.name === "logos").images}
-					setValue={(images) => editMedia("Logos", images)}
+					setValue={(images) => editMedia("logos", images)}
 					requiredValues={["Light Logo", "Dark Logo"]}
 					namePlaceholder="Description"
 					linkPlaceholder="File Name"

@@ -10,6 +10,8 @@ import Location from "./Location";
 import Media from "./Media";
 import SemiFinalDraw from "./SemiFinalDraw";
 import Shows from "./Shows";
+import { ErrorBoundary } from "react-error-boundary";
+import BoundaryError from "../BoundaryError";
 
 export default function Editor({ initialData, name }) {
 	const [data, setData] = useState(initialData);
@@ -89,7 +91,9 @@ export default function Editor({ initialData, name }) {
 				</ul>
 			</div>
 
-			{tabs.find((r) => r.name === currentTab).component}
+			<ErrorBoundary FallbackComponent={BoundaryError}>
+				{tabs.find((r) => r.name === currentTab).component}
+			</ErrorBoundary>
 		</div>
 	);
 }

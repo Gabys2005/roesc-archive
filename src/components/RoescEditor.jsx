@@ -9,6 +9,8 @@ import BroadcastersEditor from "./BroadcastersEditor/Editor";
 import EditingInformation from "./RoescEditor/EditingInformation";
 import Media from "./RoescEditor/Media";
 import Error404 from "../pages/404";
+import { ErrorBoundary } from "react-error-boundary";
+import BoundaryError from "./BoundaryError";
 
 export default function RoescEditor({ name, initialData }) {
 	const [data, setData] = useState(initialData);
@@ -92,7 +94,9 @@ export default function RoescEditor({ name, initialData }) {
 				</ul>
 			</div>
 
-			{tabs.find((r) => r.name === currentTab).component}
+			<ErrorBoundary FallbackComponent={BoundaryError}>
+				{tabs.find((r) => r.name === currentTab).component}
+			</ErrorBoundary>
 		</div>
 	);
 }

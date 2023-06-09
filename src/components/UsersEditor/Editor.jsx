@@ -2,6 +2,8 @@ import { useState } from "react";
 import NewUser from "./NewUser";
 import EditUser from "./EditUser";
 import Output from "./Output";
+import { ErrorBoundary } from "react-error-boundary";
+import BoundaryError from "../BoundaryError";
 
 export default function UsersEditor({ users, setUsers, showOutput }) {
 	const [tab, setTab] = useState("edit");
@@ -26,9 +28,11 @@ export default function UsersEditor({ users, setUsers, showOutput }) {
 				</ul>
 			</div>
 
-			{tab === "new" ? <NewUser addUser={(user) => setUsers([...users, user])} /> : ""}
-			{tab === "edit" ? <EditUser users={users} setUsers={setUsers} /> : ""}
-			{tab === "output" ? <Output data={users} /> : ""}
+			<ErrorBoundary FallbackComponent={BoundaryError}>
+				{tab === "new" ? <NewUser addUser={(user) => setUsers([...users, user])} /> : ""}
+				{tab === "edit" ? <EditUser users={users} setUsers={setUsers} /> : ""}
+				{tab === "output" ? <Output data={users} /> : ""}
+			</ErrorBoundary>
 		</div>
 	);
 }

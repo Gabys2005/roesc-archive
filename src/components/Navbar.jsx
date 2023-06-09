@@ -48,7 +48,11 @@ export default function Navbar() {
 				</div>
 
 				<div className="navbar-end">
-					<a className="navbar-item" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+					<a
+						style={{ userSelect: "none" }}
+						className="navbar-item"
+						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+					>
 						Switch to {theme === "dark" ? "light" : "dark"} theme
 					</a>
 				</div>

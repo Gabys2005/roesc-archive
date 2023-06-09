@@ -2,6 +2,8 @@ import { useState } from "react";
 import NewBroadcaster from "./NewBroadcaster";
 import EditBroadcaster from "./EditBroadcaster";
 import Output from "./Output";
+import { ErrorBoundary } from "react-error-boundary";
+import BoundaryError from "../BoundaryError";
 
 export default function Editor({ broadcasters, setBroadcasters, users, showOutput }) {
 	const [tab, setTab] = useState("edit");
@@ -26,20 +28,22 @@ export default function Editor({ broadcasters, setBroadcasters, users, showOutpu
 				</ul>
 			</div>
 
-			{tab === "new" ? (
-				<NewBroadcaster
-					users={users}
-					addBroadcaster={(broadcaster) => setBroadcasters([...broadcasters, broadcaster])}
-				/>
-			) : (
-				""
-			)}
-			{tab === "edit" ? (
-				<EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
-			) : (
-				""
-			)}
-			{tab === "output" ? <Output data={broadcasters} /> : ""}
+			<ErrorBoundary FallbackComponent={BoundaryError}>
+				{tab === "new" ? (
+					<NewBroadcaster
+						users={users}
+						addBroadcaster={(broadcaster) => setBroadcasters([...broadcasters, broadcaster])}
+					/>
+				) : (
+					""
+				)}
+				{tab === "edit" ? (
+					<EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
+				) : (
+					""
+				)}
+				{tab === "output" ? <Output data={broadcasters} /> : ""}
+			</ErrorBoundary>
 		</div>
 	);
 }
