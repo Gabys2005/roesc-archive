@@ -1,21 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext, ThemeSwitcherContext } from "../contexts/theme";
 
 export default function Navbar() {
-	const localTheme = localStorage.getItem("theme");
-	const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
 	const [activeClass, setActiveClass] = useState("");
-	const [theme, setTheme] = useState(localTheme || (prefersDark ? "dark" : "light"));
-
-	useEffect(() => {
-		if (theme === "light") {
-			document.documentElement.classList.remove("is-dark");
-		} else {
-			document.documentElement.classList.add("is-dark");
-		}
-		localStorage.setItem("theme", theme);
-	}, [theme]);
+	const theme = useContext(ThemeContext);
+	const themeSwitcher = useContext(ThemeSwitcherContext);
 
 	return (
 		<div className="navbar is-spaced">
@@ -48,11 +38,7 @@ export default function Navbar() {
 				</div>
 
 				<div className="navbar-end">
-					<a
-						style={{ userSelect: "none" }}
-						className="navbar-item"
-						onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-					>
+					<a style={{ userSelect: "none" }} className="navbar-item" onClick={themeSwitcher.switch}>
 						Switch to {theme === "dark" ? "light" : "dark"} theme
 					</a>
 				</div>

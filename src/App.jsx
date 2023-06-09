@@ -14,39 +14,69 @@ import NewEditionEditor from "./pages/Editor/New/Edition.jsx";
 import ExistingEditionEditor from "./pages/Editor/Existing/Edition.jsx";
 import EditionPage from "./pages/EditionPage.jsx";
 import Home from "./pages/Home.jsx";
+import { useState, useEffect } from "react";
+import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
 
 export default function App() {
+	const localTheme = localStorage.getItem("theme");
+	const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+	const startingTheme = localTheme || (prefersDark ? "dark" : "light");
+
+	const [theme, setTheme] = useState(startingTheme);
+	const themeSwitcher = {
+		switch: () => {
+			if (theme === "light") {
+				setTheme("dark");
+			} else {
+				setTheme("light");
+			}
+		},
+	};
+
+	useEffect(() => {
+		if (theme === "light") {
+			document.documentElement.classList.remove("is-dark");
+		} else {
+			document.documentElement.classList.add("is-dark");
+		}
+		localStorage.setItem("theme", theme);
+	}, [theme]);
+
 	return (
 		<HashRouter>
-			<Navbar />
+			<ThemeContext.Provider value={theme}>
+				<ThemeSwitcherContext.Provider value={themeSwitcher}>
+					<Navbar />
+				</ThemeSwitcherContext.Provider>
 
-			<section className="section">
-				<div className="content container">
-					<Routes>
-						<Route path="/" element={<Home />} />
+				<section className="section">
+					<div className="content container">
+						<Routes>
+							<Route path="/" element={<Home />} />
 
-						<Route path="/editor" element={<Editor />} />
-						<Route path="/editor/users" element={<UsersEditor />} />
-						<Route path="/editor/broadcasters" element={<BroadcastersEditor />} />
+							<Route path="/editor" element={<Editor />} />
+							<Route path="/editor/users" element={<UsersEditor />} />
+							<Route path="/editor/broadcasters" element={<BroadcastersEditor />} />
 
-						<Route path="/editor/new/main" element={<NewRoescEditor />} />
-						<Route path="/editor/new/edition" element={<NewEditionEditor />} />
+							<Route path="/editor/new/main" element={<NewRoescEditor />} />
+							<Route path="/editor/new/edition" element={<NewEditionEditor />} />
 
-						<Route path="/editor/existing/:link" element={<ExistingRoescEditor />} />
-						<Route path="/editor/existing/:roesc/:edition" element={<ExistingEditionEditor />} />
+							<Route path="/editor/existing/:link" element={<ExistingRoescEditor />} />
+							<Route path="/editor/existing/:roesc/:edition" element={<ExistingEditionEditor />} />
 
-						<Route path="/editor/backup/main" element={<BackupRoescEditor />} />
+							<Route path="/editor/backup/main" element={<BackupRoescEditor />} />
 
-						<Route path="/roescs" element={<RoescList />} />
-						<Route path="/roescs/:roesc" element={<RoescPage />} />
-						<Route path="/roescs/:roesc/:edition" element={<EditionPage />} />
+							<Route path="/roescs" element={<RoescList />} />
+							<Route path="/roescs/:roesc" element={<RoescPage />} />
+							<Route path="/roescs/:roesc/:edition" element={<EditionPage />} />
 
-						<Route path="/users/:username" element={<UserPage />} />
+							<Route path="/users/:username" element={<UserPage />} />
 
-						<Route path="*" element={<Error404 />} />
-					</Routes>
-				</div>
-			</section>
+							<Route path="*" element={<Error404 />} />
+						</Routes>
+					</div>
+				</section>
+			</ThemeContext.Provider>
 		</HashRouter>
 	);
 }

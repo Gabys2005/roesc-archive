@@ -1,8 +1,10 @@
+import { useContext } from "react";
 import { getMediaImage } from "../../modules/utils";
 import MediaImage from "../MediaImage";
+import { ThemeContext } from "../../contexts/theme";
 
 export default function LogoImage({ logos }) {
-	const usesDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+	const theme = useContext(ThemeContext);
 	const lightVersion = getMediaImage(logos, "Light Logo");
 	const darkVersion = getMediaImage(logos, "Dark Logo");
 
@@ -13,7 +15,7 @@ export default function LogoImage({ logos }) {
 		return <MediaImage link={lightVersion} />;
 	}
 
-	if (usesDarkMode) {
+	if (theme === "dark") {
 		return <MediaImage link={lightVersion} />;
 	}
 	return <MediaImage link={darkVersion} />;

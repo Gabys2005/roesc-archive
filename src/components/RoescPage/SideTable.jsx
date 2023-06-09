@@ -9,7 +9,9 @@ export default function SideTable({ data, style }) {
 			<table className="table is-bordered is-striped is-hoverable">
 				<thead>
 					<tr>
-						<th colSpan={2}>{data.name}</th>
+						<th colSpan={2} style={{ textAlign: "center" }}>
+							{data.name}
+						</th>
 					</tr>
 				</thead>
 				<tbody>
