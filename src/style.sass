@@ -28,6 +28,7 @@ html
     --input-border-color: hsl(0, 0%, 71%)
     --link-color: hsl(229, 53%, 53%)
     --pastel-red: #ffa4b0
+    --navbar-mobile-color: var(--background-color)
 
     --selected-color: rgb(206, 223, 242)
 
@@ -35,6 +36,7 @@ html.is-dark
     --background-color: hsl(228, 10%, 10%)
     --navbar-text-color: #b5b5b5
     --navbar-hover-background: #121212
+    --navbar-mobile-color: #17181c
     --text-color: #dbdbdb
     --line-background: #242424
     --primary-button-background: #009e86
@@ -172,3 +174,7 @@ tr.selected
 
 .tabs li.is-active a
     color: var(--link-color)
+
+@media screen and (max-width: 1023px)
+    .navbar-menu
+        background-color: var(--navbar-mobile-color)
