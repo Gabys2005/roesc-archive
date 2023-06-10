@@ -12,6 +12,7 @@ import SemiFinalDraw from "./SemiFinalDraw";
 import Shows from "./Shows";
 import { ErrorBoundary } from "react-error-boundary";
 import BoundaryError from "../BoundaryError";
+import Entries from "./Entries";
 
 export default function Editor({ initialData, name }) {
 	const [data, setData] = useState(initialData);
@@ -52,6 +53,10 @@ export default function Editor({ initialData, name }) {
 		{
 			name: "SF Draw",
 			component: <SemiFinalDraw data={data} setValue={setValue} />,
+		},
+		{
+			name: "Entries",
+			component: <Entries data={data} setValue={setValue} users={users} />,
 		},
 		{
 			name: "Media",

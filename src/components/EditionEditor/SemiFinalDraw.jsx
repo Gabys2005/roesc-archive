@@ -17,6 +17,7 @@ export default function SemiFinalDraw({ data, setValue }) {
 								data.sfDraw.map((r, i2) => (i !== i2 ? r : countries))
 							)
 						}
+						multiple
 						buttonText="Add Another Country"
 					/>
 					<Button

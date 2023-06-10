@@ -14,6 +14,7 @@ export default function Edition() {
 				presenters: [],
 				broadcasters: [],
 				links: [],
+				entries: [],
 
 				textContent: "",
 

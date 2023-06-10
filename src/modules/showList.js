@@ -1,4 +1,5 @@
 const shows = {
+	oc: "Opening Ceremony",
 	sf1: "Semi-Final 1",
 	sf2: "Semi-Final 2",
 	gf: "Grand Final",

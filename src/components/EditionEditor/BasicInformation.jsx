@@ -47,6 +47,7 @@ export default function BasicInformation({ data, setValue, users, broadcasters }
 				description="Country or countries that hosted this edition"
 				value={data.countries}
 				setValue={(countries) => setValue("countries", countries)}
+				multiple
 			/>
 			<hr />
 			<VenueInput
