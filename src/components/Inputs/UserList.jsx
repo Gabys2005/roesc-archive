@@ -5,7 +5,7 @@ export default function UserList({ value, setValue, users, disabled }) {
 				<option default hidden>
 					Select user
 				</option>
-				<option value="unknown">Unknown</option>
+				<option value="">Unknown</option>
 				{users
 					.sort((a, b) => a.current.username.localeCompare(b.current.username))
 					.map((userData) => (

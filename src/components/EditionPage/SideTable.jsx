@@ -3,6 +3,7 @@ import MediaImage from "../MediaImage";
 import { shows } from "../../modules/showList";
 import { parseDate } from "../../modules/parseDate";
 import Song from "../Song";
+import UsersString from "../UsersString";
 
 export default function SideTable({ data, roescData }) {
 	return (
@@ -30,11 +31,16 @@ export default function SideTable({ data, roescData }) {
 						<td>
 							{data.presenters.map((presenter, i) => (
 								<span key={i}>
-									{presenter.name} <br />
+									{presenter.name}{" "}
+									{presenter.id && (
+										<span>
+											(<UsersString userids={[presenter.id]} />)
+										</span>
+									)}
+									<br />
 								</span>
 							))}
-						</td>{" "}
-						{/* TODO: roblox username as well */}
+						</td>
 					</tr>
 					<tr style={{ textAlign: "center" }}>
 						<th colSpan={2}>Dates</th>

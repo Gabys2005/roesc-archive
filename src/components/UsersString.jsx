@@ -7,7 +7,7 @@ export default function UsersString({ userids }) {
 	const [users, setUsers] = useState([]);
 
 	useEffect(() => {
-		const users = userids.map((u) => getUserById(u));
+		const users = userids.filter((u) => !!u).map((u) => getUserById(u));
 		Promise.all(users).then((actualUsers) => {
 			setUsers(
 				actualUsers.map((u, i) => (

@@ -2,7 +2,7 @@ import Textarea from "../Inputs/Textarea";
 import Button from "../Button";
 import { download } from "../../modules/utils";
 
-export default function Output({ data, users, broadcasters }) {
+export default function Output({ data, users }) {
 	return (
 		<div>
 			<div className="box">
