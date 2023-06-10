@@ -25,14 +25,18 @@ export default function SideTable({ data, style }) {
 						""
 					)}
 					<tr>
-						<td>Owners:</td>
+						<th>Short Name:</th>
+						<td>{data.shortName}</td>
+					</tr>
+					<tr>
+						<th>Owners:</th>
 						<td>
 							<UsersString userids={data.owners} />
 						</td>
 					</tr>
 					{data.previousOwners.length > 0 ? (
 						<tr>
-							<td>Previous Owners: </td>
+							<th>Previous Owners: </th>
 							<td>
 								<UsersString userids={data.previousOwners} />
 							</td>
@@ -41,12 +45,12 @@ export default function SideTable({ data, style }) {
 						""
 					)}
 					<tr>
-						<td>Created: </td>
+						<th>Created: </th>
 						<td>{parseDate(data.creationDate)}</td>
 					</tr>
 					{data.cancellationDate !== "" ? (
 						<tr>
-							<td>Cancelled: </td>
+							<th>Cancelled: </th>
 							<td>{parseDate(data.cancellationDate)}</td>
 						</tr>
 					) : (

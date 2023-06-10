@@ -12,8 +12,14 @@ export default function BasicInformation({ data, setValue }) {
 				setValue={(newName) => setValue("name", newName)}
 			/>
 			<TextInput
+				name="Short Name"
+				description="The shortened name of this RoESC, for example: GESC. This will be used in tables and stuff like that"
+				value={data.shortName}
+				setValue={(shortName) => setValue("shortName", shortName)}
+			/>
+			<TextInput
 				name="Link"
-				description="The link for this RoESC, generally the shortened version of the name, for example: gesc"
+				description="The link for this RoESC, generally the short name but lowercase, for example: gesc"
 				value={data.link}
 				setValue={(newLink) => setValue("link", newLink)}
 				link

@@ -6,6 +6,7 @@ export default function Roesc() {
 			name="Blank"
 			initialData={{
 				name: "",
+				shortName: "",
 				link: "",
 				previousNames: [],
 				creationDate: "",
