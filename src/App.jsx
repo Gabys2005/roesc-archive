@@ -16,6 +16,7 @@ import EditionPage from "./pages/EditionPage.jsx";
 import Home from "./pages/Home.jsx";
 import { useState, useEffect } from "react";
 import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
+import Users from "./pages/Users.jsx";
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
@@ -70,6 +71,7 @@ export default function App() {
 							<Route path="/roescs/:roesc" element={<RoescPage />} />
 							<Route path="/roescs/:roesc/:edition" element={<EditionPage />} />
 
+							<Route path="/users" element={<Users />} />
 							<Route path="/users/:username" element={<UserPage />} />
 
 							<Route path="*" element={<Error404 />} />

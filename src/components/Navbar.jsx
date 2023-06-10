@@ -35,6 +35,9 @@ export default function Navbar() {
 					<Link to="/editor" className="navbar-item">
 						Editor
 					</Link>
+					<Link to="/users" className="navbar-item">
+						Users
+					</Link>
 				</div>
 
 				<div className="navbar-end">
