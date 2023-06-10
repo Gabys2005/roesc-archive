@@ -35,6 +35,9 @@ export default function Navbar() {
 					<Link to="/users" className="navbar-item">
 						Users
 					</Link>
+					<Link to="/broadcasters" className="navbar-item">
+						Broadcasters
+					</Link>
 				</div>
 
 				<div className="navbar-end">

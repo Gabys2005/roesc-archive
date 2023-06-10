@@ -17,6 +17,7 @@ import Home from "./pages/Home.jsx";
 import { useState, useEffect } from "react";
 import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
 import Users from "./pages/Users.jsx";
+import Broadcasters from "./pages/Broadcasters.jsx";
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
@@ -73,6 +74,8 @@ export default function App() {
 
 							<Route path="/users" element={<Users />} />
 							<Route path="/users/:username" element={<UserPage />} />
+
+							<Route path="/broadcasters" element={<Broadcasters />} />
 
 							<Route path="*" element={<Error404 />} />
 						</Routes>
