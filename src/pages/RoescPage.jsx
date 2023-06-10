@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getRoescByLink } from "../modules/fetchData";
-import Markdown from "../components/Markdown";
-import SideTable from "../components/RoescPage/SideTable";
-import Media from "../components/Media";
-import EditionTable from "../components/EditionTable";
+import Content from "../components/RoescPage/Content";
 
 export default function RoescPage() {
 	const { roesc } = useParams();
@@ -32,19 +29,5 @@ export default function RoescPage() {
 		return <h1>Loading...</h1>;
 	}
 
-	return (
-		<div>
-			<h1>{data.name}</h1>
-			<hr />
-			<SideTable data={data} style={{ float: "right" }} />
-			<div style={{ float: "left" }}>
-				<Markdown value={data.textContent} />
-			</div>
-			<div style={{ clear: "both" }}></div>
-			<h1>Editions</h1>
-			<EditionTable roesc={roesc} />
-			<hr />
-			<Media media={data.media} />
-		</div>
-	);
+	return <Content data={data} />;
 }

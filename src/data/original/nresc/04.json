@@ -85,17 +85,17 @@
 		{
 			"name": "Hatsune Miku",
 			"bot": false,
-			"id": "unknown"
+			"id": "2de6598d-cce7-490c-b07d-ea82147f2c38"
 		},
 		{
 			"name": "Mitski",
 			"bot": false,
-			"id": "unknown"
+			"id": "158454bf-6289-40db-8190-a8b8158ab448"
 		},
 		{
 			"name": "Rina Sawayama",
 			"bot": false,
-			"id": "unknown"
+			"id": "dc69c129-f757-4781-adb7-76f3e6d6d0a9"
 		}
 	],
 	"broadcasters": ["7f9b0de6-b387-474b-b100-7deffd7d9d39"],

@@ -16,12 +16,12 @@ export default function EditionTable({ roesc }) {
 			.catch((err) => setError(err));
 	}, [roesc]);
 
-	if (!data) {
-		return <h1>Loading...</h1>;
+	if (error) {
+		return <p>Error: {error}</p>;
 	}
 
-	if (error) {
-		return <h1>Error: {error}</h1>;
+	if (!data) {
+		return <p>Loading...</p>;
 	}
 
 	return (

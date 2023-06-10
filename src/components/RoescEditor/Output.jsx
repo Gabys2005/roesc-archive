@@ -26,13 +26,6 @@ export default function Output({ data, users, broadcasters }) {
 						<Button onClick={() => download(users, "users")}>Download</Button>
 					</div>
 				</div>
-				<div className="column">
-					<div className="box">
-						<h2>Broadcasters File</h2>
-						<Textarea disabled value={JSON.stringify(broadcasters, null, 4)} className="mb-2" />
-						<Button onClick={() => download(broadcasters, "broadcasters")}>Download</Button>
-					</div>
-				</div>
 			</div>
 		</div>
 	);

@@ -25,6 +25,17 @@ export default function SideTable({ data, roescData }) {
 					) : (
 						""
 					)}
+					<tr>
+						<th>Presenters</th>
+						<td>
+							{data.presenters.map((presenter, i) => (
+								<span key={i}>
+									{presenter.name} <br />
+								</span>
+							))}
+						</td>{" "}
+						{/* TODO: roblox username as well */}
+					</tr>
 					<tr style={{ textAlign: "center" }}>
 						<th colSpan={2}>Dates</th>
 					</tr>
