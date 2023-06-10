@@ -3,7 +3,7 @@ import InputHeader from "./Util/InputHeader";
 
 import { countriesArray } from "../../modules/countryList";
 
-export default function CountryInput({ name, description, value, setValue }) {
+export default function CountryInput({ name, description, value, setValue, buttonText }) {
 	return (
 		<InputHeader name={name} description={description}>
 			{value.map((selected, i) => (
@@ -30,7 +30,7 @@ export default function CountryInput({ name, description, value, setValue }) {
 					</div>
 				</div>
 			))}
-			<Button onClick={() => setValue([...value, ""])}>Add Another</Button>
+			<Button onClick={() => setValue([...value, ""])}>{buttonText || "Add Another"}</Button>
 		</InputHeader>
 	);
 }

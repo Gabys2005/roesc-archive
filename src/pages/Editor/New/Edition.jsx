@@ -7,6 +7,7 @@ export default function Edition() {
 			initialData={{
 				edition: "",
 				link: "",
+				cancelled: false,
 				slogans: [],
 				countries: [],
 				venues: [],

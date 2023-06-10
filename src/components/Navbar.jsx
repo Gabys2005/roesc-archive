@@ -32,15 +32,15 @@ export default function Navbar() {
 					<Link to="/roescs" className="navbar-item">
 						RoESCs
 					</Link>
-					<Link to="/editor" className="navbar-item">
-						Editor
-					</Link>
 					<Link to="/users" className="navbar-item">
 						Users
 					</Link>
 				</div>
 
 				<div className="navbar-end">
+					<Link to="/editor" className="navbar-item">
+						Editor
+					</Link>
 					<a style={{ userSelect: "none" }} className="navbar-item" onClick={themeSwitcher.switch}>
 						Switch to {theme === "dark" ? "light" : "dark"} theme
 					</a>

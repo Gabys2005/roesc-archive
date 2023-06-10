@@ -1,4 +1,5 @@
 import BroadcasterInput from "../Inputs/BroadcasterInput";
+import Checkbox from "../Inputs/Checkbox";
 import CountryInput from "../Inputs/CountryInput";
 import LinksInput from "../Inputs/LinksInput";
 import MarkdownInput from "../Inputs/MarkdownInput";
@@ -23,6 +24,16 @@ export default function BasicInformation({ data, setValue, users, broadcasters }
 				value={data.link}
 				setValue={(link) => setValue("link", link)}
 			/>
+			<InputHeader
+				name="Edition Cancelled"
+				description="Check this box if the edition was cancelled / was later restarted from scratch"
+			>
+				<Checkbox
+					label="Cancelled"
+					checked={data.cancelled}
+					onChange={(checked) => setValue("cancelled", checked)}
+				/>
+			</InputHeader>
 			<hr />
 			<MultiTextInput
 				name="Slogan(s)"

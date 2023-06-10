@@ -17,7 +17,20 @@ export default function SemiFinalDraw({ data, setValue }) {
 								data.sfDraw.map((r, i2) => (i !== i2 ? r : countries))
 							)
 						}
+						buttonText="Add Another Country"
 					/>
+					<Button
+						color="danger"
+						onClick={() =>
+							setValue(
+								"sfDraw",
+								data.sfDraw.filter((_, i2) => i !== i2)
+							)
+						}
+					>
+						Remove Pot
+					</Button>
+					<br />
 					<br />
 				</div>
 			))}
