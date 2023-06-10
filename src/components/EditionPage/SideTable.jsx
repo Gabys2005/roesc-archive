@@ -4,6 +4,7 @@ import { shows } from "../../modules/showList";
 import { parseDate } from "../../modules/parseDate";
 import Song from "../Song";
 import UsersString from "../UsersString";
+import BroadcastersString from "../BroadcastersString";
 
 export default function SideTable({ data, roescData }) {
 	return (
@@ -40,6 +41,12 @@ export default function SideTable({ data, roescData }) {
 									<br />
 								</span>
 							))}
+						</td>
+					</tr>
+					<tr>
+						<th>Broadcaster</th>
+						<td>
+							<BroadcastersString ids={data.broadcasters} />
 						</td>
 					</tr>
 					<tr style={{ textAlign: "center" }}>
