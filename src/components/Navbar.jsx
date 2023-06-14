@@ -11,7 +11,9 @@ export default function Navbar() {
 		<div className="navbar is-spaced">
 			<div className="navbar-brand">
 				<div className="navbar-item">
-					<Link to="/">RoESC Archive</Link>
+					<Link to="/">
+						RoESC Archive <sup>INDEV</sup>
+					</Link>
 				</div>
 				<a
 					role="button"
