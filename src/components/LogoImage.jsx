@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { getMediaImage } from "../../modules/utils";
-import MediaImage from "../MediaImage";
-import { ThemeContext } from "../../contexts/theme";
+import { getMediaImage } from "../modules/utils";
+import MediaImage from "./MediaImage";
+import { ThemeContext } from "../contexts/theme";
 
 export default function LogoImage({ logos }) {
 	const theme = useContext(ThemeContext);

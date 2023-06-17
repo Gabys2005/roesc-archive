@@ -1,7 +1,7 @@
 import { parseDate } from "../../modules/parseDate";
 import UsersString from "../UsersString";
 import { getMedia } from "../../modules/utils";
-import LogoImage from "./LogoImage";
+import LogoImage from "../LogoImage";
 
 export default function SideTable({ data, style }) {
 	return (

@@ -1,4 +1,4 @@
-import UserList from "../components/UserList";
+import UserTable from "../components/UserTable";
 
 export default function Users() {
 	return (
@@ -6,7 +6,7 @@ export default function Users() {
 			<h1>User List</h1>
 			<hr />
 			<p>This list is in an alphabetical order</p>
-			<UserList />
+			<UserTable />
 		</div>
 	);
 }

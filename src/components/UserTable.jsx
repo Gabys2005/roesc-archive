@@ -3,7 +3,7 @@ import { getUsers } from "../modules/users";
 import Table from "./Table";
 import { Link } from "react-router-dom";
 
-export default function UserList() {
+export default function UserTable() {
 	const [users, setUsers] = useState([]);
 
 	useEffect(() => {
