@@ -12,7 +12,16 @@
 				"link": "https://www.youtube.com/@GiorgioWorldMedia"
 			}
 		],
-		"logos": [],
+		"logos": [
+			{
+				"name": "Light Logo",
+				"link": ""
+			},
+			{
+				"name": "Dark Logo",
+				"link": ""
+			}
+		],
 		"owners": ["2619aac8-2e2e-4165-9b8a-d175f8df67f9"],
 		"staff": [],
 		"textContent": ""
@@ -34,7 +43,16 @@
 				"link": "https://www.youtube.com/@zye2"
 			}
 		],
-		"logos": [],
+		"logos": [
+			{
+				"name": "Light Logo",
+				"link": ""
+			},
+			{
+				"name": "Dark Logo",
+				"link": ""
+			}
+		],
 		"owners": ["00106e5c-c923-401d-a918-1d15c39bd7ac"],
 		"staff": [],
 		"textContent": ""

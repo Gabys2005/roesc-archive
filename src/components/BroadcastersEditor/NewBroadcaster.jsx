@@ -10,7 +10,16 @@ const defaultData = {
 	created: "",
 	closed: "",
 	links: [],
-	logos: [],
+	logos: [
+		{
+			name: "Light Logo",
+			link: "",
+		},
+		{
+			name: "Dark Logo",
+			link: "",
+		},
+	],
 	textContent: "",
 	owners: [],
 	staff: [],

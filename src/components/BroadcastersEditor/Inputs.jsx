@@ -54,6 +54,7 @@ export default function Inputs({ users, data, setData }) {
 				setValue={(logos) => setData("logos", logos)}
 				namePlaceholder="Description"
 				linkPlaceholder="File Name"
+				requiredValues={["Dark Logo", "Light Logo"]}
 			/>
 			<hr />
 			<UserInput
