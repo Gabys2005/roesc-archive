@@ -20,5 +20,7 @@ export default function Broadcasters() {
 		return <h1>Loading...</h1>;
 	}
 
-	return <BroadcastersEditor showOutput broadcasters={broadcasters} setBroadcasters={broadcasters} users={users} />;
+	return (
+		<BroadcastersEditor showOutput broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
+	);
 }

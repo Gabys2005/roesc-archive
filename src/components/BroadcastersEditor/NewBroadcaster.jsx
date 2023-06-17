@@ -7,6 +7,8 @@ const defaultData = {
 	name: "",
 	shortName: "",
 	link: "",
+	created: "",
+	closed: "",
 	links: [],
 	logos: [],
 	textContent: "",

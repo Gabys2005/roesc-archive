@@ -3,6 +3,7 @@ import LinksInput from "../Inputs/LinksInput";
 import UserInput from "../Inputs/UserInput";
 import InputHeader from "../Inputs/Util/InputHeader";
 import MarkdownInput from "../Inputs/MarkdownInput";
+import DateInput from "../Inputs/DateInput";
 
 export default function Inputs({ users, data, setData }) {
 	return (
@@ -24,6 +25,19 @@ export default function Inputs({ users, data, setData }) {
 				description="Link for this broadcaster, generally short name but lowercase, for example: gwm"
 				value={data.link}
 				setValue={(link) => setData("link", link)}
+			/>
+			<hr />
+			<DateInput
+				name="Creation Date"
+				description="When this broadcaster started their journey"
+				value={data.created}
+				setValue={(date) => setData("created", date)}
+			/>
+			<DateInput
+				name="Closure Date"
+				description="When this broadcaster stopped broadcasting"
+				value={data.closed}
+				setValue={(date) => setData("closed", date)}
 			/>
 			<hr />
 			<LinksInput
