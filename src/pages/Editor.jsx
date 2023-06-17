@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { getRoescs } from "../modules/fetchData";
 import { Link } from "react-router-dom";
 import { getEditions } from "../modules/roesc";
+import OutLink from "../components/OutLink";
 
 export default function Editor() {
 	const [roescs, setRoescs] = useState([]);
@@ -26,11 +27,27 @@ export default function Editor() {
 		<div>
 			<h1>Editor</h1>
 			<hr />
-			<p>What would like to do?</p>
+			<div className="box">
+				<h2>Info</h2>
+				<p>
+					More information will go here in the future <br />
+					<b>Files</b> - This website is fully static, so it{"'"}s impossible for you to upload files
+					directly. When adding images, just write their name in the correct field (for example {'"'}logo.png
+					{'"'}) and attach them on Discord
+					<br />
+					<b>Markdown / Written Text / Text Content</b> - in places marked as one of these, you can use
+					Markdown to write some actual content for the pages. You can use *cursive*, **bold**,
+					~~strikethrough~~, # Headings, etc.{" "}
+					<OutLink to="https://www.markdownguide.org/basic-syntax/">Click here</OutLink> for a full guide
+				</p>
+			</div>
+			<hr />
 			<div className="columns is-multiline">
 				<div className="column is-half">
 					<div className="box">
 						<h2>Start with a blank template</h2>
+						<hr />
+						<p>An empty template where you have to fill out everything. Use this for adding new pages.</p>
 						<hr />
 						<div className="buttons">
 							<Button link to="/editor/new/main">

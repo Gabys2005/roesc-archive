@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getBroadcasters } from "../../modules/fetchData";
 import BroadcastersEditor from "../../components/BroadcastersEditor/Editor";
-import { getUsers } from "../../modules/users";
+import { getUsersDetailed } from "../../modules/users";
 
 export default function Broadcasters() {
 	const [broadcasters, setBroadcasters] = useState();
@@ -11,7 +11,7 @@ export default function Broadcasters() {
 		getBroadcasters().then((broadcasters) => {
 			setBroadcasters(broadcasters);
 		});
-		getUsers().then((users) => {
+		getUsersDetailed().then((users) => {
 			setUsers(users);
 		});
 	}, []);
