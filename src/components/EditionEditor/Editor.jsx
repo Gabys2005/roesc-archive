@@ -77,7 +77,12 @@ export default function Editor({ initialData, name }) {
 		{
 			name: "Broadcasters Editor",
 			component: (
-				<BroadcastersEditor broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
+				<BroadcastersEditor
+					broadcasters={broadcasters}
+					setBroadcasters={setBroadcasters}
+					users={users}
+					embedded
+				/>
 			),
 		},
 	];

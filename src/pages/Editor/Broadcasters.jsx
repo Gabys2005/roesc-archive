@@ -22,7 +22,6 @@ export default function Broadcasters() {
 
 	return (
 		<BroadcastersEditor
-			showOutput
 			broadcasters={broadcasters}
 			setBroadcasters={setBroadcasters}
 			users={users}

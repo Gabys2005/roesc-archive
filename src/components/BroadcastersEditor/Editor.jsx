@@ -7,12 +7,8 @@ import BoundaryError from "../BoundaryError";
 import UsersEditor from "../UsersEditor/Editor";
 import Info from "../Editor/Info";
 
-export default function Editor({ broadcasters, setBroadcasters, users, setUsers, showOutput }) {
+export default function Editor({ broadcasters, setBroadcasters, users, setUsers, embedded }) {
 	const tabs = [
-		{
-			name: "Info",
-			component: <Info />,
-		},
 		{
 			name: "Edit Broadcaster",
 			component: <EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />,
@@ -37,7 +33,11 @@ export default function Editor({ broadcasters, setBroadcasters, users, setUsers,
 
 	const [tab, setTab] = useState(tabs[0].name);
 
-	if (showOutput) {
+	if (!embedded) {
+		tabs.splice(0, 0, {
+			name: "Info",
+			component: <Info />,
+		});
 		tabs.splice(3, 0, {
 			name: "Output",
 			component: <Output data={broadcasters} />,

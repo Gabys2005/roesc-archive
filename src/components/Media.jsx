@@ -6,7 +6,7 @@ export default function Media({ media }) {
 			<h1>Media</h1>
 			<hr />
 			{media.map((mediaSection) => (
-				<MediaSection data={mediaSection} key={mediaSection.name} />
+				<MediaSection images={mediaSection.images} name={mediaSection.name} key={mediaSection.name} />
 			))}
 		</div>
 	);
