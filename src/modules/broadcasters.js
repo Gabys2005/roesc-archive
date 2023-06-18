@@ -1,9 +1,13 @@
 function getBroadcasters() {
-	return new Promise((resolve) => {
-		import("../data/original/broadcasters.json").then((data) => {
-			resolve(data.default); // TODO: generate a broadcaters .json without written content?
-		});
-	});
+	return new Promise((resolve) =>
+		import("../data/generated/broadcasters.json").then((data) => resolve(data.default))
+	);
+}
+
+function getBroadcastersDetailed() {
+	return new Promise((resolve) =>
+		import("../data/generated/broadcasters_detailed.json").then((data) => resolve(data.default))
+	);
 }
 
 function getBroadcasterById(id) {
@@ -21,7 +25,7 @@ function getBroadcasterById(id) {
 
 function getBroadcasterByLink(link) {
 	return new Promise((resolve, reject) => {
-		getBroadcasters().then((broadcasters) => {
+		getBroadcastersDetailed().then((broadcasters) => {
 			const broadcaster = broadcasters.find((b) => b.link === link);
 			if (broadcaster) {
 				resolve(broadcaster);

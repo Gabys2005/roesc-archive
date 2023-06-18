@@ -26,7 +26,7 @@ export default function Info() {
 			<ul>
 				<li>*cursive*</li>
 				<li>**bold**</li>
-				<li>**strikethrough**</li>
+				<li>~~strikethrough~~</li>
 				<li># Headers (also ##, ###, and so on)</li>
 				<li>--- (horizontal line)</li>
 				<li>
@@ -34,6 +34,15 @@ export default function Info() {
 				</li>
 			</ul>
 			<p>You can see a live preview of your text to make it easier to use</p>
+			<p>
+				Some pages allow you to insert generated content (like tables) into your markdown content. They{"'"}re
+				going to be listed above the markdown box. You insert them like this:{" "}
+				<pre>
+					{"<"}SomeTable /{">"}
+				</pre>
+				Those components often use generated content which isn{"'"}t available at the time of editing, so an
+				example will be displayed instead
+			</p>
 			<h1>Why isn{"'"}t RoESC Archive just a text editor, like other wikis?</h1>
 			<p>
 				Because having data organised like this allows me to generate other stuff with it (for example automatic

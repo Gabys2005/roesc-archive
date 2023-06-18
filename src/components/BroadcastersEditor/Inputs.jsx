@@ -5,6 +5,7 @@ import InputHeader from "../Inputs/Util/InputHeader";
 import MarkdownInput from "../Inputs/MarkdownInput";
 import DateInput from "../Inputs/DateInput";
 import ImagesInput from "../Inputs/ImagesInput";
+import BroadcastingTable from "../BroadcasterPage/BroadcastingTable";
 
 export default function Inputs({ users, data, setData }) {
 	return (
@@ -84,11 +85,25 @@ export default function Inputs({ users, data, setData }) {
 			</div>
 			<div className="box">
 				<h1>Text</h1>
+				<p>Custom components for this editor:</p>
+				<ul>
+					<li>
+						<span className="tag">
+							{"<"}BroadcastTable /{">"}
+						</span>{" "}
+						will generate a table with all shows livestreamed by this broadcaster. If omitted, the table
+						will be generated at the very bottom of this broadcaster{"'"}s page
+					</li>
+				</ul>
 				<InputHeader
 					name="Text content"
 					description="Markdown that will be displayed next to all of the data from above"
 				>
-					<MarkdownInput value={data.textContent} setValue={(content) => setData("textContent", content)} />
+					<MarkdownInput
+						value={data.textContent}
+						setValue={(content) => setData("textContent", content)}
+						overrides={{ BroadcastTable: { component: BroadcastingTable, props: { example: true } } }}
+					/>
 				</InputHeader>
 			</div>
 		</>

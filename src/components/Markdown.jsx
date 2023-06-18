@@ -1,10 +1,20 @@
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import remarkGfm from "remark-gfm";
+import { default as MarkdownToJSX } from "markdown-to-jsx";
 
-export default function Markdown({ value }) {
+export default function Markdown({ value, overrides }) {
 	return (
-		<ReactMarkdown remarkPlugins={[remarkGfm]} components={{ h1: "h2", h2: "h3", h4: "h5", h5: "h6" }}>
+		<MarkdownToJSX
+			options={{
+				overrides: {
+					h1: { component: "h2" },
+					h2: { component: "h3" },
+					h3: { component: "h4" },
+					h4: { component: "h5" },
+					h5: { component: "h6" },
+					...overrides,
+				},
+			}}
+		>
 			{value}
-		</ReactMarkdown>
+		</MarkdownToJSX>
 	);
 }

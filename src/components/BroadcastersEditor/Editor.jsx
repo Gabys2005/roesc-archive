@@ -31,8 +31,6 @@ export default function Editor({ broadcasters, setBroadcasters, users, setUsers,
 		},
 	];
 
-	const [tab, setTab] = useState(tabs[0].name);
-
 	if (!embedded) {
 		tabs.splice(0, 0, {
 			name: "Info",
@@ -43,6 +41,8 @@ export default function Editor({ broadcasters, setBroadcasters, users, setUsers,
 			component: <Output data={broadcasters} />,
 		});
 	}
+
+	const [tab, setTab] = useState(tabs[0].name);
 
 	return (
 		<div>
