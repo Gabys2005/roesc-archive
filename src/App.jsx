@@ -1,24 +1,28 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Error404 from "./pages/404.jsx";
-import Editor from "./pages/Editor.jsx";
-import NewRoescEditor from "./pages/Editor/New/Roesc.jsx";
-import ExistingRoescEditor from "./pages/Editor/Existing/Roesx.jsx";
-import UsersEditor from "./pages/Editor/Users.jsx";
-import BroadcastersEditor from "./pages/Editor/Broadcasters.jsx";
-import BackupRoescEditor from "./pages/Editor/Backup/Roesc.jsx";
-import RoescPage from "./pages/RoescPage.jsx";
-import RoescList from "./components/RoescList.jsx";
-import UserPage from "./pages/UserPage.jsx";
-import NewEditionEditor from "./pages/Editor/New/Edition.jsx";
-import ExistingEditionEditor from "./pages/Editor/Existing/Edition.jsx";
-import EditionPage from "./pages/EditionPage.jsx";
-import Home from "./pages/Home.jsx";
+import loadable from "@loadable/component";
+
+const options = { fallback: <h1>Loading</h1> };
+
+const Editor = loadable(() => import("./pages/Editor.jsx"), options);
+const NewRoescEditor = loadable(() => import("./pages/Editor/New/Roesc.jsx"), options);
+const ExistingRoescEditor = loadable(() => import("./pages/Editor/Existing/Roesx.jsx"), options);
+const UsersEditor = loadable(() => import("./pages/Editor/Users.jsx"), options);
+const BroadcastersEditor = loadable(() => import("./pages/Editor/Broadcasters.jsx"), options);
+const BackupRoescEditor = loadable(() => import("./pages/Editor/Backup/Roesc.jsx"), options);
+const RoescPage = loadable(() => import("./pages/RoescPage.jsx"), options);
+const RoescList = loadable(() => import("./components/RoescList.jsx"), options);
+const UserPage = loadable(() => import("./pages/UserPage.jsx"), options);
+const NewEditionEditor = loadable(() => import("./pages/Editor/New/Edition.jsx"), options);
+const ExistingEditionEditor = loadable(() => import("./pages/Editor/Existing/Edition.jsx"), options);
+const EditionPage = loadable(() => import("./pages/EditionPage.jsx"), options);
+const Home = loadable(() => import("./pages/Home.jsx"), options);
+const Users = loadable(() => import("./pages/Users.jsx"), options);
+const Broadcasters = loadable(() => import("./pages/Broadcasters.jsx"), options);
+const BroadcasterPage = loadable(() => import("./pages/BroadcasterPage.jsx"), options);
 import { useState, useEffect } from "react";
 import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
-import Users from "./pages/Users.jsx";
-import Broadcasters from "./pages/Broadcasters.jsx";
-import BroadcasterPage from "./pages/BroadcasterPage.jsx";
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
