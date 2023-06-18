@@ -40,6 +40,17 @@ export default function Navbar() {
 					<Link to="/broadcasters" className="navbar-item">
 						Broadcasters
 					</Link>
+					<div className="navbar-item has-dropdown is-hoverable">
+						<Link className="navbar-link" to="/records">
+							Records
+						</Link>
+
+						<div className="navbar-dropdown">
+							<Link className="navbar-item" to="/records/broadcasters">
+								Broadcasters
+							</Link>
+						</div>
+					</div>
 				</div>
 
 				<div className="navbar-end">

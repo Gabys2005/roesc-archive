@@ -36,4 +36,4 @@ function getBroadcasterByLink(link) {
 	});
 }
 
-export { getBroadcasters, getBroadcasterById, getBroadcasterByLink };
+export { getBroadcasters, getBroadcastersDetailed, getBroadcasterById, getBroadcasterByLink };

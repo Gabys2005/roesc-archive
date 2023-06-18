@@ -62,13 +62,19 @@ html
 .navbar
     background-color: var(--background-color)
 
-.navbar-item
+.navbar-item, .navbar-link
     color: var(--navbar-text-color)
 
-.navbar-item:hover, .navbar-item:focus
+.navbar-link
+    background-color: var(--background-color) !important
+
+.navbar-item:hover, .navbar-item:focus, .navbar-link:hover, .navbar-link:focus, .navbar-link:focus-within
     color: var(--text-color) !important
     background-color: var(--navbar-hover-background) !important
     
+.navbar-dropdown
+    background-color: var(--table-background)
+
 .content
     h1, h2, h3, h4, h5, h6, strong
         color: var(--text-color)

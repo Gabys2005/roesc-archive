@@ -21,6 +21,7 @@ const Home = loadable(() => import("./pages/Home.jsx"), options);
 const Users = loadable(() => import("./pages/Users.jsx"), options);
 const Broadcasters = loadable(() => import("./pages/Broadcasters.jsx"), options);
 const BroadcasterPage = loadable(() => import("./pages/BroadcasterPage.jsx"), options);
+const BroadcasterRecords = loadable(() => import("./pages/Records/Broadcaster.jsx"));
 import { useState, useEffect } from "react";
 import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
 
@@ -82,6 +83,8 @@ export default function App() {
 
 							<Route path="/broadcasters" element={<Broadcasters />} />
 							<Route path="/broadcasters/:link" element={<BroadcasterPage />} />
+
+							<Route path="/records/broadcasters" element={<BroadcasterRecords />} />
 
 							<Route path="*" element={<Error404 />} />
 						</Routes>
