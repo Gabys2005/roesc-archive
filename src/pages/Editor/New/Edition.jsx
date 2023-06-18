@@ -15,11 +15,18 @@ export default function Edition() {
 				broadcasters: [],
 				links: [],
 				entries: [],
+				shows: [],
+				media: [
+					{
+						name: "logos",
+						images: [],
+					},
+				],
 
 				textContent: "",
 
 				sfDraw: [],
-				sfDrawContent: "",
+				sfDrawText: "",
 
 				bidding: [],
 				biddingText: "",

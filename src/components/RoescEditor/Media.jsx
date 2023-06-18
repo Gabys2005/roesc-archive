@@ -1,4 +1,4 @@
-import LinksInput from "../Inputs/LinksInput";
+import ImagesInput from "../Inputs/ImagesInput";
 
 export default function Media({ data, setValue }) {
 	function editMedia(name, newData) {
@@ -11,19 +11,12 @@ export default function Media({ data, setValue }) {
 	return (
 		<div>
 			<div className="box">
-				Remember to include any new images you add in your message on the Discord server. File Name is used only
-				to make it easier for me to differentiate between files, please write the name of the file there (for
-				example venue.png)
-			</div>
-			<div className="box">
-				<LinksInput
+				<ImagesInput
 					name="Logos"
 					description="General logos made for this RoESC. NOT EDITION SPECIFIC"
 					value={data.media.find((r) => r.name === "logos").images}
 					setValue={(images) => editMedia("logos", images)}
 					requiredValues={["Light Logo", "Dark Logo"]}
-					namePlaceholder="Description"
-					linkPlaceholder="File Name"
 				/>
 			</div>
 		</div>

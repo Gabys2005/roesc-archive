@@ -13,10 +13,11 @@ import Shows from "./Shows";
 import { ErrorBoundary } from "react-error-boundary";
 import BoundaryError from "../BoundaryError";
 import Entries from "./Entries";
+import Info from "../Editor/Info";
 
 export default function Editor({ initialData, name }) {
 	const [data, setData] = useState(initialData);
-	const [currentTab, setCurrentTab] = useState("Basic Information");
+	const [currentTab, setCurrentTab] = useState("Info");
 	const [users, setUsers] = useState([]);
 	const [broadcasters, setBroadcasters] = useState([]);
 
@@ -38,6 +39,10 @@ export default function Editor({ initialData, name }) {
 	}, [data]);
 
 	const tabs = [
+		{
+			name: "Info",
+			component: <Info />,
+		},
 		{
 			name: "Basic Information",
 			component: <BasicInformation data={data} setValue={setValue} users={users} broadcasters={broadcasters} />,

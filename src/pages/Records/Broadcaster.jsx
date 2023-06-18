@@ -38,7 +38,7 @@ export default function BroadcasterRecords() {
 				Most broadcasted shows:{" "}
 				<Link to={`/broadcasters/${records.livestreams[0].link}`}>{records.livestreams[0].name}</Link>
 			</h2>
-			<Table columns={["#", "Broadcaster", "Show Count"]}>
+			<Table columns={["#", "Broadcaster", "Show Count"]} smallFirst>
 				{records.livestreams.map((data, i) => (
 					<tr key={i}>
 						<td>{i + 1}</td>

@@ -5,7 +5,7 @@ import TextContent from "./RoescEditor/TextContent";
 import Links from "./RoescEditor/Links";
 import People from "./RoescEditor/People";
 import UsersEditor from "./UsersEditor/Editor";
-import EditingInformation from "./RoescEditor/EditingInformation";
+import Info from "./Editor/Info";
 import Media from "./RoescEditor/Media";
 import Error404 from "../pages/404";
 import { ErrorBoundary } from "react-error-boundary";
@@ -13,7 +13,7 @@ import BoundaryError from "./BoundaryError";
 
 export default function RoescEditor({ name, initialData }) {
 	const [data, setData] = useState(initialData);
-	const [currentTab, setCurrentTab] = useState("Basic Information");
+	const [currentTab, setCurrentTab] = useState("Info");
 	const [users, setUsers] = useState([]);
 
 	useEffect(() => {
@@ -32,8 +32,8 @@ export default function RoescEditor({ name, initialData }) {
 
 	const tabs = [
 		{
-			name: "Editing Information",
-			component: <EditingInformation />,
+			name: "Info",
+			component: <Info />,
 		},
 		{
 			name: "Basic Information",
