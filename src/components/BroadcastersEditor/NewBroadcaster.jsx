@@ -44,6 +44,8 @@ export default function NewBroadcaster({ users, addBroadcaster }) {
 							name: data.name,
 							shortName: data.shortName,
 							link: data.link,
+							created: data.created,
+							closed: data.closed,
 							links: data.links,
 							logos: data.logos,
 							owners: data.owners,
