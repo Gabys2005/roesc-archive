@@ -1,0 +1,1 @@
+const e=[{id:"1f956bcd-4611-4714-af65-e08fea95d412",name:"Giorgio World Media",shortName:"GWM",link:"gwm"},{id:"7f9b0de6-b387-474b-b100-7deffd7d9d39",name:"zyetv",shortName:"zyetv",link:"zyetv"}];export{e as default};
