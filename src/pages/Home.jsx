@@ -6,7 +6,9 @@ export default function Home() {
 		<div>
 			<h1>RoESC Archive</h1>
 			<hr />
-			<p>blah blah blah</p>
+			<div className="notification is-danger">
+				RoESC Archive is currently in development. Stuff might not work or data might be deleted
+			</div>
 			<Link to="/editor" className="button is-primary is-large">
 				Editor
 			</Link>
