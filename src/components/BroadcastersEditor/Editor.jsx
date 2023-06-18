@@ -4,45 +4,61 @@ import EditBroadcaster from "./EditBroadcaster";
 import Output from "./Output";
 import { ErrorBoundary } from "react-error-boundary";
 import BoundaryError from "../BoundaryError";
+import UsersEditor from "../UsersEditor/Editor";
+import Info from "../Editor/Info";
 
-export default function Editor({ broadcasters, setBroadcasters, users, showOutput }) {
-	const [tab, setTab] = useState("edit");
+export default function Editor({ broadcasters, setBroadcasters, users, setUsers, showOutput }) {
+	const tabs = [
+		{
+			name: "Info",
+			component: <Info />,
+		},
+		{
+			name: "Edit Broadcaster",
+			component: <EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />,
+		},
+		{
+			name: "New Broadcaster",
+			component: (
+				<NewBroadcaster
+					users={users}
+					addBroadcaster={(broadcaster) => setBroadcasters([...broadcasters, broadcaster])}
+				/>
+			),
+		},
+		{
+			name: "|",
+		},
+		{
+			name: "Users Editor",
+			component: <UsersEditor users={users} setUsers={setUsers} />,
+		},
+	];
+
+	const [tab, setTab] = useState(tabs[0].name);
+
+	if (showOutput) {
+		tabs.splice(3, 0, {
+			name: "Output",
+			component: <Output data={broadcasters} />,
+		});
+	}
 
 	return (
-		<div className="box">
-			<div className="tabs is-centered">
-				<ul className="ml-0">
-					<li className={tab === "edit" ? "is-active" : ""}>
-						<a onClick={() => setTab("edit")}>Edit Broadcaster</a>
-					</li>
-					<li className={tab === "new" ? "is-active" : ""}>
-						<a onClick={() => setTab("new")}>New Broadcaster</a>
-					</li>
-					{showOutput ? (
-						<li className={tab === "output" ? "is-active" : ""}>
-							<a onClick={() => setTab("output")}>Output</a>
-						</li>
-					) : (
-						""
-					)}
-				</ul>
+		<div>
+			<div className="box">
+				<div className="tabs is-centered">
+					<ul className="ml-0">
+						{tabs.map((tabData) => (
+							<li className={tab === tabData.name ? "is-active" : ""} key={tabData.name}>
+								<a onClick={() => tabData.name !== "|" && setTab(tabData.name)}>{tabData.name}</a>
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
-
 			<ErrorBoundary FallbackComponent={BoundaryError}>
-				{tab === "new" ? (
-					<NewBroadcaster
-						users={users}
-						addBroadcaster={(broadcaster) => setBroadcasters([...broadcasters, broadcaster])}
-					/>
-				) : (
-					""
-				)}
-				{tab === "edit" ? (
-					<EditBroadcaster broadcasters={broadcasters} setBroadcasters={setBroadcasters} users={users} />
-				) : (
-					""
-				)}
-				{tab === "output" ? <Output data={broadcasters} /> : ""}
+				{tabs.find((t) => t.name === tab).component}
 			</ErrorBoundary>
 		</div>
 	);

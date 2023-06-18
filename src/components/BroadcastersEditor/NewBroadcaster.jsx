@@ -36,25 +36,26 @@ export default function NewBroadcaster({ users, addBroadcaster }) {
 	return (
 		<div>
 			<Inputs users={users} data={data} setData={(field, value) => setData({ ...data, [field]: value })} />
-			<hr />
-			<Button
-				onClick={() => {
-					addBroadcaster({
-						id: uuid(),
-						name: data.name,
-						shortName: data.shortName,
-						link: data.link,
-						links: data.links,
-						logos: data.logos,
-						owners: data.owners,
-						staff: data.staff,
-						textContent: data.textContent,
-					});
-					setData(defaultData);
-				}}
-			>
-				Create Broadcaster
-			</Button>
+			<div className="box">
+				<Button
+					onClick={() => {
+						addBroadcaster({
+							id: uuid(),
+							name: data.name,
+							shortName: data.shortName,
+							link: data.link,
+							links: data.links,
+							logos: data.logos,
+							owners: data.owners,
+							staff: data.staff,
+							textContent: data.textContent,
+						});
+						setData(defaultData);
+					}}
+				>
+					Create Broadcaster
+				</Button>
+			</div>
 		</div>
 	);
 }

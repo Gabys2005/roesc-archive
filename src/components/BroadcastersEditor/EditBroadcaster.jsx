@@ -13,15 +13,15 @@ export default function EditBroadcaster({ broadcasters, setBroadcasters, users }
 
 	return (
 		<div>
-			<InputHeader name="Choose a broadcaster to edit">
-				<div className="select is-fullwidth">
-					<select value={selected} onChange={(e) => setSelected(e.target.value)}>
-						{broadcastersOptions}
-					</select>
-				</div>
-			</InputHeader>
-
-			<hr />
+			<div className="box">
+				<InputHeader name="Choose a broadcaster to edit">
+					<div className="select is-fullwidth">
+						<select value={selected} onChange={(e) => setSelected(e.target.value)}>
+							{broadcastersOptions}
+						</select>
+					</div>
+				</InputHeader>
+			</div>
 
 			<Inputs
 				data={broadcasters.find((user) => user.id === selected)}

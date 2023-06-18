@@ -28,6 +28,8 @@ html
     --input-border-color: hsl(0, 0%, 71%)
     --link-color: hsl(229, 53%, 53%)
     --pastel-red: #ffa4b0
+    --file-hover: #eeeeee
+    --file-name-hover-border: #d5d5d5
     --navbar-mobile-color: var(--background-color)
 
     --selected-color: rgb(206, 223, 242)
@@ -48,6 +50,8 @@ html.is-dark
     --input-border-color: #4a4a4a
     --link-color: #5ea3e4
     --pastel-red: #691c26
+    --file-hover: #1d1d1d
+    --file-name-hover-border: #2f2f2f
     color-scheme: dark
 
     --selected-color: #57452b
@@ -182,3 +186,17 @@ tr.selected
 .tag
     background-color: var(--line-background) !important
     color: var(--navbar-text-color) !important
+
+.file-cta
+    background-color: var(--line-background)
+    color: var(--navbar-text-color)
+
+.file-cta, .file-name
+    border-color: var(--border-color)
+
+.file-label:hover .file-cta
+    background-color: var(--file-hover)
+    color: var(--text-color)
+
+.file-label:hover .file-name
+    border-color: var(--file-name-hover-border)

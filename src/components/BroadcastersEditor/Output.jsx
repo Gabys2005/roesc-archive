@@ -4,7 +4,7 @@ import { download } from "../../modules/utils";
 
 export default function Output({ data }) {
 	return (
-		<div>
+		<div className="box">
 			<h2>Output</h2>
 			<p>Send this file in the Broadcasters thread in the #roesc-archive channel</p>
 			<Textarea disabled value={JSON.stringify(data, null, 4)} className="mb-2" />
