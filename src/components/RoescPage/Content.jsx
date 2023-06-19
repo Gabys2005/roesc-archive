@@ -9,7 +9,7 @@ export default function Content({ data }) {
 			<h1>{data.name}</h1>
 			<hr />
 			<SideTable data={data} style={{ float: "right" }} />
-			<div style={{ float: "left" }}>
+			<div>
 				<Markdown value={data.textContent} />
 			</div>
 			<div style={{ clear: "both" }}></div>
