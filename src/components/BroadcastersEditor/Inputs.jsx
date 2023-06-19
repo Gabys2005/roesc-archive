@@ -65,6 +65,9 @@ export default function Inputs({ users, data, setData }) {
 			</div>
 			<div className="box">
 				<h1>People</h1>
+				<p>
+					If someone is missing, you can add them in the <span className="tag">Users Editor</span> section
+				</p>
 				<UserInput
 					users={users}
 					multiple

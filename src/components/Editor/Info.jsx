@@ -29,6 +29,7 @@ export default function Info() {
 				<li>~~strikethrough~~</li>
 				<li># Headers (also ##, ###, and so on)</li>
 				<li>--- (horizontal line)</li>
+				<li>[name](link) - named links</li>
 				<li>
 					<OutLink to="https://www.markdownguide.org/basic-syntax/">Full Guide</OutLink>
 				</li>

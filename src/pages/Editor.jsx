@@ -26,6 +26,16 @@ export default function Editor() {
 		<div>
 			<h1>Editor</h1>
 			<hr />
+			<div className="box">
+				<h2>Quick terminology explanation</h2>
+				<p>
+					<span className="tag">RoESC File</span> - file containing the {'"'}main{'"'} content for a RoESC,
+					for example owners, creation/cancellation dates, name, youtube channel, etc.
+				</p>
+				<p>
+					<span className="tag">Edition File</span> - file containing information about a specific edition
+				</p>
+			</div>
 			<div className="columns is-multiline">
 				<div className="column is-half">
 					<div className="box">
