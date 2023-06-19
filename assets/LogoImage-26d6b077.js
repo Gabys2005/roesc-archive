@@ -1,0 +1,1 @@
+import{r as a,T as m,j as r}from"./index-57cc1027.js";import{a as n}from"./utils-4c207ad4.js";import{M as t}from"./MediaSection-8e7222ad.js";function k({logos:i}){const s=a.useContext(m),e=n(i,"Light Logo"),o=n(i,"Dark Logo");return e?o?s==="dark"?r.jsx(t,{link:e}):r.jsx(t,{link:o}):r.jsx(t,{link:e}):r.jsx(t,{link:o})}export{k as L};

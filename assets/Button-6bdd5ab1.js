@@ -1,1 +1,0 @@
-import{j as t,L as e}from"./index-a405fa45.js";function r(i){let n="button ";return i.color==="danger"?n+="is-danger ":n+="is-primary ",i.size==="small"&&(n+="is-small"),i.link?t.jsx(e,{to:i.to,className:n,children:i.children}):t.jsx("button",{className:n,onClick:i.onClick,children:i.children})}export{r as B};
