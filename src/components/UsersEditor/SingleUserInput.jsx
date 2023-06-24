@@ -18,7 +18,7 @@ export default function SingleUserInput({ value, setValue, showDeleteButton, rem
 					className="input"
 					value={value.id}
 					onChange={(e) => setValue({ ...value, id: e.target.value })}
-					placeholder="ID"
+					placeholder="Account ID"
 				/>
 			</div>
 			{showDeleteButton ? (

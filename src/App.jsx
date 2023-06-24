@@ -24,6 +24,10 @@ const BroadcasterPage = loadable(() => import("./pages/BroadcasterPage.jsx"), op
 const BroadcasterRecords = loadable(() => import("./pages/Records/Broadcaster.jsx"));
 import { useState, useEffect } from "react";
 import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
+import New from "./pages/Editor/Users/New.jsx";
+import Existing from "./pages/Editor/Users/Existing.jsx";
+import ExistingEdit from "./pages/Editor/Users/ExistingEdit.jsx";
+import File from "./pages/Editor/Users/File.jsx";
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
@@ -63,7 +67,13 @@ export default function App() {
 							<Route path="/" element={<Home />} />
 
 							<Route path="/editor" element={<Editor />} />
+
 							<Route path="/editor/users" element={<UsersEditor />} />
+							<Route path="/editor/users/new" element={<New />} />
+							<Route path="/editor/users/existing" element={<Existing />} />
+							<Route path="/editor/users/existing/:id" element={<ExistingEdit />} />
+							<Route path="/editor/users/file" element={<File />} />
+
 							<Route path="/editor/broadcasters" element={<BroadcastersEditor />} />
 
 							<Route path="/editor/new/main" element={<NewRoescEditor />} />

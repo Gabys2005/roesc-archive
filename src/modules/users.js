@@ -23,6 +23,19 @@ function getUserById(id) {
 	});
 }
 
+function getDetailedUserById(id) {
+	return new Promise((resolve, reject) => {
+		getUsersDetailed().then((users) => {
+			const user = users.find((u) => u.id === id);
+			if (user) {
+				resolve(user);
+			} else {
+				reject("User doesn't exist");
+			}
+		});
+	});
+}
+
 function getDetailedUserByUsername(username) {
 	return new Promise((resolve, reject) => {
 		getUsersDetailed().then((users) => {
@@ -49,4 +62,4 @@ function getUserByUsername(username) {
 	});
 }
 
-export { getUsers, getUsersDetailed, getUserById, getUserByUsername, getDetailedUserByUsername };
+export { getUsers, getUsersDetailed, getUserById, getUserByUsername, getDetailedUserByUsername, getDetailedUserById };
