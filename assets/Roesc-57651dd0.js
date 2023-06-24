@@ -1,1 +1,0 @@
-import{j as o}from"./index-2c7134b2.js";import{R as a}from"./RoescEditor-10006145.js";import"./ImagesInput-20ca40a1.js";import"./parseDate-e6b73185.js";function p(){const t=localStorage.getItem("backup-main");return t?o.jsx(a,{initialData:JSON.parse(t),name:"Backup"}):o.jsx("h1",{children:"No Backup Found"})}export{p as default};
