@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getDetailedUserByUsername } from "../modules/users";
 import SideTable from "../components/UserPage/SideTable";
 import Markdown from "../components/Markdown";
@@ -34,6 +34,10 @@ export default function UserPage() {
 			<div>
 				<Markdown value={user.textContent} />
 			</div>
+			<hr style={{ clear: "both" }} />
+			<Link to={`/editor/users/existing/${user.id}`} className="button is-primary is-outlined">
+				Edit this page
+			</Link>
 		</div>
 	);
 }

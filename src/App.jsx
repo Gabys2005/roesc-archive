@@ -2,6 +2,8 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Error404 from "./pages/404.jsx";
 import loadable from "@loadable/component";
+import { useState, useEffect } from "react";
+import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
 
 const options = { fallback: <h1>Loading</h1> };
 
@@ -21,13 +23,11 @@ const Home = loadable(() => import("./pages/Home.jsx"), options);
 const Users = loadable(() => import("./pages/Users.jsx"), options);
 const Broadcasters = loadable(() => import("./pages/Broadcasters.jsx"), options);
 const BroadcasterPage = loadable(() => import("./pages/BroadcasterPage.jsx"), options);
-const BroadcasterRecords = loadable(() => import("./pages/Records/Broadcaster.jsx"));
-import { useState, useEffect } from "react";
-import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
-import New from "./pages/Editor/Users/New.jsx";
-import Existing from "./pages/Editor/Users/Existing.jsx";
-import ExistingEdit from "./pages/Editor/Users/ExistingEdit.jsx";
-import File from "./pages/Editor/Users/File.jsx";
+const BroadcasterRecords = loadable(() => import("./pages/Records/Broadcaster.jsx"), options);
+const NewUserEditor = loadable(() => import("./pages/Editor/Users/New.jsx"), options);
+const ExistingUserEditorSelector = loadable(() => import("./pages/Editor/Users/Existing.jsx"), options);
+const ExistingUserEditorEditor = loadable(() => import("./pages/Editor/Users/ExistingEdit.jsx"), options);
+const FileUserEditor = loadable(() => import("./pages/Editor/Users/File.jsx"), options);
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
@@ -69,10 +69,10 @@ export default function App() {
 							<Route path="/editor" element={<Editor />} />
 
 							<Route path="/editor/users" element={<UsersEditor />} />
-							<Route path="/editor/users/new" element={<New />} />
-							<Route path="/editor/users/existing" element={<Existing />} />
-							<Route path="/editor/users/existing/:id" element={<ExistingEdit />} />
-							<Route path="/editor/users/file" element={<File />} />
+							<Route path="/editor/users/new" element={<NewUserEditor />} />
+							<Route path="/editor/users/existing" element={<ExistingUserEditorSelector />} />
+							<Route path="/editor/users/existing/:id" element={<ExistingUserEditorEditor />} />
+							<Route path="/editor/users/file" element={<FileUserEditor />} />
 
 							<Route path="/editor/broadcasters" element={<BroadcastersEditor />} />
 
