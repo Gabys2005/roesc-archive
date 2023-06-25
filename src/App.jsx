@@ -28,6 +28,10 @@ const NewUserEditor = loadable(() => import("./pages/Editor/Users/New.jsx"), opt
 const ExistingUserEditorSelector = loadable(() => import("./pages/Editor/Users/Existing.jsx"), options);
 const ExistingUserEditorEditor = loadable(() => import("./pages/Editor/Users/ExistingEdit.jsx"), options);
 const FileUserEditor = loadable(() => import("./pages/Editor/Users/File.jsx"), options);
+const NewBroadcasterEditor = loadable(() => import("./pages/Editor/Broadcasters/New.jsx"), options);
+const ExistingBroadcasterEditorSelector = loadable(() => import("./pages/Editor/Broadcasters/Existing.jsx"), options);
+const ExistingBroadcasterEditorEditor = loadable(() => import("./pages/Editor/Broadcasters/ExistingEdit.jsx"), options);
+const FileBroadcasterEditor = loadable(() => import("./pages/Editor/Broadcasters/File.jsx"), options);
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
@@ -75,6 +79,16 @@ export default function App() {
 							<Route path="/editor/users/file" element={<FileUserEditor />} />
 
 							<Route path="/editor/broadcasters" element={<BroadcastersEditor />} />
+							<Route path="/editor/broadcasters/new" element={<NewBroadcasterEditor />} />
+							<Route
+								path="/editor/broadcasters/existing"
+								element={<ExistingBroadcasterEditorSelector />}
+							/>
+							<Route
+								path="/editor/broadcasters/existing/:id"
+								element={<ExistingBroadcasterEditorEditor />}
+							/>
+							<Route path="/editor/broadcasters/file" element={<FileBroadcasterEditor />} />
 
 							<Route path="/editor/new/main" element={<NewRoescEditor />} />
 							<Route path="/editor/new/edition" element={<NewEditionEditor />} />

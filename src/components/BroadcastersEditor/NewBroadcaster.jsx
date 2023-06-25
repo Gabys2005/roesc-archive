@@ -2,32 +2,11 @@ import { useEffect, useState } from "react";
 import Button from "../Button";
 import { v4 as uuid } from "uuid";
 import Inputs from "./Inputs";
-
-const defaultData = {
-	name: "",
-	shortName: "",
-	link: "",
-	created: "",
-	closed: "",
-	links: [],
-	logos: [
-		{
-			name: "Light Logo",
-			link: "",
-		},
-		{
-			name: "Dark Logo",
-			link: "",
-		},
-	],
-	textContent: "",
-	owners: [],
-	staff: [],
-};
+import { defaultBroadcasterData } from "../../modules/defaultEditorData";
 
 export default function NewBroadcaster({ users, addBroadcaster }) {
 	const localSave = localStorage.getItem("backup-broadcaster");
-	const [data, setData] = useState(localSave ? JSON.parse(localSave) : defaultData);
+	const [data, setData] = useState(localSave ? JSON.parse(localSave) : defaultBroadcasterData);
 
 	useEffect(() => {
 		localStorage.setItem("backup-broadcaster", JSON.stringify(data));
@@ -52,7 +31,7 @@ export default function NewBroadcaster({ users, addBroadcaster }) {
 							staff: data.staff,
 							textContent: data.textContent,
 						});
-						setData(defaultData);
+						setData(defaultBroadcasterData);
 					}}
 				>
 					Create Broadcaster

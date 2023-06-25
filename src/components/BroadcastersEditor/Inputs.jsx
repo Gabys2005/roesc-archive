@@ -31,6 +31,7 @@ export default function Inputs({ users, data, setData }) {
 					setValue={(link) => setData("link", link)}
 				/>
 			</div>
+
 			<div className="box">
 				<h1>Dates</h1>
 				<DateInput
@@ -40,12 +41,19 @@ export default function Inputs({ users, data, setData }) {
 					setValue={(date) => setData("created", date)}
 				/>
 				<DateInput
+					name="RoESC Join Date"
+					description="When this broadcaster started livestreaming RoESCs"
+					value={data.roescJoin}
+					setValue={(date) => setData("roescJoin", date)}
+				/>
+				<DateInput
 					name="Closure Date"
 					description="When this broadcaster stopped broadcasting"
 					value={data.closed}
 					setValue={(date) => setData("closed", date)}
 				/>
 			</div>
+
 			<div className="box">
 				<h1>Lists</h1>
 				<LinksInput
@@ -63,6 +71,7 @@ export default function Inputs({ users, data, setData }) {
 					requiredValues={["Dark Logo", "Light Logo"]}
 				/>
 			</div>
+
 			<div className="box">
 				<h1>People</h1>
 				<p>
@@ -86,6 +95,7 @@ export default function Inputs({ users, data, setData }) {
 					setValue={(staff) => setData("staff", staff)}
 				/>
 			</div>
+
 			<div className="box">
 				<h1>Text</h1>
 				<p>Custom components for this editor:</p>

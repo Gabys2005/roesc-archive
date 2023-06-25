@@ -50,9 +50,11 @@ export default function Info({ optional }) {
 					<p>
 						Some pages allow you to insert generated content (like tables) into your markdown content. They
 						{"'"}re going to be listed above the markdown box. You insert them like this:{" "}
-						<pre>
-							{"<"}SomeTable /{">"}
-						</pre>
+					</p>
+					<pre>
+						{"<"}SomeTable /{">"}
+					</pre>
+					<p>
 						Those components often use generated content which isn{"'"}t available at the time of editing,
 						so an example will be displayed instead
 					</p>
@@ -64,7 +66,7 @@ export default function Info({ optional }) {
 					<h1>Questions</h1>
 					<p>
 						If you{"'"}re confused about something or you just have a question, you can ask it in Gybasoft
-						#general or in my DMs. My Discord username is <div className="tag">.gabys</div>
+						#general or in my DMs. My Discord username is <span className="tag">.gabys</span>
 					</p>
 				</>
 			)}

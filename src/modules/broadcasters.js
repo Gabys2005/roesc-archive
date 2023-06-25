@@ -23,6 +23,19 @@ function getBroadcasterById(id) {
 	});
 }
 
+function getDetailedBroadcasterById(id) {
+	return new Promise((resolve, reject) => {
+		getBroadcastersDetailed().then((broadcasters) => {
+			const broadcaster = broadcasters.find((b) => b.id === id);
+			if (broadcaster) {
+				resolve(broadcaster);
+			} else {
+				reject("This broadcaster doesn't exist");
+			}
+		});
+	});
+}
+
 function getBroadcasterByLink(link) {
 	return new Promise((resolve, reject) => {
 		getBroadcastersDetailed().then((broadcasters) => {
@@ -36,4 +49,10 @@ function getBroadcasterByLink(link) {
 	});
 }
 
-export { getBroadcasters, getBroadcastersDetailed, getBroadcasterById, getBroadcasterByLink };
+export {
+	getBroadcasters,
+	getBroadcastersDetailed,
+	getBroadcasterById,
+	getBroadcasterByLink,
+	getDetailedBroadcasterById,
+};
