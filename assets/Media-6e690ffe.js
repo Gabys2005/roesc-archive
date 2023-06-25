@@ -1,0 +1,1 @@
+import{j as s}from"./index-7eefb166.js";import{a as e}from"./MediaSection-206b77bf.js";function n({media:r}){return s.jsxs("div",{children:[s.jsx("h1",{children:"Media"}),s.jsx("hr",{}),r.map(a=>s.jsx(e,{images:a.images,name:a.name},a.name))]})}export{n as M};
