@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getEdition } from "../modules/roesc";
 import { getRoescByLink } from "../modules/fetchData";
 import Markdown from "../components/Markdown";
@@ -77,6 +77,14 @@ export default function EditionPage() {
 			<div style={{ marginTop: "2rem" }}></div>
 
 			<Media media={data.media} />
+
+			<hr style={{ clear: "both" }} />
+			<Link
+				to={`/editor/edition/existing/${roescData.link}/${data.link}`}
+				className="button is-primary is-outlined"
+			>
+				Edit This Page
+			</Link>
 		</div>
 	);
 }
