@@ -33,6 +33,7 @@ function getMonth(str) {
 }
 
 function parseDate(str) {
+	if (!str) return "";
 	const split = str.split("/");
 	if (split.length === 3) {
 		const year = split[0];

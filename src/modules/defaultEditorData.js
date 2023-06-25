@@ -1,3 +1,10 @@
-const defaultUserData = { current: { username: "", id: "" }, previous: [], aliases: [], textContent: "" };
+const defaultUserData = {
+	current: { username: "", id: "" },
+	previous: [],
+	aliases: [],
+	joined: "",
+	left: "",
+	textContent: "",
+};
 
 export { defaultUserData };

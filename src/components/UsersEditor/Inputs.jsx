@@ -3,6 +3,7 @@ import SingleUserInput from "./SingleUserInput";
 import Button from "../Button";
 import MarkdownInput from "../Inputs/MarkdownInput";
 import MultiTextInput from "../Inputs/MultiTextInput";
+import DateInput from "../Inputs/DateInput";
 
 export default function Inputs({ data, setData }) {
 	return (
@@ -57,6 +58,22 @@ export default function Inputs({ data, setData }) {
 						setValue={(newContent) => setData("textContent", newContent)}
 					/>
 				</InputHeader>
+			</div>
+
+			<div className="box">
+				<h2>Dates</h2>
+				<DateInput
+					name="Join date"
+					description="When this user joined the RoESC community"
+					value={data.joined}
+					setValue={(date) => setData("joined", date)}
+				/>
+				<DateInput
+					name="Leave date"
+					description="When this user left/quit the RoESC community. Leave empty if they're still active in the community"
+					value={data.left}
+					setValue={(date) => setData("left", date)}
+				/>
 			</div>
 		</>
 	);
