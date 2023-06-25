@@ -4,7 +4,6 @@ import Error404 from "./pages/404.jsx";
 import loadable from "@loadable/component";
 import { useState, useEffect } from "react";
 import { ThemeContext, ThemeSwitcherContext } from "./contexts/theme.js";
-import File from "./pages/Editor/Main/File.jsx";
 
 const options = { fallback: <h1>Loading</h1> };
 
@@ -32,6 +31,12 @@ const MainFileEditor = loadable(() => import("./pages/Editor/Main.jsx"), options
 const MainFileNew = loadable(() => import("./pages/Editor/Main/New.jsx"), options);
 const MainFileExisting = loadable(() => import("./pages/Editor/Main/Existing.jsx"), options);
 const MainFileExistingEdit = loadable(() => import("./pages/Editor/Main/ExistingEdit.jsx"), options);
+const MainFileFile = loadable(() => import("./pages/Editor/Main/File.jsx"), options);
+const EditionFileEditor = loadable(() => import("./pages/Editor/Edition.jsx"), options);
+const EditionFileNew = loadable(() => import("./pages/Editor/Edition/New.jsx"), options);
+const EditionFileExisting = loadable(() => import("./pages/Editor/Edition/Existing.jsx"), options);
+const EditionFileExistingEdit = loadable(() => import("./pages/Editor/Edition/ExistingEdit.jsx"), options);
+const EditionFileFile = loadable(() => import("./pages/Editor/Edition/File.jsx"), options);
 
 export default function App() {
 	const localTheme = localStorage.getItem("theme");
@@ -76,7 +81,13 @@ export default function App() {
 							<Route path="/editor/main/new" element={<MainFileNew />} />
 							<Route path="/editor/main/existing" element={<MainFileExisting />} />
 							<Route path="/editor/main/existing/:link" element={<MainFileExistingEdit />} />
-							<Route path="/editor/main/file" element={<File />} />
+							<Route path="/editor/main/file" element={<MainFileFile />} />
+
+							<Route path="/editor/edition" element={<EditionFileEditor />} />
+							<Route path="/editor/edition/new" element={<EditionFileNew />} />
+							<Route path="/editor/edition/existing" element={<EditionFileExisting />} />
+							<Route path="/editor/edition/existing/:roesc/:link" element={<EditionFileExistingEdit />} />
+							<Route path="/editor/edition/file" element={<EditionFileFile />} />
 
 							<Route path="/editor/users" element={<UsersEditor />} />
 							<Route path="/editor/users/new" element={<NewUserEditor />} />

@@ -66,4 +66,32 @@ const defaultMainData = {
 	],
 };
 
-export { defaultUserData, defaultBroadcasterData, defaultMainData };
+const defaultEditionData = {
+	edition: "",
+	link: "",
+	cancelled: false,
+	slogans: [],
+	countries: [],
+	venues: [],
+	presenters: [],
+	broadcasters: [],
+	links: [],
+	entries: [],
+	shows: [],
+	media: [
+		{
+			name: "logos",
+			images: [],
+		},
+	],
+
+	textContent: "",
+
+	sfDraw: [],
+	sfDrawText: "",
+
+	bidding: [],
+	biddingText: "",
+};
+
+export { defaultUserData, defaultBroadcasterData, defaultMainData, defaultEditionData };

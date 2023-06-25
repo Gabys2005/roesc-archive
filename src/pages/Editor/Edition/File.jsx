@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaUpload } from "react-icons/fa";
 import Button from "../../../components/Button";
-import RoescEditor from "../../../components/RoescEditor/RoescEditor";
+import Editor from "../../../components/EditionEditor/Editor";
 
 export default function File() {
 	const [file, setFile] = useState();
@@ -38,7 +38,7 @@ export default function File() {
 	}
 
 	if (data) {
-		return <RoescEditor name={data.name} initialData={data} initialUsers={users} />;
+		return <Editor name={data.edition} initialData={data} initialUsers={users} />;
 	}
 
 	return (
@@ -52,7 +52,7 @@ export default function File() {
 						<span className="file-icon">
 							<FaUpload />
 						</span>
-						<span className="file-label">Choose a homepage / main file…</span>
+						<span className="file-label">Choose an edition file…</span>
 					</span>
 					<span className="file-name">{file?.name}</span>
 				</label>

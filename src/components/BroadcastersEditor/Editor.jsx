@@ -22,25 +22,25 @@ export default function Editor({ broadcasters, setBroadcasters, users, setUsers,
 				/>
 			),
 		},
-		{
-			name: "|",
-		},
-		{
-			name: "Users Editor",
-			component: <UsersEditor users={users} setUsers={setUsers} />,
-		},
+		// {
+		// 	name: "|",
+		// },
+		// {
+		// 	name: "Users Editor",
+		// 	component: <UsersEditor users={users} setUsers={setUsers} />,
+		// },
 	];
 
-	if (!embedded) {
-		tabs.splice(0, 0, {
-			name: "Info",
-			component: <Info />,
-		});
-		tabs.splice(3, 0, {
-			name: "Output",
-			component: <Output data={broadcasters} />,
-		});
-	}
+	// if (!embedded) {
+	// 	tabs.splice(0, 0, {
+	// 		name: "Info",
+	// 		component: <Info />,
+	// 	});
+	// 	tabs.splice(3, 0, {
+	// 		name: "Output",
+	// 		component: <Output data={broadcasters} />,
+	// 	});
+	// }
 
 	const [tab, setTab] = useState(tabs[0].name);
 

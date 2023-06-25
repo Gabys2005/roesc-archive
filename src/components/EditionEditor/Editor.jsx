@@ -15,19 +15,20 @@ import BoundaryError from "../BoundaryError";
 import Entries from "./Entries";
 import Info from "../Editor/Info";
 
-export default function Editor({ initialData, name }) {
+export default function Editor({ initialData, name, initialUsers }) {
 	const [data, setData] = useState(initialData);
 	const [currentTab, setCurrentTab] = useState("Info");
-	const [users, setUsers] = useState([]);
+	const [users, setUsers] = useState(initialUsers || []);
 	const [broadcasters, setBroadcasters] = useState([]);
 
 	useEffect(() => {
-		getUsersDetailed().then((users) => {
-			setUsers(users);
-		});
-		getBroadcasters().then((broadcasters) => {
-			setBroadcasters(broadcasters);
-		});
+		if (!initialUsers) {
+			getUsersDetailed().then((users) => setUsers(users));
+		}
+	}, [initialUsers]);
+
+	useEffect(() => {
+		getBroadcasters().then((broadcasters) => setBroadcasters(broadcasters));
 	}, []);
 
 	function setValue(index, value) {
