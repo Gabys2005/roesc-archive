@@ -1,26 +1,28 @@
 import { useEffect, useState } from "react";
-import BasicInformation from "./RoescEditor/BasicInformation";
-import Output from "./RoescEditor/Output";
-import TextContent from "./RoescEditor/TextContent";
-import Links from "./RoescEditor/Links";
-import People from "./RoescEditor/People";
-import UsersEditor from "./UsersEditor/Editor";
-import Info from "./Editor/Info";
-import Media from "./RoescEditor/Media";
-import Error404 from "../pages/404";
+import BasicInformation from "./BasicInformation";
+import Output from "./Output";
+import TextContent from "./TextContent";
+import Links from "./Links";
+import People from "./People";
+import UsersEditor from "../UsersEditor/Editor";
+import Info from "../Editor/Info";
+import Media from "./Media";
+import Error404 from "../../pages/404";
 import { ErrorBoundary } from "react-error-boundary";
-import BoundaryError from "./BoundaryError";
+import BoundaryError from "../BoundaryError";
 
-export default function RoescEditor({ name, initialData }) {
+export default function RoescEditor({ name, initialData, initialUsers }) {
 	const [data, setData] = useState(initialData);
 	const [currentTab, setCurrentTab] = useState("Info");
-	const [users, setUsers] = useState([]);
+	const [users, setUsers] = useState(initialUsers || []);
 
 	useEffect(() => {
-		import("../data/original/users.json").then((users) => {
-			setUsers(users.default);
-		});
-	}, []);
+		if (!initialUsers) {
+			import("../../data/original/users.json").then((users) => {
+				setUsers(users.default);
+			});
+		}
+	}, [initialUsers]);
 
 	function setValue(index, value) {
 		setData({ ...data, [index]: value });

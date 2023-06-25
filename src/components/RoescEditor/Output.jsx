@@ -8,7 +8,8 @@ export default function Output({ data, users }) {
 			<div className="box">
 				<p>
 					Download both of the files below and send them as attachments in the thread of this RoESC in the
-					#roesc-archive channel
+					#roesc-archive channel (or make one). For example, if you{"'"}re editing SESC, send it in a thread
+					titled <span className="tag">[SESC] Sofos{"'"} Earthvision Song Contest</span>
 				</p>
 			</div>
 			<div className="columns">

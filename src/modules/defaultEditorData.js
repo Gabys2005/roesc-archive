@@ -34,4 +34,36 @@ const defaultBroadcasterData = {
 	staff: [],
 };
 
-export { defaultUserData, defaultBroadcasterData };
+const defaultMainData = {
+	name: "",
+	shortName: "",
+	link: "",
+	previousNames: [],
+	creationDate: "",
+	cancellationDate: "",
+	textContent: "",
+	links: [],
+	owners: [],
+	previousOwners: [],
+	developers: [],
+	staff: [],
+	designers: [],
+	broadcasters: [],
+	media: [
+		{
+			name: "logos",
+			images: [
+				{
+					name: "Light Logo",
+					link: "",
+				},
+				{
+					name: "Dark Logo",
+					link: "",
+				},
+			],
+		},
+	],
+};
+
+export { defaultUserData, defaultBroadcasterData, defaultMainData };

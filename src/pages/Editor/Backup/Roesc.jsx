@@ -1,4 +1,4 @@
-import RoescEditor from "../../../components/RoescEditor";
+import RoescEditor from "../../../components/RoescEditor/RoescEditor";
 
 export default function Roesc() {
 	const backup = localStorage.getItem("backup-main");

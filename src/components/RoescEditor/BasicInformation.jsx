@@ -34,13 +34,13 @@ export default function BasicInformation({ data, setValue }) {
 			/>
 			<DateInput
 				name="Creation Date"
-				description="When the contest was created, use the YYYY/MM/DD format, for example: 2019/11/25"
+				description="When the contest was created, for example: 2019/11/25"
 				value={data.creationDate}
 				setValue={(date) => setValue("creationDate", date)}
 			/>
 			<DateInput
 				name="Cancellation Date"
-				description="When the contest was cancelled, use the YYYY/MM/DD format, for example: 2019/11/25. Leave empty if the contest is still running"
+				description="When the contest was cancelled, for example: 2019/11/25. Leave empty if the contest is still running"
 				value={data.cancellationDate}
 				setValue={(date) => setValue("cancellationDate", date)}
 			/>
