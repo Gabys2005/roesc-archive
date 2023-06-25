@@ -1,0 +1,1 @@
+import{_ as r}from"./index-15610dad.js";function _(){return new Promise(e=>{r(()=>import("./roescs-22d96b80.js"),[]).then(t=>{e(t.default)})})}function c(e){return new Promise((t,n)=>{_().then(s=>{const o=s.find(i=>i.link===e.toLowerCase());o?t(o):n("This RoESC doesn't exist (yet)")})})}export{_ as a,c as g};

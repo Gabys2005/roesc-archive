@@ -1,0 +1,1 @@
+import{r as n,v as u,e as o,j as s,I as x,f as d,h as i}from"./index-15610dad.js";function p(){const[t,a]=n.useState({id:u(),...o});return s.jsxs("div",{children:[s.jsx("h1",{children:"Creating New User"}),s.jsx("hr",{}),s.jsx(x,{optional:!0}),s.jsx(d,{data:t,setData:(e,r)=>a({...t,[e]:r})}),s.jsx(i,{data:t,downloadName:`newuser-${t.current.username}`})]})}export{p as default};
