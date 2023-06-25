@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function Editor({ data, setData, users }) {
 	const [actualUsers, setUsers] = useState(users);
-	const [tab, setTab] = useState("editor");
+	const [tab, setTab] = useState("info");
 
 	useEffect(() => {
 		if (!users) {
@@ -25,6 +25,9 @@ export default function Editor({ data, setData, users }) {
 			<div className="box">
 				<div className="tabs is-boxed is-centered">
 					<ul>
+						<li className={tab === "info" ? "is-active" : ""}>
+							<a onClick={() => setTab("info")}>Info</a>
+						</li>
 						<li className={tab === "editor" ? "is-active" : ""}>
 							<a onClick={() => setTab("editor")}>Editor</a>
 						</li>
@@ -38,15 +41,13 @@ export default function Editor({ data, setData, users }) {
 				</div>
 			</div>
 
+			{tab === "info" && <Info />}
 			{tab === "editor" && (
-				<>
-					<Info optional />
-					<Inputs
-						data={data}
-						setData={(field, value) => setData({ ...data, [field]: value })}
-						users={actualUsers}
-					/>
-				</>
+				<Inputs
+					data={data}
+					setData={(field, value) => setData({ ...data, [field]: value })}
+					users={actualUsers}
+				/>
 			)}
 			{tab === "users" && <UsersEditor users={actualUsers} setUsers={setUsers} />}
 			{tab === "output" && (

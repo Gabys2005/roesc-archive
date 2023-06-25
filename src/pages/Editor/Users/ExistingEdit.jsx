@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { getDetailedUserById } from "../../../modules/users";
-import Info from "../../../components/Editor/Info";
-import Inputs from "../../../components/UsersEditor/Inputs";
-import Output from "../../../components/UsersEditor/Output";
+import Editor from "./Editor";
 
 export default function ExistingEdit() {
 	const { id } = useParams();
@@ -29,9 +27,7 @@ export default function ExistingEdit() {
 		<div>
 			<h1>Editing {data.current.username}</h1>
 			<hr />
-			<Info optional />
-			<Inputs data={data} setData={(field, value) => setData({ ...data, [field]: value })} />
-			<Output data={data} downloadName={`changeduser-${data.current.username}`} />
+			<Editor data={data} setData={setData} />
 		</div>
 	);
 }

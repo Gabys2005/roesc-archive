@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { FaUpload } from "react-icons/fa";
 import Button from "../../../components/Button";
-import Info from "../../../components/Editor/Info";
-import Inputs from "../../../components/UsersEditor/Inputs";
-import Output from "../../../components/UsersEditor/Output";
+import Editor from "./Editor";
 
 export default function File() {
 	const [file, setFile] = useState();
@@ -28,9 +26,7 @@ export default function File() {
 			<div>
 				<h1>Editing {data.current.username}</h1>
 				<hr />
-				<Info optional />
-				<Inputs data={data} setData={(field, value) => setData({ ...data, [field]: value })} />
-				<Output data={data} downloadName={`fileuser-${data.current.username}`} />
+				<Editor data={data} setData={setData} />
 			</div>
 		);
 	}
