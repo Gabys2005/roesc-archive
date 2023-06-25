@@ -36,6 +36,12 @@ export default function SideTable({ data }) {
 							<td>{parseDate(data.created)}</td>
 						</tr>
 					)}
+					{data.roescJoin && (
+						<tr>
+							<th>Joined RoESC:</th>
+							<td>{parseDate(data.roescJoin)}</td>
+						</tr>
+					)}
 					{data.closed && (
 						<tr>
 							<th>Closed:</th>

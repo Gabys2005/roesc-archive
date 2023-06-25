@@ -16,7 +16,7 @@ export default function Editor({ data, setData, users }) {
 		}
 	}, [users]);
 
-	if (!users) {
+	if (!actualUsers) {
 		return <h1>Loading...</h1>;
 	}
 
