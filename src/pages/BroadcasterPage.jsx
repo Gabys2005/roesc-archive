@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getBroadcasterByLink } from "../modules/broadcasters";
 import Markdown from "../components/Markdown";
 import SideTable from "../components/BroadcasterPage/SideTable";
@@ -45,6 +45,10 @@ export default function BroadcasterPage() {
 				</div>
 			)}
 			<MediaSection images={data.logos} name="logos" />
+			<hr style={{ clear: "both" }} />
+			<Link to={`/editor/broadcasters/existing/${data.id}`} className="button is-primary is-outlined">
+				Edit This Page
+			</Link>
 		</div>
 	);
 }

@@ -36,7 +36,7 @@ export default function UserPage() {
 			</div>
 			<hr style={{ clear: "both" }} />
 			<Link to={`/editor/users/existing/${user.id}`} className="button is-primary is-outlined">
-				Edit this page
+				Edit This Page
 			</Link>
 		</div>
 	);
