@@ -9,4 +9,6 @@ const showsArray = Object.keys(shows).map((key) => {
 	return { id: key, name: shows[key] };
 });
 
-export { shows, showsArray };
+const showsWithPoints = ["sf1", "sf2", "gf"];
+
+export { shows, showsArray, showsWithPoints };

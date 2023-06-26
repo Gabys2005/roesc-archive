@@ -7,7 +7,7 @@ export default function Output({ data, users, broadcasters }) {
 		<div>
 			<div className="box">
 				<p>
-					Download both of the files below and send them as attachments in the thread of this RoESC in the
+					Download all of the files below and send them as attachments in the thread of this RoESC in the
 					#roesc-archive channel
 				</p>
 			</div>

@@ -8,13 +8,21 @@ import PresenterInput from "../Inputs/PresenterInput";
 import TextInput from "../Inputs/TextInput";
 import InputHeader from "../Inputs/Util/InputHeader";
 import VenueInput from "../Inputs/VenueInput";
+import Select from "../Inputs/Select";
+import { editionTypes } from "../../modules/editionTypes";
 
 export default function BasicInformation({ data, setValue, users, broadcasters }) {
 	return (
 		<div className="box">
 			<TextInput
-				name="Edition Name"
-				description="Generally the number, for example: #04 or WC #01"
+				name="Full Name"
+				description="Full contest for this edition. For example: Gabys' Eurovision Song Contest #03. This has to be edition specific because the name of a RoESC can change over time"
+				value={data.fullName}
+				setValue={(name) => setValue("fullName", name)}
+			/>
+			<TextInput
+				name="Edition Number"
+				description="For example: #04 or WC #01. This will be visible in tables"
 				value={data.edition}
 				setValue={(edition) => setValue("edition", edition)}
 			/>
@@ -34,6 +42,13 @@ export default function BasicInformation({ data, setValue, users, broadcasters }
 					onChange={(checked) => setValue("cancelled", checked)}
 				/>
 			</InputHeader>
+			<Select
+				name="Edition Type"
+				description="Was this edition an Earthvision? A Eurovision?"
+				value={data.type}
+				setValue={(type) => setValue("type", type)}
+				values={editionTypes}
+			/>
 			<hr />
 			<MultiTextInput
 				name="Slogan(s)"
@@ -52,7 +67,7 @@ export default function BasicInformation({ data, setValue, users, broadcasters }
 			<hr />
 			<VenueInput
 				name="Host Venue(s)"
-				description="City or cities that hosted this edition"
+				description="Venue(s) that hosted this edition"
 				value={data.venues}
 				setValue={(venues) => setValue("venues", venues)}
 			/>

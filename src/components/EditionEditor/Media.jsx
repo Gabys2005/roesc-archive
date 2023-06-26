@@ -10,11 +10,7 @@ export default function Media({ data, setValue }) {
 
 	return (
 		<div>
-			<div className="box">
-				Remember to include any new images you add in your message on the Discord server. File Name is used only
-				to make it easier for me to differentiate between files, please write the name of the file there (for
-				example venue.png)
-			</div>
+			<div className="box">Remember to include any new images you add in your message on the Discord server.</div>
 			<div className="box">
 				<LinksInput
 					name="Logos"

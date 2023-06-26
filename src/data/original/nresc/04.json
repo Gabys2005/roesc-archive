@@ -8,7 +8,8 @@
 		{
 			"name": "Nagoya Civic General Gymnasium",
 			"city": "Nagoya",
-			"link": "https://en.wikipedia.org/wiki/Nippon_Gaishi_Hall"
+			"link": "https://en.wikipedia.org/wiki/Nippon_Gaishi_Hall",
+			"country": "japan"
 		}
 	],
 	"shows": [
@@ -178,5 +179,7 @@
 				}
 			]
 		}
-	]
+	],
+	"fullName": "Nedas And Rob's Earthvision Song Contest #04",
+	"type": "earthvision"
 }

@@ -1,5 +1,6 @@
 import InputHeader from "./Util/InputHeader";
 import Button from "../Button";
+import { useEffect } from "react";
 
 export default function UserInput({ name, description, users, value, setValue, multiple }) {
 	const usersOptions = users.map((userData) => (
@@ -9,8 +10,18 @@ export default function UserInput({ name, description, users, value, setValue, m
 		</option>
 	));
 
+	useEffect(() => {
+		if (!value) {
+			setValue([]);
+		}
+	}, [value, setValue]);
+
 	function editName(e, i) {
 		setValue(value.map((r, i2) => (i2 === i ? e.target.value : r)));
+	}
+
+	if (!value) {
+		return <></>;
 	}
 
 	if (multiple) {

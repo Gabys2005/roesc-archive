@@ -1,5 +1,6 @@
 import InputHeader from "./Util/InputHeader";
 import Button from "../Button";
+import { countriesArray } from "../../modules/countryList";
 
 export default function VenueInput({ name, description, value, setValue }) {
 	function edit(i, field, newValue) {
@@ -19,9 +20,6 @@ export default function VenueInput({ name, description, value, setValue }) {
 							placeholder="Name"
 						/>
 					</div>
-					<div className="control">
-						<div className="button is-static">-</div>
-					</div>
 					<div className="control is-expanded">
 						<input
 							className="input"
@@ -31,8 +29,19 @@ export default function VenueInput({ name, description, value, setValue }) {
 							placeholder="City"
 						/>
 					</div>
-					<div className="control">
-						<div className="button is-static">-</div>
+					<div className="control is-expanded">
+						<div className="select control is-fullwidth">
+							<select value={value.country} onChange={(e) => edit(i, "country", e.target.value)}>
+								<option default hidden>
+									Select Country
+								</option>
+								{countriesArray.map((country) => (
+									<option value={country.id} key={country.id}>
+										{country.name}
+									</option>
+								))}
+							</select>
+						</div>
 					</div>
 					<div className="control is-expanded">
 						<input
