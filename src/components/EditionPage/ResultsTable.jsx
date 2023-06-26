@@ -3,6 +3,7 @@ import Country from "../Country";
 import Table from "../Table";
 import UsersString from "../UsersString";
 import Song from "../Song";
+import { fancyNumber } from "../../modules/utils";
 
 function getShowEntries(data, show) {
 	const entries = [];
@@ -41,11 +42,15 @@ function getShowEntries(data, show) {
 export default function ResultsTable({ show, data }) {
 	return (
 		<Twemoji>
-			<div className="mb-5">
-				<Table columns={["Order", "Country", "Participant", "Artist", "Song", "Place", "Points"]} smallFirst>
+			<div className="my-5">
+				<Table
+					columns={["Order", "Country", "Participant", "Artist", "Song", "Place", "Points"]}
+					smallFirst
+					compact
+				>
 					{getShowEntries(data, show).map((entry, i) => (
 						<tr key={i} className={entry.className}>
-							<td>{entry.ro}</td>
+							<td style={{ textAlign: "center" }}>{fancyNumber(entry.ro)}</td>
 							<td>
 								<Country id={entry.country} />
 							</td>

@@ -19,4 +19,11 @@ function getMediaImage(images, name) {
 	return images.find((r) => r.name === name)?.link;
 }
 
-export { download, getMedia, getMediaImage };
+function fancyNumber(num) {
+	if (num < 10) {
+		return `0${num}`;
+	}
+	return num.toString();
+}
+
+export { download, getMedia, getMediaImage, fancyNumber };

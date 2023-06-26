@@ -1,7 +1,18 @@
 import Textarea from "./Textarea";
 import Markdown from "../Markdown";
+import { useEffect } from "react";
 
 export default function MarkdownInput({ value, setValue, overrides }) {
+	useEffect(() => {
+		if (value === undefined || value === null) {
+			setValue("");
+		}
+	}, [value, setValue]);
+
+	if (value === undefined || value === null) {
+		return <></>;
+	}
+
 	return (
 		<div className="columns">
 			<div className="column">

@@ -4,6 +4,7 @@ import Checkbox from "../Inputs/Checkbox";
 import InputHeader from "../Inputs/Util/InputHeader";
 import DateInput from "../Inputs/DateInput";
 import SongInput from "../Inputs/SongInput";
+import MarkdownInput from "../Inputs/MarkdownInput";
 
 export default function Shows({ data, setValue }) {
 	return (
@@ -73,6 +74,20 @@ export default function Shows({ data, setValue }) {
 							)
 						}
 					/>
+					<InputHeader
+						name="Written Content"
+						description="This text will be shown above the results table (if there is one)"
+					>
+						<MarkdownInput
+							value={show.textContent}
+							setValue={(text) =>
+								setValue(
+									"shows",
+									data.shows.map((r, i2) => (i !== i2 ? r : { ...r, textContent: text }))
+								)
+							}
+						/>
+					</InputHeader>
 				</div>
 			))}
 		</div>
