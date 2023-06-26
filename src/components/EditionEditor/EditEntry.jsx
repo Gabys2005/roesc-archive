@@ -24,10 +24,13 @@ export default function EditEntry({ data, setValue, users }) {
 					data={data.entries[selected]}
 					users={users}
 					fullData={data}
-					setData={(field, value) =>
+					setData={(
+						field,
+						value //console.log(field, value, selected)
+					) =>
 						setValue(
 							"entries",
-							data.entries.map((e, i) => (i !== selected ? e : { ...e, [field]: value }))
+							data.entries.map((e, i) => (i != selected ? e : { ...e, [field]: value }))
 						)
 					}
 				/>
