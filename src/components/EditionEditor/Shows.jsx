@@ -5,6 +5,8 @@ import InputHeader from "../Inputs/Util/InputHeader";
 import DateInput from "../Inputs/DateInput";
 import SongInput from "../Inputs/SongInput";
 import MarkdownInput from "../Inputs/MarkdownInput";
+import Select from "../Inputs/Select";
+import { votingMethods } from "../../modules/data/votingMethods";
 
 export default function Shows({ data, setValue }) {
 	return (
@@ -49,6 +51,18 @@ export default function Shows({ data, setValue }) {
 								data.shows.map((r, i2) => (i !== i2 ? r : { ...r, date: newDate }))
 							)
 						}
+					/>
+					<Select
+						name="Voting Method"
+						description="Method used in this show's jury voting"
+						value={show.votingMethod}
+						setValue={(newMethod) =>
+							setValue(
+								"shows",
+								data.shows.map((r, i2) => (i !== i2 ? r : { ...r, votingMethod: newMethod }))
+							)
+						}
+						values={votingMethods}
 					/>
 					<SongInput
 						name="Opening Acts"
