@@ -3,6 +3,11 @@ import Button from "../Button";
 import { download } from "../../modules/utils";
 
 export default function Output({ data, users, broadcasters }) {
+	const actualData = structuredClone(data);
+	actualData.entries = actualData.entries.map((entry) => {
+		return { ...entry, shows: entry.shows.filter((show) => show.participated || show.shouldveVoted) };
+	});
+
 	return (
 		<div>
 			<div className="box">
@@ -15,8 +20,8 @@ export default function Output({ data, users, broadcasters }) {
 				<div className="column">
 					<div className="box">
 						<h2>Edition File</h2>
-						<Textarea disabled value={JSON.stringify(data, null, 4)} className="mb-2" />
-						<Button onClick={() => download(data, data.link)}>Download</Button>
+						<Textarea disabled value={JSON.stringify(actualData, null, 4)} className="mb-2" />
+						<Button onClick={() => download(actualData, data.link)}>Download</Button>
 					</div>
 				</div>
 				<div className="column">

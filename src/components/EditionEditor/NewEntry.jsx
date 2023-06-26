@@ -1,30 +1,13 @@
 import { useEffect, useState } from "react";
 import EntryInputs from "./EntryInputs";
 import Button from "../Button";
-import { showsWithPoints } from "../../modules/showList";
-
-const defaultShowData = {
-	order: 0,
-	place: 0,
-	points: {
-		total: 0,
-		tele: 0,
-		jury: 0,
-	},
-	participated: false,
-	attended: false,
-	shouldveVoted: false,
-	failedToVote: false,
-};
 
 const defaultData = {
 	country: "",
 	hods: [],
 	performers: [],
 	song: { artists: [], title: "", link: "" },
-	shows: showsWithPoints.map((s) => {
-		return { id: s, ...defaultShowData };
-	}),
+	shows: [],
 };
 
 export default function NewEntry({ data, setValue, users }) {

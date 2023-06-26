@@ -2,9 +2,10 @@ import { useState } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import BoundaryError from "../BoundaryError";
 import NewEntry from "./NewEntry";
+import EditEntry from "./EditEntry";
 
 export default function Entries({ data, setValue, users }) {
-	const [tab, setTab] = useState("new");
+	const [tab, setTab] = useState("edit");
 	return (
 		<div>
 			<div className="box">
@@ -22,6 +23,7 @@ export default function Entries({ data, setValue, users }) {
 
 			<ErrorBoundary FallbackComponent={BoundaryError}>
 				{tab === "new" && <NewEntry data={data} setValue={setValue} users={users} />}
+				{tab === "edit" && <EditEntry data={data} setValue={setValue} users={users} />}
 			</ErrorBoundary>
 		</div>
 	);

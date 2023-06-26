@@ -139,4 +139,11 @@ const countriesArray = Object.keys(countries)
 	})
 	.sort((a, b) => a.name.localeCompare(b.name));
 
-export { countries, countriesArray };
+function getCountryFromCode(code) {
+	if (countries[code]) {
+		return countries[code].name;
+	}
+	return "Unknown";
+}
+
+export { countries, countriesArray, getCountryFromCode };

@@ -1,16 +1,39 @@
 import SongInput from "../Inputs/SongInput";
 import UserInput from "../Inputs/UserInput";
 import CountryInput from "../Inputs/CountryInput";
-import { shows } from "../../modules/showList";
+import { shows, showsWithPoints } from "../../modules/showList";
 import Checkbox from "../Inputs/Checkbox";
 import NumberInput from "../Inputs/NumberInput";
 
-export default function EntryInputs({ data, setData, fullData, users }) {
+const defaultShowData = {
+	order: 0,
+	place: 0,
+	points: {
+		total: 0,
+		tele: 0,
+		jury: 0,
+		penalty: 0,
+	},
+	participated: false,
+	attended: false,
+	shouldveVoted: false,
+	failedToVote: false,
+};
+
+export default function EntryInputs({ data, setData, users }) {
+	const showsData = showsWithPoints.map(
+		(showId) => data.shows.find((s) => s.id === showId) || { id: showId, ...defaultShowData }
+	);
+
 	function editShow(id, field, value) {
-		setData(
-			"shows",
-			data.shows.map((s) => (s.id !== id ? s : { ...s, [field]: value }))
-		);
+		if (data.shows.find((s) => s.id === id)) {
+			setData(
+				"shows",
+				data.shows.map((s) => (s.id !== id ? s : { ...s, [field]: value }))
+			);
+		} else {
+			setData("shows", [...data.shows, { id, ...defaultShowData, [field]: value }]);
+		}
 	}
 
 	return (
@@ -59,7 +82,7 @@ export default function EntryInputs({ data, setData, fullData, users }) {
 				/>
 			</div>
 
-			{data.shows.map((show) => (
+			{showsData.map((show) => (
 				<div className="box" key={show.id}>
 					<h1>{shows[show.id]}</h1>
 					<Checkbox
@@ -74,11 +97,34 @@ export default function EntryInputs({ data, setData, fullData, users }) {
 								checked={show.attended}
 								onChange={(attended) => editShow(show.id, "attended", attended)}
 							/>
-							<NumberInput
-								name="Running Order"
-								value={show.order}
-								setValue={(order) => editShow(show.id, "order", order)}
-							/>
+							<br />
+							{show.id === "gf" ? (
+								<Checkbox
+									label="Won?"
+									checked={show.won}
+									onChange={(won) => editShow(show.id, "won", won)}
+								/>
+							) : (
+								<Checkbox
+									label="Qualified?"
+									checked={show.qualified}
+									onChange={(qualified) => editShow(show.id, "qualified", qualified)}
+								/>
+							)}
+							<div className="field is-grouped mt-2">
+								<NumberInput
+									name="Running Order"
+									value={show.order}
+									setValue={(order) => editShow(show.id, "order", order)}
+									margin
+								/>
+								<NumberInput
+									name="Place"
+									value={show.place}
+									setValue={(place) => editShow(show.id, "place", place)}
+									margin
+								/>
+							</div>
 							<div className="field is-grouped mt-2">
 								<NumberInput
 									name="Total Points"
@@ -89,15 +135,23 @@ export default function EntryInputs({ data, setData, fullData, users }) {
 									margin
 								/>
 								<NumberInput
+									name="Jury Points"
+									value={show.points.jury}
+									setValue={(points) => editShow(show.id, "points", { ...show.points, jury: points })}
+									margin
+								/>
+								<NumberInput
 									name="Tele Points"
 									value={show.points.tele}
 									setValue={(points) => editShow(show.id, "points", { ...show.points, tele: points })}
 									margin
 								/>
 								<NumberInput
-									name="Jury Points"
-									value={show.points.jury}
-									setValue={(points) => editShow(show.id, "points", { ...show.points, jury: points })}
+									name="Penalty Points"
+									value={show.points.penalty}
+									setValue={(points) =>
+										editShow(show.id, "points", { ...show.points, penalty: points })
+									}
 									margin
 								/>
 							</div>

@@ -107,7 +107,53 @@
 			"link": "https://nresc.miraheze.org/wiki/Nedas%27_and_Rob%27s_Earthvision_Song_Contest_04"
 		}
 	],
-	"entries": [],
+	"entries": [
+		{
+			"country": "wales",
+			"hods": ["4610244f-49f8-4372-b8ac-e9d591e57fda"],
+			"performers": [],
+			"song": {
+				"artists": ["Ordinary"],
+				"title": "YONAKA",
+				"link": "https://www.youtube.com/watch?v=dTZFjuTGp6c"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": "1",
+					"place": "6",
+					"points": {
+						"total": "139",
+						"tele": "86",
+						"jury": "53",
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": "11",
+					"place": "9",
+					"points": {
+						"total": "204",
+						"tele": "110",
+						"jury": "93",
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"qualified": false
+				}
+			],
+			"delegationMembers": []
+		}
+	],
 	"bidding": [
 		{
 			"city": "Chiba",
