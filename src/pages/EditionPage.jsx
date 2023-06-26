@@ -9,6 +9,7 @@ import Media from "../components/Media";
 import SideTable from "../components/EditionPage/SideTable";
 import Country from "../components/Country";
 import Twemoji from "react-twemoji";
+import ShowContent from "../components/EditionPage/ShowContent";
 
 export default function EditionPage() {
 	const { roesc, edition } = useParams();
@@ -31,9 +32,7 @@ export default function EditionPage() {
 
 	return (
 		<div>
-			<h1>
-				{roescData.name} {data.edition}
-			</h1>
+			<h1>{data.fullName}</h1>
 			<hr />
 			<SideTable data={data} roescData={roescData} />
 			<Markdown value={data.textContent} />
@@ -73,6 +72,13 @@ export default function EditionPage() {
 					</tr>
 				</Table>
 			</Twemoji>
+
+			<h1>Shows</h1>
+			<hr />
+
+			{data.shows.map((show) => (
+				<ShowContent show={show} key={show.id} data={data} />
+			))}
 
 			<div style={{ marginTop: "2rem" }}></div>
 

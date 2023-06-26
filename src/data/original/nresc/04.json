@@ -113,19 +113,19 @@
 			"hods": ["4610244f-49f8-4372-b8ac-e9d591e57fda"],
 			"performers": [],
 			"song": {
-				"artists": ["Ordinary"],
-				"title": "YONAKA",
+				"artists": ["YONAKA"],
+				"title": "Ordinary",
 				"link": "https://www.youtube.com/watch?v=dTZFjuTGp6c"
 			},
 			"shows": [
 				{
 					"id": "sf1",
-					"order": "1",
-					"place": "6",
+					"order": 1,
+					"place": 6,
 					"points": {
-						"total": "139",
-						"tele": "86",
-						"jury": "53",
+						"total": 139,
+						"tele": 86,
+						"jury": 53,
 						"penalty": 0
 					},
 					"participated": true,
@@ -136,12 +136,12 @@
 				},
 				{
 					"id": "gf",
-					"order": "11",
-					"place": "9",
+					"order": 11,
+					"place": 9,
 					"points": {
-						"total": "204",
-						"tele": "110",
-						"jury": "93",
+						"total": 204,
+						"tele": 110,
+						"jury": 93,
 						"penalty": 0
 					},
 					"participated": true,
@@ -149,6 +149,51 @@
 					"shouldveVoted": true,
 					"failedToVote": false,
 					"qualified": false
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "poland",
+			"hods": ["dc69c129-f757-4781-adb7-76f3e6d6d0a9"],
+			"performers": [],
+			"song": {
+				"artists": ["Julia Pośnik"],
+				"title": "Puszczaj",
+				"link": "https://www.youtube.com/watch?v=JAAISfVmaQE"
+			},
+			"shows": [
+				{
+					"id": "sf2",
+					"order": 8,
+					"place": 1,
+					"points": {
+						"total": 222,
+						"tele": 84,
+						"jury": 138,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 6,
+					"place": 1,
+					"points": {
+						"total": 327,
+						"tele": 154,
+						"jury": 173,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"won": true
 				}
 			],
 			"delegationMembers": []
@@ -226,6 +271,6 @@
 			]
 		}
 	],
-	"fullName": "Nedas And Rob's Earthvision Song Contest #04",
+	"fullName": "Nedas' And Rob's Earthvision Song Contest #04",
 	"type": "earthvision"
 }

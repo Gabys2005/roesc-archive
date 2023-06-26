@@ -129,7 +129,7 @@ const countries = {
 	},
 	wales: {
 		name: "Wales",
-		emoji: "",
+		emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
 	},
 };
 

@@ -2,7 +2,8 @@ import InputHeader from "./Util/InputHeader";
 
 export default function NumberInput({ name, description, value, setValue, margin }) {
 	function valueChanged(e) {
-		setValue(e.target.value);
+		setValue(Number(e.target.value.replaceAll("e", "").replaceAll(",", "")));
+		// setValue(e.target.value);
 	}
 
 	return (

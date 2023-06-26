@@ -35,6 +35,9 @@ html
     --navbar-mobile-color: var(--background-color)
 
     --selected-color: rgb(206, 223, 242)
+    --first-place: #ffd700
+    --second-place: #c0c0c0
+    --third-place: #cd7f32
 
 html.is-dark
     --background-color: hsl(228, 10%, 10%)
@@ -57,6 +60,10 @@ html.is-dark
     color-scheme: dark
 
     --selected-color: #57452b
+    --first-place: #8b6900
+    --second-place: #5d5d5d
+    --third-place: #793f00
+
 
 html
     background-color: var(--background-color) !important
@@ -223,3 +230,12 @@ pre
 
 .checkbox:hover
     color: var(--text-color)
+
+tr.firstplace
+    background-color: var(--first-place)
+    
+tr.secondplace
+    background-color: var(--second-place)
+
+tr.thirdplace
+    background-color: var(--third-place)

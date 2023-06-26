@@ -37,6 +37,7 @@ function run() {
 					link: fileData.link,
 					countries: fileData.countries,
 					venues: fileData.venues,
+					date: fileData.shows[fileData.shows.length - 1].date,
 				});
 
 				mainDataClone.editions.push(fileData);
