@@ -1,0 +1,1 @@
+const n={oc:"Opening Ceremony",sf1:"Semi-Final 1",sf2:"Semi-Final 2",gf:"Grand Final"},o=Object.keys(n).map(s=>({id:s,name:n[s]})),a=["sf1","sf2","gf"],e=[{value:"esc",label:"Eurovision Style (12, 10, 8-1 points)",points:[12,10,8,7,6,5,4,3,2,1]}];export{o as a,a as b,n as s,e as v};
