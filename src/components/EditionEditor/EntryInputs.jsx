@@ -4,6 +4,7 @@ import CountryInput from "../Inputs/CountryInput";
 import { shows, showsWithPoints } from "../../modules/showList";
 import Checkbox from "../Inputs/Checkbox";
 import NumberInput from "../Inputs/NumberInput";
+import { votingMethods } from "../../modules/data/votingMethods";
 
 const defaultShowData = {
 	order: 0,
@@ -18,9 +19,35 @@ const defaultShowData = {
 	attended: false,
 	shouldveVoted: false,
 	failedToVote: false,
+	votes: [],
 };
 
-export default function EntryInputs({ data, setData, users }) {
+function JuryVote({ fullData, setData, data, showId }) {
+	const showData = fullData.shows.find((s) => s.id === showId);
+	const points = votingMethods.find((m) => m.value === showData.votingMethod)?.points;
+
+	if (!points) {
+		return (
+			<p>
+				Choose a voting method in the <span className="tag">Shows</span> tab
+			</p>
+		);
+	}
+	return (
+		<div>
+			{points.map((point, i) => (
+				<CountryInput
+					name={`${point} points`}
+					key={i}
+					value={data.votes[i]}
+					setValue={(country) => setData(i, country)}
+				/>
+			))}
+		</div>
+	);
+}
+
+export default function EntryInputs({ data, setData, users, fullData }) {
 	const showsData = showsWithPoints.map(
 		(showId) => data.shows.find((s) => s.id === showId) || { id: showId, ...defaultShowData }
 	);
@@ -33,6 +60,20 @@ export default function EntryInputs({ data, setData, users }) {
 			);
 		} else {
 			setData("shows", [...data.shows, { id, ...defaultShowData, [field]: value }]);
+		}
+	}
+
+	function editVotes(i, country, show) {
+		if (show.votes.at(i)) {
+			editShow(
+				show.id,
+				"votes",
+				show.votes.map((v, i2) => (i != i2 ? v : country))
+			);
+		} else {
+			const newVotes = structuredClone(show.votes);
+			newVotes[i] = country;
+			editShow(show.id, "votes", newVotes);
 		}
 	}
 
@@ -160,15 +201,23 @@ export default function EntryInputs({ data, setData, users }) {
 					<hr />
 					<Checkbox
 						label="Was supposed to vote in this show?"
-						value={show.shouldveVoted}
+						checked={show.shouldveVoted}
 						onChange={(shouldve) => editShow(show.id, "shouldveVoted", shouldve)}
 					/>
 					{show.shouldveVoted && (
 						<div>
 							<Checkbox
 								label="Failed to vote?"
-								value={show.failedToVote}
+								checked={show.failedToVote}
 								onChange={(failed) => editShow(show.id, "failedToVote", failed)}
+							/>
+
+							<h3>Jury Vote</h3>
+							<JuryVote
+								fullData={fullData}
+								data={show}
+								setData={(i, country) => editVotes(i, country, show)}
+								showId={show.id}
 							/>
 						</div>
 					)}

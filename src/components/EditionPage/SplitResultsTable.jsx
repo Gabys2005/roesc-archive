@@ -29,7 +29,7 @@ export default function SplitResultsTable({ show, data }) {
 		<Twemoji>
 			<div className="my-5">
 				<div className="table-container">
-					<table className="table is-bordered is-striped is-hoverable" style={{ width: "inherit" }}>
+					<table className="table is-bordered is-striped is-hoverable is-narrow" style={{ width: "inherit" }}>
 						<thead>
 							<tr>
 								<th style={{ textAlign: "center" }} colSpan={5}>
