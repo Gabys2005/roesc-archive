@@ -43,12 +43,14 @@ export default function SideTable({ data, roescData }) {
 							))}
 						</td>
 					</tr>
-					<tr>
-						<th>Broadcaster</th>
-						<td>
-							<BroadcastersString ids={data.broadcasters} />
-						</td>
-					</tr>
+					{data.broadcasters.length > 0 && (
+						<tr>
+							<th>Broadcaster</th>
+							<td>
+								<BroadcastersString ids={data.broadcasters} />
+							</td>
+						</tr>
+					)}
 					<tr style={{ textAlign: "center" }}>
 						<th colSpan={2}>Dates</th>
 					</tr>

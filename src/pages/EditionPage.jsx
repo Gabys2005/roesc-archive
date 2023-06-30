@@ -37,41 +37,51 @@ export default function EditionPage() {
 			<SideTable data={data} roescData={roescData} />
 			<Markdown value={data.textContent} />
 
-			<h1>Location</h1>
-			<hr />
-			<Markdown value={data.biddingText} />
-			<Table columns={["City", "Venue", "Notes"]}>
-				{data.bidding.map((biddingData, i) => (
-					<tr key={i} className={biddingData.won ? "selected" : ""}>
-						<td>{biddingData.city}</td>
-						<td>
-							<OutLink to={biddingData.link}>{biddingData.venue}</OutLink>
-						</td>
-						<td>{biddingData.notes}</td>
-					</tr>
-				))}
-			</Table>
+			{(data.biddingText || data.bidding.length > 0) && (
+				<>
+					<h1>Location</h1>
+					<hr />
+					<Markdown value={data.biddingText} />
+					{data.bidding.length > 0 && (
+						<Table columns={["City", "Venue", "Notes"]}>
+							{data.bidding.map((biddingData, i) => (
+								<tr key={i} className={biddingData.won ? "selected" : ""}>
+									<td>{biddingData.city}</td>
+									<td>
+										<OutLink to={biddingData.link}>{biddingData.venue}</OutLink>
+									</td>
+									<td>{biddingData.notes}</td>
+								</tr>
+							))}
+						</Table>
+					)}
+				</>
+			)}
 
-			<h1>Semi-Final Allocation Draw</h1>
-			<hr />
-			<Markdown value={data.sfDrawText} />
-			<Twemoji>
-				<Table columns={data.sfDraw.map((_, i) => `Pot ${i + 1}`)}>
-					<tr>
-						{data.sfDraw.map((countries, i) => (
-							<td key={i}>
-								<ul style={{ marginTop: 0 }}>
-									{countries.map((country, i) => (
-										<li key={i}>
-											<Country id={country} />
-										</li>
-									))}
-								</ul>
-							</td>
-						))}
-					</tr>
-				</Table>
-			</Twemoji>
+			{(data.sfDrawText || data.sfDraw.length > 0) && (
+				<>
+					<h1>Semi-Final Allocation Draw</h1>
+					<hr />
+					<Markdown value={data.sfDrawText} />
+					<Twemoji>
+						<Table columns={data.sfDraw.map((_, i) => `Pot ${i + 1}`)}>
+							<tr>
+								{data.sfDraw.map((countries, i) => (
+									<td key={i}>
+										<ul style={{ marginTop: 0 }}>
+											{countries.map((country, i) => (
+												<li key={i}>
+													<Country id={country} />
+												</li>
+											))}
+										</ul>
+									</td>
+								))}
+							</tr>
+						</Table>
+					</Twemoji>
+				</>
+			)}
 
 			<h1>Shows</h1>
 			<hr />

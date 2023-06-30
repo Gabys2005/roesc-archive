@@ -1,0 +1,182 @@
+{
+	"edition": "#03",
+	"link": "03",
+	"cancelled": false,
+	"slogans": ["Ethereal"],
+	"countries": ["ireland"],
+	"venues": [
+		{
+			"name": "Convention Centre Dublin",
+			"city": "Dublin",
+			"link": "https://en.wikipedia.org/wiki/Convention_Centre_Dublin",
+			"country": "ireland"
+		}
+	],
+	"presenters": [
+		{
+			"name": "Stacy",
+			"bot": true,
+			"id": ""
+		}
+	],
+	"broadcasters": [],
+	"links": [
+		{
+			"name": "Roblox Game",
+			"link": "https://www.roblox.com/games/7899709319/"
+		}
+	],
+	"entries": [
+		{
+			"country": "scotland",
+			"hods": ["5802e056-eaaf-435d-bd8b-fb6a5742d2fe"],
+			"performers": [],
+			"song": {
+				"artists": ["Self Esteem"],
+				"title": "Prioritise Pleasure",
+				"link": ""
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 13,
+					"place": 1,
+					"points": {
+						"total": 216,
+						"tele": 109,
+						"jury": 107,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"wales",
+						"kazakhstan",
+						"germany",
+						"us",
+						"norway",
+						"sweden",
+						"czechia",
+						"france",
+						"hungary",
+						"belarus"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 12,
+					"place": 5,
+					"points": {
+						"total": 285,
+						"tele": 115,
+						"jury": 170,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"wales",
+						"ireland",
+						"monaco",
+						"netherlands",
+						"japan",
+						"poland",
+						"us",
+						"czechia",
+						"norway",
+						"sweden"
+					]
+				}
+			],
+			"delegationMembers": []
+		}
+	],
+	"shows": [
+		{
+			"id": "sf1",
+			"date": "2022/01/09",
+			"openings": [],
+			"intervals": [],
+			"textContent": "",
+			"votingMethod": "esc"
+		},
+		{
+			"id": "sf2",
+			"date": "2022/01/16",
+			"openings": [],
+			"intervals": [
+				{
+					"artists": ["Lesley Roy"],
+					"title": "Maps",
+					"link": "https://www.youtube.com/watch?v=z6ZUBzqPxds"
+				}
+			],
+			"textContent": "",
+			"votingMethod": "esc"
+		},
+		{
+			"id": "gf",
+			"date": "2022/01/29",
+			"openings": [
+				{
+					"artists": ["Lorde"],
+					"title": "Green Light",
+					"link": "https://www.youtube.com/watch?v=dMK_npDG12Q"
+				}
+			],
+			"intervals": [
+				{
+					"artists": ["Adele"],
+					"title": "Easy On Me",
+					"link": "https://www.youtube.com/watch?v=U3ASj1L6_sY"
+				},
+				{
+					"artists": ["Adele"],
+					"title": "Hello",
+					"link": "https://www.youtube.com/watch?v=YQHsXMglC9A"
+				},
+				{
+					"artists": ["Adele"],
+					"title": "Rolling In The Deep",
+					"link": "https://www.youtube.com/watch?v=rYEDA3JcQqw"
+				},
+				{
+					"artists": ["Adele"],
+					"title": "Set Fire To The Rain",
+					"link": "https://www.youtube.com/watch?v=Ri7-vnrJD3k"
+				}
+			],
+			"textContent": "",
+			"votingMethod": "esc"
+		}
+	],
+	"media": [
+		{
+			"name": "logos",
+			"images": [
+				{
+					"name": "Logo",
+					"link": "gesc/03/logo.png"
+				}
+			]
+		}
+	],
+	"textContent": "",
+	"sfDraw": [
+		["netherlands", "germany", "andorra", "czechia", "us", "latvia"],
+		["england", "poland", "wales", "italy", "ukraine", "northernireland"],
+		["belarus", "croatia", "lithuania", "norway", "austria", "sweden"],
+		["japan", "romania", "spain", "france", "aland", "monaco"],
+		["hungary", "kazakhstan", "scotland", "portugal", "canada", "finland"]
+	],
+	"sfDrawText": "",
+	"bidding": [],
+	"biddingText": "",
+	"fullName": "Gabys' Eurovision Song Contest #03",
+	"type": "eurovision"
+}

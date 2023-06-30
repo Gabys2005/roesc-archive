@@ -131,6 +131,78 @@ const countries = {
 		name: "Wales",
 		emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
 	},
+	netherlands: {
+		name: "Netherlands",
+		emoji: "",
+	},
+	andorra: {
+		name: "Andorra",
+		emoji: "",
+	},
+	czechia: {
+		name: "Czechia",
+		emoji: "",
+	},
+	us: {
+		name: "United States",
+		emoji: "",
+	},
+	latvia: {
+		name: "Latvia",
+		emoji: "",
+	},
+	italy: {
+		name: "Italy",
+		emoji: "",
+	},
+	belarus: {
+		name: "Belarus",
+		emoji: "",
+	},
+	croatia: {
+		name: "Croatia",
+		emoji: "",
+	},
+	lithuania: {
+		name: "Lithuania",
+		emoji: "",
+	},
+	austria: {
+		name: "Austria",
+		emoji: "",
+	},
+	sweden: {
+		name: "Sweden",
+		emoji: "",
+	},
+	aland: {
+		name: "Aland Islands",
+		emoji: "",
+	},
+	monaco: {
+		name: "Monaco",
+		emoji: "",
+	},
+	hungary: {
+		name: "Hungary",
+		emoji: "",
+	},
+	kazakhstan: {
+		name: "Kazakhstan",
+		emoji: "",
+	},
+	portugal: {
+		name: "Portugal",
+		emoji: "",
+	},
+	canada: {
+		name: "Canada",
+		emoji: "",
+	},
+	finland: {
+		name: "Finland",
+		emoji: "",
+	},
 };
 
 const countriesArray = Object.keys(countries)
