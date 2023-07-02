@@ -4,7 +4,6 @@ import { getEdition } from "../modules/roesc";
 import { getRoescByLink } from "../modules/fetchData";
 import Markdown from "../components/Markdown";
 import Table from "../components/Table";
-import OutLink from "../components/OutLink";
 import Media from "../components/Media";
 import SideTable from "../components/EditionPage/SideTable";
 import Country from "../components/Country";
@@ -50,17 +49,7 @@ export default function EditionPage() {
 						}}
 					/>
 					{data.bidding.length > 0 && !containsComponent(data.biddingText, "BiddingTable") && (
-						<Table columns={["City", "Venue", "Notes"]}>
-							{data.bidding.map((biddingData, i) => (
-								<tr key={i} className={biddingData.won ? "selected" : ""}>
-									<td>{biddingData.city}</td>
-									<td>
-										<OutLink to={biddingData.link}>{biddingData.venue}</OutLink>
-									</td>
-									<td>{biddingData.notes}</td>
-								</tr>
-							))}
-						</Table>
+						<BiddingTable data={data.bidding} />
 					)}
 				</>
 			)}

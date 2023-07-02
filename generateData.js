@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import watch from "node-watch";
+import { getPlace, getWinner } from "./src/modules/edition.js";
 
 const dataFolder = path.join(".", "/src/data");
 const originalFolder = `${dataFolder}/original`;
@@ -31,6 +32,10 @@ function run() {
 			if (fileName !== "main.json") {
 				const fileContent = fs.readFileSync(`${originalFolder}/${roescFolderName}/${fileName}`);
 				const fileData = JSON.parse(fileContent);
+				const winner = getWinner(fileData.entries);
+				const runnerup = getPlace(fileData.entries, "gf", 2);
+
+				console.log(runnerup);
 
 				thisRoescData.push({
 					edition: fileData.edition,
@@ -38,6 +43,14 @@ function run() {
 					countries: fileData.countries,
 					venues: fileData.venues,
 					date: fileData.shows[fileData.shows.length - 1].date,
+					winner: winner && {
+						country: winner.country,
+						song: winner.song.title,
+						artists: winner.song.artists,
+						link: winner.song.link,
+						points: winner.shows.find((s) => s.id === "gf").points.total,
+					},
+					runnerup: runnerup?.country,
 				});
 
 				mainDataClone.editions.push(fileData);

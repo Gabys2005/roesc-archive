@@ -17,13 +17,12 @@ function getShowEntries(data, show, sortBy) {
 			});
 		}
 	});
-	entries.sort((a, b) => a[sortBy] - b[sortBy]);
-	return entries;
+	return entries.sort((a, b) => b[sortBy] - a[sortBy]);
 }
 
 export default function SplitResultsTable({ show, data }) {
 	const jurySorted = getShowEntries(data, show, "juryPoints");
-	const teleSorted = getShowEntries(data, show, "teleSorted");
+	const teleSorted = getShowEntries(data, show, "telePoints");
 
 	return (
 		<Twemoji>

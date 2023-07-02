@@ -176,7 +176,7 @@ const countries = {
 		emoji: "",
 	},
 	aland: {
-		name: "Aland Islands",
+		name: "Åland Islands",
 		emoji: "",
 	},
 	monaco: {

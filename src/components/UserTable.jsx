@@ -7,7 +7,7 @@ export default function UserTable() {
 	const [users, setUsers] = useState([]);
 
 	useEffect(() => {
-		getUsers().then((users) => setUsers(users));
+		getUsers().then((users) => setUsers(users.sort((a, b) => a.name.localeCompare(b.name))));
 	}, []);
 
 	if (users.length === 0) {

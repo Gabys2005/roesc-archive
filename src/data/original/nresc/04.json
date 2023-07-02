@@ -217,6 +217,52 @@
 				}
 			],
 			"delegationMembers": []
+		},
+		{
+			"country": "vietnam",
+			"hods": ["8de5b73d-abc9-419c-85c3-2696e60d0221"],
+			"performers": [],
+			"song": {
+				"artists": ["Hana Vu"],
+				"title": "Keeper",
+				"link": "https://www.youtube.com/watch?v=3dC62iOkIXw"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 12,
+					"place": 1,
+					"points": {
+						"total": 217,
+						"tele": 103,
+						"jury": 120,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": false,
+					"failedToVote": false,
+					"votes": [],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 8,
+					"place": 2,
+					"points": {
+						"total": 324,
+						"tele": 120,
+						"jury": 204,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": false,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
 		}
 	],
 	"bidding": [
