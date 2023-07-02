@@ -1,0 +1,1 @@
+const n=[{edition:"#03",link:"03",countries:["ireland"],venues:[{name:"Convention Centre Dublin",city:"Dublin",link:"https://en.wikipedia.org/wiki/Convention_Centre_Dublin",country:"ireland"}],date:"2022/01/29",cancelled:!1}];export{n as default};
