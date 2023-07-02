@@ -14,7 +14,7 @@ export default function Markdown({ value, overrides }) {
 				},
 			}}
 		>
-			{value}
+			{value || ""}
 		</MarkdownToJSX>
 	);
 }
