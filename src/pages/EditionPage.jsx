@@ -12,6 +12,8 @@ import ShowContent from "../components/EditionPage/ShowContent";
 import BiddingTable from "../components/EditionPage/BiddingTable";
 import { containsComponent } from "../modules/utils";
 import ParticipantsTable from "../components/EditionPage/ParticipantsTable";
+import UsersString from "../components/UsersString";
+import Song from "../components/Song";
 
 export default function EditionPage() {
 	const { roesc, edition } = useParams();
@@ -90,6 +92,31 @@ export default function EditionPage() {
 			))}
 
 			<div style={{ marginTop: "2rem" }}></div>
+
+			{data.replacements?.length > 0 && (
+				<>
+					<h1>Original entries</h1>
+					<hr />
+					<Table columns={["Country", "Participant", "Artists", "Song"]}>
+						{data.replacements.map((replacement, i) => (
+							<tr key={i}>
+								<td>
+									<Twemoji>
+										<Country id={replacement.country} />
+									</Twemoji>
+								</td>
+								<td>
+									<UsersString userids={[replacement.participant]} />
+								</td>
+								<td>{replacement.song.artists}</td>
+								<td>
+									<Song data={replacement.song} titleOnly />
+								</td>
+							</tr>
+						))}
+					</Table>
+				</>
+			)}
 
 			{data.incidents != "" && (
 				<>

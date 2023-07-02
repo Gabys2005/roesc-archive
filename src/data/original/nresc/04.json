@@ -339,5 +339,16 @@
 	],
 	"fullName": "Nedas' And Rob's Earthvision Song Contest #04",
 	"type": "earthvision",
-	"incidents": "# Aleyna Tilki's arrest\nOn 12 December 2021, Aleyna Tilki, one of Turkey's representatives, was arrested and sentenced to 5 months in prison over an incident which occurred at Istanbul's airport in January 2020. She was granted furlough in order to perform in Nagoya."
+	"incidents": "# Aleyna Tilki's arrest\nOn 12 December 2021, Aleyna Tilki, one of Turkey's representatives, was arrested and sentenced to 5 months in prison over an incident which occurred at Istanbul's airport in January 2020. She was granted furlough in order to perform in Nagoya.",
+	"replacements": [
+		{
+			"country": "australia",
+			"participant": "289b9d48-2566-409d-b9b6-580df89c9f1e",
+			"song": {
+				"artists": ["G-Nat!on"],
+				"link": "https://www.youtube.com/watch?v=WVrCB4kVeIc",
+				"title": "Little Bit Of"
+			}
+		}
+	]
 }

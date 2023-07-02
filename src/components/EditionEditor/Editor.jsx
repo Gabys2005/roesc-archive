@@ -15,6 +15,7 @@ import BoundaryError from "../BoundaryError";
 import Entries from "./Entries";
 import Info from "../Editor/Info";
 import Incidents from "./Incidents";
+import Changes from "./Changes";
 
 export default function Editor({ initialData, name, initialUsers }) {
 	const [data, setData] = useState(initialData);
@@ -64,6 +65,10 @@ export default function Editor({ initialData, name, initialUsers }) {
 		{
 			name: "Entries",
 			component: <Entries data={data} setValue={setValue} users={users} />,
+		},
+		{
+			name: "Changes",
+			component: <Changes data={data} setValue={setValue} users={users} />,
 		},
 		{
 			name: "Incidents",
