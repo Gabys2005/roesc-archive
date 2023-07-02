@@ -118,7 +118,7 @@ export default function EditionPage() {
 				</>
 			)}
 
-			{data.incidents != "" && (
+			{data.incidents && (
 				<>
 					<h1>Incidents</h1>
 					<hr />

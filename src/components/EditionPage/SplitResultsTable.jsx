@@ -56,14 +56,14 @@ export default function SplitResultsTable({ show, data }) {
 							{jurySorted.map((juryEntry, i) => (
 								<tr key={i}>
 									<th style={{ textAlign: "center" }}>{i + 1}</th>
-									<td>
+									<td className={juryEntry.className}>
 										<Country id={juryEntry.country} />
 									</td>
-									<td>{juryEntry.juryPoints}</td>
-									<td>
+									<td className={juryEntry.className}>{juryEntry.juryPoints}</td>
+									<td className={teleSorted[i].className}>
 										<Country id={teleSorted[i].country} />
 									</td>
-									<td>{teleSorted[i].telePoints}</td>
+									<td className={teleSorted[i].className}>{teleSorted[i].telePoints}</td>
 								</tr>
 							))}
 						</tbody>

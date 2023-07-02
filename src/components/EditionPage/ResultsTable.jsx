@@ -9,7 +9,7 @@ function getShowEntries(data, show) {
 	const entries = [];
 	data.entries.forEach((entry) => {
 		const showData = entry.shows.find((s) => s.id === show);
-		if (showData) {
+		if (showData?.participated) {
 			let className = "";
 			if (showData.qualified) className = "selected";
 			if (show === "gf") {

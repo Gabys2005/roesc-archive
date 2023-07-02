@@ -10,7 +10,7 @@ function getMaxPoints(data, show) {
 		const showData = entry.shows.find((s) => s.id === show.id);
 		if (showData && showData.votes && showData.votes[0]) {
 			const maxPointsGetter = showData.votes[0];
-			const existing = getters.find((g) => (g.country = maxPointsGetter));
+			const existing = getters.find((g) => g.country === maxPointsGetter);
 			if (existing) {
 				existing.givers.push(entry.country);
 			} else {
@@ -21,7 +21,7 @@ function getMaxPoints(data, show) {
 
 	const toReturn = {
 		maxPoints,
-		getters,
+		getters: getters.sort((a, b) => b.givers.length - a.givers.length),
 	};
 
 	return toReturn;
@@ -53,7 +53,10 @@ export default function MaxPointsTable({ data, show }) {
 							</td>
 							<td>
 								{getter.givers.map((giver, i) => (
-									<Country id={giver} key={i} />
+									<>
+										<Country id={giver} key={i} />
+										{i === getter.givers.length - 1 ? "" : ", "}
+									</>
 								))}
 							</td>
 						</tr>

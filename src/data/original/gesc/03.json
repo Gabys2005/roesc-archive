@@ -94,6 +94,797 @@
 				}
 			],
 			"delegationMembers": []
+		},
+		{
+			"country": "norway",
+			"hods": ["2de6598d-cce7-490c-b07d-ea82147f2c38"],
+			"performers": [],
+			"song": {
+				"artists": ["Emilie Adams"],
+				"title": "Monogamy",
+				"link": "https://www.youtube.com/watch?v=e9sDb8eVEWM"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 6,
+					"place": 2,
+					"points": {
+						"total": 199,
+						"tele": 98,
+						"jury": 101,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"england",
+						"wales",
+						"hungary",
+						"scotland",
+						"czechia",
+						"sweden",
+						"france",
+						"belarus",
+						"kazakhstan",
+						"germany"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 11,
+					"place": 2,
+					"points": {
+						"total": 312,
+						"tele": 145,
+						"jury": 167,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "czechia",
+			"hods": ["e71b949e-679a-4459-b34c-42f6d88027b0"],
+			"performers": [],
+			"song": {
+				"artists": ["Aiko"],
+				"title": "Daughter Of The Sun",
+				"link": "https://www.youtube.com/watch?v=ZrOSBINZu9c"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 14,
+					"place": 3,
+					"points": {
+						"total": 169,
+						"tele": 91,
+						"jury": 78,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"scotland",
+						"sweden",
+						"norway",
+						"england",
+						"us",
+						"belarus",
+						"hungary",
+						"germany",
+						"spain",
+						"france"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 10,
+					"place": 14,
+					"points": {
+						"total": 166,
+						"tele": 77,
+						"jury": 89,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "wales",
+			"hods": ["aa65daa1-5c11-473e-aa61-ea2815c6d0ce"],
+			"performers": [],
+			"song": {
+				"artists": ["Marina"],
+				"title": "Bubblegum Bitch",
+				"link": "https://www.youtube.com/watch?v=TcnrXHtRgKc"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 8,
+					"place": 4,
+					"points": {
+						"total": 166,
+						"tele": 73,
+						"jury": 93,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"norway",
+						"aland",
+						"sweden",
+						"us",
+						"hungary",
+						"france",
+						"czechia",
+						"germany",
+						"kazakhstan",
+						"italy"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 6,
+					"place": 1,
+					"points": {
+						"total": 335,
+						"tele": 161,
+						"jury": 174,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [],
+					"won": true
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "england",
+			"hods": ["a8621f3b-650e-45ec-92a1-a1996b517cc9"],
+			"performers": [],
+			"song": {
+				"artists": ["London Grammar"],
+				"title": "Lose Your Head",
+				"link": "https://www.youtube.com/watch?v=j8oD9jlCFJw"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 7,
+					"place": 5,
+					"points": {
+						"total": 161,
+						"tele": 73,
+						"jury": 88,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"aland",
+						"scotland",
+						"hungary",
+						"norway",
+						"germany",
+						"czechia",
+						"kazakhstan",
+						"us",
+						"sweden",
+						"wales"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 8,
+					"place": 12,
+					"points": {
+						"total": 182,
+						"tele": 77,
+						"jury": 105,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "us",
+			"hods": ["fe119bf0-e951-4e7b-a61e-b0d849f36902"],
+			"performers": [],
+			"song": {
+				"artists": ["Naïka"],
+				"title": "Oh Mama",
+				"link": "https://www.youtube.com/watch?v=fNw9C50SCaM"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 15,
+					"place": 6,
+					"points": {
+						"total": 133,
+						"tele": 62,
+						"jury": 71,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"norway",
+						"czechia",
+						"sweden",
+						"wales",
+						"belarus",
+						"england",
+						"kazakhstan",
+						"germany",
+						"hungary",
+						"scotland"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 4,
+					"place": 11,
+					"points": {
+						"total": 197,
+						"tele": 138,
+						"jury": 59,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "sweden",
+			"hods": ["2a49f78f-67bc-414a-9fed-95374a800df3"],
+			"performers": [],
+			"song": {
+				"artists": ["Agnes"],
+				"title": "24 Hours",
+				"link": "https://www.youtube.com/watch?v=CPtAMyqHrNc"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 9,
+					"place": 7,
+					"points": {
+						"total": 133,
+						"tele": 80,
+						"jury": 53,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"aland",
+						"norway",
+						"us",
+						"wales",
+						"scotland",
+						"france",
+						"england",
+						"belarus",
+						"kazakhstan",
+						"czechia"
+					],
+					"qualified": true
+				},
+				{
+					"id": "gf",
+					"order": 5,
+					"place": 7,
+					"points": {
+						"total": 259,
+						"tele": 122,
+						"jury": 137,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "hungary",
+			"hods": ["37d23bc4-496e-4aa2-a6f3-45d1e127ae03"],
+			"performers": [],
+			"song": {
+				"artists": ["Hundred Sins"],
+				"title": "浮世 (UIKYO)",
+				"link": "https://www.youtube.com/watch?v=wSsT1lzKi08"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 3,
+					"place": 8,
+					"points": {
+						"total": 122,
+						"tele": 66,
+						"jury": 56,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"scotland",
+						"wales",
+						"england",
+						"germany",
+						"czechia",
+						"us",
+						"spain",
+						"france",
+						"norway",
+						"sweden"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "france",
+			"hods": ["4a8dbd34-49e4-4379-91bf-0c73c182cdb3"],
+			"performers": [],
+			"song": {
+				"artists": ["Angèle"],
+				"title": "Bruxelles je t'aime",
+				"link": "https://www.youtube.com/watch?v=a79iLjV-HKw"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 5,
+					"place": 9,
+					"points": {
+						"total": 118,
+						"tele": 55,
+						"jury": 63,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"us",
+						"scotland",
+						"belarus",
+						"england",
+						"aland",
+						"norway",
+						"germany",
+						"italy",
+						"hungary",
+						"sweden"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "germany",
+			"hods": ["9c487c9f-7899-4522-8a4c-d9571e332b53"],
+			"performers": [],
+			"song": {
+				"artists": ["Cinta Laura Kiehl"],
+				"title": "Markisa",
+				"link": "https://www.youtube.com/watch?v=gyW35w1mIEo"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 1,
+					"place": 10,
+					"points": {
+						"total": 113,
+						"tele": 55,
+						"jury": 58,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"norway",
+						"czechia",
+						"scotland",
+						"wales",
+						"england",
+						"hungary",
+						"us",
+						"sweden",
+						"kazakhstan",
+						"aland"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "aland",
+			"hods": ["52f7b109-6484-4983-891c-cb60b727cf16"],
+			"performers": [],
+			"song": {
+				"artists": ["Dotter"],
+				"title": "Bulletproof",
+				"link": "https://www.youtube.com/watch?v=faIF5Ej_VHI"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 4,
+					"place": 11,
+					"points": {
+						"total": 100,
+						"tele": 47,
+						"jury": 53,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"belarus",
+						"czechia",
+						"wales",
+						"italy",
+						"england",
+						"france",
+						"kazakhstan",
+						"norway",
+						"germany",
+						"us"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "belarus",
+			"hods": ["eeb71f68-77ad-44d0-b978-56ee92716f4e"],
+			"performers": [],
+			"song": {
+				"artists": ["Garza"],
+				"title": "Пташка",
+				"link": "https://www.youtube.com/watch?v=sXtqoyQjx8g"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 2,
+					"place": 12,
+					"points": {
+						"total": 79,
+						"tele": 36,
+						"jury": 43,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"england",
+						"us",
+						"czechia",
+						"kazakhstan",
+						"norway",
+						"scotland",
+						"germany",
+						"wales",
+						"hungary",
+						"sweden"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "kazakhstan",
+			"hods": ["d8aa08a4-213e-4452-bce9-2e42dd115ab1"],
+			"performers": [],
+			"song": {
+				"artists": ["C.C.TAY"],
+				"title": "Мүмкін емес",
+				"link": "https://www.youtube.com/watch?v=aZgHsz9A9KE"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 11,
+					"place": 13,
+					"points": {
+						"total": 63,
+						"tele": 25,
+						"jury": 38,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"france",
+						"scotland",
+						"wales",
+						"hungary",
+						"aland",
+						"belarus",
+						"italy",
+						"spain",
+						"sweden",
+						"norway"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "italy",
+			"hods": ["2619aac8-2e2e-4165-9b8a-d175f8df67f9"],
+			"performers": [],
+			"song": {
+				"artists": ["Caparezza"],
+				"title": "La Scelta",
+				"link": "https://www.youtube.com/watch?v=D8ZVhvXqUzI"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 12,
+					"place": 14,
+					"points": {
+						"total": 55,
+						"tele": 40,
+						"jury": 15,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"scotland",
+						"france",
+						"england",
+						"norway",
+						"germany",
+						"aland",
+						"czechia",
+						"sweden",
+						"spain",
+						"us"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
+		},
+		{
+			"country": "spain",
+			"hods": ["c6aec350-441a-4d2d-9090-8316e16e0560"],
+			"performers": [],
+			"song": {
+				"artists": ["Nia"],
+				"title": "Malayerba",
+				"link": "https://www.youtube.com/watch?v=A3NCMhIzPgs"
+			},
+			"shows": [
+				{
+					"id": "sf1",
+					"order": 10,
+					"place": 15,
+					"points": {
+						"total": 29,
+						"tele": 18,
+						"jury": 11,
+						"penalty": 0
+					},
+					"participated": true,
+					"attended": true,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": [
+						"france",
+						"hungary",
+						"wales",
+						"england",
+						"scotland",
+						"norway",
+						"germany",
+						"us",
+						"sweden",
+						"aland"
+					]
+				},
+				{
+					"id": "gf",
+					"order": 0,
+					"place": 0,
+					"points": {
+						"total": 0,
+						"tele": 0,
+						"jury": 0,
+						"penalty": 0
+					},
+					"participated": false,
+					"attended": false,
+					"shouldveVoted": true,
+					"failedToVote": false,
+					"votes": []
+				}
+			],
+			"delegationMembers": []
 		}
 	],
 	"shows": [
@@ -178,5 +969,6 @@
 	"bidding": [],
 	"biddingText": "",
 	"fullName": "Gabys' Eurovision Song Contest #03",
-	"type": "eurovision"
+	"type": "eurovision",
+	"replacements": []
 }
