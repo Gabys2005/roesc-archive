@@ -13,7 +13,8 @@ export default function Output({ data, users, broadcasters }) {
 			<div className="box">
 				<p>
 					Download all of the files below and send them as attachments in the thread of this RoESC in the
-					#roesc-archive channel
+					#roesc-archive channel. If you haven{"'"}t edited/added users or broadcasters then you don{"'"}t
+					need to download those files
 				</p>
 			</div>
 			<div className="columns">

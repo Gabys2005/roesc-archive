@@ -1,10 +1,39 @@
 import { getMedia } from "../../modules/utils";
 import MediaImage from "../MediaImage";
-import { shows } from "../../modules/showList";
+import { shows as showList } from "../../modules/showList";
 import { parseDate } from "../../modules/parseDate";
 import Song from "../Song";
 import UsersString from "../UsersString";
 import BroadcastersString from "../BroadcastersString";
+
+function Acts({ name, shows, showIndex }) {
+	const showsToShow = shows.filter((s) => s[showIndex].length > 0);
+
+	if (showsToShow.length === 0) {
+		return <></>;
+	}
+
+	return (
+		<>
+			<tr style={{ textAlign: "center" }}>
+				<th colSpan={2}>{name} Acts</th>
+			</tr>
+			{showsToShow.map((show) => (
+				<tr key={show.id}>
+					<th>{showList[show.id]}</th>
+					<td>
+						{show[showIndex].map((act, i) => (
+							<div key={i}>
+								<Song data={act} />
+								<br />
+							</div>
+						))}
+					</td>
+				</tr>
+			))}
+		</>
+	);
+}
 
 export default function SideTable({ data, roescData }) {
 	return (
@@ -56,42 +85,12 @@ export default function SideTable({ data, roescData }) {
 					</tr>
 					{data.shows.map((show) => (
 						<tr key={show.id}>
-							<th>{shows[show.id]}</th>
+							<th>{showList[show.id]}</th>
 							<td>{parseDate(show.date)}</td>
 						</tr>
 					))}
-					<tr style={{ textAlign: "center" }}>
-						<th colSpan={2}>Opening Acts</th>
-					</tr>
-					{data.shows.map((show) => (
-						<tr key={show.id}>
-							<th>{shows[show.id]}</th>
-							<td>
-								{show.openings.map((opening, i) => (
-									<div key={i}>
-										<Song data={opening} />
-										<br />
-									</div>
-								))}
-							</td>
-						</tr>
-					))}
-					<tr style={{ textAlign: "center" }}>
-						<th colSpan={2}>Interval Acts</th>
-					</tr>
-					{data.shows.map((show) => (
-						<tr key={show.id}>
-							<th>{shows[show.id]}</th>
-							<td>
-								{show.intervals.map((interval, i) => (
-									<div key={i}>
-										<Song data={interval} />
-										<br />
-									</div>
-								))}
-							</td>
-						</tr>
-					))}
+					<Acts name="Opening" shows={data.shows} showIndex="openings" />
+					<Acts name="Interval" shows={data.shows} showIndex="intervals" />
 				</tbody>
 			</table>
 		</div>

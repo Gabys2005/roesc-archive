@@ -39,7 +39,7 @@ function getShowEntries(data, show) {
 	return entries;
 }
 
-export default function ResultsTable({ show, data }) {
+function TableWithPoints({ entries }) {
 	return (
 		<Twemoji>
 			<div className="my-5">
@@ -48,7 +48,7 @@ export default function ResultsTable({ show, data }) {
 					smallFirst
 					compact
 				>
-					{getShowEntries(data, show).map((entry, i) => (
+					{entries.map((entry, i) => (
 						<tr key={i} className={entry.className}>
 							<td style={{ textAlign: "center" }}>{fancyNumber(entry.ro)}</td>
 							<td>
@@ -69,4 +69,39 @@ export default function ResultsTable({ show, data }) {
 			</div>
 		</Twemoji>
 	);
+}
+
+function TableWithoutPoints({ entries }) {
+	return (
+		<Twemoji>
+			<div className="my-5">
+				<Table columns={["Country", "Participant", "Artist", "Song"]} compact>
+					{entries.map((entry, i) => (
+						<tr key={i} className={entry.className}>
+							<td>
+								<Country id={entry.country} />
+							</td>
+							<td>
+								<UsersString userids={entry.participant} />
+							</td>
+							<td>{entry.song.artists}</td>
+							<td>
+								<Song data={entry.song} titleOnly />
+							</td>
+						</tr>
+					))}
+				</Table>
+			</div>
+		</Twemoji>
+	);
+}
+
+export default function ResultsTable({ show, data }) {
+	const showEntries = getShowEntries(data, show);
+	const shouldDisplayNumbers = !!showEntries.find((entry) => entry.ro != 0 || entry.place != 0 || entry.points != 0);
+
+	if (shouldDisplayNumbers) {
+		return <TableWithPoints entries={showEntries} />;
+	}
+	return <TableWithoutPoints entries={showEntries} />;
 }

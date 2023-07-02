@@ -23,6 +23,11 @@ function getShowEntries(data, show, sortBy) {
 export default function SplitResultsTable({ show, data }) {
 	const jurySorted = getShowEntries(data, show, "juryPoints");
 	const teleSorted = getShowEntries(data, show, "telePoints");
+	const shouldShow = !!jurySorted.find((e) => e.juryPoints != 0 || e.telePoints != 0);
+
+	if (!shouldShow) {
+		return <></>;
+	}
 
 	return (
 		<Twemoji>

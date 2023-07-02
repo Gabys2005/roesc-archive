@@ -24,12 +24,15 @@ function getMaxPoints(data, show) {
 		getters,
 	};
 
-	console.log(toReturn);
 	return toReturn;
 }
 
 export default function MaxPointsTable({ data, show }) {
 	const points = getMaxPoints(data, show);
+
+	if (points.getters.length === 0) {
+		return <></>;
+	}
 
 	return (
 		<Twemoji>
