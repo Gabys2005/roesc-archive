@@ -88,6 +88,12 @@ export default function EditionPage() {
 
 			<div style={{ marginTop: "2rem" }}></div>
 
+			<h1>Incidents</h1>
+			<hr />
+			<Markdown value={data.incidents} />
+
+			<div style={{ marginTop: "2rem" }}></div>
+
 			<Media media={data.media} />
 
 			<hr style={{ clear: "both" }} />
