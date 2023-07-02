@@ -1,1 +1,0 @@
-import{r,j as i,L as p}from"./index-dec13bd2.js";import{b as f}from"./users-a7f7ff0e.js";function l({userids:t}){const[n,o]=r.useState([]);return r.useEffect(()=>{const a=t.filter(s=>!!s).map(s=>f(s));Promise.all(a).then(s=>{o(s.map((e,m)=>i.jsxs(p,{to:`/users/${e.name}`,children:[e.name,m===s.length-1?"":", "]},e.id)))})},[t]),n}export{l as U};

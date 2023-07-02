@@ -1,1 +1,0 @@
-import{j as t}from"./index-dec13bd2.js";import{R as o}from"./RoescEditor-f813c6e4.js";import{b as r}from"./v4-872b0555.js";import"./Output-b2539952.js";import"./Markdown-92b15ec1.js";import"./OutLink-29cdf1bb.js";import"./Editor-d08e85c7.js";import"./index.esm-325b60d3.js";function u(){return t.jsx(o,{name:"Blank",initialData:r})}export{u as default};
