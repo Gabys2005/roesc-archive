@@ -1,1 +1,0 @@
-const a=[{edition:"#04",link:"04",countries:["japan"],venues:[{name:"Nagoya Civic General Gymnasium",city:"Nagoya",link:"https://en.wikipedia.org/wiki/Nippon_Gaishi_Hall",country:"japan"}],date:"2022/02/05"}];export{a as default};
