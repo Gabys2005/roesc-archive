@@ -26,4 +26,9 @@ function fancyNumber(num) {
 	return num.toString();
 }
 
-export { download, getMedia, getMediaImage, fancyNumber };
+function containsComponent(text, componentName) {
+	const regex = new RegExp(`<${componentName}(?:(?: )*|)/>`, "g");
+	return text.search(regex) > -1;
+}
+
+export { download, getMedia, getMediaImage, fancyNumber, containsComponent };

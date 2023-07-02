@@ -10,6 +10,8 @@ import SideTable from "../components/EditionPage/SideTable";
 import Country from "../components/Country";
 import Twemoji from "react-twemoji";
 import ShowContent from "../components/EditionPage/ShowContent";
+import BiddingTable from "../components/EditionPage/BiddingTable";
+import { containsComponent } from "../modules/utils";
 
 export default function EditionPage() {
 	const { roesc, edition } = useParams();
@@ -41,8 +43,13 @@ export default function EditionPage() {
 				<>
 					<h1>Location</h1>
 					<hr />
-					<Markdown value={data.biddingText} />
-					{data.bidding.length > 0 && (
+					<Markdown
+						value={data.biddingText}
+						overrides={{
+							BiddingTable: { component: BiddingTable, props: { data: data.bidding } },
+						}}
+					/>
+					{data.bidding.length > 0 && !containsComponent(data.biddingText, "BiddingTable") && (
 						<Table columns={["City", "Venue", "Notes"]}>
 							{data.bidding.map((biddingData, i) => (
 								<tr key={i} className={biddingData.won ? "selected" : ""}>

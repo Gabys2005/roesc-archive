@@ -1,7 +1,7 @@
 import Button from "../Button";
+import BiddingTable from "../EditionPage/BiddingTable";
 import Checkbox from "../Inputs/Checkbox";
 import MarkdownInput from "../Inputs/MarkdownInput";
-import InputHeader from "../Inputs/Util/InputHeader";
 import Table from "../Table";
 
 export default function Location({ data, setValue }) {
@@ -13,8 +13,9 @@ export default function Location({ data, setValue }) {
 	}
 
 	return (
-		<div className="box">
-			<InputHeader name="Bidding Table">
+		<div>
+			<div className="box">
+				<h1>Bidding Table</h1>
 				<Table columns={["City", "Venue", "Notes", "Wikipedia link", "Won?", ""]}>
 					{data.bidding.map((bidData, i) => (
 						<tr key={i}>
@@ -82,11 +83,27 @@ export default function Location({ data, setValue }) {
 				>
 					Add Another Row
 				</Button>
-			</InputHeader>
-
-			<InputHeader name="Written Content" description="">
-				<MarkdownInput value={data.biddingText} setValue={(text) => setValue("biddingText", text)} />
-			</InputHeader>
+			</div>
+			<div className="box">
+				<h1>Written Content</h1>
+				<p>Custom components for this editor:</p>
+				<ul>
+					<li>
+						<span className="tag">
+							{"<"}BiddingTable /{">"}
+						</span>{" "}
+						will insert the table from above. If omitted, the table will be generated at the very bottom of
+						this section
+					</li>
+				</ul>
+				<MarkdownInput
+					value={data.biddingText}
+					setValue={(text) => setValue("biddingText", text)}
+					overrides={{
+						BiddingTable: { component: BiddingTable, props: { data: data.bidding, stopLinks: true } },
+					}}
+				/>
+			</div>
 		</div>
 	);
 }
