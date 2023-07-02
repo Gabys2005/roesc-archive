@@ -11,6 +11,7 @@ import Twemoji from "react-twemoji";
 import ShowContent from "../components/EditionPage/ShowContent";
 import BiddingTable from "../components/EditionPage/BiddingTable";
 import { containsComponent } from "../modules/utils";
+import ParticipantsTable from "../components/EditionPage/ParticipantsTable";
 
 export default function EditionPage() {
 	const { roesc, edition } = useParams();
@@ -79,6 +80,8 @@ export default function EditionPage() {
 				</>
 			)}
 
+			<ParticipantsTable entries={data.entries} />
+
 			<h1>Shows</h1>
 			<hr />
 
@@ -88,11 +91,14 @@ export default function EditionPage() {
 
 			<div style={{ marginTop: "2rem" }}></div>
 
-			<h1>Incidents</h1>
-			<hr />
-			<Markdown value={data.incidents} />
-
-			<div style={{ marginTop: "2rem" }}></div>
+			{data.incidents != "" && (
+				<>
+					<h1>Incidents</h1>
+					<hr />
+					<Markdown value={data.incidents} />
+					<div style={{ marginTop: "2rem" }}></div>
+				</>
+			)}
 
 			<Media media={data.media} />
 

@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import watch from "node-watch";
 import { getPlace, getWinner } from "./src/modules/edition.js";
+import editionOrder from "./src/data/original/editionOrder.json" assert { type: "json" };
 
 const dataFolder = path.join(".", "/src/data");
 const originalFolder = `${dataFolder}/original`;
@@ -35,8 +36,6 @@ function run() {
 				const winner = getWinner(fileData.entries);
 				const runnerup = getPlace(fileData.entries, "gf", 2);
 
-				console.log(runnerup);
-
 				thisRoescData.push({
 					edition: fileData.edition,
 					link: fileData.link,
@@ -51,11 +50,16 @@ function run() {
 						points: winner.shows.find((s) => s.id === "gf").points.total,
 					},
 					runnerup: runnerup?.country,
+					cancelled: fileData.cancelled,
 				});
 
 				mainDataClone.editions.push(fileData);
 			}
 		}
+
+		const roescEditionOrder = editionOrder[roescFolderName];
+		thisRoescData.sort((a, b) => roescEditionOrder.indexOf(a.link) - roescEditionOrder.indexOf(b.link));
+
 		fs.writeFileSync(`${generatedFolder}/${roescFolderName}.json`, JSON.stringify(thisRoescData), "utf-8");
 		allRoescs.push(mainFileData);
 		fullData.push(mainDataClone);

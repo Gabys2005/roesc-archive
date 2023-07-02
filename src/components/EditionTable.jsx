@@ -18,22 +18,30 @@ function Row({ edition, roesc }) {
 					{edition.venues[0].city}, <Country id={edition.venues[0].country} />
 				</Twemoji>
 			</td>
-			<td>{parseDate(edition.date)}</td>
-			<td>
-				<Twemoji>
-					<Country id={edition.winner?.country} />
-				</Twemoji>
-			</td>
-			<td>
-				<OutLink to={edition.winner?.link}>{edition.winner?.song}</OutLink>
-			</td>
-			<td>{edition.winner?.artists}</td>
-			<td>{edition.winner?.points}</td>
-			<td>
-				<Twemoji>
-					<Country id={edition.runnerup} />
-				</Twemoji>
-			</td>
+			{edition.cancelled ? (
+				<td colSpan={6} style={{ textAlign: "center" }}>
+					Edition cancelled
+				</td>
+			) : (
+				<>
+					<td>{parseDate(edition.date)}</td>
+					<td>
+						<Twemoji>
+							<Country id={edition.winner?.country} />
+						</Twemoji>
+					</td>
+					<td>
+						<OutLink to={edition.winner?.link}>{edition.winner?.song}</OutLink>
+					</td>
+					<td>{edition.winner?.artists}</td>
+					<td>{edition.winner?.points}</td>
+					<td>
+						<Twemoji>
+							<Country id={edition.runnerup} />
+						</Twemoji>
+					</td>
+				</>
+			)}
 		</tr>
 	);
 }

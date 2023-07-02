@@ -5,6 +5,12 @@ import ResultsTable from "./ResultsTable";
 import SplitResultsTable from "./SplitResultsTable";
 
 export default function ShowContent({ data, show }) {
+	const shouldShow = show.textContent || data.entries.find((e) => e.shows.find((s) => s.id === show.id));
+
+	if (!shouldShow) {
+		return <></>;
+	}
+
 	return (
 		<div className="mb-5">
 			<h2>{shows[show.id]}</h2>

@@ -30,5 +30,5 @@ export default function ExistingEdit() {
 		return <h1>Loading...</h1>;
 	}
 
-	return <Editor name={data.edition} initialData={data} />;
+	return <Editor name={data.fullName} initialData={data} />;
 }

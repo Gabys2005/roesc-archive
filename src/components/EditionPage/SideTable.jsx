@@ -56,22 +56,24 @@ export default function SideTable({ data, roescData }) {
 					) : (
 						""
 					)}
-					<tr>
-						<th>Presenters</th>
-						<td>
-							{data.presenters.map((presenter, i) => (
-								<span key={i}>
-									{presenter.name}{" "}
-									{presenter.id && (
-										<span>
-											(<UsersString userids={[presenter.id]} />)
-										</span>
-									)}
-									<br />
-								</span>
-							))}
-						</td>
-					</tr>
+					{data.presenters.length > 0 && (
+						<tr>
+							<th>Presenters</th>
+							<td>
+								{data.presenters.map((presenter, i) => (
+									<span key={i}>
+										{presenter.name}{" "}
+										{presenter.id && (
+											<span>
+												(<UsersString userids={[presenter.id]} />)
+											</span>
+										)}
+										<br />
+									</span>
+								))}
+							</td>
+						</tr>
+					)}
 					{data.broadcasters.length > 0 && (
 						<tr>
 							<th>Broadcaster</th>
