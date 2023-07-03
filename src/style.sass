@@ -38,6 +38,7 @@ html
     --first-place: #ffd700
     --second-place: #c0c0c0
     --third-place: #cd7f32
+    --blank-cell: var(--input-border-color)
 
 html.is-dark
     --background-color: hsl(228, 10%, 10%)
@@ -63,6 +64,7 @@ html.is-dark
     --first-place: #8b6900
     --second-place: #5d5d5d
     --third-place: #793f00
+    --blank-cell: var(--input-border-color)
 
 
 html
@@ -231,11 +233,17 @@ pre
 .checkbox:hover
     color: var(--text-color)
 
-tr.firstplace
+tr.firstplace, td.firstplace
     background-color: var(--first-place)
     
-tr.secondplace
+tr.secondplace, td.secondplace
     background-color: var(--second-place)
 
-tr.thirdplace
+tr.thirdplace, td.thirdplace
     background-color: var(--third-place)
+
+.rotate
+    transform: rotate(180deg)
+
+td.blank
+    background-color: var(--blank-cell) !important

@@ -1,5 +1,6 @@
 import { shows } from "../../modules/showList";
 import Markdown from "../Markdown";
+import DetailedVotingTable from "./DetailedVotingTable";
 import MaxPointsTable from "./MaxPointsTable";
 import ResultsTable from "./ResultsTable";
 import SplitResultsTable from "./SplitResultsTable";
@@ -20,6 +21,7 @@ export default function ShowContent({ data, show }) {
 				<SplitResultsTable data={data} show={show.id} />
 				<MaxPointsTable data={data} show={show} />
 			</div>
+			<DetailedVotingTable data={data} show={show} />
 		</div>
 	);
 }
