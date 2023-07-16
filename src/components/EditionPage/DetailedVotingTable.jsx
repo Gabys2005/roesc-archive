@@ -8,6 +8,7 @@ function getTableContent(data, show) {
 	const voters = [];
 	const votingMethod = show.votingMethod;
 	const pointsToGive = votingMethods.find((m) => m.value === votingMethod)?.points || [];
+	const maxPoints = pointsToGive[0];
 
 	data.entries.forEach((entry) => {
 		const showData = entry.shows.find((s) => s.id === show.id);
@@ -50,6 +51,7 @@ function getTableContent(data, show) {
 					showPoints: showData.points,
 					className,
 					points,
+					maxPoints,
 				});
 			}
 		}
@@ -65,68 +67,77 @@ export default function DetailedVotingTable({ data, show }) {
 	const content = getTableContent(data, show);
 
 	return (
-		<div className="table-container" style={{ display: "flex", justifyContent: "center" }}>
-			<table
-				className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
-				style={{ width: "inherit" }}
-			>
-				<thead>
-					<tr>
-						<th rowSpan={2} colSpan={2}></th>
-						<th rowSpan={2} style={{ verticalAlign: "bottom" }}>
-							<SidewaysText>Total score</SidewaysText>
-						</th>
-						<th rowSpan={2} style={{ verticalAlign: "bottom" }}>
-							<SidewaysText>Jury vote score</SidewaysText>
-						</th>
-						<th rowSpan={2} style={{ verticalAlign: "bottom" }}>
-							<SidewaysText>Televoting score</SidewaysText>
-						</th>
-						<th style={{ textAlign: "center" }} colSpan={content.voters.length}>
-							Jury vote
-						</th>
-					</tr>
-					<tr>
-						{content.voters.map((voter, i) => (
-							<th key={i} style={{ verticalAlign: "bottom" }}>
-								<SidewaysText>
-									<Twemoji>
-										<Country id={voter.country} rotateFlag />
-									</Twemoji>
-								</SidewaysText>
+		<div style={{ display: "flex", justifyContent: "center" }}>
+			<div className="table-container">
+				<table
+					className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+					style={{ width: "inherit" }}
+				>
+					<thead>
+						<tr>
+							<th colSpan={content.voters.length + 5} style={{ textAlign: "center" }}>
+								Detailed jury voting results
 							</th>
-						))}
-					</tr>
-				</thead>
-				<tbody>
-					{content.participants.map((participant, i) => (
-						<tr key={i}>
-							{i === 0 && (
-								<th style={{ verticalAlign: "middle" }} rowSpan={content.participants.length}>
-									<SidewaysText>Contestants</SidewaysText>
+						</tr>
+						<tr>
+							<th rowSpan={2} colSpan={2}></th>
+							<th rowSpan={2} style={{ verticalAlign: "bottom" }}>
+								<SidewaysText>Total score</SidewaysText>
+							</th>
+							<th rowSpan={2} style={{ verticalAlign: "bottom" }}>
+								<SidewaysText>Jury vote score</SidewaysText>
+							</th>
+							<th rowSpan={2} style={{ verticalAlign: "bottom" }}>
+								<SidewaysText>Televoting score</SidewaysText>
+							</th>
+							<th style={{ textAlign: "center" }} colSpan={content.voters.length}>
+								Jury vote
+							</th>
+						</tr>
+						<tr>
+							{content.voters.map((voter, i) => (
+								<th key={i} style={{ verticalAlign: "bottom" }}>
+									<SidewaysText>
+										<Twemoji>
+											<Country id={voter.country} rotateFlag />
+										</Twemoji>
+									</SidewaysText>
 								</th>
-							)}
-							<th className={participant.className}>
-								<Twemoji>
-									<Country id={participant.country} />
-								</Twemoji>
-							</th>
-							<td className={participant.className}>{participant.showPoints.total}</td>
-							<td className={participant.className}>{participant.showPoints.jury}</td>
-							<td className={participant.className}>{participant.showPoints.tele}</td>
-							{participant.points.map((point, i) => (
-								<td
-									style={{ textAlign: "center" }}
-									key={i}
-									className={`${participant.className} ${point === "-" && "blank"}`}
-								>
-									{point !== "-" && point}
-								</td>
 							))}
 						</tr>
-					))}
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						{content.participants.map((participant, i) => (
+							<tr key={i}>
+								{i === 0 && (
+									<th style={{ verticalAlign: "middle" }} rowSpan={content.participants.length}>
+										<SidewaysText>Contestants</SidewaysText>
+									</th>
+								)}
+								<th className={participant.className}>
+									<Twemoji>
+										<Country id={participant.country} />
+									</Twemoji>
+								</th>
+								<td className={participant.className}>{participant.showPoints.total}</td>
+								<td className={participant.className}>{participant.showPoints.jury}</td>
+								<td className={participant.className}>{participant.showPoints.tele}</td>
+								{participant.points.map((point, i) => (
+									<td
+										style={{ textAlign: "center" }}
+										key={i}
+										className={`${participant.className} ${point === "-" && "blank"} ${
+											point === participant.maxPoints && "has-text-weight-bold"
+										}`}
+									>
+										{point !== "-" && point}
+									</td>
+								))}
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
 		</div>
 	);
 }
